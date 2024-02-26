@@ -1,0 +1,76 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix vivo: <http://vivoweb.org/ontology/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix uni: <http://uni.com/schema#>.
+
+# - University RDFS
+uni:University a rdfs:Class;
+    rdfs:label "University"@en.
+
+uni:uni_dblink a rdf:Property;
+    rdfs:domain uni:University;
+    rdfs:range xsd:string;
+    rdfs:label "DBPedia Link"@en;
+    rdfs:comment "University Link on DBPedia"@en.
+
+uni:uni_wikilink a rdf:Property;
+    rdfs:domain uni:University;
+    rdfs:range xsd:string;
+    rdfs:label "Wikidata Link"@en;
+    rdfs:comment "University Link on Wikidata"@en.
+
+# - Courses RDFS
+uni:Course a rdfs:Class;
+    rdfs:subClassOf uni:University;
+    dbo:abstract xsd:string;
+    rdfs:seeAlso xsd:string;
+    rdfs:label "Course"@en;
+    rdfs:comment "Course class"@en.
+
+uni:name a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range xsd:string;
+    rdfs:label "Name"@en;
+    rdfs:comment "Name of a Course"@en.
+
+uni:subject a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range xsd:string;
+    rdfs:label "Subject"@en;
+    rdfs:comment "Subject of the class"@en.
+
+uni:ID a rdf:Property;
+    rdfs:subPropertyOf vivo:identifier;
+    rdfs:label "Course ID"@en.
+    rdfs:comment "ID of the course"@en.
+
+uni:credits a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range xsd:string;
+    rdfs:label "Credits"@en;
+    rdfs:comment "Number of credits of a class"@en.
+
+uni:outline a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range xsd:string;
+    rdfs:label "Outline"@en;
+    rdfs:comment "Outline of a class"@en.
+
+
+# - Lectures RDFS - TODO
+# - Topics RDFS - TODO
+
+# - Students RDFS - TO FINISH
+focu:Student a rdfs:Class;
+    rdfs:label "Student"@en;
+    rdfs:comment "Student of an University"@en;
+    rdfs:subClassOf foaf:Person.
+
+uni:student_ID a rdf:Property;
+    rdfs:domain uni:Student;
+    rdfs:range xsd:string;
+    rdfs:label "Student ID"@en;
+    rdfs:comment "The unique identifier of a student"@en.
