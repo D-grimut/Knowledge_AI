@@ -18,15 +18,12 @@ uni:uni_dblink a rdf:Property;
 
 uni:uni_wikilink a rdf:Property;
     rdfs:domain uni:University;
-    rdfs:range xsd:string;
     rdfs:label "Wikidata Link"@en;
     rdfs:comment "University Link on Wikidata"@en.
 
 # - Courses RDFS
 uni:Course a rdfs:Class;
     rdfs:subClassOf uni:University;
-    dbo:abstract xsd:string;
-    rdfs:seeAlso xsd:string;
     rdfs:label "Course"@en;
     rdfs:comment "Course class"@en.
 
@@ -74,3 +71,31 @@ uni:student_ID a rdf:Property;
     rdfs:range xsd:string;
     rdfs:label "Student ID"@en;
     rdfs:comment "The unique identifier of a student"@en.
+
+# cource_completed allows a student to have direct links with comepleted Classes.
+# in the event the student retakes the class, we simply remove this link BUT keep the
+# previous grade obtained by the student - we ubtated that grade when course is coompleted.
+
+uni:completed_cource a rdf:Property;
+    rdfs:domain uni:Student;
+    rdfs:range uni:Course;
+    rdfs:label "Cource Completed"@en;
+    rdfs:comment "Cource ompleted by the student"@en.
+
+uni:Grade a rdfs:Class;
+    rdfs:label "Grade"@en;
+    rdfs:comment "Letter Grade"@en.
+
+uni:grade_obtained a rdf:Property;
+    rdfs:domain uni:Student;
+    rdfs:range uni:Grade;
+    rdfs:label "Grade Obtained"@en;
+    rdfs:comment "Grade Obtained by the student"@en.
+
+uni:grade_obtained_in a rdf:Property;
+    rdfs:domain uni:Grade;
+    rdfs:range uni:Course;
+    rdfs:label "Grade Obtained In"@en;
+    rdfs:comment "Grade Obtained by the student in a specific course"@en.
+
+#TODO finish competencies - waiting on Nico to finish Topics.
