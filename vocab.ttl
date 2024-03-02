@@ -7,31 +7,28 @@
 @prefix uni: <http://uni.com/schema#>.
 
 # - University RDFS
-uni:University a rdfs:Class;
-    rdfs:label "University"@en.
-
 uni:uni_dblink a rdf:Property;
-    rdfs:domain uni:University;
+    rdfs:domain dbo:University;
     rdfs:range xsd:string;
     rdfs:label "DBPedia Link"@en;
     rdfs:comment "University Link on DBPedia"@en.
 
 uni:uni_wikilink a rdf:Property;
-    rdfs:domain uni:University;
+    rdfs:domain dbo:University;
     rdfs:label "Wikidata Link"@en;
     rdfs:comment "University Link on Wikidata"@en.
 
+uni:name a rdfs:Property;
+    rdfs:domain dbo:University;
+    rdfs:range xsd:string;
+    rdfs:label "name"@en;
+    rdfs:comment "University Name"@en.
+
 # - Courses RDFS
 uni:Course a rdfs:Class;
-    rdfs:subClassOf uni:University;
+    rdfs:subClassOf dbo:University;
     rdfs:label "Course"@en;
     rdfs:comment "Course class"@en.
-
-uni:name a rdf:Property;
-    rdfs:domain uni:Course;
-    rdfs:range xsd:string;
-    rdfs:label "Name"@en;
-    rdfs:comment "Name of a Course"@en.
 
 uni:subject a rdf:Property;
     rdfs:domain uni:Course;
@@ -41,7 +38,7 @@ uni:subject a rdf:Property;
 
 uni:ID a rdf:Property;
     rdfs:subPropertyOf vivo:identifier;
-    rdfs:label "Course ID"@en.
+    rdfs:label "Course ID"@en;
     rdfs:comment "ID of the course"@en.
 
 uni:credits a rdf:Property;
@@ -56,18 +53,23 @@ uni:outline a rdf:Property;
     rdfs:label "Outline"@en;
     rdfs:comment "Outline of a class"@en.
 
+uni:offered_in a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range dbo:University;
+    rdfs:label "Offered In"@en;
+    rdfs:comment "University node where the course is offered in"@en.
 
 # - Lectures RDFS - TODO
 # - Topics RDFS - TODO
 
 # - Students RDFS - TO FINISH
-focu:Student a rdfs:Class;
+dbo:student a rdfs:Class;
     rdfs:label "Student"@en;
     rdfs:comment "Student of an University"@en;
     rdfs:subClassOf foaf:Person.
 
 uni:student_ID a rdf:Property;
-    rdfs:domain uni:Student;
+    rdfs:domain dbo:student;
     rdfs:range xsd:string;
     rdfs:label "Student ID"@en;
     rdfs:comment "The unique identifier of a student"@en.
@@ -77,7 +79,7 @@ uni:student_ID a rdf:Property;
 # previous grade obtained by the student - we ubtated that grade when course is coompleted.
 
 uni:completed_cource a rdf:Property;
-    rdfs:domain uni:Student;
+    rdfs:domain dbo:student;
     rdfs:range uni:Course;
     rdfs:label "Cource Completed"@en;
     rdfs:comment "Cource ompleted by the student"@en.
@@ -87,7 +89,7 @@ uni:Grade a rdfs:Class;
     rdfs:comment "Letter Grade"@en.
 
 uni:grade_obtained a rdf:Property;
-    rdfs:domain uni:Student;
+    rdfs:domain dbo:student;
     rdfs:range uni:Grade;
     rdfs:label "Grade Obtained"@en;
     rdfs:comment "Grade Obtained by the student"@en.
@@ -98,4 +100,31 @@ uni:grade_obtained_in a rdf:Property;
     rdfs:label "Grade Obtained In"@en;
     rdfs:comment "Grade Obtained by the student in a specific course"@en.
 
+
 #TODO finish competencies - waiting on Nico to finish Topics.
+
+#test querries
+
+#querry 1
+
+uni:Concordia rdf:type dbo:University;
+    uni:name "Concordia".
+
+uni:McGill rdf:type dbo:University;
+    uni:name "McGill".
+
+uni:Comp_474 rdf:type uni:Course;
+    uni:name "Inteligent Systems";
+    uni:offered_in uni:Concordia.
+
+uni:Comp_445 rdf:type uni:Course;
+    uni:name "Networks";
+    uni:offered_in uni:Concordia.
+
+uni:Comp_1 rdf:type uni:Course;
+    uni:name "mcgill class 1";
+    uni:offered_in uni:McGill.
+
+uni:Comp_2 rdf:type uni:Course;
+    uni:name "mcgill class 2";
+    uni:offered_in uni:McGill.
