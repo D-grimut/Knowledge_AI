@@ -22,7 +22,7 @@ uni:name a rdfs:Property;
     rdfs:domain dbo:University;
     rdfs:range xsd:string;
     rdfs:label "name"@en;
-    rdfs:comment "University Name"@en.
+    rdfs:comment "name of the entity (university) or one of its children"@en.
 
 # - Courses RDFS
 uni:Course a rdfs:Class;
