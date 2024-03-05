@@ -123,8 +123,42 @@ uni:grade_obtained_in a rdf:Property;
     rdfs:label "Grade Obtained In"@en;
     rdfs:comment "Grade Obtained by the student in a specific course"@en.
 
+#-----------------------Lectures------------------------------
 
-#TODO finish competencies - waiting on Nico to finish Topics.
+#Used to get the lecture number of anything of type lecture
+ex:LectureNumber rdf:type rdf:Property;
+    rdfs:range ex:Lecture;
+
+#Used to get the lecture name of anything of type lecture
+ex:LectureName rdf:type rdf:Property;
+    rdfs:range ex:Lecture;
+
+#Used to link courses to lectures
+ex:HasLecture rdf:type rdf:Property;
+    rdfs:range ex:Course;
+    rdfs:domain ex:Lecture;
+
+ex:Lecture
+    rdf:type rdfs:Class;
+    rdfs:label "Lecture Class";
+    rdfs:comment "The Class Type Lecture";
+
+ex:Slides
+    rdf:type rdfs:Class;
+    rdfs:subClassOf ex:Lectures;
+
+ex:Worksheets
+    rdf:type rdfs:Class;
+    rdfs:subClassOf ex:Lectures;
+
+ex:Readings
+    rdf:type rdfs:Class;
+    rdfs:subClassOf ex:Lectures;
+
+ex:OtherLectureMaterial
+    rdf:type rdfs:Class;
+    rdfs:subClassOf ex:Lectures;
+
 
 #test querries
 
