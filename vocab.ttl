@@ -60,7 +60,30 @@ uni:offered_in a rdf:Property;
     rdfs:comment "University node where the course is offered in"@en.
 
 # - Lectures RDFS - TODO
-# - Topics RDFS - TODO
+
+# - Topics RDFS
+uni:Topic a rdfs:Class;
+    rdfs:subClassOf uni:Course;
+    rdfs:label "Topic"@en;
+    rdfs:comment "topics of the course"@en.
+
+uni:topicName a rdf:Property;
+    rdfs:domain uni:Topic;
+    rdfs:range xsd:string;
+    rdfs:label "Topic Name"@en;
+    rdfs:comment "name of the topic"@en.
+
+uni:provenance a rdf:Property;
+    rdfs:domain uni:Topic;
+    rdfs:range xsd:string;
+    rdfs:label "Provenance"@en;
+    rdfs:comment "a record of where the topic was identified as being covered in the course"@en.
+
+uni:linkedTo a rdf:Property;
+    rdfs:domain uni:Topic;
+    rdfs:range xsd:anyURI;
+    rdfs:label "Linked To"@en;
+    rdfs:comment "link to a DBpedia and/or Wikidata"@en.
 
 # - Students RDFS - TO FINISH
 dbo:student a rdfs:Class;
