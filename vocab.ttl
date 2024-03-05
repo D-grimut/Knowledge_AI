@@ -76,11 +76,6 @@ uni:student_ID a rdf:Property;
     rdfs:comment "The unique identifier of a student"@en.
 
 #-----------------------Lectures------------------------------
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dbp: <http://dbpedia.org/ontology/>.
-@prefix ex: <http://example.org/>.
 
 #Used to get the lecture number of anything of type lecture
 ex:LectureNumber rdf:type rdf:Property;
