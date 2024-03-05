@@ -6,7 +6,7 @@
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix uni: <http://uni.com/schema#>.
 
-# - University RDFS
+#-----------------------University------------------------------
 uni:uni_dblink a rdf:Property;
     rdfs:domain dbo:University;
     rdfs:range xsd:string;
@@ -24,7 +24,7 @@ uni:name a rdfs:Property;
     rdfs:label "name"@en;
     rdfs:comment "name of the entity (university) or one of its children"@en.
 
-# - Courses RDFS
+#-----------------------Course------------------------------
 uni:Course a rdfs:Class;
     rdfs:subClassOf dbo:University;
     rdfs:label "Course"@en;
@@ -61,7 +61,7 @@ uni:offered_in a rdf:Property;
 
 # - Lectures RDFS - TODO
 
-# - Topics RDFS
+#-----------------------Topics------------------------------
 uni:Topic a rdfs:Class;
     rdfs:subClassOf uni:Course;
     rdfs:label "Topic"@en;
@@ -85,7 +85,7 @@ uni:linkedTo a rdf:Property;
     rdfs:label "Linked To"@en;
     rdfs:comment "link to a DBpedia and/or Wikidata"@en.
 
-# - Students RDFS - TO FINISH
+#-----------------------Student------------------------------
 dbo:student a rdfs:Class;
     rdfs:label "Student"@en;
     rdfs:comment "Student of an University"@en;
@@ -126,41 +126,41 @@ uni:grade_obtained_in a rdf:Property;
 #-----------------------Lectures------------------------------
 
 #Used to get the lecture number of anything of type lecture
-ex:LectureNumber rdf:type rdf:Property;
-    rdfs:range ex:Lecture;
+uni:LectureNumber rdf:type rdf:Property;
+    rdfs:range uni:Lecture.
 
 #Used to get the lecture name of anything of type lecture
-ex:LectureName rdf:type rdf:Property;
-    rdfs:range ex:Lecture;
+uni:LectureName rdf:type rdf:Property;
+    rdfs:range uni:Lecture.
 
 #Used to link courses to lectures
-ex:HasLecture rdf:type rdf:Property;
-    rdfs:range ex:Course;
-    rdfs:domain ex:Lecture;
+uni:HasLecture rdf:type rdf:Property;
+    rdfs:range uni:Course;
+    rdfs:domain uni:Lecture.
 
-ex:Lecture
+uni:Lecture
     rdf:type rdfs:Class;
     rdfs:label "Lecture Class";
-    rdfs:comment "The Class Type Lecture";
+    rdfs:comment "The Class Type Lecture".
 
-ex:Slides
+uni:Slides
     rdf:type rdfs:Class;
-    rdfs:subClassOf ex:Lectures;
+    rdfs:subClassOf uni:Lectures.
 
-ex:Worksheets
+uni:Worksheets
     rdf:type rdfs:Class;
-    rdfs:subClassOf ex:Lectures;
+    rdfs:subClassOf uni:Lectures.
 
-ex:Readings
+uni:Readings
     rdf:type rdfs:Class;
-    rdfs:subClassOf ex:Lectures;
+    rdfs:subClassOf uni:Lectures.
 
-ex:OtherLectureMaterial
+uni:OtherLectureMaterial
     rdf:type rdfs:Class;
-    rdfs:subClassOf ex:Lectures;
+    rdfs:subClassOf uni:Lectures.
 
 
-#test querries
+#-----------------------Test querries REMOVE AT THE END------------------------------
 
 #querry 1
 
