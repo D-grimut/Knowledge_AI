@@ -5,6 +5,7 @@
 @prefix vivo: <http://vivoweb.org/ontology/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix uni: <http://uni.com/schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #-----------------------University------------------------------
 uni:uni_dblink a rdf:Property;
@@ -63,7 +64,6 @@ uni:offered_in a rdf:Property;
 
 #-----------------------Topics------------------------------
 uni:Topic a rdfs:Class;
-    rdfs:subClassOf uni:Course;
     rdfs:label "Topic"@en;
     rdfs:comment "topics of the course"@en.
 
@@ -84,6 +84,20 @@ uni:linkedTo a rdf:Property;
     rdfs:range xsd:anyURI;
     rdfs:label "Linked To"@en;
     rdfs:comment "link to a DBpedia and/or Wikidata"@en.
+
+uni:topic_from a rdf:Property;
+    rdfs:domain uni:Topic;
+    rdfs:range uni:Course;
+    rdfs:label "topic origin"@en;
+    rdfs:comment "course(s) from where the topic is presented"@en.
+
+uni:topic_offered a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range uni:Topic;
+    rdfs:label "topic offered"@en;
+    rdfs:comment "topic that is offered by a class"@en.
+
+uni:topic_offered owl:inverseOf uni:topic_from.
 
 #-----------------------Student------------------------------
 dbo:student a rdfs:Class;
