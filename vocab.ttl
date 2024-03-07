@@ -140,62 +140,77 @@ uni:grade_obtained_in a rdf:Property;
 #-----------------------Lectures------------------------------
 
 #Used to get the lecture number of anything of type lecture
-uni:LectureNumber rdf:type rdf:Property;
+uni:lecture_number a rdf:Property;
     rdfs:range uni:Lecture.
 
 #Used to get the lecture name of anything of type lecture
-uni:LectureName rdf:type rdf:Property;
+uni:lecture_name a rdf:Property;
     rdfs:range uni:Lecture.
 
 #Used to link courses to lectures
-uni:HasLecture rdf:type rdf:Property;
+uni:has_lecture a rdf:Property;
     rdfs:range uni:Course;
     rdfs:domain uni:Lecture.
 
-uni:Lecture
-    rdf:type rdfs:Class;
-    rdfs:label "Lecture Class";
-    rdfs:comment "The Class Type Lecture".
+uni:has_content a rdf:Property;
+    rdfs:range uni:Lecture;
+    rdfs:domain uni:Lecture_Content.
+    rdfs:label "has content"@en
+    rdfs:comment "content of a lecture"@en.
 
-uni:Slides
-    rdf:type rdfs:Class;
-    rdfs:subClassOf uni:Lectures.
+uni:Lecture_Content a rdfs:Class;
+    rdfs:label "Lecture_Content"@en
+    rdfs:comment "Lecture Content parent class"@en.
 
-uni:Worksheets
-    rdf:type rdfs:Class;
-    rdfs:subClassOf uni:Lectures.
+uni::material a rdfs:Property;
+    rdfs:domain uni:Lecture_Content;
+    rdfs:range xsd:anyURI;
+    rdfs:label "material"@en
+    rdfs:comment "material for a given leacture"@en.
 
-uni:Readings
-    rdf:type rdfs:Class;
-    rdfs:subClassOf uni:Lectures.
+uni:Lecture a rdfs:Class;
+    rdfs:label "Lecture Class"@en;
+    rdfs:comment "The Class Type Lecture"@en.
 
-uni:OtherLectureMaterial
-    rdf:type rdfs:Class;
-    rdfs:subClassOf uni:Lectures.
+uni:Slides a rdfs:Lecture_Content;
+    rdfs:label "slides"@en;
+    rdfs:comment "slides of a lecture"@en.
+
+uni:Worksheets a rdfs:Lecture_Content;
+    rdfs:label "worksheet"@en;
+    rdfs:comment "worksheets of a lecture"@en.
+
+uni:Readings a rdfs:Lecture_Content;
+    rdfs:label "readings"@en;
+    rdfs:comment "readings of a given lecture"@en.
+
+uni:OtherLectureMaterial a rdfs:Lecture_Content;
+    rdfs:label "other material"@en;
+    rdfs:comment "other/supplementary lecture material"@en.
 
 
 #-----------------------Test querries REMOVE AT THE END------------------------------
 
 #querry 1
 
-uni:Concordia rdf:type dbo:University;
+uni:Concordia a dbo:University;
     uni:name "Concordia".
 
-uni:McGill rdf:type dbo:University;
+uni:McGill a dbo:University;
     uni:name "McGill".
 
-uni:Comp_474 rdf:type uni:Course;
+uni:Comp_474 a uni:Course;
     uni:name "Inteligent Systems";
     uni:offered_in uni:Concordia.
 
-uni:Comp_445 rdf:type uni:Course;
+uni:Comp_445 a uni:Course;
     uni:name "Networks";
     uni:offered_in uni:Concordia.
 
-uni:Comp_1 rdf:type uni:Course;
+uni:Comp_1 a uni:Course;
     uni:name "mcgill class 1";
     uni:offered_in uni:McGill.
 
-uni:Comp_2 rdf:type uni:Course;
+uni:Comp_2 a uni:Course;
     uni:name "mcgill class 2";
     uni:offered_in uni:McGill.
