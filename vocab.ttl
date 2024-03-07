@@ -59,8 +59,6 @@ uni:offered_in a rdf:Property;
     rdfs:label "Offered In"@en;
     rdfs:comment "University node where the course is offered in"@en.
 
-# - Lectures RDFS - TODO
-
 #-----------------------Topics------------------------------
 uni:Topic a rdfs:Class;
     rdfs:subClassOf uni:Course;
@@ -160,9 +158,9 @@ uni:OtherLectureMaterial
     rdfs:subClassOf uni:Lectures.
 
 
-#-----------------------Test querries REMOVE AT THE END------------------------------
+#-----------------------Test queries REMOVE AT THE END------------------------------
 
-#querry 1
+#query 1
 
 uni:Concordia rdf:type dbo:University;
     uni:name "Concordia".
