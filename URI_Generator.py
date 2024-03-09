@@ -14,8 +14,13 @@ from urllib.parse import quote_plus
 
 def get_course_info():
     course_list = ["GCS_132", "GCS_143", "GCS_165"]
+    course_list_cred = ["005411", "005484", "040355"]
 
     data = {}
+    index = {}
+
+    for i, course in enumerate(course_list):
+        index[course_list_cred] 
 
     with open("CATALOG.csv", mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -27,6 +32,15 @@ def get_course_info():
                         "Course number": row["Course number"],
                         "Title": row["Title"], 
                     }
+
+    # with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r') as csv_file:
+    #     csv_reader = csv.DictReader(csv_file)
+    #     for row in csv_reader:
+    #         for key, value in row.items():
+    #             if value in course_list_cred:
+    #                 data[row["Key"]] = {
+    #                     "Class Units": row["Class Units"],
+    #                 }
 
     return data
 
