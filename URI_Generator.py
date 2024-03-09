@@ -15,21 +15,20 @@ from urllib.parse import quote_plus
 def get_course_info():
     course_list = ["GCS_132", "GCS_143", "GCS_165"]
 
-    data = []
-    course_info = []
+    data = {}
 
     with open("CATALOG.csv", mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
             for key, value in row.items():
                 if value in course_list:
-                    data.append(row)
+                    data[row["Key"]] = {
+                        "Course code": row["Course code"],
+                        "Course number": row["Course number"],
+                        "Title": row["Title"], 
+                    }
 
-    for dict in data:
-        course_info.append({dict["Course Code"]})
-
-
-    return course_info
+    return data
 
 def get_files(dir):
     file_list = []
