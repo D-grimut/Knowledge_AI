@@ -20,12 +20,14 @@ def get_course_info():
     index = {}
 
     for i, course in enumerate(course_list):
-        index[course_list_cred] 
+        index[course_list_cred[i]] = course
 
     with open("CATALOG.csv", mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
+
             for key, value in row.items():
+
                 if value in course_list:
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
@@ -33,15 +35,15 @@ def get_course_info():
                         "Title": row["Title"], 
                     }
 
-    # with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r') as csv_file:
-    #     csv_reader = csv.DictReader(csv_file)
-    #     for row in csv_reader:
-    #         for key, value in row.items():
-    #             if value in course_list_cred:
-    #                 data[row["Key"]] = {
-    #                     "Class Units": row["Class Units"],
-    #                 }
-
+    with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding='latin1') as f:
+        csv_reader = csv.DictReader(f)
+        for row in csv_reader:
+            
+            for key, value in row.items():
+                print(value)
+                if value in course_list_cred:
+                    cource_id = index[value]
+                    data[cource_id["Class Units"]] = row["Class Units"]
     return data
 
 def get_files(dir):
