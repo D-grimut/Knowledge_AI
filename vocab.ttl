@@ -25,6 +25,7 @@ uni:name a rdfs:Property;
     rdfs:label "name"@en;
     rdfs:comment "name of the entity (university) or one of its children"@en.
 
+
 #-----------------------Course------------------------------
 uni:Course a rdfs:Class;
     rdfs:subClassOf dbo:University;
@@ -61,6 +62,13 @@ uni:offered_in a rdf:Property;
     rdfs:label "Offered In"@en;
     rdfs:comment "University node where the course is offered in"@en.
 
+uni:offers a rdf:Property;
+    rdfs:domain uni:University;
+    rdfs:range dbo:Course;
+    rdfs:label "offers"@en;
+    rdfs:comment "Course offered by a university"@en.
+
+uni:offered_in owl:inverseOf uni:offers.
 
 #-----------------------Lectures------------------------------
 
@@ -89,15 +97,15 @@ uni:has_lecture a rdf:Property;
     rdfs:label "has lecture"@en;
     rdfs:comment "The lecture that is offered by some class"@en.
 
+uni:Lecture_Content a rdfs:Class;
+    rdfs:label "Lecture_Content"@en;
+    rdfs:comment "Lecture Content parent class"@en.
+
 uni:has_content a rdf:Property;
-    rdfs:range uni:Lecture;
-    rdfs:domain uni:Lecture_Content.
+    rdfs:domain uni:Lecture;
+    rdfs:range uni:Lecture_Content.
     rdfs:label "has content"@en
     rdfs:comment "content of a lecture"@en.
-
-uni:Lecture_Content a rdfs:Class;
-    rdfs:label "Lecture_Content"@en
-    rdfs:comment "Lecture Content parent class"@en.
 
 uni::material a rdfs:Property;
     rdfs:domain uni:Lecture_Content;
@@ -105,22 +113,22 @@ uni::material a rdfs:Property;
     rdfs:label "material"@en
     rdfs:comment "material for a given leacture"@en.
 
-uni:Slides a rdfs:Lecture_Content;
+uni:Slides a rdfs:Class;
     rdfs:subClassOf uni:Lecture_Content;
     rdfs:label "slides"@en;
     rdfs:comment "slides of a lecture"@en.
 
-uni:Worksheets a rdfs:Lecture_Content;
+uni:Worksheets a rdfs:Class;
     rdfs:subClassOf uni:Lecture_Content;
     rdfs:label "worksheet"@en;
     rdfs:comment "worksheets of a lecture"@en.
 
-uni:Readings a rdfs:Lecture_Content;
+uni:Readings a rdfs:Class;
     rdfs:subClassOf uni:Lecture_Content;
     rdfs:label "readings"@en;
     rdfs:comment "readings of a given lecture"@en.
 
-uni:OtherLectureMaterial a rdfs:Lecture_Content;
+uni:OtherLectureMaterial a rdfs:Class;
     rdfs:subClassOf uni:Lecture_Content;
     rdfs:label "other material"@en;
     rdfs:comment "other/supplementary lecture material"@en.
@@ -174,15 +182,9 @@ uni:student_ID a rdf:Property;
     rdfs:label "Student ID"@en;
     rdfs:comment "The unique identifier of a student"@en.
 
-# cource_completed allows a student to have direct links with comepleted Classes.
-# in the event the student retakes the class, we simply remove this link BUT keep the
-# previous grade obtained by the student - we ubtated that grade when course is coompleted.
-
-uni:completed_cource a rdf:Property;
-    rdfs:domain uni:Student;
-    rdfs:range uni:Course;
-    rdfs:label "Cource Completed"@en;
-    rdfs:comment "Cource ompleted by the student"@en.
+# a student is considered to have completed a course, if they have a a grade associated with that course
+# the grade for that course can be updated if the student re-takes it, by simply "moving backwards"
+# thanks to 2 way connections between grade, student, and course.
 
 uni:Grade a rdfs:Class;
     rdfs:label "Grade"@en;
@@ -194,17 +196,28 @@ uni:grade_obtained a rdf:Property;
     rdfs:label "Grade Obtained"@en;
     rdfs:comment "Grade Obtained by the student"@en.
 
+uni:grade_from a rdf:Property;
+    rdfs:domain uni:Grade;
+    rdfs:range uni:Student;
+    rdfs:label "Grade from"@en;
+    rdfs:comment "grade from a student, inverse of grade_obtianed"@en.
+
 uni:grade_obtained_in a rdf:Property;
     rdfs:domain uni:Grade;
     rdfs:range uni:Course;
     rdfs:label "Grade Obtained In"@en;
     rdfs:comment "Grade Obtained by the student in a specific course"@en.
 
-uni:competency a rdf:Property;
-    rdfs:domain uni:Student;
-    rdfs:range uni:Topic;
-    rdfs:label "competency"@en;
-    rdfs:comment "Competency aquired by a student"@en.
+uni:grades a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range uni:Grade;
+    rdfs:label "Grades"@en;
+    rdfs:comment "All the grades from a course"@en.
+
+uni:grade_obtained owl:inverseOf uni:grade_from.
+uni:grade_obtained_in owl:inverseOf uni:grades.
+
+#note: the competencies can be aquired from the link between the student, the grade and the course: student -> grade -> course -> topic.
 
 #-----------------------Test querries REMOVE AT THE END------------------------------
 
