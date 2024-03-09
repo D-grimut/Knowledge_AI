@@ -1,8 +1,35 @@
 import os
+import csv
 
 from rdflib import URIRef, Namespace
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
+
+# Steps
+# 1- Get course info from dataset TODO
+# 2- Get content DONE
+# 3- Give URIs DONE
+# 4- Chanage csv for letter grades DONE
+# 5- Manually create triples for grades TODO
+
+def get_course_info():
+    course_list = ["GCS_132", "GCS_143", "GCS_165"]
+
+    data = []
+    course_info = []
+
+    with open("CATALOG.csv", mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            for key, value in row.items():
+                if value in course_list:
+                    data.append(row)
+
+    for dict in data:
+        course_info.append({dict["Course Code"]})
+
+
+    return course_info
 
 def get_files(dir):
     file_list = []
@@ -11,25 +38,25 @@ def get_files(dir):
     for root, dirs, files in os.walk(dir):
         if("COMP" in root):
             for file in files:
-                file_list.append(file)
+                file_list.append(root + "\\" + file)
 
     return file_list
 
 def create_URI(file_list):
     URI_list = []
-    curr_dir = os.getcwd()
-    namespace = Namespace("file://home/roboprof/")
 
     # Go through file list and create URI, then append it to a namespace
     # Converts name to valid URI after check
     for file in file_list:
-        uri_ref = URIRef(file)
-        name_uri_ref = namespace + uri_ref
-        if(_is_valid_uri(name_uri_ref)):
-            URI_list.append(name_uri_ref)
-        else:
-            valid_uri = quote_plus(name_uri_ref)
-            URI_list.append(valid_uri)
+        # Fix URI errors saying invalid URI
+        file_nospace = file.replace(" ", "%20")
+        file_front = file_nospace.replace("\\", "/")
+
+        namespace = Namespace("file:///" + file_front)
+
+        uri_ref = URIRef(namespace)
+
+        URI_list.append(uri_ref)
 
     return URI_list
 
@@ -43,5 +70,4 @@ files = get_files(curr_dir)
 # Create and print URIs
 URI_list = create_URI(files)
 
-for uri in URI_list:
-    print(uri + "\nIs this a valid URI: " + str(_is_valid_uri(uri)))
+print(get_course_info())
