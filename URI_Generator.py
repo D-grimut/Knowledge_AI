@@ -4,9 +4,6 @@ from rdflib import URIRef, Namespace
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
 
-class InvalidURIRef(Exception):
-    pass
-
 def get_files(dir):
     file_list = []
 
@@ -20,6 +17,7 @@ def get_files(dir):
 
 def create_URI(file_list):
     URI_list = []
+    curr_dir = os.getcwd()
     namespace = Namespace("file://home/roboprof/")
 
     # Go through file list and create URI, then append it to a namespace
