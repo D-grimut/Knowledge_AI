@@ -2,7 +2,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix vivo: <http://vivoweb.org/ontology/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix uni: <http://uni.com/schema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,12 +9,13 @@
 #-----------------------University------------------------------
 uni:uni_dblink a rdf:Property;
     rdfs:domain dbo:University;
-    rdfs:range xsd:string;
+    rdfs:range xsd:anyURI;
     rdfs:label "DBPedia Link"@en;
     rdfs:comment "University Link on DBPedia"@en.
 
 uni:uni_wikilink a rdf:Property;
     rdfs:domain dbo:University;
+    rdfs:range xsd:anyURI;
     rdfs:label "Wikidata Link"@en;
     rdfs:comment "University Link on Wikidata"@en.
 
@@ -38,19 +38,20 @@ uni:subject a rdf:Property;
     rdfs:comment "Subject of the class"@en.
 
 uni:ID a rdf:Property;
-    rdfs:subPropertyOf vivo:identifier;
+    rdfs:domain uni:Course;
+    rdfs:range xsd:integer;
     rdfs:label "Course ID"@en;
     rdfs:comment "ID of the course"@en.
 
 uni:credits a rdf:Property;
     rdfs:domain uni:Course;
-    rdfs:range xsd:string;
+    rdfs:range xsd:integer;
     rdfs:label "Credits"@en;
     rdfs:comment "Number of credits of a class"@en.
 
 uni:outline a rdf:Property;
     rdfs:domain uni:Course;
-    rdfs:range xsd:string;
+    rdfs:range xsd:anyURI;
     rdfs:label "Outline"@en;
     rdfs:comment "Outline of a class"@en.
 
@@ -60,7 +61,69 @@ uni:offered_in a rdf:Property;
     rdfs:label "Offered In"@en;
     rdfs:comment "University node where the course is offered in"@en.
 
-# - Lectures RDFS - TODO
+
+#-----------------------Lectures------------------------------
+
+uni:Lecture a rdfs:Class;
+    rdfs:label "Lecture Class"@en;
+    rdfs:comment "The Class Type Lecture"@en.
+
+#Used to get the lecture number of anything of type lecture
+uni:lecture_number a rdf:Property;
+    rdfs:domain xsd:integer;
+    rdfs:range uni:Lecture;
+    rdfs:label "Lecture Number"@en;
+    rdfs:comment "The number of a lecture"@en.
+
+#Used to get the lecture name of anything of type lecture
+uni:lecture_name a rdf:Property;
+    rdfs:domain xsd:string;
+    rdfs:range uni:Lecture;
+    rdfs:label "Lecture Name"@en;
+    rdfs:comment "The name of a lecture"@en.
+
+#Used to link courses to lectures - A course has some lectures
+uni:has_lecture a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range uni:Lecture;
+    rdfs:label "has lecture"@en;
+    rdfs:comment "The lecture that is offered by some class"@en.
+
+uni:has_content a rdf:Property;
+    rdfs:range uni:Lecture;
+    rdfs:domain uni:Lecture_Content.
+    rdfs:label "has content"@en
+    rdfs:comment "content of a lecture"@en.
+
+uni:Lecture_Content a rdfs:Class;
+    rdfs:label "Lecture_Content"@en
+    rdfs:comment "Lecture Content parent class"@en.
+
+uni::material a rdfs:Property;
+    rdfs:domain uni:Lecture_Content;
+    rdfs:range xsd:anyURI;
+    rdfs:label "material"@en
+    rdfs:comment "material for a given leacture"@en.
+
+uni:Slides a rdfs:Lecture_Content;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "slides"@en;
+    rdfs:comment "slides of a lecture"@en.
+
+uni:Worksheets a rdfs:Lecture_Content;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "worksheet"@en;
+    rdfs:comment "worksheets of a lecture"@en.
+
+uni:Readings a rdfs:Lecture_Content;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "readings"@en;
+    rdfs:comment "readings of a given lecture"@en.
+
+uni:OtherLectureMaterial a rdfs:Lecture_Content;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "other material"@en;
+    rdfs:comment "other/supplementary lecture material"@en.
 
 #-----------------------Topics------------------------------
 uni:Topic a rdfs:Class;
@@ -79,7 +142,7 @@ uni:provenance a rdf:Property;
     rdfs:label "Provenance"@en;
     rdfs:comment "a record of where the topic was identified as being covered in the course"@en.
 
-uni:linkedTo a rdf:Property;
+uni:linked_to a rdf:Property;
     rdfs:domain uni:Topic;
     rdfs:range xsd:anyURI;
     rdfs:label "Linked To"@en;
@@ -100,14 +163,14 @@ uni:topic_offered a rdf:Property;
 uni:topic_offered owl:inverseOf uni:topic_from.
 
 #-----------------------Student------------------------------
-dbo:student a rdfs:Class;
+uni:Student a rdfs:Class;
     rdfs:label "Student"@en;
     rdfs:comment "Student of an University"@en;
     rdfs:subClassOf foaf:Person.
 
 uni:student_ID a rdf:Property;
-    rdfs:domain dbo:student;
-    rdfs:range xsd:string;
+    rdfs:domain uni:Student;
+    rdfs:range xsd:integer;
     rdfs:label "Student ID"@en;
     rdfs:comment "The unique identifier of a student"@en.
 
@@ -116,7 +179,7 @@ uni:student_ID a rdf:Property;
 # previous grade obtained by the student - we ubtated that grade when course is coompleted.
 
 uni:completed_cource a rdf:Property;
-    rdfs:domain dbo:student;
+    rdfs:domain uni:Student;
     rdfs:range uni:Course;
     rdfs:label "Cource Completed"@en;
     rdfs:comment "Cource ompleted by the student"@en.
@@ -126,7 +189,7 @@ uni:Grade a rdfs:Class;
     rdfs:comment "Letter Grade"@en.
 
 uni:grade_obtained a rdf:Property;
-    rdfs:domain dbo:student;
+    rdfs:domain uni:Student;
     rdfs:range uni:Grade;
     rdfs:label "Grade Obtained"@en;
     rdfs:comment "Grade Obtained by the student"@en.
@@ -137,57 +200,11 @@ uni:grade_obtained_in a rdf:Property;
     rdfs:label "Grade Obtained In"@en;
     rdfs:comment "Grade Obtained by the student in a specific course"@en.
 
-#-----------------------Lectures------------------------------
-
-#Used to get the lecture number of anything of type lecture
-uni:lecture_number a rdf:Property;
-    rdfs:range uni:Lecture.
-
-#Used to get the lecture name of anything of type lecture
-uni:lecture_name a rdf:Property;
-    rdfs:range uni:Lecture.
-
-#Used to link courses to lectures
-uni:has_lecture a rdf:Property;
-    rdfs:range uni:Course;
-    rdfs:domain uni:Lecture.
-
-uni:has_content a rdf:Property;
-    rdfs:range uni:Lecture;
-    rdfs:domain uni:Lecture_Content.
-    rdfs:label "has content"@en
-    rdfs:comment "content of a lecture"@en.
-
-uni:Lecture_Content a rdfs:Class;
-    rdfs:label "Lecture_Content"@en
-    rdfs:comment "Lecture Content parent class"@en.
-
-uni::material a rdfs:Property;
-    rdfs:domain uni:Lecture_Content;
-    rdfs:range xsd:anyURI;
-    rdfs:label "material"@en
-    rdfs:comment "material for a given leacture"@en.
-
-uni:Lecture a rdfs:Class;
-    rdfs:label "Lecture Class"@en;
-    rdfs:comment "The Class Type Lecture"@en.
-
-uni:Slides a rdfs:Lecture_Content;
-    rdfs:label "slides"@en;
-    rdfs:comment "slides of a lecture"@en.
-
-uni:Worksheets a rdfs:Lecture_Content;
-    rdfs:label "worksheet"@en;
-    rdfs:comment "worksheets of a lecture"@en.
-
-uni:Readings a rdfs:Lecture_Content;
-    rdfs:label "readings"@en;
-    rdfs:comment "readings of a given lecture"@en.
-
-uni:OtherLectureMaterial a rdfs:Lecture_Content;
-    rdfs:label "other material"@en;
-    rdfs:comment "other/supplementary lecture material"@en.
-
+uni:competency a rdf:Property;
+    rdfs:domain uni:Student;
+    rdfs:range uni:Topic;
+    rdfs:label "competency"@en;
+    rdfs:comment "Competency aquired by a student"@en.
 
 #-----------------------Test querries REMOVE AT THE END------------------------------
 
