@@ -103,14 +103,14 @@ uni:Lecture_Content a rdfs:Class;
 
 uni:has_content a rdf:Property;
     rdfs:domain uni:Lecture;
-    rdfs:range uni:Lecture_Content.
-    rdfs:label "has content"@en
+    rdfs:range uni:Lecture_Content;
+    rdfs:label "has content"@en;
     rdfs:comment "content of a lecture"@en.
 
 uni::material a rdfs:Property;
     rdfs:domain uni:Lecture_Content;
     rdfs:range xsd:anyURI;
-    rdfs:label "material"@en
+    rdfs:label "material"@en;
     rdfs:comment "material for a given leacture"@en.
 
 uni:Slides a rdfs:Class;
