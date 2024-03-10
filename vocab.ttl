@@ -218,29 +218,3 @@ uni:grade_obtained owl:inverseOf uni:grade_from.
 uni:grade_obtained_in owl:inverseOf uni:grades.
 
 #note: the competencies can be aquired from the link between the student, the grade and the course: student -> grade -> course -> topic.
-
-#-----------------------Test queries REMOVE AT THE END------------------------------
-
-#query 1
-
-uni:Concordia a dbo:University;
-    uni:name "Concordia".
-
-uni:McGill a dbo:University;
-    uni:name "McGill".
-
-uni:Comp_474 a uni:Course;
-    uni:name "Inteligent Systems";
-    uni:offered_in uni:Concordia.
-
-uni:Comp_445 a uni:Course;
-    uni:name "Networks";
-    uni:offered_in uni:Concordia.
-
-uni:Comp_1 a uni:Course;
-    uni:name "mcgill class 1";
-    uni:offered_in uni:McGill.
-
-uni:Comp_2 a uni:Course;
-    uni:name "mcgill class 2";
-    uni:offered_in uni:McGill.
