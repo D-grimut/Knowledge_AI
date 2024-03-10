@@ -2,6 +2,7 @@ import os
 import csv
 
 from rdflib import URIRef, Namespace, Graph
+from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
 
@@ -45,8 +46,6 @@ def get_course_info():
                     data[course_id]["Class Units"] = row["Class Units"]
     return data
 
-
-
 def get_files(dir):
     file_list = []
 
@@ -76,6 +75,36 @@ def create_URI(file_list):
 
     return URI_list
 
+def create_course_graph(course_list):
+    # Create a graph
+    graph = Graph()
+    
+    # Create new Namespace
+    unid = Namespace("http://uni.com/data/")
+    uni = Namespace("http://uni.com/schema#")
+
+    # Bind Namespaces
+    graph.bind("unid", unid)
+    graph.bind("uni", uni)
+
+    for key, values in course_list.items():
+        graph.add((unid[key], RDF.type, uni.Course))
+
+        graph.add((unid[key], uni.subject, unid[values]["Title"]))
+
+        graph.add((unid[key], uni.credits, unid[values]["Class Units"]))
+
+        graph.add((unid[key], uni.ID, unid[values]["Course Number"]))
+
+    # Serialize graph
+    file_ttl = "dummy_data.ttl"
+
+    serialize_data = graph.serialize(format='turtle')
+
+    with open(file_ttl, "wb") as file:
+        file.write(serialize_data)
+
+
 
 # Get current dir
 curr_dir = os.getcwd()
@@ -86,4 +115,8 @@ files = get_files(curr_dir)
 # Create and print URIs
 URI_list = create_URI(files)
 
+# Print course information
 print(get_course_info())
+
+# Print graph
+# print(create_course_graph(get_course_info()))
