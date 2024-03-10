@@ -6,13 +6,6 @@ from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
 
-# Steps
-# 1- Get course info from dataset DONE
-# 2- Get content DONE
-# 3- Give URIs DONE
-# 4- Chanage csv for letter grades DONE
-# 5- Manually create triples for grades TODO
-
 def get_course_info():
     course_list = ["GCS_132", "GCS_143", "GCS_165"]
     course_list_cred = ["005411", "005484", "040355"]
@@ -30,10 +23,13 @@ def get_course_info():
             for key, value in row.items():
 
                 if value in course_list:
+                    if(row["Title"]):
+                        new_val = row["Title"].replace(" ", "_")
+                        
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
                         "Course number": row["Course number"],
-                        "Title": row["Title"], 
+                        "Title": new_val, 
                     }
 
     with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding="utf-16") as f:
@@ -90,21 +86,17 @@ def create_course_graph(course_list):
     for key, values in course_list.items():
         graph.add((unid[key], RDF.type, uni.Course))
 
-        graph.add((unid[key], uni.subject, unid[values]["Title"]))
+        unid_val = values["Title"]
+        graph.add((unid[key], uni.subject, unid[unid_val]))
 
-        graph.add((unid[key], uni.credits, unid[values]["Class Units"]))
+        unid_val = values["Class Units"]
+        graph.add((unid[key], uni.credits, unid[unid_val]))
 
-        graph.add((unid[key], uni.ID, unid[values]["Course Number"]))
+        unid_val = values["Course number"]
+        graph.add((unid[key], uni.ID, unid[unid_val]))
 
     # Serialize graph
-    file_ttl = "dummy_data.ttl"
-
-    serialize_data = graph.serialize(format='turtle')
-
-    with open(file_ttl, "wb") as file:
-        file.write(serialize_data)
-
-
+    graph.serialize(destination="dummy_data.ttl", format='turtle')
 
 # Get current dir
 curr_dir = os.getcwd()
@@ -115,8 +107,5 @@ files = get_files(curr_dir)
 # Create and print URIs
 URI_list = create_URI(files)
 
-# Print course information
-print(get_course_info())
-
-# Print graph
-# print(create_course_graph(get_course_info()))
+# Graph creation
+create_course_graph(get_course_info())

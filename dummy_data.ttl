@@ -1,0 +1,18 @@
+@prefix uni: <http://uni.com/schema#> .
+@prefix unid: <http://uni.com/data/> .
+
+unid:GCS_132 a uni:Course ;
+    uni:ID unid:354 ;
+    uni:credits unid:4.00 ;
+    uni:subject unid:Introduction_to_Software_Engineering .
+
+unid:GCS_143 a uni:Course ;
+    uni:ID unid:474 ;
+    uni:credits unid:4.00 ;
+    uni:subject unid:Intelligent_Systems .
+
+unid:GCS_165 a uni:Course ;
+    uni:ID unid:6741 ;
+    uni:credits unid:4.00 ;
+    uni:subject unid:Intelligent_Systems .
+
