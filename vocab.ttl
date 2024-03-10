@@ -78,15 +78,15 @@ uni:Lecture a rdfs:Class;
 
 #Used to get the lecture number of anything of type lecture
 uni:lecture_number a rdf:Property;
-    rdfs:domain xsd:integer;
-    rdfs:range uni:Lecture;
+    rdfs:range xsd:integer;
+    rdfs:domain uni:Lecture;
     rdfs:label "Lecture Number"@en;
     rdfs:comment "The number of a lecture"@en.
 
 #Used to get the lecture name of anything of type lecture
 uni:lecture_name a rdf:Property;
-    rdfs:domain xsd:string;
-    rdfs:range uni:Lecture;
+    rdfs:range xsd:string;
+    rdfs:domain uni:Lecture;
     rdfs:label "Lecture Name"@en;
     rdfs:comment "The name of a lecture"@en.
 
