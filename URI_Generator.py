@@ -1,7 +1,7 @@
 import os
 import csv
 
-from rdflib import URIRef, Namespace, Graph
+from rdflib import URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
@@ -87,6 +87,7 @@ def grades_extract():
     
     return data
 
+# TODO: Add Dummy Lectures, Dummy topics, Dummy course material (including outlines for each course)
 def create_course_graph(course_list):
     # Create a graph
     graph = Graph()
@@ -94,13 +95,22 @@ def create_course_graph(course_list):
     # Create new Namespace
     unid = Namespace("http://uni.com/data/")
     uni = Namespace("http://uni.com/schema#")
+    dbo = Namespace("http://dbpedia.org/ontology/")
 
     # Bind Namespaces
     graph.bind("unid", unid)
     graph.bind("uni", uni)
+    graph.bind("dbo", dbo)
 
     data_grades = grades_extract()
+    uni_dummy = URIRef("https://dbpedia.org/data/Concordia_University")
 
+    #Creating Dummy University - Concordia
+    graph.add((unid.Concordia, RDF.type, dbo.University))
+    graph.add((unid.Concordia, uni.uni_dblink, uni_dummy))
+    graph.add((unid.Concordia, uni.name, Literal("Concordia")))
+
+    # Adding Courses to the graph - Concordia ONLY
     for key, values in course_list.items():
         graph.add((unid[key], RDF.type, uni.Course))
 
@@ -113,6 +123,10 @@ def create_course_graph(course_list):
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, unid[unid_val]))
 
+        graph.add((unid[key], uni.offered_in, unid.Concordia))
+        graph.add((unid.Concordia, uni.offers, unid[key]))
+
+    # Adding students and gardes to the RDF graph
     for name, grades in data_grades.items():
         #initialize classes
         grade_474 = grades["GCS_143"]
@@ -149,6 +163,9 @@ files = get_files(curr_dir)
 
 # Create and print URIs
 URI_list = create_URI(files)
+
+for i in URI_list:
+    print(i)
 
 # Graph creation
 create_course_graph(get_course_info())

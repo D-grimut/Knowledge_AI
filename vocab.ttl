@@ -25,7 +25,6 @@ uni:name a rdfs:Property;
     rdfs:label "name"@en;
     rdfs:comment "name of the entity (university) or one of its children"@en.
 
-
 #-----------------------Course------------------------------
 uni:Course a rdfs:Class;
     rdfs:subClassOf dbo:University;
@@ -71,7 +70,6 @@ uni:offers a rdf:Property;
 uni:offered_in owl:inverseOf uni:offers.
 
 #-----------------------Lectures------------------------------
-
 uni:Lecture a rdfs:Class;
     rdfs:label "Lecture Class"@en;
     rdfs:comment "The Class Type Lecture"@en.
