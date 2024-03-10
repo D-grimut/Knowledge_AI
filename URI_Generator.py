@@ -1,12 +1,12 @@
 import os
 import csv
 
-from rdflib import URIRef, Namespace
+from rdflib import URIRef, Namespace, Graph
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
 
 # Steps
-# 1- Get course info from dataset TODO
+# 1- Get course info from dataset DONE
 # 2- Get content DONE
 # 3- Give URIs DONE
 # 4- Chanage csv for letter grades DONE
@@ -20,7 +20,7 @@ def get_course_info():
     index = {}
 
     for i, course in enumerate(course_list):
-        index[course_list_cred[i]] = course
+        index[course_list_cred[i]] = course   
 
     with open("CATALOG.csv", mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -35,16 +35,17 @@ def get_course_info():
                         "Title": row["Title"], 
                     }
 
-    with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding='latin1') as f:
+    with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding="utf-16") as f:
         csv_reader = csv.DictReader(f)
         for row in csv_reader:
             
             for key, value in row.items():
-                print(value)
                 if value in course_list_cred:
-                    cource_id = index[value]
-                    data[cource_id["Class Units"]] = row["Class Units"]
+                    course_id = index[value]
+                    data[course_id]["Class Units"] = row["Class Units"]
     return data
+
+
 
 def get_files(dir):
     file_list = []
