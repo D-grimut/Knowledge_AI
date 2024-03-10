@@ -71,6 +71,22 @@ def create_URI(file_list):
 
     return URI_list
 
+def grades_extract():
+    data = {}
+
+    with open('grades.csv', newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader)
+        
+        for row in reader:
+            name = row[0]
+            grade_474 = row[1]
+            grade_354 = row[2]
+        
+            data[name] = {"GCS_143" : grade_474, "GCS_132" : grade_354}
+    
+    return data
+
 def create_course_graph(course_list):
     # Create a graph
     graph = Graph()
@@ -83,6 +99,8 @@ def create_course_graph(course_list):
     graph.bind("unid", unid)
     graph.bind("uni", uni)
 
+    data_grades = grades_extract()
+
     for key, values in course_list.items():
         graph.add((unid[key], RDF.type, uni.Course))
 
@@ -94,6 +112,31 @@ def create_course_graph(course_list):
 
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, unid[unid_val]))
+
+    for name, grades in data_grades.items():
+        #initialize classes
+        grade_474 = grades["GCS_143"]
+        grade_354 = grades["GCS_132"]
+        graph.add((unid[grade_474], RDF.type, uni.Grade))
+        graph.add((unid[grade_354], RDF.type, uni.Grade))
+        graph.add((unid[name], RDF.type, uni.Student))
+        graph.add((unid[name], FOAF.firstName, uni.Student))
+
+        #connection grade to course
+        graph.add((unid[grade_474], uni.grade_obtained_in, unid["GCS_143"]))
+        graph.add((unid[grade_354], uni.grade_obtained_in, unid["GCS_132"]))
+
+        #connection course to grade
+        graph.add((unid["GCS_143"], uni.grades, unid[grade_474]))
+        graph.add((unid["GCS_132"], uni.grades, unid[grade_354]))
+
+        #connection grade to name
+        graph.add((unid[grade_474], uni.grade_from, unid[name]))
+        graph.add((unid[grade_354], uni.grade_from, unid[name]))
+        
+        #connection name to grade
+        graph.add((unid[name], uni.grade_obtained, unid[grade_474]))
+        graph.add((unid[name], uni.grade_obtained, unid[grade_354]))
 
     # Serialize graph
     graph.serialize(destination="dummy_data.ttl", format='turtle')

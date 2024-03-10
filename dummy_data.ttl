@@ -1,18 +1,361 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix uni: <http://uni.com/schema#> .
 @prefix unid: <http://uni.com/data/> .
-
-unid:GCS_132 a uni:Course ;
-    uni:ID unid:354 ;
-    uni:credits unid:4.00 ;
-    uni:subject unid:Introduction_to_Software_Engineering .
-
-unid:GCS_143 a uni:Course ;
-    uni:ID unid:474 ;
-    uni:credits unid:4.00 ;
-    uni:subject unid:Intelligent_Systems .
 
 unid:GCS_165 a uni:Course ;
     uni:ID unid:6741 ;
     uni:credits unid:4.00 ;
     uni:subject unid:Intelligent_Systems .
+
+unid:Casey a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Dakota a uni:Student ;
+    uni:grade_obtained unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Georgie a uni:Student ;
+    uni:grade_obtained unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Hayden a uni:Student ;
+    uni:grade_obtained unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Lee a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Morgan a uni:Student ;
+    uni:grade_obtained unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Nico a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Oakley a uni:Student ;
+    uni:grade_obtained unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Pat a uni:Student ;
+    uni:grade_obtained unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Quincy a uni:Student ;
+    uni:grade_obtained unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Riley a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Robin a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Sasha a uni:Student ;
+    uni:grade_obtained unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Skyler a uni:Student ;
+    uni:grade_obtained unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Wesley a uni:Student ;
+    uni:grade_obtained unid:A ;
+    foaf:firstName uni:Student .
+
+unid:Xander a uni:Student ;
+    uni:grade_obtained unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Xen a uni:Student ;
+    uni:grade_obtained unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Yael a uni:Student ;
+    uni:grade_obtained unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Zane a uni:Student ;
+    uni:grade_obtained unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Alex a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Ari a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Bailey a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Blake a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Charlie a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Drew a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Elliot a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Emerson a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Finley a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Frankie a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Grayson a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Harper a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Indiana a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Ira a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Jessie a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Jordan a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Kai a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Kris a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Logan a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Mickey a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Noel a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Ollie a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Peyton a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Quinn a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Taylor a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Toby a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Uli a uni:Student ;
+    uni:grade_obtained unid:C,
+        unid:D ;
+    foaf:firstName uni:Student .
+
+unid:Unique a uni:Student ;
+    uni:grade_obtained unid:D,
+        unid:F ;
+    foaf:firstName uni:Student .
+
+unid:Val a uni:Student ;
+    uni:grade_obtained unid:B,
+        unid:C ;
+    foaf:firstName uni:Student .
+
+unid:Vic a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:Whitney a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:B ;
+    foaf:firstName uni:Student .
+
+unid:GCS_132 a uni:Course ;
+    uni:ID unid:354 ;
+    uni:credits unid:4.00 ;
+    uni:grades unid:A,
+        unid:B,
+        unid:C,
+        unid:D,
+        unid:F ;
+    uni:subject unid:Introduction_to_Software_Engineering .
+
+unid:GCS_143 a uni:Course ;
+    uni:ID unid:474 ;
+    uni:credits unid:4.00 ;
+    uni:grades unid:A,
+        unid:B,
+        unid:C,
+        unid:D,
+        unid:F ;
+    uni:subject unid:Intelligent_Systems .
+
+unid:F a uni:Grade ;
+    uni:grade_from unid:Alex,
+        unid:Blake,
+        unid:Dakota,
+        unid:Drew,
+        unid:Georgie,
+        unid:Indiana,
+        unid:Mickey,
+        unid:Oakley,
+        unid:Sasha,
+        unid:Unique ;
+    uni:grade_obtained_in unid:GCS_132,
+        unid:GCS_143 .
+
+unid:A a uni:Grade ;
+    uni:grade_from unid:Bailey,
+        unid:Casey,
+        unid:Elliot,
+        unid:Emerson,
+        unid:Harper,
+        unid:Ira,
+        unid:Kai,
+        unid:Lee,
+        unid:Nico,
+        unid:Ollie,
+        unid:Riley,
+        unid:Robin,
+        unid:Vic,
+        unid:Wesley,
+        unid:Whitney ;
+    uni:grade_obtained_in unid:GCS_132,
+        unid:GCS_143 .
+
+unid:B a uni:Grade ;
+    uni:grade_from unid:Bailey,
+        unid:Charlie,
+        unid:Elliot,
+        unid:Finley,
+        unid:Frankie,
+        unid:Harper,
+        unid:Ira,
+        unid:Jessie,
+        unid:Kai,
+        unid:Logan,
+        unid:Ollie,
+        unid:Peyton,
+        unid:Skyler,
+        unid:Toby,
+        unid:Val,
+        unid:Vic,
+        unid:Whitney,
+        unid:Zane ;
+    uni:grade_obtained_in unid:GCS_132,
+        unid:GCS_143 .
+
+unid:C a uni:Grade ;
+    uni:grade_from unid:Ari,
+        unid:Charlie,
+        unid:Finley,
+        unid:Frankie,
+        unid:Grayson,
+        unid:Jessie,
+        unid:Jordan,
+        unid:Kris,
+        unid:Logan,
+        unid:Noel,
+        unid:Pat,
+        unid:Peyton,
+        unid:Quinn,
+        unid:Taylor,
+        unid:Toby,
+        unid:Uli,
+        unid:Val,
+        unid:Xander ;
+    uni:grade_obtained_in unid:GCS_132,
+        unid:GCS_143 .
+
+unid:D a uni:Grade ;
+    uni:grade_from unid:Alex,
+        unid:Ari,
+        unid:Blake,
+        unid:Drew,
+        unid:Emerson,
+        unid:Grayson,
+        unid:Hayden,
+        unid:Indiana,
+        unid:Jordan,
+        unid:Kris,
+        unid:Mickey,
+        unid:Morgan,
+        unid:Noel,
+        unid:Quincy,
+        unid:Quinn,
+        unid:Taylor,
+        unid:Uli,
+        unid:Unique,
+        unid:Xen,
+        unid:Yael ;
+    uni:grade_obtained_in unid:GCS_132,
+        unid:GCS_143 .
 
