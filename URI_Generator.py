@@ -143,8 +143,8 @@ def create_course_graph(course_list):
         email = student_data['email']
 
         #initialize classes
-        grade_474 = student_data["grade_GCS_143"]
-        grade_354 = student_data["grade_GCS_132"]
+        grade_474 = student_data["grade_GCS_143"] + "_" + id
+        grade_354 = student_data["grade_GCS_132"] + "_" + id
 
         #making garde entities
         graph.add((unid[grade_474], RDF.type, uni.Grade))
