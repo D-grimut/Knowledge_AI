@@ -3,142 +3,103 @@
 @prefix uni: <http://uni.com/schema#> .
 @prefix unid: <http://uni.com/data/> .
 
-unid:Dakota a uni:Student ;
-    uni:grade_obtained unid:F ;
-    foaf:firstName uni:Student .
-
 unid:GCS_165 a uni:Course ;
     uni:ID unid:6741 ;
     uni:credits unid:4.00 ;
     uni:offered_in unid:Concordia ;
     uni:subject unid:Intelligent_Systems .
 
-unid:Morgan a uni:Student ;
-    uni:grade_obtained unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Nico a uni:Student ;
-    uni:grade_obtained unid:A ;
-    foaf:firstName uni:Student .
-
-unid:Oakley a uni:Student ;
-    uni:grade_obtained unid:F ;
-    foaf:firstName uni:Student .
-
-unid:Riley a uni:Student ;
-    uni:grade_obtained unid:A ;
-    foaf:firstName uni:Student .
-
-unid:Skyler a uni:Student ;
-    uni:grade_obtained unid:B ;
-    foaf:firstName uni:Student .
-
-unid:Wesley a uni:Student ;
-    uni:grade_obtained unid:A ;
-    foaf:firstName uni:Student .
-
-unid:Xander a uni:Student ;
-    uni:grade_obtained unid:C ;
-    foaf:firstName uni:Student .
-
-unid:Yael a uni:Student ;
-    uni:grade_obtained unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Alex a uni:Student ;
-    uni:grade_obtained unid:D,
+unid:Alice a uni:Student ;
+    uni:grade_obtained unid:A,
         unid:F ;
-    foaf:firstName uni:Student .
+    uni:student_ID "2" ;
+    foaf:firstName "Alice" ;
+    foaf:lastName "Smith" ;
+    foaf:mbox "alicesmith@example.com" .
 
-unid:Bailey a uni:Student ;
+unid:Emily a uni:Student ;
     uni:grade_obtained unid:A,
-        unid:B ;
-    foaf:firstName uni:Student .
-
-unid:Charlie a uni:Student ;
-    uni:grade_obtained unid:B,
-        unid:C ;
-    foaf:firstName uni:Student .
-
-unid:Emerson a uni:Student ;
-    uni:grade_obtained unid:A,
-        unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Finley a uni:Student ;
-    uni:grade_obtained unid:B,
-        unid:C ;
-    foaf:firstName uni:Student .
-
-unid:Grayson a uni:Student ;
-    uni:grade_obtained unid:C,
-        unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Harper a uni:Student ;
-    uni:grade_obtained unid:A,
-        unid:B ;
-    foaf:firstName uni:Student .
-
-unid:Indiana a uni:Student ;
-    uni:grade_obtained unid:D,
         unid:F ;
-    foaf:firstName uni:Student .
+    uni:student_ID "10" ;
+    foaf:firstName "Emily" ;
+    foaf:lastName "Taylor" ;
+    foaf:mbox "emilytaylor@example.com" .
 
-unid:Jordan a uni:Student ;
-    uni:grade_obtained unid:C,
-        unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Kai a uni:Student ;
+unid:Emma a uni:Student ;
     uni:grade_obtained unid:A,
-        unid:B ;
-    foaf:firstName uni:Student .
-
-unid:Logan a uni:Student ;
-    uni:grade_obtained unid:B,
-        unid:C ;
-    foaf:firstName uni:Student .
-
-unid:Peyton a uni:Student ;
-    uni:grade_obtained unid:B,
-        unid:C ;
-    foaf:firstName uni:Student .
-
-unid:Quinn a uni:Student ;
-    uni:grade_obtained unid:C,
-        unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Taylor a uni:Student ;
-    uni:grade_obtained unid:C,
-        unid:D ;
-    foaf:firstName uni:Student .
-
-unid:Unique a uni:Student ;
-    uni:grade_obtained unid:D,
         unid:F ;
-    foaf:firstName uni:Student .
+    uni:student_ID "4" ;
+    foaf:firstName "Emma" ;
+    foaf:lastName "Williams" ;
+    foaf:mbox "emmawilliams@example.com" .
 
-unid:Val a uni:Student ;
-    uni:grade_obtained unid:B,
-        unid:C ;
-    foaf:firstName uni:Student .
+unid:James a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "9" ;
+    foaf:firstName "James" ;
+    foaf:lastName "Wilson" ;
+    foaf:mbox "jameswilson@example.com" .
+
+unid:John a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "1" ;
+    foaf:firstName "John" ;
+    foaf:lastName "Doe" ;
+    foaf:mbox "johndoe@example.com" .
+
+unid:Matthew a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "7" ;
+    foaf:firstName "Matthew" ;
+    foaf:lastName "Davis" ;
+    foaf:mbox "matthewdavis@example.com" .
+
+unid:Michael a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "3" ;
+    foaf:firstName "Michael" ;
+    foaf:lastName "Johnson" ;
+    foaf:mbox "michaeljohnson@example.com" .
+
+unid:Olivia a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "8" ;
+    foaf:firstName "Olivia" ;
+    foaf:lastName "Miller" ;
+    foaf:mbox "oliviamiller@example.com" .
+
+unid:Sophia a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "6" ;
+    foaf:firstName "Sophia" ;
+    foaf:lastName "Jones" ;
+    foaf:mbox "sophiajones@example.com" .
+
+unid:William a uni:Student ;
+    uni:grade_obtained unid:A,
+        unid:F ;
+    uni:student_ID "5" ;
+    foaf:firstName "William" ;
+    foaf:lastName "Brown" ;
+    foaf:mbox "williambrown@example.com" .
 
 unid:Concordia a dbo:University ;
     uni:name "Concordia" ;
     uni:offers unid:GCS_132,
         unid:GCS_143,
         unid:GCS_165 ;
-    uni:uni_dblink <http://example.org/resource> .
+    uni:uni_dblink <https://dbpedia.org/data/Concordia_University> .
 
 unid:GCS_132 a uni:Course ;
     uni:ID unid:354 ;
     uni:credits unid:4.00 ;
     uni:grades unid:A,
-        unid:B,
-        unid:C,
-        unid:D,
         unid:F ;
     uni:offered_in unid:Concordia ;
     uni:subject unid:Introduction_to_Software_Engineering .
@@ -147,71 +108,35 @@ unid:GCS_143 a uni:Course ;
     uni:ID unid:474 ;
     uni:credits unid:4.00 ;
     uni:grades unid:A,
-        unid:B,
-        unid:C,
-        unid:D,
         unid:F ;
     uni:offered_in unid:Concordia ;
     uni:subject unid:Intelligent_Systems .
 
-unid:F a uni:Grade ;
-    uni:grade_from unid:Alex,
-        unid:Dakota,
-        unid:Indiana,
-        unid:Oakley,
-        unid:Unique ;
-    uni:grade_obtained_in unid:GCS_132,
-        unid:GCS_143 .
-
 unid:A a uni:Grade ;
-    uni:grade_from unid:Bailey,
-        unid:Emerson,
-        unid:Harper,
-        unid:Kai,
-        unid:Nico,
-        unid:Riley,
-        unid:Wesley ;
+    uni:grade_from unid:Alice,
+        unid:Emily,
+        unid:Emma,
+        unid:James,
+        unid:John,
+        unid:Matthew,
+        unid:Michael,
+        unid:Olivia,
+        unid:Sophia,
+        unid:William ;
     uni:grade_obtained_in unid:GCS_132,
         unid:GCS_143 .
 
-unid:B a uni:Grade ;
-    uni:grade_from unid:Bailey,
-        unid:Charlie,
-        unid:Finley,
-        unid:Harper,
-        unid:Kai,
-        unid:Logan,
-        unid:Peyton,
-        unid:Skyler,
-        unid:Val ;
-    uni:grade_obtained_in unid:GCS_132,
-        unid:GCS_143 .
-
-unid:C a uni:Grade ;
-    uni:grade_from unid:Charlie,
-        unid:Finley,
-        unid:Grayson,
-        unid:Jordan,
-        unid:Logan,
-        unid:Peyton,
-        unid:Quinn,
-        unid:Taylor,
-        unid:Val,
-        unid:Xander ;
-    uni:grade_obtained_in unid:GCS_132,
-        unid:GCS_143 .
-
-unid:D a uni:Grade ;
-    uni:grade_from unid:Alex,
-        unid:Emerson,
-        unid:Grayson,
-        unid:Indiana,
-        unid:Jordan,
-        unid:Morgan,
-        unid:Quinn,
-        unid:Taylor,
-        unid:Unique,
-        unid:Yael ;
+unid:F a uni:Grade ;
+    uni:grade_from unid:Alice,
+        unid:Emily,
+        unid:Emma,
+        unid:James,
+        unid:John,
+        unid:Matthew,
+        unid:Michael,
+        unid:Olivia,
+        unid:Sophia,
+        unid:William ;
     uni:grade_obtained_in unid:GCS_132,
         unid:GCS_143 .
 

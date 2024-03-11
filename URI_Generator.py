@@ -79,11 +79,20 @@ def grades_extract():
         next(reader)
         
         for row in reader:
-            name = row[0]
-            grade_474 = row[1]
-            grade_354 = row[2]
+            id = row[0]
+            fname = row[1]
+            lname = row[2]
+            email = row[3]
+            grade_474 = row[4]
+            grade_354 = row[5]
         
-            data[name] = {"GCS_143" : grade_474, "GCS_132" : grade_354}
+            data[id] = {
+                "fname" : fname,
+                "lname" : lname,
+                "email" : email,
+                "grade_GCS_143" : grade_474, 
+                "grade_GCS_132" : grade_354
+                }
     
     return data
 
@@ -127,14 +136,26 @@ def create_course_graph(course_list):
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
     # Adding students and gardes to the RDF graph
-    for name, grades in data_grades.items():
+    for id, student_data in data_grades.items():
+        
+        fname = student_data['fname']
+        lname = student_data['lname']
+        email = student_data['email']
+
         #initialize classes
-        grade_474 = grades["GCS_143"]
-        grade_354 = grades["GCS_132"]
+        grade_474 = student_data["grade_GCS_143"]
+        grade_354 = student_data["grade_GCS_132"]
+
+        #making garde entities
         graph.add((unid[grade_474], RDF.type, uni.Grade))
         graph.add((unid[grade_354], RDF.type, uni.Grade))
-        graph.add((unid[name], RDF.type, uni.Student))
-        graph.add((unid[name], FOAF.firstName, uni.Student))
+
+        #making student entities
+        graph.add((unid[fname], RDF.type, uni.Student))
+        graph.add((unid[fname], FOAF.firstName, Literal(fname)))
+        graph.add((unid[fname], FOAF.lastName, Literal(lname)))
+        graph.add((unid[fname], FOAF.mbox, Literal(email)))
+        graph.add((unid[fname], uni.student_ID, Literal(id)))
 
         #connection grade to course
         graph.add((unid[grade_474], uni.grade_obtained_in, unid["GCS_143"]))
@@ -145,12 +166,12 @@ def create_course_graph(course_list):
         graph.add((unid["GCS_132"], uni.grades, unid[grade_354]))
 
         #connection grade to name
-        graph.add((unid[grade_474], uni.grade_from, unid[name]))
-        graph.add((unid[grade_354], uni.grade_from, unid[name]))
+        graph.add((unid[grade_474], uni.grade_from, unid[fname]))
+        graph.add((unid[grade_354], uni.grade_from, unid[fname]))
         
         #connection name to grade
-        graph.add((unid[name], uni.grade_obtained, unid[grade_474]))
-        graph.add((unid[name], uni.grade_obtained, unid[grade_354]))
+        graph.add((unid[fname], uni.grade_obtained, unid[grade_474]))
+        graph.add((unid[fname], uni.grade_obtained, unid[grade_354]))
 
     # Serialize graph
     graph.serialize(destination="dummy_data.ttl", format='turtle')
