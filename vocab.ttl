@@ -4,7 +4,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix uni: <http://uni.com/schema#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #-----------------------University------------------------------
 uni:uni_dblink a rdf:Property;
@@ -66,8 +65,6 @@ uni:offers a rdf:Property;
     rdfs:range dbo:Course;
     rdfs:label "offers"@en;
     rdfs:comment "Course offered by a university"@en.
-
-uni:offered_in owl:inverseOf uni:offers.
 
 #-----------------------Lectures------------------------------
 uni:Lecture a rdfs:Class;
@@ -166,8 +163,6 @@ uni:topic_offered a rdf:Property;
     rdfs:label "topic offered"@en;
     rdfs:comment "topic that is offered by a class"@en.
 
-uni:topic_offered owl:inverseOf uni:topic_from.
-
 #-----------------------Student------------------------------
 uni:Student a rdfs:Class;
     rdfs:label "Student"@en;
@@ -211,8 +206,5 @@ uni:grades a rdf:Property;
     rdfs:range uni:Grade;
     rdfs:label "Grades"@en;
     rdfs:comment "All the grades from a course"@en.
-
-uni:grade_obtained owl:inverseOf uni:grade_from.
-uni:grade_obtained_in owl:inverseOf uni:grades.
 
 #note: the competencies can be aquired from the link between the student, the grade and the course: student -> grade -> course -> topic.
