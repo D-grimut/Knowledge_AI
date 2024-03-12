@@ -43,33 +43,40 @@ def get_course_info():
     return data
 
 def get_files(dir):
-    file_list = []
+    file_list = {}
 
     # Go through directory of current application and get file names
     for root, dirs, files in os.walk(dir):
+
         if("COMP" in root):
+            lecture_number = 0 #simple counter for lecture number TODO: change to dinmaic through MLP extraction or other means in part 2
+            lecture = "Lecture_"
+            class_name = os.path.basename(root) #assuming dir name = cource name
+            file_list[class_name] = {}
+
             for file in files:
-                file_list.append(root + "\\" + file)
+                file_preped = root + "\\" + file
+                file_uri = create_URI(file_preped)
+                
+                file_list[class_name][lecture + str(lecture_number)] = file_uri
+                lecture_number += 1
 
     return file_list
 
-def create_URI(file_list):
-    URI_list = []
+def create_URI(file):
 
     # Go through file list and create URI, then append it to a namespace
     # Converts name to valid URI after check
-    for file in file_list:
-        # Fix URI errors saying invalid URI
-        file_nospace = file.replace(" ", "%20")
-        file_front = file_nospace.replace("\\", "/")
 
-        namespace = Namespace("file:///" + file_front)
+    # Fix URI errors saying invalid URI
+    file_nospace = file.replace(" ", "%20")
+    file_front = file_nospace.replace("\\", "/")
 
-        uri_ref = URIRef(namespace)
+    namespace = Namespace("file:///" + file_front)
 
-        URI_list.append(uri_ref)
+    uri_ref = URIRef(namespace)
 
-    return URI_list
+    return uri_ref
 
 def grades_extract():
     data = {}
@@ -95,6 +102,15 @@ def grades_extract():
                 }
     
     return data
+
+#method to manualy create (temprary) lectures - this will be removed in part 2 when we know how to create them dinamicaly using NLP
+def dummy_lectures(graph, unid, uni, dbo, material_URIs):
+    
+    #TODO: finish this method
+    graph.add((unid.Concordia, RDF.type, dbo.University))
+    graph.add((unid.Concordia, uni.uni_dblink, uni_dummy))
+    graph.add((unid.Concordia, uni.name, Literal("Concordia")))
+
 
 # TODO: Add Dummy Lectures, Dummy topics, Dummy course material (including outlines for each course)
 def create_course_graph(course_list):
@@ -180,13 +196,8 @@ def create_course_graph(course_list):
 curr_dir = os.getcwd()
 
 # Get file names
-files = get_files(curr_dir)
-
-# Create and print URIs
-URI_list = create_URI(files)
-
-for i in URI_list:
-    print(i)
-
+URI_list = get_files(curr_dir)
+for lect, val in URI_list.items():
+    print(lect, "------------", val)
 # Graph creation
 create_course_graph(get_course_info())
