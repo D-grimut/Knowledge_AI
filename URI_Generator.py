@@ -108,7 +108,6 @@ def dummy_lectures(graph, unid, uni, dbo, material_URIs):
     
     #TODO: finish this method
     graph.add((unid.Concordia, RDF.type, dbo.University))
-    graph.add((unid.Concordia, uni.uni_dblink, uni_dummy))
     graph.add((unid.Concordia, uni.name, Literal("Concordia")))
 
 
