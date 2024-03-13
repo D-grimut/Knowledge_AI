@@ -145,6 +145,12 @@ uni:linked_to a rdf:Property;
     rdfs:label "Linked To"@en;
     rdfs:comment "link to a DBpedia and/or Wikidata"@en.
 
+uni:has_topic a rdf:Property;
+    rdfs:domain uni:Course;
+    rdfs:range uni:Topic;
+    rdfs:label "has topic"@en;
+    rdfs:comment "Topic offered by some class"@en.
+
 #-----------------------Student------------------------------
 uni:Student a rdfs:Class;
     rdfs:label "Student"@en;

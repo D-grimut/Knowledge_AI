@@ -1,6 +1,6 @@
 import os
 import csv
-
+import pandas as pd
 from rdflib import URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
@@ -78,29 +78,24 @@ def create_URI(file):
 
     return uri_ref
 
-def grades_extract():
+#Since the data extraction process for grades and student info is the same, we use only one function
+def student_info_extract(file):
     data = {}
 
-    with open('grades.csv', newline='') as csvfile:
-        reader = csv.reader(csvfile)
-        next(reader)
-        
-        for row in reader:
-            id = row[0]
-            fname = row[1]
-            lname = row[2]
-            email = row[3]
-            grade_474 = row[4]
-            grade_354 = row[5]
-        
-            data[id] = {
-                "fname" : fname,
-                "lname" : lname,
-                "email" : email,
-                "grade_GCS_143" : grade_474, 
-                "grade_GCS_132" : grade_354
-                }
+    student_info = pd.read_csv(file)
     
+    for index, row in student_info.iterrows():
+
+        curr_student = -1
+
+        for column_name, value in row.items():
+
+            if(column_name == "ID"):
+                curr_student = value
+                data[curr_student] = {}
+            else:
+                data[curr_student][column_name] = value
+
     return data
 
 #method to manualy create (temprary) lectures - this will be removed in part 2 when we know how to create them dinamicaly using NLP
@@ -126,7 +121,10 @@ def create_course_graph(course_list):
     graph.bind("uni", uni)
     graph.bind("dbo", dbo)
 
-    data_grades = grades_extract()
+    
+    data_grades = student_info_extract("grades.csv")
+    data_students = student_info_extract("students.csv")
+
     uni_dummy = URIRef("https://dbpedia.org/data/Concordia_University")
 
     #Creating Dummy University - Concordia
@@ -147,48 +145,38 @@ def create_course_graph(course_list):
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, unid[unid_val]))
 
-        graph.add((unid[key], uni.offered_in, unid.Concordia))
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
-    # Adding students and gardes to the RDF graph
-    for id, student_data in data_grades.items():
-        
-        fname = student_data['fname']
-        lname = student_data['lname']
-        email = student_data['email']
+    # Adding students to the graph
+    for student_id, student_info in data_students.items():
 
-        #initialize classes
-        grade_474 = student_data["grade_GCS_143"] + "_" + id
-        grade_354 = student_data["grade_GCS_132"] + "_" + id
-
-        #making garde entities
-        graph.add((unid[grade_474], RDF.type, uni.Grade))
-        graph.add((unid[grade_474], uni.grade_value, Literal(student_data["grade_GCS_143"])))
-        graph.add((unid[grade_354], RDF.type, uni.Grade))
-        graph.add((unid[grade_354], uni.grade_value, Literal(student_data["grade_GCS_132"])))
+        fname = student_info['Fname']
+        lname = student_info['Lname']
+        email = student_info['email']
 
         #making student entities
-        graph.add((unid[fname], RDF.type, uni.Student))
-        graph.add((unid[fname], FOAF.firstName, Literal(fname)))
-        graph.add((unid[fname], FOAF.lastName, Literal(lname)))
-        graph.add((unid[fname], FOAF.mbox, Literal(email)))
-        graph.add((unid[fname], uni.student_ID, Literal(id)))
+        graph.add((unid[str(student_id)], RDF.type, uni.Student))
+        graph.add((unid[str(student_id)], FOAF.firstName, Literal(fname)))
+        graph.add((unid[str(student_id)], FOAF.lastName, Literal(lname)))
+        graph.add((unid[str(student_id)], FOAF.mbox, Literal(email)))
+        graph.add((unid[str(student_id)], uni.student_ID, Literal(student_id)))
 
-        #connection grade to course
-        graph.add((unid[grade_474], uni.grade_obtained_in, unid["GCS_143"]))
-        graph.add((unid[grade_354], uni.grade_obtained_in, unid["GCS_132"]))
-
-        #connection course to grade
-        graph.add((unid["GCS_143"], uni.grades, unid[grade_474]))
-        graph.add((unid["GCS_132"], uni.grades, unid[grade_354]))
-
-        #connection grade to name
-        graph.add((unid[grade_474], uni.grade_from, unid[fname]))
-        graph.add((unid[grade_354], uni.grade_from, unid[fname]))
+    # Adding students and gardes to the RDF graph
+    for student_id, grades in data_grades.items():
         
-        #connection name to grade
-        graph.add((unid[fname], uni.grade_obtained, unid[grade_474]))
-        graph.add((unid[fname], uni.grade_obtained, unid[grade_354]))
+        pass_grade = "D"
+
+        for cource_id, grade in grades.items():
+            #making garde entities
+            garde_uri = grade + "_" + str(student_id)
+            graph.add((unid[garde_uri], RDF.type, uni.Grade))
+            graph.add((unid[garde_uri], uni.grade_value, Literal(grade)))
+
+            #connection grade to course
+            graph.add((unid[garde_uri], uni.grade_obtained_in, unid[cource_id]))
+
+            #connection name to grade
+            graph.add((unid[str(student_id)], uni.grade_obtained, unid[garde_uri]))
 
     # Serialize graph
     graph.serialize(destination="dummy_data.ttl", format='turtle')
