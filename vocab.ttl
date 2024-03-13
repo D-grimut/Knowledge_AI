@@ -141,7 +141,7 @@ uni:topicName a rdf:Property;
 
 uni:provenance a rdf:Property;
     rdfs:domain uni:Topic;
-    rdfs:range xsd:string;
+    rdfs:range xsd:anyURI;
     rdfs:label "Provenance"@en;
     rdfs:comment "a record of where the topic was identified as being covered in the course"@en.
 
