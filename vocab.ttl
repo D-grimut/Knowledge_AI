@@ -54,12 +54,6 @@ uni:outline a rdf:Property;
     rdfs:label "Outline"@en;
     rdfs:comment "Outline of a class"@en.
 
-uni:offered_in a rdf:Property;
-    rdfs:domain uni:Course;
-    rdfs:range dbo:University;
-    rdfs:label "Offered In"@en;
-    rdfs:comment "University node where the course is offered in"@en.
-
 uni:offers a rdf:Property;
     rdfs:domain uni:University;
     rdfs:range dbo:Course;
@@ -151,18 +145,6 @@ uni:linked_to a rdf:Property;
     rdfs:label "Linked To"@en;
     rdfs:comment "link to a DBpedia and/or Wikidata"@en.
 
-uni:topic_from a rdf:Property;
-    rdfs:domain uni:Topic;
-    rdfs:range uni:Course;
-    rdfs:label "topic origin"@en;
-    rdfs:comment "course(s) from where the topic is presented"@en.
-
-uni:topic_offered a rdf:Property;
-    rdfs:domain uni:Course;
-    rdfs:range uni:Topic;
-    rdfs:label "topic offered"@en;
-    rdfs:comment "topic that is offered by a class"@en.
-
 #-----------------------Student------------------------------
 uni:Student a rdfs:Class;
     rdfs:label "Student"@en;
@@ -175,9 +157,14 @@ uni:student_ID a rdf:Property;
     rdfs:label "Student ID"@en;
     rdfs:comment "The unique identifier of a student"@en.
 
-# a student is considered to have completed a course, if they have a a grade associated with that course
-# the grade for that course can be updated if the student re-takes it, by simply "moving backwards"
-# thanks to 2 way connections between grade, student, and course.
+# a student is considered to have completed a course, if they have a "completed" link (property) with the course
+# the grade for that course is kept and link removed to indicate that student is re-taking the course.
+
+uni:completed a rdf:Property;
+    rdfs:domain uni:Student;
+    rdfs:range uni:Course;
+    rdfs:label "completed"@en;
+    rdfs:comment "indicates if a student completed a course"@en.
 
 uni:Grade a rdfs:Class;
     rdfs:label "Grade"@en;
@@ -195,22 +182,10 @@ uni:grade_obtained a rdf:Property;
     rdfs:label "Grade Obtained"@en;
     rdfs:comment "Grade Obtained by the student"@en.
 
-uni:grade_from a rdf:Property;
-    rdfs:domain uni:Grade;
-    rdfs:range uni:Student;
-    rdfs:label "Grade from"@en;
-    rdfs:comment "grade from a student, inverse of grade_obtianed"@en.
-
 uni:grade_obtained_in a rdf:Property;
     rdfs:domain uni:Grade;
     rdfs:range uni:Course;
     rdfs:label "Grade Obtained In"@en;
     rdfs:comment "Grade Obtained by the student in a specific course"@en.
-
-uni:grades a rdf:Property;
-    rdfs:domain uni:Course;
-    rdfs:range uni:Grade;
-    rdfs:label "Grades"@en;
-    rdfs:comment "All the grades from a course"@en.
 
 #note: the competencies can be aquired from the link between the student, the grade and the course: student -> grade -> course -> topic.
