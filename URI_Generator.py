@@ -163,7 +163,9 @@ def create_course_graph(course_list):
 
         #making garde entities
         graph.add((unid[grade_474], RDF.type, uni.Grade))
+        graph.add((unid[grade_474], uni.grade_value, Literal(student_data["grade_GCS_143"])))
         graph.add((unid[grade_354], RDF.type, uni.Grade))
+        graph.add((unid[grade_354], uni.grade_value, Literal(student_data["grade_GCS_132"])))
 
         #making student entities
         graph.add((unid[fname], RDF.type, uni.Student))

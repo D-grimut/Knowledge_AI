@@ -11,43 +11,53 @@ unid:GCS_165 a uni:Course ;
 
 unid:A_1 a uni:Grade ;
     uni:grade_from unid:John ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "A" .
 
 unid:A_10 a uni:Grade ;
     uni:grade_from unid:Emily ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "A" .
 
 unid:A_2 a uni:Grade ;
     uni:grade_from unid:Alice ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "A" .
 
 unid:A_3 a uni:Grade ;
     uni:grade_from unid:Michael ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "A" .
 
 unid:A_4 a uni:Grade ;
     uni:grade_from unid:Emma ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "A" .
 
 unid:A_5 a uni:Grade ;
     uni:grade_from unid:William ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "A" .
 
 unid:A_6 a uni:Grade ;
     uni:grade_from unid:Sophia ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "A" .
 
 unid:A_7 a uni:Grade ;
     uni:grade_from unid:Matthew ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "A" .
 
 unid:A_8 a uni:Grade ;
     uni:grade_from unid:Olivia ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "A" .
 
 unid:A_9 a uni:Grade ;
     uni:grade_from unid:James ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "A" .
 
 unid:Alice a uni:Student ;
     uni:grade_obtained unid:A_2,
@@ -75,43 +85,53 @@ unid:Emma a uni:Student ;
 
 unid:F_1 a uni:Grade ;
     uni:grade_from unid:John ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "F" .
 
 unid:F_10 a uni:Grade ;
     uni:grade_from unid:Emily ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "F" .
 
 unid:F_2 a uni:Grade ;
     uni:grade_from unid:Alice ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "F" .
 
 unid:F_3 a uni:Grade ;
     uni:grade_from unid:Michael ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "F" .
 
 unid:F_4 a uni:Grade ;
     uni:grade_from unid:Emma ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "F" .
 
 unid:F_5 a uni:Grade ;
     uni:grade_from unid:William ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "F" .
 
 unid:F_6 a uni:Grade ;
     uni:grade_from unid:Sophia ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "F" .
 
 unid:F_7 a uni:Grade ;
     uni:grade_from unid:Matthew ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "F" .
 
 unid:F_8 a uni:Grade ;
     uni:grade_from unid:Olivia ;
-    uni:grade_obtained_in unid:GCS_132 .
+    uni:grade_obtained_in unid:GCS_132 ;
+    uni:grade_value "F" .
 
 unid:F_9 a uni:Grade ;
     uni:grade_from unid:James ;
-    uni:grade_obtained_in unid:GCS_143 .
+    uni:grade_obtained_in unid:GCS_143 ;
+    uni:grade_value "F" .
 
 unid:James a uni:Student ;
     uni:grade_obtained unid:A_9,

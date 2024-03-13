@@ -183,6 +183,12 @@ uni:Grade a rdfs:Class;
     rdfs:label "Grade"@en;
     rdfs:comment "Letter Grade"@en.
 
+uni:grade_value a rdf:Property;
+    rdfs:domain uni:Grade;
+    rdfs:range xsd:string;
+    rdfs:label "grade value"@en;
+    rdfs:comment "The actual value of the grade"@en.
+
 uni:grade_obtained a rdf:Property;
     rdfs:domain uni:Student;
     rdfs:range uni:Grade;
