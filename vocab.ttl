@@ -56,7 +56,7 @@ uni:outline a rdf:Property;
 
 uni:offers a rdf:Property;
     rdfs:domain uni:University;
-    rdfs:range dbo:Course;
+    rdfs:range uni:Course;
     rdfs:label "offers"@en;
     rdfs:comment "Course offered by a university"@en.
 
