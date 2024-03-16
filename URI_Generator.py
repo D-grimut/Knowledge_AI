@@ -51,14 +51,15 @@ def get_files(dir):
         if("COMP" in root):
             lecture_number = 0 #simple counter for lecture number TODO: change to dinmaic through MLP extraction or other means in part 2
             lecture = "Lecture_"
-            class_name = os.path.basename(root) #assuming dir name = cource name
-            file_list[class_name] = {}
+
+            path_name = root[root.find('COMP'):]
+            file_list[path_name] = {}
 
             for file in files:
                 file_preped = root + "\\" + file
                 file_uri = create_URI(file_preped)
                 
-                file_list[class_name][lecture + str(lecture_number)] = file_uri
+                file_list[path_name][lecture + str(lecture_number)] = file_uri
                 lecture_number += 1
 
     return file_list
@@ -107,7 +108,7 @@ def dummy_lectures(graph, unid, uni, dbo, material_URIs):
 
 
 # TODO: Add Dummy Lectures, Dummy topics, Dummy course material (including outlines for each course)
-def create_course_graph(course_list):
+def create_course_graph(course_list, get_files):
     # Create a graph
     graph = Graph()
     
@@ -147,6 +148,27 @@ def create_course_graph(course_list):
 
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
+    # Adding course lectures 
+    for course, course_content in get_files.items():
+        if "Lectures" in course:
+            for lec_num, lec_cont in course_content.items():
+                # Change lec_name
+                lec_name = lec_cont[lec_cont.find("Lectures/")+9:-4]
+
+                # Add lecture
+                graph.add((unid[lec_cont], RDF.type, uni.Lecture))
+
+                # Add lecture number
+                graph.add((unid[lec_cont], uni.lecture_number, unid[lec_num[lec_num.find("_")+1:]]))
+
+                # Add lecture name
+                graph.add((unid[lec_cont], uni.lecture_name, unid[lec_name]))
+
+                # Add has lecture
+                for k1, v1 in course_list.items():
+                    print(k1)
+
+
     # Adding students to the graph
     for student_id, student_info in data_students.items():
 
@@ -185,8 +207,9 @@ def create_course_graph(course_list):
 curr_dir = os.getcwd()
 
 # Get file names
-URI_list = get_files(curr_dir)
-for lect, val in URI_list.items():
-    print(lect, "------------", val)
+# URI_list = get_files(curr_dir)
+# for lect, val in URI_list.items():
+#     print(lect, "------------", val)
+
 # Graph creation
-create_course_graph(get_course_info())
+create_course_graph(get_course_info(), get_files(curr_dir))

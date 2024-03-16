@@ -4,13 +4,116 @@
 @prefix unid: <http://uni.com/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-unid:1 a uni:Student ;
-    uni:grade_obtained unid:A_1,
-        unid:F_1 ;
-    uni:student_ID 1 ;
-    foaf:firstName "John" ;
-    foaf:lastName "Doe" ;
-    foaf:mbox "johndoe@example.com" .
+unid:Concordia a dbo:University ;
+    uni:name "Concordia" ;
+    uni:offers unid:GCS_132,
+        unid:GCS_143,
+        unid:GCS_165 ;
+    uni:uni_dblink <https://dbpedia.org/data/Concordia_University> .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Agility%20and%20Process.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Agility%20and%20Process ;
+    uni:lecture_number unid:0 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Architectural%20Design.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Architectural%20Design ;
+    uni:lecture_number unid:1 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Component-Level%20Design.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Component-Level%20Design ;
+    uni:lecture_number unid:2 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Configuration%20Management.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Configuration%20Management ;
+    uni:lecture_number unid:3 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Design%20Concepts.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Design%20Concepts ;
+    uni:lecture_number unid:4 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Project%20Management%20Concepts.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Project%20Management%20Concepts ;
+    uni:lecture_number unid:5 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Requirements%20Modeling.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Requirements%20Modeling ;
+    uni:lecture_number unid:6 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Risk%20Management.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Risk%20Management ;
+    uni:lecture_number unid:7 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Component%20Testing.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Component%20Testing ;
+    uni:lecture_number unid:8 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Development%20and%20Engineering.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Development%20and%20Engineering ;
+    uni:lecture_number unid:9 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Integration%20Testing.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Integration%20Testing ;
+    uni:lecture_number unid:10 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Metrics%20and%20Analytics.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Metrics%20and%20Analytics ;
+    uni:lecture_number unid:11 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Process%20Models.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Process%20Models ;
+    uni:lecture_number unid:12 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Quality%20Concepts.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Quality%20Concepts ;
+    uni:lecture_number unid:13 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Reviews.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Reviews ;
+    uni:lecture_number unid:14 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Software%20Support.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Software%20Support ;
+    uni:lecture_number unid:15 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Understanding%20Requirements.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Understanding%20Requirements ;
+    uni:lecture_number unid:16 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/User%20Experience%20Design.pdf> a uni:Lecture ;
+    uni:lecture_name unid:User%20Experience%20Design ;
+    uni:lecture_number unid:17 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354/Lectures/Viable%20Software%20Plan.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Viable%20Software%20Plan ;
+    uni:lecture_number unid:18 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Intelligent%20Agents.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Intelligent%20Agents ;
+    uni:lecture_number unid:0 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Intelligent%20Systems%20Introduction.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Intelligent%20Systems%20Introduction ;
+    uni:lecture_number unid:1 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Knowledge%20Base%20Queries%20&%20Linked%20Open%20Data.pdf> a uni:Lecture ;
+    uni:lecture_name <http://uni.com/data/Knowledge%20Base%20Queries%20&%20Linked%20Open%20Data> ;
+    uni:lecture_number unid:2 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies ;
+    uni:lecture_number unid:3 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Knowledge%20Graphs.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Knowledge%20Graphs ;
+    uni:lecture_number unid:4 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Machine%20Learning%20for%20Intelligent%20Systems ;
+    uni:lecture_number unid:5 .
+
+<http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741/Lectures/Recommender%20Systems.pdf> a uni:Lecture ;
+    uni:lecture_name unid:Recommender%20Systems ;
+    uni:lecture_number unid:6 .
 
 unid:10 a uni:Student ;
     uni:grade_obtained unid:A_10,
@@ -19,46 +122,6 @@ unid:10 a uni:Student ;
     foaf:firstName "Emily" ;
     foaf:lastName "Taylor" ;
     foaf:mbox "emilytaylor@example.com" .
-
-unid:2 a uni:Student ;
-    uni:grade_obtained unid:A_2,
-        unid:F_2 ;
-    uni:student_ID 2 ;
-    foaf:firstName "Alice" ;
-    foaf:lastName "Smith" ;
-    foaf:mbox "alicesmith@example.com" .
-
-unid:3 a uni:Student ;
-    uni:grade_obtained unid:A_3,
-        unid:F_3 ;
-    uni:student_ID 3 ;
-    foaf:firstName "Michael" ;
-    foaf:lastName "Johnson" ;
-    foaf:mbox "michaeljohnson@example.com" .
-
-unid:4 a uni:Student ;
-    uni:grade_obtained unid:A_4,
-        unid:F_4 ;
-    uni:student_ID 4 ;
-    foaf:firstName "Emma" ;
-    foaf:lastName "Williams" ;
-    foaf:mbox "emmawilliams@example.com" .
-
-unid:5 a uni:Student ;
-    uni:grade_obtained unid:A_5,
-        unid:F_5 ;
-    uni:student_ID 5 ;
-    foaf:firstName "William" ;
-    foaf:lastName "Brown" ;
-    foaf:mbox "williambrown@example.com" .
-
-unid:6 a uni:Student ;
-    uni:grade_obtained unid:A_6,
-        unid:F_6 ;
-    uni:student_ID 6 ;
-    foaf:firstName "Sophia" ;
-    foaf:lastName "Jones" ;
-    foaf:mbox "sophiajones@example.com" .
 
 unid:7 a uni:Student ;
     uni:grade_obtained unid:A_7,
@@ -83,13 +146,6 @@ unid:9 a uni:Student ;
     foaf:firstName "James" ;
     foaf:lastName "Wilson" ;
     foaf:mbox "jameswilson@example.com" .
-
-unid:Concordia a dbo:University ;
-    uni:name "Concordia" ;
-    uni:offers unid:GCS_132,
-        unid:GCS_143,
-        unid:GCS_165 ;
-    uni:uni_dblink <https://dbpedia.org/data/Concordia_University> .
 
 unid:A_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_132 ;
@@ -175,6 +231,54 @@ unid:GCS_165 a uni:Course ;
     uni:ID unid:6741 ;
     uni:credits unid:4.00 ;
     uni:subject unid:Intelligent_Systems .
+
+unid:1 a uni:Student ;
+    uni:grade_obtained unid:A_1,
+        unid:F_1 ;
+    uni:student_ID 1 ;
+    foaf:firstName "John" ;
+    foaf:lastName "Doe" ;
+    foaf:mbox "johndoe@example.com" .
+
+unid:2 a uni:Student ;
+    uni:grade_obtained unid:A_2,
+        unid:F_2 ;
+    uni:student_ID 2 ;
+    foaf:firstName "Alice" ;
+    foaf:lastName "Smith" ;
+    foaf:mbox "alicesmith@example.com" .
+
+unid:3 a uni:Student ;
+    uni:grade_obtained unid:A_3,
+        unid:F_3 ;
+    uni:student_ID 3 ;
+    foaf:firstName "Michael" ;
+    foaf:lastName "Johnson" ;
+    foaf:mbox "michaeljohnson@example.com" .
+
+unid:4 a uni:Student ;
+    uni:grade_obtained unid:A_4,
+        unid:F_4 ;
+    uni:student_ID 4 ;
+    foaf:firstName "Emma" ;
+    foaf:lastName "Williams" ;
+    foaf:mbox "emmawilliams@example.com" .
+
+unid:5 a uni:Student ;
+    uni:grade_obtained unid:A_5,
+        unid:F_5 ;
+    uni:student_ID 5 ;
+    foaf:firstName "William" ;
+    foaf:lastName "Brown" ;
+    foaf:mbox "williambrown@example.com" .
+
+unid:6 a uni:Student ;
+    uni:grade_obtained unid:A_6,
+        unid:F_6 ;
+    uni:student_ID 6 ;
+    foaf:firstName "Sophia" ;
+    foaf:lastName "Jones" ;
+    foaf:mbox "sophiajones@example.com" .
 
 unid:GCS_132 a uni:Course ;
     uni:ID unid:354 ;
