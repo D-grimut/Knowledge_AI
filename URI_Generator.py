@@ -165,8 +165,7 @@ def create_course_graph(course_list, get_files):
                 graph.add((unid[lec_cont], uni.lecture_name, unid[lec_name]))
 
                 # Add has lecture
-                for k1, v1 in course_list.items():
-                    print(k1)
+                graph.add((unid[course[course.find("-")+1:-9]], uni.has_lecture, unid[lec_cont]))
 
 
     # Adding students to the graph
