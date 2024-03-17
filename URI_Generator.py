@@ -1,7 +1,7 @@
 import os
 import csv
 import pandas as pd
-from rdflib import URIRef, Namespace, Graph, Literal
+from rdflib import XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
@@ -107,7 +107,7 @@ def dummy_lectures(graph, unid, uni, dbo, material_URIs):
     graph.add((unid.Concordia, uni.name, Literal("Concordia")))
 
 
-# TODO: Add Dummy Lectures, Dummy topics, Dummy course material (including outlines for each course)
+# TODO: Dummy topics
 def create_course_graph(course_list, get_files):
     # Create a graph
     graph = Graph()
@@ -151,22 +151,30 @@ def create_course_graph(course_list, get_files):
     # Adding course lectures 
     for course, course_content in get_files.items():
         if "Lectures" in course:
-            for lec_num, lec_cont in course_content.items():
+            for lec_num, lec_cont_uri in course_content.items():
+                
                 # Change lec_name
-                lec_name = lec_cont[lec_cont.find("Lectures/")+9:-4]
+                lec_name = lec_cont_uri[lec_cont_uri.find("Lectures/")+9:-4]
+                lec_uri = course[ :course.find("/")].replace(' ', '%20') + "_" + lec_name
+                lec_uri = lec_uri.replace('%20', '_')
 
                 # Add lecture
-                graph.add((unid[lec_cont], RDF.type, uni.Lecture))
+                graph.add((unid[lec_uri], RDF.type, uni.Lecture))
 
                 # Add lecture number
-                graph.add((unid[lec_cont], uni.lecture_number, unid[lec_num[lec_num.find("_")+1:]]))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num[lec_num.find("_")+1:], datatype=XSD.integer)))
 
                 # Add lecture name
-                graph.add((unid[lec_cont], uni.lecture_name, unid[lec_name]))
+                graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
 
                 # Add has lecture
-                graph.add((unid[course[course.find("-")+1:-9]], uni.has_lecture, unid[lec_cont]))
+                graph.add((unid[course[course.find("-")+1:-9]], uni.has_lecture, unid[lec_uri]))
 
+                # Add lecture content entity
+                graph.add((lec_cont_uri, RDF.type, uni.Slides))
+
+                # Attach lecture content entity to the lecture
+                graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
 
     # Adding students to the graph
     for student_id, student_info in data_students.items():
@@ -204,11 +212,6 @@ def create_course_graph(course_list, get_files):
 
 # Get current dir
 curr_dir = os.getcwd()
-
-# Get file names
-# URI_list = get_files(curr_dir)
-# for lect, val in URI_list.items():
-#     print(lect, "------------", val)
 
 # Graph creation
 create_course_graph(get_course_info(), get_files(curr_dir))
