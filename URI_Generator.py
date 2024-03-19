@@ -195,8 +195,8 @@ def create_course_graph(course_list, get_files):
     graph.add((unid["Engineering_Practices"], uni.linked_to, URIRef("https://www.wikidata.org/entity/Q2920267")))
 
     # Add topic provenance
-    graph.add((unid['Deep_Learning'], uni.linked_to, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf')))
-    graph.add((unid["Engineering_Practices"], uni.linked_to, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf')))
+    graph.add((unid['Deep_Learning'], uni.provenance, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf')))
+    graph.add((unid["Engineering_Practices"], uni.provenance, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf')))
 
     # Add has topic
     graph.add((unid['GCS_143'], uni.has_topic, unid['Deep_Learning']))

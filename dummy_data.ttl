@@ -325,13 +325,13 @@ unid:D_1 a uni:Grade ;
     uni:grade_value "D" .
 
 unid:Deep_Learning a uni:Topic ;
-    uni:linked_to <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf>,
-        <https://www.wikidata.org/entity/Q197536> ;
+    uni:linked_to <https://www.wikidata.org/entity/Q197536> ;
+    uni:provenance <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> ;
     uni:topicName "Deep Learning" .
 
 unid:Engineering_Practices a uni:Topic ;
-    uni:linked_to <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf>,
-        <https://www.wikidata.org/entity/Q2920267> ;
+    uni:linked_to <https://www.wikidata.org/entity/Q2920267> ;
+    uni:provenance <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> ;
     uni:topicName "Engineering Practices" .
 
 unid:F_10 a uni:Grade ;
