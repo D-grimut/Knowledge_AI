@@ -112,8 +112,6 @@ unid:Concordia a dbo:University ;
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> a uni:Slides .
 
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> a uni:Slides .
-
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> a uni:Slides .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> a uni:Slides .
@@ -149,8 +147,6 @@ unid:Concordia a dbo:University ;
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> a uni:Slides .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> a uni:Slides .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Slides .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> a uni:Slides .
 
@@ -328,6 +324,16 @@ unid:D_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_143 ;
     uni:grade_value "D" .
 
+unid:Deep_Learning a uni:Topic ;
+    uni:linked_to <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf>,
+        <https://www.wikidata.org/entity/Q197536> ;
+    uni:topicName "Deep Learning" .
+
+unid:Engineering_Practices a uni:Topic ;
+    uni:linked_to <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf>,
+        <https://www.wikidata.org/entity/Q2920267> ;
+    uni:topicName "Engineering Practices" .
+
 unid:F_10 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_132 ;
     uni:grade_value "F" .
@@ -369,6 +375,10 @@ unid:GCS_165 a uni:Course ;
     uni:credits 4.00 ;
     uni:subject "Intelligent_Systems" .
 
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> a uni:Slides .
+
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Slides .
+
 unid:GCS_132 a uni:Course ;
     uni:ID 354 ;
     uni:credits 4.00 ;
@@ -391,6 +401,7 @@ unid:GCS_132 a uni:Course ;
         unid:COMP_354-GCS_132_Understanding_Requirements,
         unid:COMP_354-GCS_132_User_Experience_Design,
         unid:COMP_354-GCS_132_Viable_Software_Plan ;
+    uni:has_topic unid:Engineering_Practices ;
     uni:subject "Introduction_to_Software_Engineering" .
 
 unid:GCS_143 a uni:Course ;
@@ -403,5 +414,6 @@ unid:GCS_143 a uni:Course ;
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies,
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
         unid:COMP_474_6741-GCS_143_Recommender_Systems ;
+    uni:has_topic unid:Deep_Learning ;
     uni:subject "Intelligent_Systems" .
 

@@ -181,6 +181,27 @@ def create_course_graph(course_list, get_files):
                 # Attach lecture content entity to the lecture
                 graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
 
+    # --------------------- ADDING TOPICS MANUALLY ---------------------------------
+    # Adding 2 topics
+    graph.add((unid['Deep_Learning'], RDF.type, uni.Topic))
+    graph.add((unid["Engineering_Practices"], RDF.type, uni.Topic))
+
+    # Add topic name
+    graph.add((unid['Deep_Learning'], uni.topicName, Literal("Deep Learning")))
+    graph.add((unid["Engineering_Practices"], uni.topicName, Literal("Engineering Practices")))
+
+    # Add topic link
+    graph.add((unid['Deep_Learning'], uni.linked_to, URIRef("https://www.wikidata.org/entity/Q197536")))
+    graph.add((unid["Engineering_Practices"], uni.linked_to, URIRef("https://www.wikidata.org/entity/Q2920267")))
+
+    # Add topic provenance
+    graph.add((unid['Deep_Learning'], uni.linked_to, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf')))
+    graph.add((unid["Engineering_Practices"], uni.linked_to, URIRef('file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf')))
+
+    # Add has topic
+    graph.add((unid['GCS_143'], uni.has_topic, unid['Deep_Learning']))
+    graph.add((unid['GCS_132'], uni.has_topic, unid["Engineering_Practices"]))
+
     # Adding students to the graph
     for student_id, student_info in data_students.items():
 
