@@ -1,6 +1,7 @@
 import os
 import csv
 import pandas as pd
+import platform
 from rdflib import XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
@@ -148,14 +149,25 @@ def create_course_graph(course_list, get_files):
                 
                 # Change lec_name
                 lec_name = lec_cont_uri[lec_cont_uri.find("Lectures/")+9:-4]
-                lec_uri = course[ :course.find("/")].replace(' ', '%20') + "_" + lec_name
+
+                lec_uri = ""
+
+                if platform.system() == 'Windows':
+                    lec_uri = course[ :course.find("\\")].replace(' ', '%20') + "_" + lec_name
+                else:
+                    lec_uri = course[ :course.find("/")].replace(' ', '%20') + "_" + lec_name
+                
                 lec_uri = lec_uri.replace('%20', '_')
+
+                lec_num_formatted = lec_num[lec_num.find("_")+1:]
 
                 # Add lecture
                 graph.add((unid[lec_uri], RDF.type, uni.Lecture))
 
                 # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num[lec_num.find("_")+1:], datatype=XSD.integer)))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+
+                lec_name = lec_name.replace('%20', " ")
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))

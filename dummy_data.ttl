@@ -102,57 +102,57 @@ unid:Concordia a dbo:University ;
         unid:GCS_165 ;
     uni:uni_dblink <https://dbpedia.org/data/Concordia_University> .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20&%20Linked%20Open%20Data.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> a uni:Slides .
 
 unid:A_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_132 ;
@@ -195,134 +195,134 @@ unid:A_9 a uni:Grade ;
     uni:grade_value "A" .
 
 unid:COMP_354-GCS_132_Agility_and_Process a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> ;
-    uni:lecture_name "Agility%20and%20Process" ;
-    uni:lecture_number 15 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> ;
+    uni:lecture_name "Agility and Process" ;
+    uni:lecture_number 0 .
 
 unid:COMP_354-GCS_132_Architectural_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> ;
-    uni:lecture_name "Architectural%20Design" ;
-    uni:lecture_number 12 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> ;
+    uni:lecture_name "Architectural Design" ;
+    uni:lecture_number 1 .
 
 unid:COMP_354-GCS_132_Component-Level_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> ;
-    uni:lecture_name "Component-Level%20Design" ;
-    uni:lecture_number 6 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> ;
+    uni:lecture_name "Component-Level Design" ;
+    uni:lecture_number 2 .
 
 unid:COMP_354-GCS_132_Configuration_Management a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> ;
-    uni:lecture_name "Configuration%20Management" ;
-    uni:lecture_number 11 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> ;
+    uni:lecture_name "Configuration Management" ;
+    uni:lecture_number 3 .
 
 unid:COMP_354-GCS_132_Design_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> ;
-    uni:lecture_name "Design%20Concepts" ;
-    uni:lecture_number 18 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> ;
+    uni:lecture_name "Design Concepts" ;
+    uni:lecture_number 4 .
 
 unid:COMP_354-GCS_132_Project_Management_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> ;
-    uni:lecture_name "Project%20Management%20Concepts" ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> ;
+    uni:lecture_name "Project Management Concepts" ;
     uni:lecture_number 5 .
 
 unid:COMP_354-GCS_132_Requirements_Modeling a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> ;
-    uni:lecture_name "Requirements%20Modeling" ;
-    uni:lecture_number 9 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> ;
+    uni:lecture_name "Requirements Modeling" ;
+    uni:lecture_number 6 .
 
 unid:COMP_354-GCS_132_Risk_Management a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> ;
-    uni:lecture_name "Risk%20Management" ;
-    uni:lecture_number 16 .
-
-unid:COMP_354-GCS_132_Software_Component_Testing a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> ;
-    uni:lecture_name "Software%20Component%20Testing" ;
-    uni:lecture_number 13 .
-
-unid:COMP_354-GCS_132_Software_Development_and_Engineering a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> ;
-    uni:lecture_name "Software%20Development%20and%20Engineering" ;
-    uni:lecture_number 1 .
-
-unid:COMP_354-GCS_132_Software_Integration_Testing a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> ;
-    uni:lecture_name "Software%20Integration%20Testing" ;
-    uni:lecture_number 3 .
-
-unid:COMP_354-GCS_132_Software_Metrics_and_Analytics a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> ;
-    uni:lecture_name "Software%20Metrics%20and%20Analytics" ;
-    uni:lecture_number 17 .
-
-unid:COMP_354-GCS_132_Software_Process_Models a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> ;
-    uni:lecture_name "Software%20Process%20Models" ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> ;
+    uni:lecture_name "Risk Management" ;
     uni:lecture_number 7 .
 
+unid:COMP_354-GCS_132_Software_Component_Testing a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> ;
+    uni:lecture_name "Software Component Testing" ;
+    uni:lecture_number 8 .
+
+unid:COMP_354-GCS_132_Software_Development_and_Engineering a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> ;
+    uni:lecture_name "Software Development and Engineering" ;
+    uni:lecture_number 9 .
+
+unid:COMP_354-GCS_132_Software_Integration_Testing a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> ;
+    uni:lecture_name "Software Integration Testing" ;
+    uni:lecture_number 10 .
+
+unid:COMP_354-GCS_132_Software_Metrics_and_Analytics a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> ;
+    uni:lecture_name "Software Metrics and Analytics" ;
+    uni:lecture_number 11 .
+
+unid:COMP_354-GCS_132_Software_Process_Models a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> ;
+    uni:lecture_name "Software Process Models" ;
+    uni:lecture_number 12 .
+
 unid:COMP_354-GCS_132_Software_Quality_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> ;
-    uni:lecture_name "Software%20Quality%20Concepts" ;
-    uni:lecture_number 0 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> ;
+    uni:lecture_name "Software Quality Concepts" ;
+    uni:lecture_number 13 .
 
 unid:COMP_354-GCS_132_Software_Reviews a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> ;
-    uni:lecture_name "Software%20Reviews" ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> ;
+    uni:lecture_name "Software Reviews" ;
     uni:lecture_number 14 .
 
 unid:COMP_354-GCS_132_Software_Support a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> ;
-    uni:lecture_name "Software%20Support" ;
-    uni:lecture_number 2 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> ;
+    uni:lecture_name "Software Support" ;
+    uni:lecture_number 15 .
 
 unid:COMP_354-GCS_132_Understanding_Requirements a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> ;
-    uni:lecture_name "Understanding%20Requirements" ;
-    uni:lecture_number 4 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> ;
+    uni:lecture_name "Understanding Requirements" ;
+    uni:lecture_number 16 .
 
 unid:COMP_354-GCS_132_User_Experience_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> ;
-    uni:lecture_name "User%20Experience%20Design" ;
-    uni:lecture_number 10 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> ;
+    uni:lecture_name "User Experience Design" ;
+    uni:lecture_number 17 .
 
 unid:COMP_354-GCS_132_Viable_Software_Plan a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf> ;
-    uni:lecture_name "Viable%20Software%20Plan" ;
-    uni:lecture_number 8 .
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf> ;
+    uni:lecture_name "Viable Software Plan" ;
+    uni:lecture_number 18 .
 
 unid:COMP_474_6741-GCS_143_Intelligent_Agents a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf> ;
-    uni:lecture_name "Intelligent%20Agents" ;
-    uni:lecture_number 3 .
-
-unid:COMP_474_6741-GCS_143_Intelligent_Systems_Introduction a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> ;
-    uni:lecture_name "Intelligent%20Systems%20Introduction" ;
-    uni:lecture_number 2 .
-
-<http://uni.com/data/COMP_474_6741-GCS_143_Knowledge_Base_Queries_&_Linked_Open_Data> a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20&%20Linked%20Open%20Data.pdf> ;
-    uni:lecture_name "Knowledge%20Base%20Queries%20&%20Linked%20Open%20Data" ;
-    uni:lecture_number 6 .
-
-unid:COMP_474_6741-GCS_143_Knowledge_Graphs a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> ;
-    uni:lecture_name "Knowledge%20Graphs" ;
-    uni:lecture_number 5 .
-
-unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> ;
-    uni:lecture_name "Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies" ;
-    uni:lecture_number 4 .
-
-unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> ;
-    uni:lecture_name "Machine%20Learning%20for%20Intelligent%20Systems" ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf> ;
+    uni:lecture_name "Intelligent Agents" ;
     uni:lecture_number 0 .
 
-unid:COMP_474_6741-GCS_143_Recommender_Systems a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> ;
-    uni:lecture_name "Recommender%20Systems" ;
+unid:COMP_474_6741-GCS_143_Intelligent_Systems_Introduction a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> ;
+    uni:lecture_name "Intelligent Systems Introduction" ;
     uni:lecture_number 1 .
+
+unid:COMP_474_6741-GCS_143_Knowledge_Base_Queries_and_Linked_Open_Data a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.pdf> ;
+    uni:lecture_name "Knowledge Base Queries and Linked Open Data" ;
+    uni:lecture_number 2 .
+
+unid:COMP_474_6741-GCS_143_Knowledge_Graphs a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> ;
+    uni:lecture_name "Knowledge Graphs" ;
+    uni:lecture_number 4 .
+
+unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> ;
+    uni:lecture_name "Knowledge Graphs - Vocabularies and Ontologies" ;
+    uni:lecture_number 3 .
+
+unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> ;
+    uni:lecture_name "Machine Learning for Intelligent Systems" ;
+    uni:lecture_number 5 .
+
+unid:COMP_474_6741-GCS_143_Recommender_Systems a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> ;
+    uni:lecture_name "Recommender Systems" ;
+    uni:lecture_number 6 .
 
 unid:D_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_143 ;
@@ -398,7 +398,7 @@ unid:GCS_143 a uni:Course ;
     uni:credits 4.00 ;
     uni:has_lecture unid:COMP_474_6741-GCS_143_Intelligent_Agents,
         unid:COMP_474_6741-GCS_143_Intelligent_Systems_Introduction,
-        <http://uni.com/data/COMP_474_6741-GCS_143_Knowledge_Base_Queries_&_Linked_Open_Data>,
+        unid:COMP_474_6741-GCS_143_Knowledge_Base_Queries_and_Linked_Open_Data,
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs,
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies,
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
