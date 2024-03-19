@@ -5,14 +5,17 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 unid:1 a uni:Student ;
+    uni:completed unid:GCS_132,
+        unid:GCS_143 ;
     uni:grade_obtained unid:A_1,
-        unid:F_1 ;
+        unid:D_1 ;
     uni:student_ID 1 ;
     foaf:firstName "John" ;
     foaf:lastName "Doe" ;
     foaf:mbox "johndoe@example.com" .
 
 unid:10 a uni:Student ;
+    uni:completed unid:GCS_143 ;
     uni:grade_obtained unid:A_10,
         unid:F_10 ;
     uni:student_ID 10 ;
@@ -21,6 +24,7 @@ unid:10 a uni:Student ;
     foaf:mbox "emilytaylor@example.com" .
 
 unid:2 a uni:Student ;
+    uni:completed unid:GCS_143 ;
     uni:grade_obtained unid:A_2,
         unid:F_2 ;
     uni:student_ID 2 ;
@@ -29,6 +33,7 @@ unid:2 a uni:Student ;
     foaf:mbox "alicesmith@example.com" .
 
 unid:3 a uni:Student ;
+    uni:completed unid:GCS_132 ;
     uni:grade_obtained unid:A_3,
         unid:F_3 ;
     uni:student_ID 3 ;
@@ -37,6 +42,7 @@ unid:3 a uni:Student ;
     foaf:mbox "michaeljohnson@example.com" .
 
 unid:4 a uni:Student ;
+    uni:completed unid:GCS_143 ;
     uni:grade_obtained unid:A_4,
         unid:F_4 ;
     uni:student_ID 4 ;
@@ -45,6 +51,7 @@ unid:4 a uni:Student ;
     foaf:mbox "emmawilliams@example.com" .
 
 unid:5 a uni:Student ;
+    uni:completed unid:GCS_132 ;
     uni:grade_obtained unid:A_5,
         unid:F_5 ;
     uni:student_ID 5 ;
@@ -53,6 +60,7 @@ unid:5 a uni:Student ;
     foaf:mbox "williambrown@example.com" .
 
 unid:6 a uni:Student ;
+    uni:completed unid:GCS_143 ;
     uni:grade_obtained unid:A_6,
         unid:F_6 ;
     uni:student_ID 6 ;
@@ -61,6 +69,7 @@ unid:6 a uni:Student ;
     foaf:mbox "sophiajones@example.com" .
 
 unid:7 a uni:Student ;
+    uni:completed unid:GCS_132 ;
     uni:grade_obtained unid:A_7,
         unid:F_7 ;
     uni:student_ID 7 ;
@@ -69,6 +78,7 @@ unid:7 a uni:Student ;
     foaf:mbox "matthewdavis@example.com" .
 
 unid:8 a uni:Student ;
+    uni:completed unid:GCS_143 ;
     uni:grade_obtained unid:A_8,
         unid:F_8 ;
     uni:student_ID 8 ;
@@ -77,6 +87,7 @@ unid:8 a uni:Student ;
     foaf:mbox "oliviamiller@example.com" .
 
 unid:9 a uni:Student ;
+    uni:completed unid:GCS_132 ;
     uni:grade_obtained unid:A_9,
         unid:F_9 ;
     uni:student_ID 9 ;
@@ -313,9 +324,9 @@ unid:COMP_474_6741-GCS_143_Recommender_Systems a uni:Lecture ;
     uni:lecture_name "Recommender%20Systems" ;
     uni:lecture_number 1 .
 
-unid:F_1 a uni:Grade ;
+unid:D_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_143 ;
-    uni:grade_value "F" .
+    uni:grade_value "D" .
 
 unid:F_10 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_132 ;
@@ -354,13 +365,13 @@ unid:F_9 a uni:Grade ;
     uni:grade_value "F" .
 
 unid:GCS_165 a uni:Course ;
-    uni:ID unid:6741 ;
-    uni:credits unid:4.00 ;
-    uni:subject unid:Intelligent_Systems .
+    uni:ID 6741 ;
+    uni:credits 4.00 ;
+    uni:subject "Intelligent_Systems" .
 
 unid:GCS_132 a uni:Course ;
-    uni:ID unid:354 ;
-    uni:credits unid:4.00 ;
+    uni:ID 354 ;
+    uni:credits 4.00 ;
     uni:has_lecture unid:COMP_354-GCS_132_Agility_and_Process,
         unid:COMP_354-GCS_132_Architectural_Design,
         unid:COMP_354-GCS_132_Component-Level_Design,
@@ -380,11 +391,11 @@ unid:GCS_132 a uni:Course ;
         unid:COMP_354-GCS_132_Understanding_Requirements,
         unid:COMP_354-GCS_132_User_Experience_Design,
         unid:COMP_354-GCS_132_Viable_Software_Plan ;
-    uni:subject unid:Introduction_to_Software_Engineering .
+    uni:subject "Introduction_to_Software_Engineering" .
 
 unid:GCS_143 a uni:Course ;
-    uni:ID unid:474 ;
-    uni:credits unid:4.00 ;
+    uni:ID 474 ;
+    uni:credits 4.00 ;
     uni:has_lecture unid:COMP_474_6741-GCS_143_Intelligent_Agents,
         unid:COMP_474_6741-GCS_143_Intelligent_Systems_Introduction,
         <http://uni.com/data/COMP_474_6741-GCS_143_Knowledge_Base_Queries_&_Linked_Open_Data>,
@@ -392,5 +403,5 @@ unid:GCS_143 a uni:Course ;
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies,
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
         unid:COMP_474_6741-GCS_143_Recommender_Systems ;
-    uni:subject unid:Intelligent_Systems .
+    uni:subject "Intelligent_Systems" .
 

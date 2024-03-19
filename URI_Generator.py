@@ -99,13 +99,6 @@ def student_info_extract(file):
 
     return data
 
-#method to manualy create (temprary) lectures - this will be removed in part 2 when we know how to create them dinamicaly using NLP
-def dummy_lectures(graph, unid, uni, dbo, material_URIs):
-    
-    #TODO: finish this method
-    graph.add((unid.Concordia, RDF.type, dbo.University))
-    graph.add((unid.Concordia, uni.name, Literal("Concordia")))
-
 
 # TODO: Dummy topics
 def create_course_graph(course_list, get_files):
@@ -138,13 +131,13 @@ def create_course_graph(course_list, get_files):
         graph.add((unid[key], RDF.type, uni.Course))
 
         unid_val = values["Title"]
-        graph.add((unid[key], uni.subject, unid[unid_val]))
+        graph.add((unid[key], uni.subject, Literal(unid_val)))
 
         unid_val = values["Class Units"]
-        graph.add((unid[key], uni.credits, unid[unid_val]))
+        graph.add((unid[key], uni.credits, Literal(unid_val, datatype=XSD.decimal)))
 
         unid_val = values["Course number"]
-        graph.add((unid[key], uni.ID, unid[unid_val]))
+        graph.add((unid[key], uni.ID, Literal(unid_val, datatype=XSD.integer)))
 
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
@@ -196,10 +189,14 @@ def create_course_graph(course_list, get_files):
         pass_grade = "D"
 
         for cource_id, grade in grades.items():
+
             #making garde entities
             garde_uri = grade + "_" + str(student_id)
             graph.add((unid[garde_uri], RDF.type, uni.Grade))
             graph.add((unid[garde_uri], uni.grade_value, Literal(grade)))
+
+            if(grade <= pass_grade):
+                graph.add((unid[str(student_id)], uni.completed, unid[cource_id]))
 
             #connection grade to course
             graph.add((unid[garde_uri], uni.grade_obtained_in, unid[cource_id]))
