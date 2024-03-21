@@ -254,12 +254,9 @@ def runAllQueries():
     query_dir = os.getcwd() + "\Queries"
     files = os.listdir(query_dir)
 
-    file_counter = 0
-
     # Get content of every file and add them to query statement
     for file in files:
         if file.endswith(".txt"):
-            file_counter += 1
             with open(os.path.join(query_dir, file), "r") as f:
                 cont = f.read()
 
@@ -267,7 +264,7 @@ def runAllQueries():
                 sparql.setReturnFormat(JSON)
                 results = sparql.queryAndConvert()
 
-                print(f"File {file_counter}")
+                print(f"File {file[1:-4]}")
 
                 for result in results['results']['bindings']:
                     # To get the value only: print(result[cName][value])
