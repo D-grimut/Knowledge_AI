@@ -1,0 +1,19 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix uni: <http://uni.com/schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+
+SELECT ?material
+WHERE{
+?course rdf:type uni:Course.
+?course uni:subject ?cName.
+?course uni:has_lecture ?lecture.
+?lecture uni:lecture_number ?lecNum.
+?lecture uni:has_content ?material.
+FILTER(REGEX(STR(?cName), 'Intelligent_Systems', "i")). 
+FILTER(?lecNum=5).
+}
+LIMIT 100

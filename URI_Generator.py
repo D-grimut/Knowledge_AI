@@ -2,10 +2,12 @@ import os
 import csv
 import pandas as pd
 import platform
+import asyncio
 from rdflib import XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
 from urllib.parse import quote_plus
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 def get_course_info():
     course_list = ["GCS_132", "GCS_143", "GCS_165"]
@@ -240,8 +242,72 @@ def create_course_graph(course_list, get_files):
     # Serialize graph
     graph.serialize(destination="dummy_data.ttl", format='turtle')
 
+
+def runAllQueries():
+    # Setup database connection
+    endpoint_url = "http://localhost:3030/data"
+
+    # Connect our database connection to SPARQL
+    sparql = SPARQLWrapper(endpoint_url)
+
+    # Get current files in directory + get files
+    query_dir = os.getcwd() + "\Queries"
+    files = os.listdir(query_dir)
+
+    file_counter = 0
+
+    # Get content of every file and add them to query statement
+    for file in files:
+        if file.endswith(".txt"):
+            file_counter += 1
+            with open(os.path.join(query_dir, file), "r") as f:
+                cont = f.read()
+
+                sparql.setQuery(cont)
+                sparql.setReturnFormat(JSON)
+                results = sparql.queryAndConvert()
+
+                print(f"File {file_counter}")
+
+                for result in results['results']['bindings']:
+                    # To get the value only: print(result[cName][value])
+                    print(result)
+
 # Get current dir
 curr_dir = os.getcwd()
 
 # Graph creation
 create_course_graph(get_course_info(), get_files(curr_dir))
+
+runAllQueries()
+
+# Connect to database
+# endpoint_url = "http://localhost:3030/data"
+
+# sparql = SPARQLWrapper(endpoint_url)
+# sparql.setQuery("""
+# PREFIX owl: <http://www.w3.org/2002/07/owl#>
+# prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+# prefix foaf: <http://xmlns.com/foaf/0.1/>
+# prefix dbo: <http://dbpedia.org/ontology/>
+# prefix uni: <http://uni.com/schema#>
+# prefix owl: <http://www.w3.org/2002/07/owl#> 
+# SELECT ?cName
+# WHERE{
+# ?course uni:has_topic ?topic.
+# ?topic uni:topicName ?tName.
+# ?course uni:subject ?cName.
+# FILTER(REGEX(STR(?tName), 'Deep Learning', "i"))
+# }
+# LIMIT 100
+# """)
+
+# sparql.setReturnFormat(JSON)
+
+# results = sparql.queryAndConvert()
+
+# for result in results['results']['bindings']:
+#     # To get the value only: print(result[cName][value])
+#     print(result)
