@@ -2,7 +2,7 @@ import os
 import csv
 import pandas as pd
 import platform
-import asyncio
+import csv
 from rdflib import XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from rdflib.term import _is_valid_uri
@@ -258,17 +258,50 @@ def runAllQueries():
     for file in files:
         if file.endswith(".txt"):
             with open(os.path.join(query_dir, file), "r") as f:
+                # Read file content
                 cont = f.read()
 
+                # SPARQL Query
                 sparql.setQuery(cont)
                 sparql.setReturnFormat(JSON)
                 results = sparql.queryAndConvert()
 
-                print(f"File {file[1:-4]}")
+                # Name CSV file
+                csv_file_name = f"{file[:-4]}-out.csv"
 
-                for result in results['results']['bindings']:
-                    # To get the value only: print(result[cName][value])
-                    print(result)
+                # Get only keys from results
+                keys = []
+                query = results['results']['bindings']
+
+                for q in query:
+                    for key in q.keys():
+                        if key not in keys:
+                            keys.append(key)
+
+                # Write to CSV file
+                with open(csv_file_name, 'w', newline='') as csvf:
+                    trip_counter = 0
+
+                    # Open writer and add keys
+                    writer = csv.writer(csvf)
+                    writer.writerow(keys)
+
+                    # Get results like before
+                    query = results['results']['bindings']
+
+                    # Add values from keys if they exist
+                    for q in query:
+                        row = []
+                        for k in keys:
+                            if k in q:
+                                row.append(q[k]['value'])
+                        trip_counter += 1
+                        writer.writerow(row)
+
+                    # Add number of triples returned
+                    row.clear()
+                    row.append(f"Number of triples: {trip_counter}")
+                    writer.writerow(row)
 
 # Get current dir
 curr_dir = os.getcwd()
@@ -276,35 +309,5 @@ curr_dir = os.getcwd()
 # Graph creation
 create_course_graph(get_course_info(), get_files(curr_dir))
 
+# Run queries and output them to files
 runAllQueries()
-
-# Connect to database
-# endpoint_url = "http://localhost:3030/data"
-
-# sparql = SPARQLWrapper(endpoint_url)
-# sparql.setQuery("""
-# PREFIX owl: <http://www.w3.org/2002/07/owl#>
-# prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-# prefix foaf: <http://xmlns.com/foaf/0.1/>
-# prefix dbo: <http://dbpedia.org/ontology/>
-# prefix uni: <http://uni.com/schema#>
-# prefix owl: <http://www.w3.org/2002/07/owl#> 
-# SELECT ?cName
-# WHERE{
-# ?course uni:has_topic ?topic.
-# ?topic uni:topicName ?tName.
-# ?course uni:subject ?cName.
-# FILTER(REGEX(STR(?tName), 'Deep Learning', "i"))
-# }
-# LIMIT 100
-# """)
-
-# sparql.setReturnFormat(JSON)
-
-# results = sparql.queryAndConvert()
-
-# for result in results['results']['bindings']:
-#     # To get the value only: print(result[cName][value])
-#     print(result)
