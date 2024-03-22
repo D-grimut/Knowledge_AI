@@ -107,7 +107,6 @@ def student_info_extract(file):
     return data
 
 
-# TODO: Dummy topics
 def create_course_graph(course_list, get_files):
     # Create a graph
     graph = Graph()
@@ -283,10 +282,10 @@ def create_course_graph(course_list, get_files):
                       uni.grade_obtained, unid[garde_uri]))
 
     # Serialize graph - TTL
-    graph.serialize(destination="dummy_data_turtle.ttl", format='turtle')
+    graph.serialize(destination="knowldge_base_turtle.ttl", format='turtle')
 
     # Serialize graph - nTriples
-    graph.serialize(destination="dummy_data_ntriples.nt", format='nt')
+    graph.serialize(destination="knowldge_base_ntriples.nt", format='nt')
 
 
 def runAllQueries():
