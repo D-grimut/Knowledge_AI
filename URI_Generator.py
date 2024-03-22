@@ -297,7 +297,14 @@ def runAllQueries():
     sparql = SPARQLWrapper(endpoint_url)
 
     # Get current files in directory + get files
-    query_dir = os.getcwd() + "\Queries"
+
+    query_dir = ""
+
+    if platform.system() == 'Windows':
+        query_dir = os.getcwd() + "\Queries"
+    else:
+        query_dir = os.getcwd() + "/Queries"
+
     files = os.listdir(query_dir)
 
     # Get content of every file and add them to query statement
@@ -358,8 +365,7 @@ def main():
     create_course_graph(get_course_info(), get_files(curr_dir))
 
     # Run queries and output them to files
-    runAllQueries()
-
+    # runAllQueries()
 
 if __name__ == "__main__":
     main()
