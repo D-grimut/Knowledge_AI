@@ -12,13 +12,9 @@ WHERE{
 ?course uni:has_lecture ?lecture.
 ?lecture uni:lecture_number ?lecNum.
 ?topic uni:provenance ?courseMat.
-?lecture uni:has_content ?courseMat.
+?course uni:has_lecture ?courseMat.
 ?topic uni:topicName ?tName.
 FILTER(REGEX(STR(?cName), 'Intelligent_Systems', "i")).
 FILTER(?lecNum=5).
-
-
-
-
 }
 LIMIT 100
