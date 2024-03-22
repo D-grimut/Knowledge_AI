@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 import platform
 import csv
-from rdflib import XSD, URIRef, Namespace, Graph, Literal
+from rdflib import OWL, RDFS, XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from SPARQLWrapper import SPARQLWrapper, JSON
 
@@ -30,7 +30,8 @@ def get_course_info():
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
                         "Course number": row["Course number"],
-                        "Title": new_val, 
+                        "Title": new_val,
+                        "Website": row["Website"], 
                     }
 
     with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding="utf-16") as f:
@@ -126,6 +127,8 @@ def create_course_graph(course_list, get_files):
     graph.add((unid.Concordia, RDF.type, dbo.University))
     graph.add((unid.Concordia, uni.uni_dblink, uni_dummy))
     graph.add((unid.Concordia, uni.name, Literal("Concordia")))
+    graph.add((unid.Concordia, OWL.sameAs, URIRef("https://dbpedia.org/resource/Concordia_University")))
+    graph.add((unid.Concordia, OWL.sameAs, URIRef("https://www.wikidata.org/entity/Q326342")))
 
     # Adding Courses to the graph - Concordia ONLY
     for key, values in course_list.items():
@@ -139,6 +142,11 @@ def create_course_graph(course_list, get_files):
 
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, Literal(unid_val, datatype=XSD.integer)))
+
+        website = values["Website"]
+
+        if(len(website) > 0):
+            graph.add((unid[key], RDFS.seeAlso, URIRef(website)))
 
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
@@ -201,6 +209,10 @@ def create_course_graph(course_list, get_files):
     # Add has topic
     graph.add((unid['GCS_143'], uni.has_topic, unid['Deep_Learning']))
     graph.add((unid['GCS_132'], uni.has_topic, unid["Engineering_Practices"]))
+
+    # Adding Topic DBPedia links
+    graph.add((unid['GCS_143'], OWL.sameAs, URIRef("https://dbpedia.org/resource/Deep_learning")))
+    graph.add((unid['GCS_132'], OWL.sameAs, URIRef("https://www.wikidata.org/entity/Q11023")))
 
     # Adding students to the graph
     for student_id, student_info in data_students.items():
@@ -312,7 +324,7 @@ def main():
     create_course_graph(get_course_info(), get_files(curr_dir))
 
     # Run queries and output them to files
-    runAllQueries()
+    # runAllQueries()
 
 if __name__ == "__main__":
     main()

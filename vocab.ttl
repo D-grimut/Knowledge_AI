@@ -6,18 +6,6 @@
 @prefix uni: <http://uni.com/schema#>.
 
 #-----------------------University------------------------------
-uni:uni_dblink a rdf:Property;
-    rdfs:domain dbo:University;
-    rdfs:range xsd:anyURI;
-    rdfs:label "DBPedia Link"@en;
-    rdfs:comment "University Link on DBPedia"@en.
-
-uni:uni_wikilink a rdf:Property;
-    rdfs:domain dbo:University;
-    rdfs:range xsd:anyURI;
-    rdfs:label "Wikidata Link"@en;
-    rdfs:comment "University Link on Wikidata"@en.
-
 uni:name a rdfs:Property;
     rdfs:domain dbo:University;
     rdfs:range xsd:string;
@@ -132,12 +120,6 @@ uni:provenance a rdf:Property;
     rdfs:range xsd:anyURI;
     rdfs:label "Provenance"@en;
     rdfs:comment "a record of where the topic was identified as being covered in the course"@en.
-
-uni:linked_to a rdf:Property;
-    rdfs:domain uni:Topic;
-    rdfs:range xsd:anyURI;
-    rdfs:label "Linked To"@en;
-    rdfs:comment "link to a DBpedia and/or Wikidata"@en.
 
 uni:has_topic a rdf:Property;
     rdfs:domain uni:Course;

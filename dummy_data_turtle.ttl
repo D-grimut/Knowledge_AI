@@ -1,5 +1,6 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix uni: <http://uni.com/schema#> .
 @prefix unid: <http://uni.com/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -415,5 +416,6 @@ unid:GCS_143 a uni:Course ;
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
         unid:COMP_474_6741-GCS_143_Recommender_Systems ;
     uni:has_topic unid:Deep_Learning ;
-    uni:subject "Intelligent_Systems" .
+    uni:subject "Intelligent_Systems" ;
+    rdfs:seeAlso <https://www.studocu.com/en-ca/course/concordia-university/intelligent-systems/1423693> .
 
