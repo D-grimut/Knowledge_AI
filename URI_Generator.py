@@ -280,7 +280,7 @@ def runAllQueries():
                 results = sparql.queryAndConvert()
 
                 # Name CSV file
-                csv_file_name = f"{file[:-4]}-out.csv"
+                file_name = f"{file[:-4]}-out.csv"
 
                 # Get only keys from results
                 keys = []
@@ -292,11 +292,11 @@ def runAllQueries():
                             keys.append(key)
 
                 # Write to CSV file
-                with open(csv_file_name, 'w', newline='') as csvf:
+                with open(file_name, 'w', newline='') as csvfile:
                     trip_counter = 0
 
                     # Open writer and add keys
-                    writer = csv.writer(csvf)
+                    writer = csv.writer(csvfile)
                     writer.writerow(keys)
 
                     # Get results like before
