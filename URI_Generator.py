@@ -8,17 +8,27 @@ from rdflib.namespace import FOAF, RDF
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
-def get_course_info():
+def get_course_info(curr_dir):
     course_list = ["GCS_132", "GCS_143", "GCS_165"]
     course_list_cred = ["005411", "005484", "040355"]
 
     data = {}
     index = {}
 
+    catalog = ""
+    data_catalog = ""
+
+    if platform.system() == 'Windows':
+        catalog = curr_dir + "\KB Data\CATALOG.csv"
+        data_catalog = curr_dir + "\KB Data\CU_SR_OPEN_DATA_CATALOG.csv"
+    else:
+        catalog = curr_dir + "/KB Data/CATALOG.csv"
+        data_catalog = curr_dir + "/KB Data/CU_SR_OPEN_DATA_CATALOG.csv"
+
     for i, course in enumerate(course_list):
         index[course_list_cred[i]] = course
 
-    with open("CATALOG.csv", mode='r') as csv_file:
+    with open(catalog, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
 
@@ -35,7 +45,7 @@ def get_course_info():
                         "Website": row["Website"],
                     }
 
-    with open("CU_SR_OPEN_DATA_CATALOG.csv", mode='r', encoding="utf-16") as f:
+    with open(data_catalog, mode='r', encoding="utf-16") as f:
         csv_reader = csv.DictReader(f)
         for row in csv_reader:
 
@@ -107,7 +117,7 @@ def student_info_extract(file):
     return data
 
 
-def create_course_graph(course_list, get_files):
+def create_course_graph(course_list, get_files, curr_dir):
     # Create a graph
     graph = Graph()
 
@@ -121,8 +131,18 @@ def create_course_graph(course_list, get_files):
     graph.bind("uni", uni)
     graph.bind("dbo", dbo)
 
-    data_grades = student_info_extract("grades.csv")
-    data_students = student_info_extract("students.csv")
+    grades_path = ""
+    students_path = ""
+
+    if platform.system() == 'Windows':
+        grades_path = curr_dir + "\KB Data\grades.csv"
+        students_path = curr_dir + "\KB Data\students.csv"
+    else:
+        grades_path = curr_dir + "/KB Data/grades.csv"
+        students_path = curr_dir + "/KB Data/students.csv"
+
+    data_grades = student_info_extract(grades_path)
+    data_students = student_info_extract(students_path)
 
     uni_dummy = URIRef("https://dbpedia.org/data/Concordia_University")
 
@@ -257,7 +277,7 @@ def create_course_graph(course_list, get_files):
         graph.add((unid[str(student_id)], FOAF.mbox, Literal(email)))
         graph.add((unid[str(student_id)], uni.student_ID, Literal(student_id)))
 
-    # Adding students and gardes to the RDF graph
+    # Adding students and grades to the RDF graph
     for student_id, grades in data_grades.items():
 
         pass_grade = "D"
@@ -288,7 +308,7 @@ def create_course_graph(course_list, get_files):
     graph.serialize(destination="knowldge_base_ntriples.nt", format='nt')
 
 
-def runAllQueries():
+def runAllQueries(curr_dir):
     # Setup database connection
     # To connect to your database, change "data" to whatever your database name is in fuseki.
     endpoint_url = "http://localhost:3030/dummy_data_1"
@@ -301,9 +321,9 @@ def runAllQueries():
     query_dir = ""
 
     if platform.system() == 'Windows':
-        query_dir = os.getcwd() + "\Queries"
+        query_dir = curr_dir + "\Queries"
     else:
-        query_dir = os.getcwd() + "/Queries"
+        query_dir = curr_dir + "/Queries"
 
     files = os.listdir(query_dir)
 
@@ -362,10 +382,10 @@ def main():
     curr_dir = os.getcwd()
 
     # Graph creation
-    create_course_graph(get_course_info(), get_files(curr_dir))
+    create_course_graph(get_course_info(curr_dir), get_files(curr_dir), curr_dir)
 
     # Run queries and output them to files
-    # runAllQueries()
+    # runAllQueries(curr_dir)
 
 if __name__ == "__main__":
     main()

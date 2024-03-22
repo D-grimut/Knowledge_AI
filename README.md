@@ -22,7 +22,10 @@ Here are the following contents of the assignment as well as their respective de
   - This folder contains all of the query outputs, seperated into files named q1-out.csv - q13-out.csv
   - These files show the output of the queries, formated into a CSV format
   
-- CATALOG.csv, CU_SR_OPEN_DATA_CATALOG.csv, grades.csv, students.csv
+- KB Data Folder 
+  - This is the folder that contains all the resources that we need to parse to begin creating the knoweldge graphs
+  - There resources are different to the resources found in the Cources foulder as these resources contain only CSV data we use to retrieve information about different classes and students prior to their creation.
+  - This folder contains the folowing files: CATALOG.csv, CU_SR_OPEN_DATA_CATALOG.csv, grades.csv, students.csv
   - These files are the main source of information used to create the triples
   - The program gathers and formats the information to ensure the quality of the data
   - These files are read for specific informations such as cource number, description, website, credits, etc. To create the 
@@ -32,8 +35,8 @@ Here are the following contents of the assignment as well as their respective de
   - These are the outputs of our graph once we serialize it
   - They come in 2 formats: n-triples format and turtle format
 
-- vocab.ttl
-  - This is the RDFS vocabulary that we devfined for this project
+- RDFS Vocab folder
+  - This folder contains the vocab.ttl fil which is our RDFS vocabulary defined for this project
   - This file is used as the vocabulary of our graph
   - Used for the definitions for the triples
 
