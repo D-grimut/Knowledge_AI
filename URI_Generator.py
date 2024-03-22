@@ -5,8 +5,6 @@ import platform
 import csv
 from rdflib import XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
-from rdflib.term import _is_valid_uri
-from urllib.parse import quote_plus
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 def get_course_info():
@@ -239,8 +237,11 @@ def create_course_graph(course_list, get_files):
             #connection name to grade
             graph.add((unid[str(student_id)], uni.grade_obtained, unid[garde_uri]))
 
-    # Serialize graph
-    graph.serialize(destination="dummy_data.ttl", format='turtle')
+    # Serialize graph - TTL
+    graph.serialize(destination="dummy_data_turtle.ttl", format='turtle')
+
+    # Serialize graph - nTriples
+    graph.serialize(destination="dummy_data_ntriples.nt", format='nt')
 
 
 def runAllQueries():
@@ -303,11 +304,15 @@ def runAllQueries():
                     row.append(f"Number of triples: {trip_counter}")
                     writer.writerow(row)
 
-# Get current dir
-curr_dir = os.getcwd()
+def main():
+    # Get current dir
+    curr_dir = os.getcwd()
 
-# Graph creation
-create_course_graph(get_course_info(), get_files(curr_dir))
+    # Graph creation
+    create_course_graph(get_course_info(), get_files(curr_dir))
 
-# Run queries and output them to files
-runAllQueries()
+    # Run queries and output them to files
+    runAllQueries()
+
+if __name__ == "__main__":
+    main()
