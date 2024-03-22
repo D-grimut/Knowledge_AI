@@ -1,3 +1,4 @@
+
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -6,15 +7,12 @@ prefix dbo: <http://dbpedia.org/ontology/>
 prefix uni: <http://uni.com/schema#>
 prefix owl: <http://www.w3.org/2002/07/owl#> 
 
-SELECT ?material
+SELECT ?lectureContent
 WHERE{
-?course rdf:type uni:Course.
-?course uni:subject ?cName.
+?course uni:ID ?courseNumber.
 ?course uni:has_lecture ?lecture.
-?lecture rdf:type uni:Lecture.
-?lecture uni:has_content ?material.
-?material rdf:type uni:OtherLectureMaterial.
-FILTER(REGEX(STR(?cName), 'Intelligent_Systems', "i")).  
-
+?lecture uni:has_content ?lectureContent.
+?lectureContent rdf:type uni:OtherLectureMaterial.
+FILTER(?courseNumber=474).
 }
 LIMIT 100

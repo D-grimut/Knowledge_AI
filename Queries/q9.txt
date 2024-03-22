@@ -6,18 +6,14 @@ prefix dbo: <http://dbpedia.org/ontology/>
 prefix uni: <http://uni.com/schema#>
 prefix owl: <http://www.w3.org/2002/07/owl#> 
 
-SELECT ?material
+SELECT ?content
 WHERE{
-?topic rdf:type uni:Topic.
-?topic uni:topicname ?tName.
-?topic uni:provenance ?material.
-?material rdf:type uni:Readings.
-?lecture uni:has_content ?material.
-?lecture rdf:type uni:Lecture.
+?coures uni:subject ?cName.
+?course uni:has_topic ?tName.
 ?course uni:has_lecture ?lecture.
-?course rdf:type uni:Course.
-?course uni:subject ?cName.
-FILTER(REGEX(STR(?tName), 'Deep Learning', "i")). 
-FILTER(REGEX(STR(?cName), 'Intelligent_Systems', "i")). 
+?lecture uni:has_content ?content.
+?content rdf:type uni:OtherLectureMaterial.
+FILTER(REGEX(STR(?tName), 'Engineering_Practices', "i")). 
+FILTER(REGEX(STR(?cName), 'Introduction_to_Software_Engineering', "i")). 
 }
 LIMIT 100
