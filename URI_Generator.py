@@ -7,10 +7,24 @@ from rdflib import OWL, RDFS, XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+def populate_cource_arr(key_name, title_name, file, enc=None):
+
+    courses = {}
+
+    with open(file, mode='r', encoding=enc) as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+
+            for key, value in row.items():
+                    if (row[title_name]):
+                        new_val = row[title_name].replace(" ", "_")
+
+                    courses[row[title_name]] = row[key_name]
+
+    return courses
+
 
 def get_course_info(curr_dir):
-    course_list = ["GCS_132", "GCS_143", "GCS_165"]
-    course_list_cred = ["005411", "005484", "040355"]
 
     data = {}
     index = {}
@@ -25,8 +39,12 @@ def get_course_info(curr_dir):
         catalog = curr_dir + "/KB Data/CATALOG.csv"
         data_catalog = curr_dir + "/KB Data/CU_SR_OPEN_DATA_CATALOG.csv"
 
-    for i, course in enumerate(course_list):
-        index[course_list_cred[i]] = course
+    course_list = populate_cource_arr("Key", "Title", catalog)
+    course_list_cred = populate_cource_arr("Course ID", "Long Title", data_catalog, "utf-16")
+
+    for key, val in course_list.items():
+        if(key in course_list_cred and key in course_list):
+            index[course_list_cred[key]] = course_list[key]
 
     with open(catalog, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -38,9 +56,17 @@ def get_course_info(curr_dir):
                     if (row["Title"]):
                         new_val = row["Title"].replace(" ", "_")
 
+                        course_num = -1
+                        try:
+                            int_value = int(row["Course number"].replace('\xa0', ''))
+                            course_num = int_value
+                        except ValueError:
+                            course_num = -1
+
+
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
-                        "Course number": row["Course number"],
+                        "Course number": course_num,
                         "Title": new_val,
                         "Website": row["Website"],
                     }
@@ -50,7 +76,7 @@ def get_course_info(curr_dir):
         for row in csv_reader:
 
             for key, value in row.items():
-                if value in course_list_cred:
+                if value in index:
                     course_id = index[value]
                     data[course_id]["Class Units"] = row["Class Units"]
     return data
@@ -162,9 +188,9 @@ def create_course_graph(course_list, get_files, curr_dir):
         unid_val = values["Title"]
         graph.add((unid[key], uni.subject, Literal(unid_val)))
 
-        unid_val = values["Class Units"]
-        graph.add((unid[key], uni.credits, Literal(
-            unid_val, datatype=XSD.decimal)))
+        if("Class Units" in values):
+            unid_val = values["Class Units"]
+            graph.add((unid[key], uni.credits, Literal(unid_val, datatype=XSD.decimal)))
 
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, Literal(unid_val, datatype=XSD.integer)))
@@ -201,8 +227,7 @@ def create_course_graph(course_list, get_files, curr_dir):
                 graph.add((unid[lec_uri], RDF.type, uni.Lecture))
 
                 # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(
-                    lec_num_formatted, datatype=XSD.integer)))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
 
                 lec_name = lec_name.replace('%20', " ")
 
