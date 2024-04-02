@@ -1,0 +1,243 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMP 354: Introduction to 
+Software Engineering
+
+Software Process Models
+
+Based on Chapter 2 of the textbook 
+
+COMP 354, Fall 2023 Software Process Models
+
+
+
+Essence of 
+Software Engineering Practice
+1.Understand the problem 
+
+(communication and analysis).
+2. Plan a solution (modeling and software 
+
+design).
+3.Carry out the plan (code 
+
+generation/construction).
+4. Examine result for accuracy (testing & 
+
+quality assurance/deployment).
+1COMP 354, Fall 2023 Software Process Models
+
+
+
+Generic 
+Process Model
+
+COMP 354, Fall 2023 Software Process Models 2
+
+ Framework Activities
+ Communication
+ Planning
+ Modeling
+ Construction 
+ Deployment
+
+ Umbrella Activities
+ Project Tracking and 
+
+Control
+ Risk Management
+ Quality Assurance
+ Configuration Management
+ Technical Reviews
+
+
+
+Identifying a Task Set
+ A task set defines the actual work to be 
+
+done to accomplish the objectives of a 
+software engineering action. 
+
+ A task set is defined by creating several 
+lists:
+ A list of the tasks to be accomplished.
+ A list of the work products to be produced.
+ A list of the quality assurance filters to be 
+
+applied.
+COMP 354, Fall 2023 Software Process Models 3
+
+
+
+Process 
+Flow
+
+COMP 354, Fall 2023 Software Process Models 4
+
+
+
+Waterfall Process Model
+
+COMP 354, Fall 2023 Software Process Models 5
+
+Pros 
+ It is easy to understand and plan.
+ It works for well-understood small 
+
+projects.
+ Analysis and testing are 
+
+straightforward.
+
+Cons 
+ It does not accommodate change well.
+ Testing occurs late in the process.
+ Customer approval is at the end.
+
+
+
+Prototyping Process Model
+
+COMP 354, Fall 2023 Software Process Models 6
+
+Pros 
+
+ Reduced impact of requirement 
+changes.
+
+ Customer is involved early and often.
+ Works well for small projects.
+ Reduced likelihood of product 
+
+rejection.
+
+Cons 
+
+ Customer involvement may cause 
+delays.
+
+ Temptation to “ship” a prototype.
+ Work lost in a throwaway prototype.
+ Hard to plan and manage.
+
+
+
+Spiral Process Model
+
+COMP 354, Fall 2023 Software Process Models 7
+
+Cons 
+ Risk analysis failures can doom 
+
+the project.
+ Project may be hard to manage.
+ Requires an expert development 
+
+team.
+
+Pros 
+
+ Continuous customer involvement.
+ Development risks are managed.
+ Suitable for large, complex 
+
+projects.
+ It works well for extensible 
+
+products.
+
+
+
+Unified Process Model
+
+COMP 354, Fall 2023 Software Process Models 8
+
+Cons
+ Use cases are not always precise.
+ Tricky software increment 
+
+integration.
+ Overlapping phases can cause 
+
+problems.
+ Requires expert development team.
+
+Pros 
+ Quality documentation emphasized.
+ Continuous customer involvement.
+ Accommodates requirements 
+
+changes.
+ Works well for maintenance projects.
+
+
+
+Process Assessment and 
+Improvement
+ The existence of a software process is no guarantee 
+
+that software will be delivered on time, or meet the 
+customer’s needs, or that it will exhibit long-term 
+quality characteristics. 
+
+ Any software process can be assessed to ensure that 
+it meets a set of basic process criteria that have been 
+shown to be essential for successful software 
+engineering.
+
+ Software processes and activities should be assessed 
+using numeric measures or software analytics 
+(metrics).
+
+COMP 354, Fall 2023 Software Process Models 9
+
+
+
+Prescriptive Process Models
+ Prescriptive process models advocate an 
+
+orderly approach to software engineering.
+ That leads to two questions:
+
+ If prescriptive process models strive for structure 
+and order, are they appropriate for a software 
+world that thrives on change? 
+
+ If we reject traditional process models and replace 
+them with something less structured, do we make 
+it impossible to achieve coordination and 
+coherence in software work?
+
+COMP 354, Fall 2023 Software Process Models 10
+
+

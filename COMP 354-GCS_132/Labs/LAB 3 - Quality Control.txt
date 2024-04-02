@@ -1,0 +1,109 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lab 3
+
+
+Lab 3
+COMP 354- Fall 23
+
+Apekshaba Gohil Anam A. Shaikh Marzieh Adeli
+
+apekshabagohil.it@gmail.com anams403@gmail.com marzieh.adeli@gmail.com
+
+mailto:anams403@gmail.com
+mailto:marzieh.adeli@gmail.com
+
+
+Quality Control
+
+
+
+Technical Review
+
+
+
+Technical Review
+
+
+
+Unit Testing
+
+
+
+Unit Testing
+
+
+
+Integration Testing
+
+
+
+Integration Testing
+
+
+
+Changes to Original Design
+
+
+
+Changes to Original Design
+
+
+
+MVC Architecture
+
+
+
+Contributions
+
+
+	Slide 1: Lab 3
+	Slide 2: Quality Control
+	Slide 3: Technical Review
+	Slide 4: Technical Review
+	Slide 5: Unit Testing
+	Slide 6: Unit Testing
+	Slide 7: Integration Testing
+	Slide 8: Integration Testing
+	Slide 9: Changes to Original Design
+	Slide 10: Changes to Original Design
+	Slide 11: MVC Architecture
+	Slide 12: Contributions
+

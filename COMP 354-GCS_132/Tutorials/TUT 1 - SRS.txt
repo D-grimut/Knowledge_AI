@@ -1,0 +1,343 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tutorial 2
+
+
+Tutorial 1
+
+COMP 354- Fall 23
+
+Apekshaba Gohil Anam A. Shaikh Marzieh Adeli
+
+apekshabagohil.it@gmail.com anams403@gmail.com marzieh.adeli@gmail.com
+
+mailto:anams403@gmail.com
+mailto:marzieh.adeli@gmail.com
+
+
+Course Outline 
+
+In this course, we have three assignments and one course project.
+
+Three Assignments: Write reports for these three assignments and implement 
+them in your final project.
+
+1. Assignment 1 – Software Requirements Specifications (SRS)
+
+2. Assignment 2 – Software Design
+
+3. Assignment 3 – Quality Control
+
+Course Project: In a Team (6 members) Submit a Project Report and 
+Develop the project which will be evaluated with a 15-20 mins Project Demo.
+
+
+
+Course Assignment and Project
+
+• Extending the Open-Source Shopping Cart App into the “Concordia 
+Cart App”
+
+• You are going to extend the open-source Shopping Cart app available 
+at https://github.com/shashirajraja/shopping-cart into a more 
+personalized app named “Concordia Cart”
+
+• Please Refer to Assignment 1 to carefully read the extended 
+requirements for the Concordia Cart App
+
+https://github.com/shashirajraja/shopping-cart
+
+
+Course Outline
+
+• It is very important to complete Assignments on time.
+
+• Do not delay your assignments for the last moment. 
+
+• Develop it step-by-step everyday. 
+
+• Ask questions!
+
+• Connect with your respective TA as they will act as one of the stakeholders for your Assignments and Projects.
+
+• Each team must submit one Assignment and Project Report per Team
+
+Note: It is very important for the entire team to attend the same tutorials and labs sections as tagged on the 
+“Assignment and Group Portal”
+
+
+
+Assignment 1: Software Requirements Specification
+
+
+
+Essence of Software Engineering Practice
+
+1. Understand the Problem – Analyze and Communicate
+
+2. Plan a Solution – Modelling and Software Design
+
+3. Carry out the Plan – Develop and Generate Programs/Code
+
+4. Examine Results for Accuracy – Test, Deploy and Quality Assurance
+
+
+
+Software Engineering Process 
+
+Requirement Gathering
+
+Designing 
+
+Implementing 
+
+Testing
+
+Deployment and 
+
+Maintainance
+
+
+
+Software Engineering Process 
+
+Requirement Gathering
+
+Designing 
+
+Implementing 
+
+Testing
+
+Deployment and 
+
+Maintenance  
+
+Understand the Problem –
+
+Analyze and Communicate 
+
+Plan a Solution – Modelling 
+
+and Software Designing
+
+Carry out the Plan – Develop 
+
+and Generate Programs/Code
+
+Examine Results for 
+
+Accuracy – Test, 
+
+Deploy and Quality 
+
+Assurance
+
+
+
+Software Engineering Process 
+
+Requirement Gathering
+
+Designing 
+
+Implementing 
+
+Testing
+
+Deployment and 
+
+Maintenance  
+
+Understand the Problem –
+
+Analyze and Communicate 
+
+Plan a Solution – Modelling 
+
+and Software Designing
+
+Carry out the Plan – Develop 
+
+and Generate Programs/Code
+
+Examine Results for 
+
+Accuracy – Test, 
+
+Deploy and Quality 
+
+Assurance
+
+Right now we are here
+
+
+
+1. Requirement Gathering - Understand the 
+Problem
+1. Domain Understanding
+
+• What is the Problem ? Why this Problem ?
+
+• What is the solution to the problem ?
+
+• Who are the people who wants the solution to this problem ?, etc.
+
+2. Requirements Elicitation
+
+• Interviews, Questionnaires, Surveys, Card Sorts, User-Stories, etc.
+
+3. Requirements Elaboration and Refine
+
+• Here, the elicited requirements from the previous steps is refined based on software functionality, behavior 
+and information.
+
+
+
+1. Requirement Gathering - Understand the 
+Problem
+4. Negotiate the Refined Requirements
+
+• Agree on deliverables scope which are realistic between the customer and the developer.
+
+5. Specification
+
+• Agreed Requirements and Deliverables Scope and deadline must be specified and documented in 
+the form of graphical models, mathematical models(Z-language), usage scenarios and prototypes.
+
+6. Quality Assurance
+
+• Check whether the products or service meets the specified requirements and solves the problem 
+with a solution accepted by the customer.
+
+
+
+Functional and Non-Functional Requirements
+
+Requirements
+
+Functional/Operational 
+
+Requirements
+
+Non-Functional/ Quality 
+
+Requirements
+
+e.g. Features of the Software e.g. Performance, Security, 
+
+Interface, Development, etc.
+
+
+
+Example: Electronic Tool Rental System
+
+• Objective –
+
+Design an Electronic Tool Rental System for the customers who 
+wants to rent tools and equipment such as drills & drivers, saws, 
+lifts and jacks, etc. for a minimal duration of time rather than 
+purchasing them. The system is available nationwide with 
+multiple branches. Users of the system are Branch Employees 
+who manages the branch. An Admin who manages all the 
+branches and customer who rents tools online.
+
+
+
+Requirement Gathering for ETR System.
+
+• What is the Problem ?
+
+• Who are the user of the system ?
+
+• Is the system we have to develop ? Is it a website or an apk ?
+
+• What is a successful solution ?
+
+• Who are the stakeholders of this system ? Primary and Secondary 
+Stakeholders ?
+
+• Functional Requirements
+
+• Non-functional Requirements
+
+
+
+Resources
+
+CSPS Vision (uhcl.edu) – A requirement specification document called 
+Vision Document for Reference.
+
+https://www.perforce.com/blog/alm/how-write-software-requirements-
+specification-srs-
+document#:~:text=A%20software%20requirements%20specification%2
+0(SRS)%20is%20a%20document%20that%20describes,(business%2C
+%20users)%20needs
+
+https://praxent.com/blog/software-requirements-gathering-formula-
+success
+
+https://sceweb.uhcl.edu/helm/RationalUnifiedProcess/examples/csports/ex_vision.htm
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=A%20software%20requirements%20specification%20(SRS)%20is%20a%20document%20that%20describes,(business%2C%20users)%20needs
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=A%20software%20requirements%20specification%20(SRS)%20is%20a%20document%20that%20describes,(business%2C%20users)%20needs
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=A%20software%20requirements%20specification%20(SRS)%20is%20a%20document%20that%20describes,(business%2C%20users)%20needs
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=A%20software%20requirements%20specification%20(SRS)%20is%20a%20document%20that%20describes,(business%2C%20users)%20needs
+https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=A%20software%20requirements%20specification%20(SRS)%20is%20a%20document%20that%20describes,(business%2C%20users)%20needs
+https://praxent.com/blog/software-requirements-gathering-formula-success
+https://praxent.com/blog/software-requirements-gathering-formula-success
+
+	Default Section
+	Slide 1: Tutorial 1
+	Slide 2: Course Outline  
+	Slide 3: Course Assignment and Project
+	Slide 4: Course Outline
+	Slide 5: Assignment 1: Software Requirements Specification
+	Slide 6: Essence of Software Engineering Practice
+	Slide 7: Software Engineering Process 
+	Slide 8: Software Engineering Process 
+	Slide 9: Software Engineering Process 
+	Slide 10: 1. Requirement Gathering - Understand the Problem 
+	Slide 11: 1. Requirement Gathering - Understand the Problem
+	Slide 12: Functional and Non-Functional Requirements
+	Slide 13: Example: Electronic Tool Rental System
+	Slide 14: Requirement Gathering for ETR System.
+	Slide 15: Resources 
+
+

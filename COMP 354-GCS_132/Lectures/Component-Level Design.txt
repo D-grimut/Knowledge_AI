@@ -1,0 +1,438 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMP 354: Introduction to 
+Software Engineering
+
+Component-Level Design
+Based on Chapter 11 of the textbook 
+
+COMP 354, Fall 2023 Component-Level Design
+
+
+
+What is a component?
+ OMG Unified Modeling Language Specification defines a 
+
+component as “… a modular, deployable, and replaceable 
+part of a system that encapsulates implementation and 
+exposes a set of interfaces.”
+
+ Object-Oriented view: a component contains a set of 
+collaborating classes.
+
+ Traditional view: a component contains processing logic, 
+internal data structures that are required to implement the 
+processing logic, and an interface that enables the 
+component to be invoked and data to be passed to it.
+
+ Process-related view: building systems out of reusable 
+software components or design patterns selected from a 
+catalog (component-based software engineering).
+
+COMP 354, Fall 2023 Component-Level Design 1
+
+
+
+Class-based 
+Component-Level Design
+
+COMP 354, Fall 2023 Component-Level Design 2
+
+
+
+Traditional 
+Component-Level Design 
+
+COMP 354, Fall 2023 Component-Level Design 3
+
+
+
+Basic Component Design 
+Principles
+ Open-Closed Principle (OCP). “A module [component] should be 
+
+open for extension but closed for modification.
+ Liskov Substitution Principle (LSP). “Subclasses should be 
+
+substitutable for their base classes.
+ Dependency Inversion Principle (DIP). “Depend on abstractions. 
+
+Do not depend on concretions.”
+ Interface Segregation Principle (ISP). “Many client-specific 
+
+interfaces are better than one general purpose interface.
+ Release Reuse Equivalency Principle (REP). “The granule of 
+
+reuse is the granule of release.”
+ Common Closure Principle (CCP). “Classes that change together 
+
+belong together.”
+ Common Reuse Principle (CRP). “Classes that aren’t reused 
+
+together should not be grouped together.”
+COMP 354, Fall 2023 Component-Level Design 4
+
+
+
+Component-Level Design 
+Guidelines
+ Components - Naming conventions should be 
+
+established for components that are specified as part 
+of the architectural model and then refined and 
+elaborated as part of the component-level model.
+
+ Interfaces - provide important information about 
+communication and collaboration (as well as helping 
+us to achieve the OCP).
+
+ Dependencies and Inheritance – For readability, it is 
+a good idea to model dependencies from left to right 
+and inheritance from bottom (derived classes) to top 
+(base classes).
+
+COMP 354, Fall 2023 Component-Level Design 5
+
+
+
+Cohesion
+ Traditional view - the “single-mindedness” of a 
+
+module.
+ Object-Oriented view - cohesion implies that a 
+
+component encapsulates only attributes and 
+operations that are closely related to one another 
+and the component itself.
+
+ Levels of cohesion:
+ Functional - module performs one and only one 
+
+computation.
+ Layer - occurs when a higher layer accesses the services of 
+
+a lower layer, but lower layers do not access higher layers.
+ Communicational - All operations that access the same data 
+
+are defined within one class.
+COMP 354, Fall 2023 Component-Level Design 6
+
+
+
+Coupling
+ Traditional view - degree to which a component is 
+
+connected to other components and to the external 
+world.
+
+ Object-Oriented view - qualitative measure of the 
+degree to which classes are connected to one 
+another.
+
+ Levels of coupling.
+ Content - occurs when one component “surreptitiously 
+
+modifies data that is internal to another component”.
+ Control – occurs when control flags a passed to components 
+
+to requests alternate behaviors when invoked.
+ External - occurs when a component communicates or 
+
+collaborates with infrastructure components.
+COMP 354, Fall 2023 Component-Level Design 7
+
+
+
+Component-Level Design 
+ Step 1. Identify all design classes that correspond to 
+
+the problem domain.
+ Step 2. Identify all design classes that correspond to 
+
+the infrastructure domain.
+ Step 3. Elaborate all design classes that are not 
+
+acquired as reusable components.
+ Step 3a. Specify message details when classes or component 
+
+collaborate.
+ Step 3b. Identify appropriate interfaces for each component.
+ Step 3c. Elaborate attributes and define data types and data 
+
+structures required to implement them.
+ Step 3d. Describe processing flow within each operation in 
+
+detail.
+COMP 354, Fall 2023 Component-Level Design 8
+
+
+
+Component-Level Design 
+ Step 4. Describe persistent data sources (databases 
+
+and files) and identify the classes required to manage 
+them.
+
+ Step 5. Develop and elaborate behavioral 
+representations for a class or component.
+
+ Step 6. Elaborate deployment diagrams to provide 
+additional implementation detail.
+
+ Step 7. Factor every component-level design 
+representation and always consider alternatives.
+
+COMP 354, Fall 2023 Component-Level Design 9
+
+
+
+Collaboration Diagram 
+with Message Detail
+
+COMP 354, Fall 2023 Component-Level Design 10
+
+
+
+Define Interfaces
+
+COMP 354, Fall 2023 Component-Level Design 11
+
+
+
+Describe Processing Flow
+
+COMP 354, Fall 2023 Component-Level Design 12
+
+
+
+Elaborate Behavioral Representations
+
+COMP 354, Fall 2023 Component-Level Design 13
+
+
+
+Component-Level Design 
+for WebApps
+ WebApp component is:
+
+ a well-defined cohesive function that manipulates 
+content or provides computational or data 
+processing for an end-user, or.
+
+ a cohesive package of content and functionality 
+that provides end-user with some required 
+capability.
+
+ Component-level design for WebApps often 
+incorporates elements of content design and 
+functional design.
+
+COMP 354, Fall 2023 Component-Level Design 14
+
+
+
+WebApp Content Design
+ Focuses on content objects and the manner in which they 
+
+may be packaged for presentation to a WebApp end-user
+ Consider a Web-based video surveillance capability within 
+
+SafeHomeAssured.com potential content components can 
+be defined for the video surveillance capability:
+1. the content objects that represent the space layout (the 
+
+floor plan) with additional icons representing the location 
+of sensors and video cameras; 
+
+2. the collection of thumbnail video captures (each an 
+separate data object), and 
+
+3. the streaming video window for a specific camera.
+ Each of these components can be separately named and 
+
+manipulated as a package.
+COMP 354, Fall 2023 Component-Level Design 15
+
+
+
+WebApp Functional Design
+ Modern Web applications deliver increasingly 
+
+sophisticated processing functions that:
+1. perform localized processing to generate content and 
+
+navigation capability in a dynamic fashion; 
+2. provide computation or data processing capability that is 
+
+appropriate for the WebApp’s business domain; 
+3. provide sophisticated database query and access, or.
+4. establish data interfaces with external corporate systems. 
+
+ To achieve these (and many other) capabilities, you 
+will design and construct WebApp functional 
+components that are identical in form to software 
+components for conventional software. 
+
+COMP 354, Fall 2023 Component-Level Design 16
+
+
+
+Component-Level Design for 
+Mobile Apps
+ Thin web-based client.
+
+ Interface layer only on device.
+ Business and data layers implemented 
+
+using web or cloud services.
+ Rich client.
+
+ All three layers (interface, business, data) 
+implemented on device.
+
+ Subject to mobile device limitations.
+
+COMP 354, Fall 2023 Component-Level Design 17
+
+
+
+Traditional 
+Component-Level Design 
+ Design of processing logic is governed 
+
+by the basic principles of algorithm 
+design and structured programming.
+
+ Design of data structures is defined by 
+the data model developed for the 
+system.
+
+ Design of interfaces is governed by the 
+collaborations that a component must 
+effect.
+
+COMP 354, Fall 2023 Component-Level Design 18
+
+
+
+Component-Based Software 
+Engineering (CBSE)
+The software team asks:
+ Are commercial off-the-shelf (COTS) components 
+
+available to implement the requirement?
+ Are internally-developed reusable components 
+
+available to implement the requirement?
+ Are the interfaces for available components 
+
+compatible within the architecture of the system to 
+be built?
+
+COMP 354, Fall 2023 Component-Level Design 19
+
+
+
+CBSE Benefits
+ Reduced lead time. It is faster to build complete 
+
+applications from a pool of existing components.
+ Greater return on investment (ROI). Sometimes savings 
+
+can be realized by purchasing components rather than 
+redeveloping the same functionality in-house.
+
+ Leveraged costs of developing components. Reusing 
+components in multiple applications allows the costs to be 
+spread over multiple projects.
+
+ Enhanced quality. Components are reused and tested in 
+many different applications.
+
+ Maintenance of component-based applications. With 
+careful engineering, it can be relatively easy to replace 
+obsolete components with new or enhanced components.
+
+COMP 354, Fall 2023 Component-Level Design 20
+
+
+
+CBSE Risks
+ Component selection risks. It is difficult to predict component 
+
+behavior for black-box components, or there may be poor mapping 
+of user requirements to the component architectural design.
+
+ Component integration risks. There is a lack of interoperability 
+standards between components; this often requires the creation of 
+“wrapper code” to interface components.
+
+ Quality risks. Unknown design assumptions made for the 
+components makes testing more difficult, and this can affect 
+system safety, performance, and reliability.
+
+ Security risks. A system can be used in unintended ways, and 
+system vulnerabilities can be caused by integrating components in 
+untested combinations.
+
+ System evolution risks. Updated components may be incompatible 
+with user requirements or contain additional undocumented 
+features.
+
+COMP 354, Fall 2023 Component-Level Design 21
+
+
+
+Component Refactoring
+ Most developers would agree that refactoring components 
+
+to improve quality is a good practice.
+ It is hard to convince management to expend resources 
+
+fixing components that are working correctly rather than 
+adding new functionality to them.
+
+ Changing software and failing to document the changes 
+can lead to increasing technical debt.
+
+ Reducing this technical debt often involves architectural 
+refactoring, which is generally perceived by developers as 
+both costly and risky.
+
+ Developers can make of tools to examine change histories 
+to identify the most cost effective refactoring 
+opportunities.
+
+COMP 354, Fall 2023 Component-Level Design 22
+
+
