@@ -623,7 +623,7 @@ Reading
 
 Example
 
-• Given pairs (X , f (X )) (the training set – the data points)
+• Given pairs (X , f (X )) (the training set - the data points)
 • Find a function f that fits the training set well
 • So that given a new X , you can predict its f (X ) value
 
@@ -1292,8 +1292,8 @@ Motivation
 
 Intelligent Systems for Investigative Journalism
 Organize large, unstructured document collections:
-• Enron email dataset – ca. 500,000 emails from management
-• Wikileaks – often releases millions of documents
+• Enron email dataset - ca. 500,000 emails from management
+• Wikileaks - often releases millions of documents
 
 • Guantanamo Bay Files, TPP Agreements, CIA Documents, German BND-NSA
 Inquiry, . . .
@@ -3385,7 +3385,7 @@ Reading
 
 Learning Curve
 
-Copyright 2007–2019, scikit-learn developers (BSD License), https://scikit- learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
+Copyright 2007-2019, scikit-learn developers (BSD License), https://scikit- learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
 
 Plot evaluation metric vs. size of training set
 
@@ -3742,7 +3742,7 @@ k-fold Cross-Validation
 
 Balancing Data Use and Model Validation
 
-• Maximizes data use—every data point serves in both training (k − 1 times) and
+• Maximizes data use-every data point serves in both training (k − 1 times) and
 testing (exactly once)
 
 • Reduces risk of model overfitting by validating against multiple data subsets

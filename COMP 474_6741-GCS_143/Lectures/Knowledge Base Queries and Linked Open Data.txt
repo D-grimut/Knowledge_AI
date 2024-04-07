@@ -7448,7 +7448,7 @@ References II
 Frey.
 The New DBpedia Release Cycle: Increasing Agility and Efficiency
 in Knowledge Extraction Workflows.
-In Semantic Systems. In the Era of Knowledge Graphs, pages 1–18,
+In Semantic Systems. In the Era of Knowledge Graphs, pages 1-18,
 Cham, 2020. Springer International Publishing.
 https://link.springer.com/chapter/10.1007/978-3-030-59833-4_1.
 

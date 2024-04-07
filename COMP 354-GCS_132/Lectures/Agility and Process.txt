@@ -113,7 +113,7 @@ primary goal.
 “sustainable,” enabling them to work effectively for 
 long periods of time.
 
- An agile team is a “self-organizing team”— that can 
+ An agile team is a “self-organizing team”- that can 
 be trusted to develop well-structured architectures 
 that lead to solid designs and customer satisfaction.
 

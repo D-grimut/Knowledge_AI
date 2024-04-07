@@ -65,21 +65,21 @@ Deployment and
 
 Maintenance  
 
-Understand the Problem –
+Understand the Problem -
 
 Analyze and Communicate 
 
-Plan a Solution – Modelling 
+Plan a Solution - Modelling 
 
 and Software Designing
 
-Carry out the Plan – Develop 
+Carry out the Plan - Develop 
 
 and Generate Programs/Code
 
 Examine Results for 
 
-Accuracy – Test, 
+Accuracy - Test, 
 
 Deploy and Quality 
 
@@ -101,21 +101,21 @@ Deployment and
 
 Maintenance  
 
-Understand the Problem –
+Understand the Problem -
 
 Analyze and Communicate 
 
-Plan a Solution – Modelling 
+Plan a Solution - Modelling 
 
 and Software Designing
 
-Carry out the Plan – Develop 
+Carry out the Plan - Develop 
 
 and Generate Programs/Code
 
 Examine Results for 
 
-Accuracy – Test, 
+Accuracy - Test, 
 
 Deploy and Quality 
 
@@ -143,11 +143,11 @@ before implementing it.
 Fundamental Quality aspects of a Design
 1. The design should be a readable, understandable guide
 
-1.1.For those who generate code – Developers
+1.1.For those who generate code - Developers
 
-1.2.For those who test code the software code – Testers
+1.2.For those who test code the software code - Testers
 
-1.3.For those who maintains the software – Support Team
+1.3.For those who maintains the software - Support Team
 
 2. The design should provide a complete picture of the software  
 
@@ -164,11 +164,11 @@ explicit requirements (e.g. Security Requirements →Authorization)
 
 Design Concepts
 
-1. Abstraction – Hiding the unnecessary details from the users. i.e. depict only relevant details.
+1. Abstraction - Hiding the unnecessary details from the users. i.e. depict only relevant details.
 
-1.1. Data Abstraction – Named collection of data describing the data objects.
+1.1. Data Abstraction - Named collection of data describing the data objects.
 
-1.2. Procedural Abstraction – Named sequence of instructions with specific functions.
+1.2. Procedural Abstraction - Named sequence of instructions with specific functions.
 
 2.     Modularization - Modularization is a technique to divide a software system into multiple 
 discrete and independent modules, which are expected to be capable of carrying out task(s) 
@@ -281,7 +281,7 @@ invoked and data to be passed to it.
 
 • E.g. Collaborative Classes are Component Level Design.
 
-• Diagrams – Class Diagrams, State Machine Diagram, Activity Diagrams.
+• Diagrams - Class Diagrams, State Machine Diagram, Activity Diagrams.
 
 
 
@@ -295,7 +295,7 @@ Interface Level Design
 interfaces in software or computerized devices, focusing on looks 
 or style.
 
-• UI design refers to graphical user interfaces and other forms—e.g., 
+• UI design refers to graphical user interfaces and other forms-e.g., 
 voice-controlled interfaces.
 
 • Designers aim to create interfaces which users find easy to use and 
@@ -307,14 +307,14 @@ Interface Level Design
 
 • Types of Interface Level Design :
 
-1. Information Design – can be represented in a hierarchical flow 
+1. Information Design - can be represented in a hierarchical flow 
 diagram
 
-2. Interaction Design – UML Diagrams
+2. Interaction Design - UML Diagrams
 
-3. Visual Design – Wireframes
+3. Visual Design - Wireframes
 
-4. User Experience Design –Actual UI/UX representation of the 
+4. User Experience Design -Actual UI/UX representation of the 
 Software.
 
 

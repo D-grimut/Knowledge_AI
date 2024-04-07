@@ -61,10 +61,10 @@ COMP 354, Fall 2023 Software Reviews 1
 
 Cost Impact of Software 
 Defects
- Error—a quality problem found before the software is 
+ Error-a quality problem found before the software is 
 
 released to end users.
- Defect—a quality problem found only after the 
+ Defect-a quality problem found only after the 
 
 software has been released to end-users.
  We make this distinction because errors and defects 
@@ -106,25 +106,25 @@ COMP 354, Fall 2023 Software Reviews 3
 
 
 Review Metrics 
- Preparation effort, Ep — the effort (in person-hours) required to review 
+ Preparation effort, Ep - the effort (in person-hours) required to review 
 
 a work product prior to the actual review meeting.
- Assessment effort, Ea — the effort (in person-hours) that is expending 
+ Assessment effort, Ea - the effort (in person-hours) that is expending 
 
 during the actual review.
- Rework effort, Er — the effort (in person-hours) that is dedicated to the 
+ Rework effort, Er - the effort (in person-hours) that is dedicated to the 
 
 correction of those errors uncovered during the review.
- Work product size, WPS — a measure of the size of the work product 
+ Work product size, WPS - a measure of the size of the work product 
 
 that has been reviewed (for example:  the number of UML models, or 
 the number of document pages, or the number of lines of code).
 
- Minor errors found, Errminor — the number of errors found that can be 
+ Minor errors found, Errminor - the number of errors found that can be 
 categorized as minor (requiring less than some pre-specified effort to 
 correct).
 
- Major errors found, Errmajor — the number of errors found that can be 
+ Major errors found, Errmajor - the number of errors found that can be 
 categorized as major (requiring more than some pre-specified effort to 
 correct).
 
@@ -195,8 +195,8 @@ testing require an average of 45 person-hours to
 find and correct. Using the averages noted, we 
 get:
 
-Effort saved per error  = Etesting – Ereviews
-= 45 – 6  =  39 person-hours/error
+Effort saved per error  = Etesting - Ereviews
+= 45 - 6  =  39 person-hours/error
 
  Since 22 errors were found during the review of 
 the requirements model, a saving of about 858 
@@ -283,20 +283,20 @@ COMP 354, Fall 2023 Software Reviews 13
 
 
 Review Players
- Producer—the individual who has developed the work 
+ Producer-the individual who has developed the work 
 
 product.
- Review leader—evaluates the product for readiness, 
+ Review leader-evaluates the product for readiness, 
 
 generates copies of product materials, and distributes 
 them to two or three reviewers for advance 
 preparation and facilitates the meeting discussion.
 
- Reviewer(s)—expected to spend between one and 
+ Reviewer(s)-expected to spend between one and 
 two hours reviewing the product, making notes, and 
 otherwise becoming familiar with the work.
 
- Recorder—reviewer who records (in writing) all 
+ Recorder-reviewer who records (in writing) all 
 important issues raised during the review.
 
 COMP 354, Fall 2023 Software Reviews 14

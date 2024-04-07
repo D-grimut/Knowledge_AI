@@ -44,13 +44,13 @@ Reactive Risk Management
  Project team reacts to risks when they 
 
 occur.
- Mitigation—plan for additional resources 
+ Mitigation-plan for additional resources 
 
 in anticipation of fire fighting.
- Fix on failure—resource are found and 
+ Fix on failure-resource are found and 
 
 applied when the risk strikes.
- Crisis management—failure does not 
+ Crisis management-failure does not 
 
 respond to applied resources and 
 project is in jeopardy.

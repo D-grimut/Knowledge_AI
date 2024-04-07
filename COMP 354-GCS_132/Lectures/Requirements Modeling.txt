@@ -179,9 +179,9 @@ COMP 354, Fall 2023 Requirements Modeling 7
 
 
 What to Write About?
- The first two requirements engineering tasks—
+ The first two requirements engineering tasks-
 
-inception and elicitation—provide you with the 
+inception and elicitation-provide you with the 
 information you’ll need to begin writing use cases. 
 
  To begin developing a set of use cases, list the 
@@ -368,7 +368,7 @@ Defining Attributes
  Attributes describe a class that has been selected for 
 
 inclusion in the analysis model.
- It is the attributes that define the class—that clarify 
+ It is the attributes that define the class-that clarify 
 
 what is meant by the class in the context of the 
 problem space.
@@ -497,7 +497,7 @@ events cause transitions from object to object.
  Once events have been identified by examining a 
 
 use case, the modeler creates a sequence 
-diagram—a representation of how events cause 
+diagram-a representation of how events cause 
 flow from one object to another as a function of 
 time. 
 

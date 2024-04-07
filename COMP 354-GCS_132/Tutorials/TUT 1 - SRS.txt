@@ -59,11 +59,11 @@ In this course, we have three assignments and one course project.
 Three Assignments: Write reports for these three assignments and implement 
 them in your final project.
 
-1. Assignment 1 – Software Requirements Specifications (SRS)
+1. Assignment 1 - Software Requirements Specifications (SRS)
 
-2. Assignment 2 – Software Design
+2. Assignment 2 - Software Design
 
-3. Assignment 3 – Quality Control
+3. Assignment 3 - Quality Control
 
 Course Project: In a Team (6 members) Submit a Project Report and 
 Develop the project which will be evaluated with a 15-20 mins Project Demo.
@@ -110,13 +110,13 @@ Assignment 1: Software Requirements Specification
 
 Essence of Software Engineering Practice
 
-1. Understand the Problem – Analyze and Communicate
+1. Understand the Problem - Analyze and Communicate
 
-2. Plan a Solution – Modelling and Software Design
+2. Plan a Solution - Modelling and Software Design
 
-3. Carry out the Plan – Develop and Generate Programs/Code
+3. Carry out the Plan - Develop and Generate Programs/Code
 
-4. Examine Results for Accuracy – Test, Deploy and Quality Assurance
+4. Examine Results for Accuracy - Test, Deploy and Quality Assurance
 
 
 
@@ -150,21 +150,21 @@ Deployment and
 
 Maintenance  
 
-Understand the Problem –
+Understand the Problem -
 
 Analyze and Communicate 
 
-Plan a Solution – Modelling 
+Plan a Solution - Modelling 
 
 and Software Designing
 
-Carry out the Plan – Develop 
+Carry out the Plan - Develop 
 
 and Generate Programs/Code
 
 Examine Results for 
 
-Accuracy – Test, 
+Accuracy - Test, 
 
 Deploy and Quality 
 
@@ -186,21 +186,21 @@ Deployment and
 
 Maintenance  
 
-Understand the Problem –
+Understand the Problem -
 
 Analyze and Communicate 
 
-Plan a Solution – Modelling 
+Plan a Solution - Modelling 
 
 and Software Designing
 
-Carry out the Plan – Develop 
+Carry out the Plan - Develop 
 
 and Generate Programs/Code
 
 Examine Results for 
 
-Accuracy – Test, 
+Accuracy - Test, 
 
 Deploy and Quality 
 
@@ -269,7 +269,7 @@ Interface, Development, etc.
 
 Example: Electronic Tool Rental System
 
-• Objective –
+• Objective -
 
 Design an Electronic Tool Rental System for the customers who 
 wants to rent tools and equipment such as drills & drivers, saws, 
@@ -302,7 +302,7 @@ Stakeholders ?
 
 Resources
 
-CSPS Vision (uhcl.edu) – A requirement specification document called 
+CSPS Vision (uhcl.edu) - A requirement specification document called 
 Vision Document for Reference.
 
 https://www.perforce.com/blog/alm/how-write-software-requirements-

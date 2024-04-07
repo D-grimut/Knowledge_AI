@@ -176,7 +176,7 @@ Upon completing this task, you should have a deeper understanding of how to repr
 using the FOAF vocabulary. This exercise has not only reinforced your skills in RDF and Knowledge Graph construction but has also
 introduced you to the vital concept of semantic interoperability through standardized vocabularies.
 
-An important observation from this task is that the semantics—meaning the properties and relationships—are represented in triples, just as
+An important observation from this task is that the semantics-meaning the properties and relationships-are represented in triples, just as
 the data itself. This uniform structure facilitates the integration and querying of data across diverse sources.
 
 Interoperability, in this context, refers to the ability of different systems and applications to understand and use the data. Concretely, it

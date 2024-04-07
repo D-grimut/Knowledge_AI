@@ -130,7 +130,7 @@ operational environment.
 
  Support personnel should have access to a database 
 containing records of all defects that have already been 
-encountered—their characteristics, cause, and cure.
+encountered-their characteristics, cause, and cure.
 
 COMP 354, Fall 2023 Software Support 7
 

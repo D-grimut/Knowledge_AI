@@ -485,7 +485,7 @@ Please find all Persons mentioned in our documents
 
 What you need
 
-Requires Information Extraction (IE) – an example for a Text Mining task
+Requires Information Extraction (IE) - an example for a Text Mining task
 
 
 
@@ -568,7 +568,7 @@ Please find all Persons mentioned in our documents
 
 What you need
 
-Requires Information Extraction (IE) – an example for a Text Mining task
+Requires Information Extraction (IE) - an example for a Text Mining task
 
 
 
@@ -651,7 +651,7 @@ Please find all Persons mentioned in our documents
 
 What you need
 
-Requires Information Extraction (IE) – an example for a Text Mining task
+Requires Information Extraction (IE) - an example for a Text Mining task
 
 
 
@@ -5286,7 +5286,7 @@ Reading
 
 IBM Watson
 
-Watson is a type of question-answering (QA) system, first developed 2006–2011
+Watson is a type of question-answering (QA) system, first developed 2006-2011
 
 2011 Jeopardy! competition: 2,880 POWER7 threads and 16 terabytes of RAM
 
@@ -5898,8 +5898,8 @@ Many people think of the war as about states rights. You’re not wrong about th
 but it’s kind of misleading to say that the Civil War was a conflict between states’
 rights and federalism. So let’s try again. What’s the idea that has inspired so many
 people to go onto the battlefields of Gettysburg and Antietam and Gettysberg and
-Petersburg and Fredericksburg? The American idea of the republic–a notion of
-limited government–is a great part of the history....”
+Petersburg and Fredericksburg? The American idea of the republic-a notion of
+limited government-is a great part of the history....”
 
 See https://openai.com/blog/better-language-models/#sample6
 
@@ -5985,8 +5985,8 @@ Many people think of the war as about states rights. You’re not wrong about th
 but it’s kind of misleading to say that the Civil War was a conflict between states’
 rights and federalism. So let’s try again. What’s the idea that has inspired so many
 people to go onto the battlefields of Gettysburg and Antietam and Gettysberg and
-Petersburg and Fredericksburg? The American idea of the republic–a notion of
-limited government–is a great part of the history....”
+Petersburg and Fredericksburg? The American idea of the republic-a notion of
+limited government-is a great part of the history....”
 
 See https://openai.com/blog/better-language-models/#sample6
 

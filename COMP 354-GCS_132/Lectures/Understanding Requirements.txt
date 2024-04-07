@@ -61,19 +61,19 @@ COMP 354, Fall 2023 Understanding Requirements 1
 
 
 Requirements Engineering 
- Negotiation—agree on the scope of a deliverable 
+ Negotiation-agree on the scope of a deliverable 
 
 system that is realistic for developers and customers.
- Specification—can be any or all of the following: 
+ Specification-can be any or all of the following: 
 
 written documents, graphical models, mathematical 
 models, usage scenarios, prototypes.
 
- Validation—Requirements engineering work products 
+ Validation-Requirements engineering work products 
 produced during requirements engineering are 
 assessed for quality and consistency.
 
- Requirements management – set of traceability 
+ Requirements management - set of traceability 
 activities to help the project team identify, control, 
 and track requirements and their changes to 
 requirements as the project proceeds.
@@ -83,7 +83,7 @@ COMP 354, Fall 2023 Understanding Requirements 2
 
 
 Non-functional Requirements
- Non-Functional Requirement (NFR) – quality 
+ Non-Functional Requirement (NFR) - quality 
 
 attribute, performance attribute, security attribute, 
 or general system constraint.
@@ -201,16 +201,16 @@ Analysis Model Elements
 informational, functional, and behavioral domains for 
 a computer-based system.
 
- Scenario-based elements – functional descriptions 
+ Scenario-based elements - functional descriptions 
 are express in the customers own words and user 
 stories and as interactions of actors with the system 
 expressed using UML use case diagrams.
 
- Class-based elements – collections of attributes and 
+ Class-based elements - collections of attributes and 
 behaviors implied by the user stories and expressed 
 using UML class diagrams (information domain).
 
- Behavioral elements – may be expressed using UML 
+ Behavioral elements - may be expressed using UML 
 state diagrams as inputs causing state changes.
 
 COMP 354, Fall 2023 Understanding Requirements 8

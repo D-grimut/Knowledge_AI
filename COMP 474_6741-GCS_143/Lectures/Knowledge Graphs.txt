@@ -1579,7 +1579,7 @@ Reading
 
 Today
 
-From 1950–2020. . .
+From 1950-2020. . .
 • Concepts have been around for a long time (Semantic Networks, Frames,
 
 Description Logic, . . . )

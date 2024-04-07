@@ -337,10 +337,10 @@ cases.
  The environment in which the project will be developed.
 
 UCP = (UUCW + UAW) × TCF × ECF
-UUCW – unadjusted sum of use case weights
-UAW – unadjusted sum of actor weight
-TCF – technical complexity 13 factors
-ECF – environment complexity 8 factors 
+UUCW - unadjusted sum of use case weights
+UAW - unadjusted sum of actor weight
+TCF - technical complexity 13 factors
+ECF - environment complexity 8 factors 
 
 COMP 354, Fall 2023 Viable Software Plan 17
 

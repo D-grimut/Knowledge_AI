@@ -67,7 +67,7 @@ COMP 354, Fall 2023 Software Quality Concepts 2
 
 
 
-Software Quality –
+Software Quality -
 Effective Process
  An effective software process establishes 
 
@@ -75,11 +75,11 @@ infrastructure that supports building a high-quality
 software product. 
 
  The management aspects of process create the 
-checks and balances that help avoid project chaos—a 
+checks and balances that help avoid project chaos-a 
 key contributor to poor quality.
 
  Software engineering practices allow the developer to 
-analyze the problem and design a solid solution—
+analyze the problem and design a solid solution-
 both critical to building high quality software. 
 
  Umbrella activities such as change management and 
@@ -90,7 +90,7 @@ COMP 354, Fall 2023 Software Quality Concepts 3
 
 
 
-Software Quality –
+Software Quality -
 Useful Product
  A useful product delivers the content, functions, 
 
@@ -111,7 +111,7 @@ COMP 354, Fall 2023 Software Quality Concepts 4
 
 
 
-Software Quality –
+Software Quality -
 Adding Value
  By adding value for both the producer and user 
 
@@ -142,7 +142,7 @@ the problem to be solved and be capable of creating
 a quality design the conforms to the problem 
 requirements.
 
- Project management – project plan includes explicit 
+ Project management - project plan includes explicit 
 techniques for quality and change management.
  Use estimation to verify that delivery dates are achievable.
  Schedule is understood and team avoids taking shortcuts.

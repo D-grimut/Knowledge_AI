@@ -518,7 +518,7 @@ COMP 354, Fall 2023 Software Component Testing 27
 
 
 
-Black Box – Interface Testing
+Black Box - Interface Testing
  Interface testing is used to check that a program 
 
 component accepts information passed to it in the 
@@ -540,7 +540,7 @@ COMP 354, Fall 2023 Software Component Testing 28
 
 
 
-Black Box – Boundary Value 
+Black Box - Boundary Value 
 Analysis (BVA)
  Boundary value analysis leads to a selection of test cases that 
 
@@ -586,7 +586,7 @@ COMP 354, Fall 2023 Software Component Testing 30
 
 
 
-OOT – Class Testing
+OOT - Class Testing
  Class testing for object-oriented (OO) software is the 
 
 equivalent of unit testing for conventional software.
@@ -607,7 +607,7 @@ COMP 354, Fall 2023 Software Component Testing 31
 
 
 
-OOT– Behavior Testing
+OOT- Behavior Testing
  A state diagram can be used to help derive a sequence 
 
 of tests that will exercise dynamic behavior of the class.

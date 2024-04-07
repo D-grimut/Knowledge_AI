@@ -223,16 +223,16 @@ COMP 354, Fall 2023 User Experience Design 9
 
 
 User Interface Design Models
- User model — a profile of all end users of the 
+ User model - a profile of all end users of the 
 
 system.
- Design model — a design realization of the user 
+ Design model - a design realization of the user 
 
 model.
- Mental model (system perception) — the user’s 
+ Mental model (system perception) - the user’s 
 
 mental image of what the interface is.
- Implementation model — the interface “look and 
+ Implementation model - the interface “look and 
 
 feel” coupled with supporting information that 
 describe interface syntax and semantics.
@@ -368,7 +368,7 @@ the user does the work?
  What specific problem domain objects will the 
 
 user manipulate as work is performed?
- What is the sequence of work tasks—the 
+ What is the sequence of work tasks-the 
 
 workflow?
  What is the hierarchy of tasks?

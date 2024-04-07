@@ -63,18 +63,18 @@ COMP 354, Fall 2023 Design Concepts 1
 
 
 Software Engineering Design
- Data/Class design – transforms analysis classes 
+ Data/Class design - transforms analysis classes 
 
 into implementation classes and data structures.
- Architectural design – defines relationships 
+ Architectural design - defines relationships 
 
 among the major software structural elements.
- Interface design – defines how software 
+ Interface design - defines how software 
 
 elements, hardware elements, and end-users 
 communicate.
 
- Component-level design – transforms structural 
+ Component-level design - transforms structural 
 elements into procedural descriptions of software 
 components.
 
@@ -136,7 +136,7 @@ COMP 354, Fall 2023 Design Concepts 5
 
 Common Design Characteristics
 Each new software design methodology 
-introduces unique heuristics and notions – yet 
+introduces unique heuristics and notions - yet 
 they each contain:
 1. A mechanism for the translating the 
 
@@ -153,7 +153,7 @@ COMP 354, Fall 2023 Design Concepts 6
 
 
 Design Concepts 
- Abstraction – data (named collection of data describing 
+ Abstraction - data (named collection of data describing 
 
 data object), procedural (named sequence of 
 instructions with specific and limited function).
@@ -169,7 +169,7 @@ context.
  Separation of concerns - any complex problem can be 
 more easily handled if it is subdivided into pieces.
 
- Modularity—compartmentalization of data and function.
+ Modularity-compartmentalization of data and function.
 COMP 354, Fall 2023 Design Concepts 7
 
 
@@ -190,13 +190,13 @@ any local data structure used by the component.
 components with aversion to excessive interaction with 
 other components (low coupling).
 
- Stepwise Refinement – incremental elaboration of detail 
+ Stepwise Refinement - incremental elaboration of detail 
 for all abstractions.
 
- Refactoring—a reorganization technique that simplifies the 
+ Refactoring-a reorganization technique that simplifies the 
 design without changing functionality.
 
- Design Classes—provide design detail that will enable 
+ Design Classes-provide design detail that will enable 
 analysis classes to be implemented.
 
 COMP 354, Fall 2023 Design Concepts 9
@@ -216,13 +216,13 @@ and methods) and sufficient (contains only
 those methods needed to achieve class 
 intent).
 
- Primitiveness – each class method focuses on 
+ Primitiveness - each class method focuses on 
 providing one service.
 
- High cohesion – small, focused, single-
+ High cohesion - small, focused, single-
 minded classes.
 
- Low coupling – class collaboration kept to 
+ Low coupling - class collaboration kept to 
 minimum.
 
 COMP 354, Fall 2023 Design Concepts 11
@@ -238,7 +238,7 @@ decisions.
 
 controlled interfaces.
  Discourages the use of global data.
- Leads to encapsulation—an attribute of high 
+ Leads to encapsulation-an attribute of high 
 
 quality design.
  Results in higher quality software.
@@ -317,7 +317,7 @@ COMP 354, Fall 2023 Design Concepts 16
 
 
 Data Design Elements
- Data model – data objects and database architectures.
+ Data model - data objects and database architectures.
 
  Examines data objects independently of processing.
  Focuses attention on the data domain.

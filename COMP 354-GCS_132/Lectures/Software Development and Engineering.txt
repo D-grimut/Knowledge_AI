@@ -330,19 +330,19 @@ involved with the project.
 
 
 General Principles
-1. The Reason It All Exists – provide value to users.
-2. KISS (Keep It Simple, Stupid!) – design simple 
+1. The Reason It All Exists - provide value to users.
+2. KISS (Keep It Simple, Stupid!) - design simple 
 
 as it can be.
-3. Maintain the Vision – clear vision is essential.
+3. Maintain the Vision - clear vision is essential.
 4. What You Produce, Others Will Consume.
 5. Be Open to the Future - do not design yourself 
 
 into a corner.
-6. Plan Ahead for Reuse – reduces cost and 
+6. Plan Ahead for Reuse - reduces cost and 
 
 increases value.
-7. Think! – placing thought before action produce 
+7. Think! - placing thought before action produce 
 
 results.
 17COMP 354, Fall 2023 Software Engineering

@@ -83,7 +83,7 @@ COMP 354, Fall 2023 Architectural Design 2
 Architectural Descriptions
  The I E E E Computer Society has proposed I E E E-Std-42010-
 
-2011, Systems and Software Engineering – Architecture 
+2011, Systems and Software Engineering - Architecture 
 Description.
  Describes the use of architecture viewpoints, architecture frameworks, 
 
@@ -253,21 +253,21 @@ COMP 354, Fall 2023 Architectural Design 14
 
 
 Architectural Considerations
- Economy – software is uncluttered and relies on 
+ Economy - software is uncluttered and relies on 
 
 abstraction to reduce unnecessary detail. 
- Visibility – Architectural decisions and their 
+ Visibility - Architectural decisions and their 
 
 justifications should be obvious to software engineers 
 who review.
 
- Spacing – Separation of concerns in a design without 
+ Spacing - Separation of concerns in a design without 
 introducing hidden dependencies.
 
- Symmetry – Architectural symmetry implies that a 
+ Symmetry - Architectural symmetry implies that a 
 system is consistent and balanced in its attributes.
 
- Emergence – Emergent, self-organized behavior and 
+ Emergence - Emergent, self-organized behavior and 
 control are key to creating scalable, efficient, and 
 economic software architectures.
 

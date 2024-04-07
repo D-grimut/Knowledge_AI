@@ -338,7 +338,7 @@ COMP 354, Fall 2023 Software Metrics and Analytics 17
 Process Measurement
  We measure the efficacy of a software process 
 
-indirectly – by deriving metrics based on the 
+indirectly - by deriving metrics based on the 
 outcomes that can be derived from the process:
  measures of errors uncovered before release of the 
 

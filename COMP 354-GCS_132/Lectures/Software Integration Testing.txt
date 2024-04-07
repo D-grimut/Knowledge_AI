@@ -222,7 +222,7 @@ COMP 354, Fall 2023 Software Integration Testing 10
 Smoke Testing Integration
  Software components that have been translated into 
 
-code are integrated into a build. – that includes all 
+code are integrated into a build. - that includes all 
 data files, libraries, reusable modules, and 
 components required to implement one or more 
 product functions.
@@ -335,7 +335,7 @@ COMP 354, Fall 2023 Software Integration Testing 15
 
 
 
-OO Testing –
+OO Testing -
 Fault-Based Test Case Design
  The object of fault-based testing is to design tests 
 
@@ -367,7 +367,7 @@ faults in operation calls or message connections:
  incorrect invocation
 
  Integration testing applies to attributes and 
-operations – class behaviors are defined by the 
+operations - class behaviors are defined by the 
 attributes.
 
  Focus of integration testing is to determine 
@@ -378,7 +378,7 @@ COMP 354, Fall 2023 Software Integration Testing 17
 
 
 
-OO Testing –
+OO Testing -
 Fault-Based Test Case Design
  Scenario-based testing uncovers errors that occur when any 
 
@@ -411,7 +411,7 @@ COMP 354, Fall 2023 Software Integration Testing 19
 
 
 
-OO Testing –
+OO Testing -
 Random Test Case Design
  For each client class, use the list of class operations to generate 
 
@@ -436,7 +436,7 @@ COMP 354, Fall 2023 Software Integration Testing 20
 
 
 
-OO Testing – Scenario-Based 
+OO Testing - Scenario-Based 
 Test Case Design
  Scenario-based testing uncovers errors that occur when any 
 

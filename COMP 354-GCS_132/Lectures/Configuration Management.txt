@@ -376,16 +376,16 @@ be transmitted to client-side browsers.
 
  The publishing subsystem uses a series of templates for each 
 type:
- Static elements—text, graphics, media, and scripts that require no 
+ Static elements-text, graphics, media, and scripts that require no 
 
 further processing are transmitted directly to the client-side.
- Publication services—function calls to specific retrieval and 
+ Publication services-function calls to specific retrieval and 
 
 formatting services that personalize content (using predefined 
 rules), perform data conversion, and build appropriate navigation 
 links.
 
- External services—provide access to external corporate information 
+ External services-provide access to external corporate information 
 infrastructure such as enterprise data or “back-room” applications.
 
 COMP 354, Fall 2023 Configuration Management 21

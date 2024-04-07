@@ -238,11 +238,11 @@ Quality Control
 
 3. Issues
 
-1. Issue – Reviewed By, Severity Level, Results
+1. Issue - Reviewed By, Severity Level, Results
 
-2. Review Metrics – Preparation, Assessment, Rework
+2. Review Metrics - Preparation, Assessment, Rework
 
-3. Review Outcome – Vote, How, What 
+3. Review Outcome - Vote, How, What 
 
 
 

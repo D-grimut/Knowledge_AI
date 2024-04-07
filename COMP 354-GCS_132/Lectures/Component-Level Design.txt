@@ -116,7 +116,7 @@ elaborated as part of the component-level model.
 communication and collaboration (as well as helping 
 us to achieve the OCP).
 
- Dependencies and Inheritance – For readability, it is 
+ Dependencies and Inheritance - For readability, it is 
 a good idea to model dependencies from left to right 
 and inheritance from bottom (derived classes) to top 
 (base classes).
@@ -163,7 +163,7 @@ another.
  Content - occurs when one component “surreptitiously 
 
 modifies data that is internal to another component”.
- Control – occurs when control flags a passed to components 
+ Control - occurs when control flags a passed to components 
 
 to requests alternate behaviors when invoked.
  External - occurs when a component communicates or 

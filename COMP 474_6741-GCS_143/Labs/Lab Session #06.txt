@@ -157,7 +157,7 @@ https://scikit-learn.org/stable/modules/feature_extraction.html#tfidf-term-weigh
 
 
 To get some more data into your program, we'll use one of the datasets that come with scikit-learn: The 20newsgroups dataset. You
-probably don't know about these newsgroups – that's ok, they are even older than the Web: they come from Usenet, which dates back to
+probably don't know about these newsgroups - that's ok, they are even older than the Web: they come from Usenet, which dates back to
 1979. This dataset is often used for various natural language processing (NLP) experiments. Here's an example post, from the newsgroup
 comp.sys.mac.hardware:
 

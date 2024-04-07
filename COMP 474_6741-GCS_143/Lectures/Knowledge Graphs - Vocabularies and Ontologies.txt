@@ -1479,7 +1479,7 @@ Classes
 • The members of a class are known as instances of the class
 • An instance can be member of more than one class
 
-What is a knowledge graph – Pokémon edition: https://pieterheyvaert.com/blog/2019/12/27/kg-pkmn/
+What is a knowledge graph - Pokémon edition: https://pieterheyvaert.com/blog/2019/12/27/kg-pkmn/
 
 Defining Classes
 We define that an URI in a triple is a class using . . . a triple!
@@ -2262,7 +2262,7 @@ be in any format)
 rdfs:isDefinedBy a property typically used to refer to a vocabulary (RDF Schema)
 defining the subject IRI
 
-There are also some datastructures (bag, list etc.) – read more before using!
+There are also some datastructures (bag, list etc.) - read more before using!
 
 Copyright 2014 by Manning Publications Co., [WZRH14]
 

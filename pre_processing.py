@@ -38,7 +38,7 @@ class FileParser:
                     text_content = self.extract_text(file_path)
                     new_file_path = file_name + ".txt"
 
-                    with open(new_file_path, 'w') as f:
+                    with open(new_file_path, 'w', encoding="utf8") as f:
                         f.write(text_content)
                     
                     os.remove(file_path)

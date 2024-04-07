@@ -939,7 +939,7 @@ Reading
 Bot Design Process
 
 User Stories
-• Develop pairs of user questions – expected answers
+• Develop pairs of user questions - expected answers
 • Generalize multiple stories with the same theme
 
 Development
@@ -3369,7 +3369,7 @@ Reading
 
 IBM Watson
 
-Watson is a type of question-answering (QA) system, first developed 2006–2011
+Watson is a type of question-answering (QA) system, first developed 2006-2011
 
 2011 Jeopardy! competition: 2,880 POWER7 threads and 16 terabytes of RAM
 
@@ -3599,7 +3599,7 @@ References
 Frey.
 The New DBpedia Release Cycle: Increasing Agility and Efficiency
 in Knowledge Extraction Workflows.
-In Semantic Systems. In the Era of Knowledge Graphs, pages 1–18,
+In Semantic Systems. In the Era of Knowledge Graphs, pages 1-18,
 Cham, 2020. Springer International Publishing.
 https://link.springer.com/chapter/10.1007/978-3-030-59833-4_1.
 

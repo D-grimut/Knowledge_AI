@@ -786,7 +786,7 @@ How do we compute the length of a vector?
 
 • A vector can be (length-) normalized by dividing each of its components by its
 
-length – here we use the L2 norm: ||x ||2 =
+length - here we use the L2 norm: ||x ||2 =
 √∑
 
 i x2
@@ -2877,7 +2877,7 @@ Each document is now represented as a real-valued vector of tf-idf weights ∈ R
 • Very high-dimensional: tens of millions of dimensions when you apply this to
 
 web search engines
-• Each vector is very sparse – most entries are zero.
+• Each vector is very sparse - most entries are zero.
 
 
 

@@ -40,18 +40,18 @@ COMP 354, Fall 2023 Project Management Concepts
 
 
 
-Management Spectrum –
+Management Spectrum -
 Four P’s
- People — the most important element 
+ People - the most important element 
 
 of a successful project.
- Product — the software to be built.
- Process — the set of framework 
+ Product - the software to be built.
+ Process - the set of framework 
 
 activities and software engineering 
 tasks to get the job done.
 
- Project — all work required to make the 
+ Project - all work required to make the 
 product a reality.
 
 COMP 354, Fall 2023 Project Management Concepts 1

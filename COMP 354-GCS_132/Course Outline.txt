@@ -84,7 +84,7 @@ The following courses must be completed previously: COMP 352; ENCS 282.
 
 
 
-COMP 354 (Introduction to Software Engineering), Fall 2023 — Course Outline  Page 2 
+COMP 354 (Introduction to Software Engineering), Fall 2023 - Course Outline  Page 2 
 
  
 
@@ -138,20 +138,20 @@ control, the content and/or evaluation scheme in this course is subject to chang
 
 
 
-COMP 354 (Introduction to Software Engineering), Fall 2023 — Course Outline  Page 3 
+COMP 354 (Introduction to Software Engineering), Fall 2023 - Course Outline  Page 3 
 
  
 
 Tentative Course Schedule 
          WEEK                                         TOPIC                                        MATERIAL 
             1             Introduction to Software Development                        Chapter 1     
-          2–3             The Software Process                                                Chapters 2–5  
-          3–4             Software Requirements                                                Chapters 7–8  
-          4–6            Software Architecture and Design                              Chapters 9–14 
-          6–7             Software Quality Assurance                                          Chapters 15–17 
-          8–9         Software Testing                                                            Chapters 19–21 
+          2-3             The Software Process                                                Chapters 2-5  
+          3-4             Software Requirements                                                Chapters 7-8  
+          4-6            Software Architecture and Design                              Chapters 9-14 
+          6-7             Software Quality Assurance                                          Chapters 15-17 
+          8-9         Software Testing                                                            Chapters 19-21 
            10             Software Configuration Management                         Chapter 22 
-        11–12         Software Project and Risk Management                   Chapters 24–26 
+        11-12         Software Project and Risk Management                   Chapters 24-26 
 
 Details on assessment tools:  
 During this Fall 2023 term, this course will be delivered in person: all components and 
@@ -170,7 +170,7 @@ lab times.
 
 Other information 
 Students should be aware of the University's Academic Code of Conduct as specified in 
-Section 17.10 in the 2023–2024 Undergraduate Calendar, especially the parts 
+Section 17.10 in the 2023-2024 Undergraduate Calendar, especially the parts 
 concerning cheating, plagiarism, and the possible consequence of violating this code 
 (available at  
 https://www.concordia.ca/academics/undergraduate/calendar/current/section-17-
@@ -191,7 +191,7 @@ the following.
 
 
 
-COMP 354 (Introduction to Software Engineering), Fall 2023 — Course Outline  Page 4 
+COMP 354 (Introduction to Software Engineering), Fall 2023 - Course Outline  Page 4 
 
  
 

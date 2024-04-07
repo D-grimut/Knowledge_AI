@@ -109,7 +109,7 @@ Assignment 1:  Report
 
 • Follow the template or example presented during the LAB session. 
 
-• Templates and Examples are uploaded on the Moodle course page –
+• Templates and Examples are uploaded on the Moodle course page -
 the “Report Format and Samples” section.
 
 • The following slides include some sections of the Report and what is 
@@ -144,21 +144,21 @@ some goals. For that we use exceptional case to represent the steps when
 something is going in a negative way how the system must handle and 
 respond to it.
 
-e.g. Scenario 1- User log-in the system – Positive Scenario
+e.g. Scenario 1- User log-in the system - Positive Scenario
 
-What if the user has forgotten password to login within the system ? – 
+What if the user has forgotten password to login within the system ? - 
 Negative Scenario of User login.
 
 
 
 Use- Case Format
 
-1. Use-Case ID – Unique Identifier for each use-case. e.g. UC-01
+1. Use-Case ID - Unique Identifier for each use-case. e.g. UC-01
 
-2. Use-Case – Title of the use-case 
+2. Use-Case - Title of the use-case 
  e.g. Use-Case : Make a Reservation
 
-3. Description – Give a brief on what is the use-case about ? When does it 
+3. Description - Give a brief on what is the use-case about ? When does it 
            occurs ? What are the constraints ? 
 
  Note: Keep description very short as 1-2 sentences.
@@ -171,7 +171,7 @@ reserve more than one tool a customer needs to make a separate reservation reque
 
 Use- Case Format
 
-4. Level – User Goal Level/System Level  ?
+4. Level - User Goal Level/System Level  ?
 
  Level specifies with whom is the use-case related to it. Is it the use-
 case which will be performed by the user or by the system. Most of the use-
@@ -179,22 +179,22 @@ cases are User Goal Level.
 
 5. Primary Actor- User primarily involved with the use-case.
 
- e.g. Primary Actor – Customer
+ e.g. Primary Actor - Customer
 
-6. Supporting Actor/s – Users passively involved with the use-case.
+6. Supporting Actor/s - Users passively involved with the use-case.
 
- e.g. Supporting Actor – Branch Employee.
+ e.g. Supporting Actor - Branch Employee.
 
 
 
 Use- Case Format
 
-7. Stakeholders and Interests – Who are directly and indirectly involved with 
+7. Stakeholders and Interests - Who are directly and indirectly involved with 
     the use-case and describe what is their involvement.
 
  
 
-e.g. Stakeholders and Interests – 
+e.g. Stakeholders and Interests - 
 
 i. Customer - Reserves a tool or equipment according to their need. 
 
@@ -214,7 +214,7 @@ v. Tester - Tests the developed scenario and suggests any improvements required
 
 Use- Case Format
 
-8. Pre-conditions – What are the requirements in-order to implement the 
+8. Pre-conditions - What are the requirements in-order to implement the 
 use-case ?
 
 E.g. Pre-Conditions. 
@@ -226,7 +226,7 @@ E.g. Pre-Conditions.
 3. Customers must make a reservation request as early as next day and upto 30 days in 
 advance
 
-9. Post-conditions – The result of the use-case.
+9. Post-conditions - The result of the use-case.
 i. Success end condition
 
 ii. Failure end condition
@@ -235,15 +235,15 @@ ii. Failure end condition
 
 Use- Case Format
 
-10. Main-Scenario – The actual steps the user will be performing with 
+10. Main-Scenario - The actual steps the user will be performing with 
 the system.
 
-11. Extensions – Mention the exception cases(negative scenario) if any 
+11. Extensions - Mention the exception cases(negative scenario) if any 
 for a particular use-case.
 
 Note: Mention at-most 3 extensions and not more than that.
 
-12. Special Requirements – How the use-case must be for the users.
+12. Special Requirements - How the use-case must be for the users.
 
 i.e. Specify the quality requirements against each use-case.
 
@@ -301,13 +301,13 @@ Use draw.io which is the best tool to develop all the diagrams. A total of 3
 diagrams are expected in your Assignment 1 Report based on the priorities 
 mentioned below.
 
-1. Use-Case Diagram – Most Important - Must-have in your Assignment 1. 
+1. Use-Case Diagram - Most Important - Must-have in your Assignment 1. 
 
-2. Sequence Diagram – Should-have in your Assignment 1.
+2. Sequence Diagram - Should-have in your Assignment 1.
 
-3. Activity Diagram (optional) – Could-have in your Assignment 1.
+3. Activity Diagram (optional) - Could-have in your Assignment 1.
 
-4. State-Machine Diagram (optional) – Could-have in your Assignment 1.
+4. State-Machine Diagram (optional) - Could-have in your Assignment 1.
 
 
 
@@ -467,9 +467,9 @@ Reason for creating/changing the document.
 • Contribution Log
 Describe the contribution of each member of the team in brief.
 
-e.g Jim – Project Description.
+e.g Jim - Project Description.
 
-Kate – Specific Requirements
+Kate - Specific Requirements
 
 1. Functional
 
