@@ -5,17 +5,6 @@ from spacy.language import Language
 
 nlp = spacy.load("en_core_web_sm")
 
-@Language.component("filter_links_component")
-def filter_links(doc):
-
-    filtered_entities = []
-
-    for ent in doc.ents:
-        if (ent._.label_ not in ["DATE", "TIME", "PERCENT", "MONEY", "QUANTITY", "ORDINAL", "CARDINAL"] and ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
-            filtered_entities.append(ent)
-    
-    return doc
-
 def platform_extension():
     if platform.system() == 'Windows':
         return "\\"
@@ -33,29 +22,50 @@ def get_files(dir):
 
     return file_list
 
-def tokenize_files(file_list):
+def post_process(doc):
+    file_named_entities = {}
+
+    for ent in doc.ents:
+        if (ent.label_ not in ["DATE", "TIME", "PERCENT", "MONEY", "QUANTITY", "ORDINAL", "CARDINAL"] and ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
+
+            if ent.text in file_named_entities and ent._.nerd_score <= file_named_entities[ent.text]["sim_score"]:
+                continue
+
+            file_named_entities[ent.text] = {"qid" :  ent._.kb_qid,
+                                           "url" : ent._.url_wikidata,
+                                           "sim_score" : ent._.nerd_score
+                                           }       
+    return file_named_entities
+
+def process_files(file_list):
+    filtered_entities = {}
+
     for file in file_list:
         # Open files in encoding UTF-8
         with open(file, 'r', encoding="utf8") as f:
+
+            file_name = os.path.basename(file)
             cont = f.read()
             # Doc to send
             doc = nlp(cont)
-            print(doc)
+            filtered_entities[file_name] = post_process(doc)
+    
+        return filtered_entities
 
 def main():
     
     # Import NLP and add fishing pipeline
-    
     nlp.add_pipe('entityfishing')
-    nlp.add_pipe('filter_links_component', name="filter_URI_links", after='entityfishing')
 
     # Get directory and get files
     curr_dir = os.getcwd()
     file_list = get_files(curr_dir)
 
     # Tokenize files
-    tokenize_files(file_list)
-
+    for file, ents in process_files(file_list).items():
+        print(file, "------------------------------------------------------------------\n")
+        for topic, vals in ents.items():
+            print(topic, " -- ", vals["url"])
 
 if __name__ == "__main__":
     main()
