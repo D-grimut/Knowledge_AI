@@ -62,6 +62,6 @@ To ensure that the program runs smoothly, please follow the instructions below:
   - The files will be created in the main directory and not the Query Ouputs folder
 
 - To make sure Spacy can be run, run the following commands in the terminal:
-  - pip install Spacy
+  - pip install spacy
   - python -m spacy download en_core_web_sm
   - pip install spacyfishing 
