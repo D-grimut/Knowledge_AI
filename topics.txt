@@ -1,3 +1,4 @@
+
 Course Outline.txt------------------------------------------------------------------
 ER -- https://www.wikidata.org/wiki/Q207375
 Moodle -- https://www.wikidata.org/wiki/Q190434
@@ -17,7 +18,7 @@ Personalization -- https://www.wikidata.org/wiki/Q1000371
 RDF -- https://www.wikidata.org/wiki/Q1367488
 OWL -- https://www.wikidata.org/wiki/Q994371
 Linked Open Data -- https://www.wikidata.org/wiki/Q515701
-LOD -- https://www.wikidata.org/wiki/Q1505570
+LOD -- https://www.wikidata.org/wiki/Q1821756
 ML -- https://www.wikidata.org/wiki/Q860654
 Intelligent Systems -- https://www.wikidata.org/wiki/Q150001
 Artificial Neural Networks -- https://www.wikidata.org/wiki/Q192776
@@ -26,6 +27,7 @@ tandem -- https://www.wikidata.org/wiki/Q1752317
 Active Learning -- https://www.wikidata.org/wiki/Q1542052
 Model Evaluation -- https://www.wikidata.org/wiki/Q1379672
 Concordia University -- https://www.wikidata.org/wiki/Q326342
+
 LAB 1 - SRS.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 Moodle -- https://www.wikidata.org/wiki/Q190434
@@ -34,22 +36,27 @@ Sequence Diagram -- https://www.wikidata.org/wiki/Q1391624
 Reason -- https://www.wikidata.org/wiki/Q1454090
 Slide -- https://www.wikidata.org/wiki/Q85801586
 UML Diagram -- https://www.wikidata.org/wiki/Q169411
+
 LAB 2 - Software Design.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 Text Editor -- https://www.wikidata.org/wiki/Q131212
 Slide -- https://www.wikidata.org/wiki/Q85801586
+
 LAB 3 - Quality Control.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 Original Design -- https://www.wikidata.org/wiki/Q211736
+
 Agility and Process.txt------------------------------------------------------------------
 Process 4 -- https://www.wikidata.org/wiki/Q674564
 Extreme Programming -- https://www.wikidata.org/wiki/Q209711
 Framework -- https://www.wikidata.org/wiki/Q271680
 DevOps -- https://www.wikidata.org/wiki/Q3025536
+
 Architectural Design.txt------------------------------------------------------------------
 IEEE Standard -- https://www.wikidata.org/wiki/Q5970491
 Tradeoff Analysis -- https://www.wikidata.org/wiki/Q638123
 Assess -- https://www.wikidata.org/wiki/Q1476755
+
 Component-Level Design.txt------------------------------------------------------------------
 Chapter 11 -- https://www.wikidata.org/wiki/Q1062835
 Liskov Substitution Principle -- https://www.wikidata.org/wiki/Q957386
@@ -63,6 +70,7 @@ WebApp -- https://www.wikidata.org/wiki/Q189210
 Mobile Apps -- https://www.wikidata.org/wiki/Q620615
 CBSE -- https://www.wikidata.org/wiki/Q3347350
 COTS -- https://www.wikidata.org/wiki/Q1115443
+
 Configuration Management.txt------------------------------------------------------------------
 CM -- https://www.wikidata.org/wiki/Q5066118
 SCM -- https://www.wikidata.org/wiki/Q189439
@@ -75,24 +83,29 @@ Convert -- https://www.wikidata.org/wiki/Q904756
 XML -- https://www.wikidata.org/wiki/Q2115
 Content Management System -- https://www.wikidata.org/wiki/Q131093
 Version Control -- https://www.wikidata.org/wiki/Q189439
+
 Design Concepts.txt------------------------------------------------------------------
 Chapter 9 -- https://www.wikidata.org/wiki/Q5073465
 Design Model -- https://www.wikidata.org/wiki/Q857102
 Stepwise Refinement -- https://www.wikidata.org/wiki/Q2167279
 UI -- https://www.wikidata.org/wiki/Q47146
 UML -- https://www.wikidata.org/wiki/Q169411
+
 Project Management Concepts.txt------------------------------------------------------------------
 Chapter 24 -- https://www.wikidata.org/wiki/Q261005
 Inspire -- https://www.wikidata.org/wiki/Q3359800
+
 Requirements Modeling.txt------------------------------------------------------------------
 UML -- https://www.wikidata.org/wiki/Q169411
 CRC -- https://www.wikidata.org/wiki/Q242915
 Sequence Diagram -- https://www.wikidata.org/wiki/Q1391624
 Sequence -- https://www.wikidata.org/wiki/Q3955681
 Swimlane -- https://www.wikidata.org/wiki/Q4050462
+
 Risk Management.txt------------------------------------------------------------------
 Chapter 26 -- https://www.wikidata.org/wiki/Q6789867
 LOC -- https://www.wikidata.org/wiki/Q131454
+
 Software Component Testing.txt------------------------------------------------------------------
 ITG -- https://www.wikidata.org/wiki/Q3063959
 Test Planning -- https://www.wikidata.org/wiki/Q364651
@@ -107,12 +120,14 @@ Interface -- https://www.wikidata.org/wiki/Q23808
 OO -- https://www.wikidata.org/wiki/Q1807761
 Valid -- https://www.wikidata.org/wiki/Q18757
 State Diagram -- https://www.wikidata.org/wiki/Q230885
+
 Software Development and Engineering.txt------------------------------------------------------------------
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
 Software -- https://www.wikidata.org/wiki/Q80993
 KISS -- https://www.wikidata.org/wiki/Q124179
 Reuse -- https://www.wikidata.org/wiki/Q846574
 AI -- https://www.wikidata.org/wiki/Q2494121
+
 Software Integration Testing.txt------------------------------------------------------------------
 Integration Testing -- https://www.wikidata.org/wiki/Q782466
 Breadth -- https://www.wikidata.org/wiki/Q36253
@@ -121,6 +136,7 @@ Time -- https://www.wikidata.org/wiki/Q43297
 Regression Testing -- https://www.wikidata.org/wiki/Q917415
 AI -- https://www.wikidata.org/wiki/Q2494121
 Collaboration Diagram -- https://www.wikidata.org/wiki/Q950859
+
 Software Metrics and Analytics.txt------------------------------------------------------------------
 Width -- https://www.wikidata.org/wiki/Q36253
 DIT -- https://www.wikidata.org/wiki/Q3098071
@@ -133,10 +149,11 @@ PAD -- https://www.wikidata.org/wiki/Q249083
 NOR -- https://www.wikidata.org/wiki/Q574946
 SMI -- https://www.wikidata.org/wiki/Q1487705
 Organizational Effectiveness -- https://www.wikidata.org/wiki/Q7102014
-LOC -- https://www.wikidata.org/wiki/Q131454
+LOC -- https://www.wikidata.org/wiki/Q942695
 KLOC -- https://www.wikidata.org/wiki/Q14682612
 FP -- https://www.wikidata.org/wiki/Q970152
 DRE -- https://www.wikidata.org/wiki/Q5206047
+
 Software Process Models.txt------------------------------------------------------------------
 Software Engineering
 
@@ -146,8 +163,10 @@ Quality Assurance -- https://www.wikidata.org/wiki/Q836575
 Configuration Management -- https://www.wikidata.org/wiki/Q1153495
 Process Model -- https://www.wikidata.org/wiki/Q27610560
 Tricky -- https://www.wikidata.org/wiki/Q313627
+
 Software Quality Concepts.txt------------------------------------------------------------------
 Umbrella -- https://www.wikidata.org/wiki/Q155447
+
 Software Reviews.txt------------------------------------------------------------------
 Software Engineering
 
@@ -159,6 +178,7 @@ FTR -- https://www.wikidata.org/wiki/Q22079375
 Focus -- https://www.wikidata.org/wiki/Q288918
 Producer -- https://www.wikidata.org/wiki/Q183945
 PME -- https://www.wikidata.org/wiki/Q622439
+
 Software Support.txt------------------------------------------------------------------
 Software Engineering
 
@@ -176,11 +196,13 @@ P3 -- https://www.wikidata.org/wiki/Q659696
 P6 -- https://www.wikidata.org/wiki/Q1364041
 Inventory Analysis -- https://www.wikidata.org/wiki/Q6059915
 Code Restructuring -- https://www.wikidata.org/wiki/Q116877
+
 Understanding Requirements.txt------------------------------------------------------------------
 Requirements -- https://www.wikidata.org/wiki/Q774228
 Non-Functional Requirement -- https://www.wikidata.org/wiki/Q3254666
 NFR -- https://www.wikidata.org/wiki/Q3454731
 UML -- https://www.wikidata.org/wiki/Q169411
+
 User Experience Design.txt------------------------------------------------------------------
 Usability Engineering -- https://www.wikidata.org/wiki/Q1642623
 UX -- https://www.wikidata.org/wiki/Q11248500
@@ -192,6 +214,7 @@ Prototype -- https://www.wikidata.org/wiki/Q746599
 Validate -- https://www.wikidata.org/wiki/Q3306762
 Response Time -- https://www.wikidata.org/wiki/Q578372
 jargon -- https://www.wikidata.org/wiki/Q17951
+
 Viable Software Plan.txt------------------------------------------------------------------
 Software Engineering
 
@@ -211,26 +234,31 @@ CAD -- https://www.wikidata.org/wiki/Q184793
 Miscommunication -- https://www.wikidata.org/wiki/Q104841107
 Customer -- https://www.wikidata.org/wiki/Q852835
 Gantt Chart -- https://www.wikidata.org/wiki/Q192847
+
 Final Project.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 Junit -- https://www.wikidata.org/wiki/Q847675
 Mockito -- https://www.wikidata.org/wiki/Q1941695
 MVC -- https://www.wikidata.org/wiki/Q1536057
+
 TUT 1 - SRS.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 TA -- https://www.wikidata.org/wiki/Q2609672
 Non-Functional Requirements
 	 -- https://www.wikidata.org/wiki/Q3254666
+
 TUT 2 - Software Design.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 SRS -- https://www.wikidata.org/wiki/Q334410
 Data Flow -- https://www.wikidata.org/wiki/Q1172416
+
 TUT 3 - Quality Control.txt------------------------------------------------------------------
 Adeli -- https://www.wikidata.org/wiki/Q4681927
 JAVA -- https://www.wikidata.org/wiki/Q1100132
 Preparations -- https://www.wikidata.org/wiki/Q7240618
 Severity Level -- https://www.wikidata.org/wiki/Q1425501
 Quality Control -- https://www.wikidata.org/wiki/Q55316128
+
 Lab Session #01.txt------------------------------------------------------------------
 TA -- https://www.wikidata.org/wiki/Q2609672
 Linux -- https://www.wikidata.org/wiki/Q388
@@ -239,6 +267,7 @@ Eliza -- https://www.wikidata.org/wiki/Q580318
 Python -- https://www.wikidata.org/wiki/Q28865
 GitHub -- https://www.wikidata.org/wiki/Q364
 Concordia -- https://www.wikidata.org/wiki/Q1913996
+
 Lab Session #02.txt------------------------------------------------------------------
 RDF -- https://www.wikidata.org/wiki/Q54872
 Turtle -- https://www.wikidata.org/wiki/Q223044
@@ -263,8 +292,9 @@ Concordia University -- https://www.wikidata.org/wiki/Q326342
 AI -- https://www.wikidata.org/wiki/Q2494121
 Montreal -- https://www.wikidata.org/wiki/Q340
 Advanced Analytics -- https://www.wikidata.org/wiki/Q485396
+
 Lab Session #03.txt------------------------------------------------------------------
-RDF -- https://www.wikidata.org/wiki/Q1751819
+RDF -- https://www.wikidata.org/wiki/Q54872
 Knowledge Graphs -- https://www.wikidata.org/wiki/Q324254
 RDF Schema -- https://www.wikidata.org/wiki/Q1751819
 RDFS -- https://www.wikidata.org/wiki/Q1751819
@@ -303,6 +333,7 @@ Siri -- https://www.wikidata.org/wiki/Q582159
 Alexa -- https://www.wikidata.org/wiki/Q230051
 Knowledge
 Graphs -- https://www.wikidata.org/wiki/Q324254
+
 Lab Session #04.txt------------------------------------------------------------------
 SPARQL -- https://www.wikidata.org/wiki/Q54871
 RDF -- https://www.wikidata.org/wiki/Q54872
@@ -338,6 +369,7 @@ Google -- https://www.wikidata.org/wiki/Q95
 LinkedIn -- https://www.wikidata.org/wiki/Q213660
 Netflix -- https://www.wikidata.org/wiki/Q907311
 Spotify -- https://www.wikidata.org/wiki/Q689141
+
 Lab Session #05.txt------------------------------------------------------------------
 DBpedia -- https://www.wikidata.org/wiki/Q465
 Canada -- https://www.wikidata.org/wiki/Q16
@@ -361,6 +393,7 @@ Linked Data -- https://www.wikidata.org/wiki/Q515701
 GitHub -- https://www.wikidata.org/wiki/Q364
 TA -- https://www.wikidata.org/wiki/Q2609672
 pandas -- https://www.wikidata.org/wiki/Q33602
+
 Lab Session #06.txt------------------------------------------------------------------
 ML -- https://www.wikidata.org/wiki/Q860654
 Matplotlib -- https://www.wikidata.org/wiki/Q2985668
@@ -383,6 +416,7 @@ kmeans -- https://www.wikidata.org/wiki/Q310401
 WCSS -- https://www.wikidata.org/wiki/Q7948104
 Principal Component Analysis -- https://www.wikidata.org/wiki/Q2873
 PCA -- https://www.wikidata.org/wiki/Q2873
+
 Intelligent Agents.txt------------------------------------------------------------------
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
 Concordia University -- https://www.wikidata.org/wiki/Q326342
@@ -455,6 +489,7 @@ Cole Howard -- https://www.wikidata.org/wiki/Q5142666
 Stuart Russell -- https://www.wikidata.org/wiki/Q3656334
 Peter Norvig -- https://www.wikidata.org/wiki/Q92832
 Prentice Hall -- https://www.wikidata.org/wiki/Q443253
+
 Intelligent Systems Introduction.txt------------------------------------------------------------------
 Knowledge Graphs -- https://www.wikidata.org/wiki/Q324254
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
@@ -506,6 +541,7 @@ GPT-2 -- https://www.wikidata.org/wiki/Q95726727
 GPT-3 -- https://www.wikidata.org/wiki/Q95726734
 API -- https://www.wikidata.org/wiki/Q165194
 Cole Howard -- https://www.wikidata.org/wiki/Q5142666
+
 Knowledge Base Queries and Linked Open Data.txt------------------------------------------------------------------
 LOD -- https://www.wikidata.org/wiki/Q843863
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
@@ -564,6 +600,7 @@ Linked Data -- https://www.wikidata.org/wiki/Q515701
 Frey -- https://www.wikidata.org/wiki/Q7326995
 Cham -- https://www.wikidata.org/wiki/Q383256
 Springer International Publishing -- https://www.wikidata.org/wiki/Q176916
+
 Knowledge Graphs - Vocabularies and Ontologies.txt------------------------------------------------------------------
 Dublin Core
 
@@ -601,6 +638,7 @@ Chapter 7 -- https://www.wikidata.org/wiki/Q4411666
 Schema.org -- https://www.wikidata.org/wiki/Q3475322
 Linked Data -- https://www.wikidata.org/wiki/Q515701
 Primer -- https://www.wikidata.org/wiki/Q16000421
+
 Knowledge Graphs.txt------------------------------------------------------------------
 RDF -- https://www.wikidata.org/wiki/Q54872
 DBpedia -- https://www.wikidata.org/wiki/Q465
@@ -661,6 +699,7 @@ Knowledge Graph -- https://www.wikidata.org/wiki/Q33002955
 LLM -- https://www.wikidata.org/wiki/Q754848
 GenAI -- https://www.wikidata.org/wiki/Q5530868
 Primer -- https://www.wikidata.org/wiki/Q16000421
+
 Machine Learning for Intelligent Systems.txt------------------------------------------------------------------
 Machine Learning -- https://www.wikidata.org/wiki/Q6723676
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
@@ -697,6 +736,7 @@ Underfitting -- https://www.wikidata.org/wiki/Q331309
 Cross-Validation -- https://www.wikidata.org/wiki/Q541014
 Chapter 7 -- https://www.wikidata.org/wiki/Q4411666
 James Pustejovsky -- https://www.wikidata.org/wiki/Q3161351
+
 Recommender Systems.txt------------------------------------------------------------------
 Software Engineering -- https://www.wikidata.org/wiki/Q80993
 Concordia University -- https://www.wikidata.org/wiki/Q5159001
@@ -715,7 +755,7 @@ Intuitively -- https://www.wikidata.org/wiki/Q189222
 Amazon -- https://www.wikidata.org/wiki/Q3884
 Netflix -- https://www.wikidata.org/wiki/Q907311
 AP -- https://www.wikidata.org/wiki/Q40469
-MAP -- https://www.wikidata.org/wiki/Q4863657
+MAP -- https://www.wikidata.org/wiki/Q6753731
 Likert -- https://www.wikidata.org/wiki/Q617473
 Compute -- https://www.wikidata.org/wiki/Q4036474
 DCG -- https://www.wikidata.org/wiki/Q1963535

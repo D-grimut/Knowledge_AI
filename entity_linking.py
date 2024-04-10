@@ -1,6 +1,8 @@
 import spacy
 import os
 import platform
+from rdflib import OWL, RDFS, XSD, URIRef, Namespace, Graph, Literal
+from rdflib.namespace import FOAF, RDF
 from spacy.language import Language
 
 nlp = spacy.load("en_core_web_sm")
@@ -52,6 +54,37 @@ def process_files(file_list):
     
     return filtered_entities
 
+def topics_graph(file_list):
+    # Create a graph
+    graph = Graph()
+
+    # Create new Namespace
+    unid = Namespace("http://uni.com/data/")
+    uni = Namespace("http://uni.com/schema#")
+    dbo = Namespace("http://dbpedia.org/ontology/")
+
+    # Bind Namespaces
+    graph.bind("unid", unid)
+    graph.bind("uni", uni)
+    graph.bind("dbo", dbo)
+
+    for file, ents in process_files(file_list).items():
+        file_nospace = file.replace(' ', '_')
+        graph.add((unid[file_nospace], RDF.type, uni.Topic))
+
+        for topic, vals in ents.items():
+            topic_nospace = topic.replace(' ', '_')
+            topic_nobs = topic_nospace.replace('\\', '%5C')
+
+            graph.add((unid[topic_nobs], uni.topicName, Literal(topic)))
+
+            graph.add((unid[topic_nobs], uni.linked_to, URIRef(vals["url"])))
+
+            # TODO: Add has_topic somehow
+
+    graph.serialize(destination="topics_turtle.ttl", format='turtle')
+    graph.serialize(destination="topics_ntriples.nt", format='nt')
+
 def main():
     
     # Import NLP and add fishing pipeline
@@ -61,16 +94,19 @@ def main():
     curr_dir = os.getcwd()
     file_list = get_files(curr_dir)
 
-    # Tokenize files  NAME OF FILE -> course
-    with open("topics.txt", 'w', newline='', encoding="utf8") as tf:
-        for file, ents in process_files(file_list).items():
-            tf.write(file)
-            tf.write("------------------------------------------------------------------\n")
-            for topic, vals in ents.items():
-                tf.write(topic)
-                tf.write(" -- ")
-                tf.write(vals["url"])
-                tf.write("\n")
+    topics_graph(file_list)
+
+    # Tokenize files  
+    # with open("topics.txt", 'w', newline='', encoding="utf8") as tf:
+    #     for file, ents in process_files(file_list).items():
+    #         tf.write("\n")
+    #         tf.write(file)
+    #         tf.write("------------------------------------------------------------------\n")
+    #         for topic, vals in ents.items():
+    #             tf.write(topic)
+    #             tf.write(" -- ")
+    #             tf.write(vals["url"])
+    #             tf.write("\n")
 
 if __name__ == "__main__":
     main()
