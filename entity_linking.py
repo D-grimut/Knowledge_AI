@@ -50,7 +50,7 @@ def process_files(file_list):
             doc = nlp(cont)
             filtered_entities[file_name] = post_process(doc)
     
-        return filtered_entities
+    return filtered_entities
 
 def main():
     
@@ -61,11 +61,16 @@ def main():
     curr_dir = os.getcwd()
     file_list = get_files(curr_dir)
 
-    # Tokenize files
-    for file, ents in process_files(file_list).items():
-        print(file, "------------------------------------------------------------------\n")
-        for topic, vals in ents.items():
-            print(topic, " -- ", vals["url"])
+    # Tokenize files  NAME OF FILE -> course
+    with open("topics.txt", 'w', newline='', encoding="utf8") as tf:
+        for file, ents in process_files(file_list).items():
+            tf.write(file)
+            tf.write("------------------------------------------------------------------\n")
+            for topic, vals in ents.items():
+                tf.write(topic)
+                tf.write(" -- ")
+                tf.write(vals["url"])
+                tf.write("\n")
 
 if __name__ == "__main__":
     main()
