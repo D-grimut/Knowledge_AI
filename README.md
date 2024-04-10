@@ -60,3 +60,8 @@ To ensure that the program runs smoothly, please follow the instructions below:
   - Find the endpoint_url variable and change the data part of (http://localhost:3030/data) to the name found in Fuseki Server
   - In the main method, runAllQueries() might be commented, due to it creating many .csv files for the outputs. Make sure to uncomment it
   - The files will be created in the main directory and not the Query Ouputs folder
+
+- To make sure Spacy can be run, run the following commands in the terminal:
+  - pip install Spacy
+  - python -m spacy download en_core_web_sm
+  - pip install spacyfishing 
