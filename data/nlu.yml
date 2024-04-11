@@ -1,6 +1,16 @@
 version: "3.1"
 
 nlu:
+
+- regex: university
+  examples: |
+    - University of Concordia
+    - Concordia University
+    - ConU
+    - Concordia 
+    - Concordia Uni
+    - Con U 
+
 - intent: greet
   examples: |
     - hey
