@@ -1,10 +1,8 @@
+import json
 import spacy
 import os
+import re
 import platform
-from rdflib import OWL, RDFS, XSD, URIRef, Namespace, Graph, Literal
-from rdflib.namespace import FOAF, RDF
-from spacy.language import Language
-
 nlp = spacy.load("en_core_web_sm")
 
 def platform_extension():
@@ -32,7 +30,7 @@ def post_process(doc):
 
             if ent.text in file_named_entities and ent._.nerd_score <= file_named_entities[ent.text]["sim_score"]:
                 continue
-
+            
             file_named_entities[ent.text] = {"qid" :  ent._.kb_qid,
                                            "url" : ent._.url_wikidata,
                                            "sim_score" : ent._.nerd_score
@@ -41,8 +39,20 @@ def post_process(doc):
 
 def process_files(file_list):
     filtered_entities = {}
+    course_name = ""
 
     for file in file_list:
+
+        directory_parts = file.split(platform_extension())
+        
+        if(course_name == "" or course_name not in directory_parts):
+            for part in directory_parts:
+                if "COMP" in part:
+                    course_name = part
+                    break
+                
+            filtered_entities[course_name] = {}
+            
         # Open files in encoding UTF-8
         with open(file, 'r', encoding="utf8") as f:
 
@@ -50,43 +60,9 @@ def process_files(file_list):
             cont = f.read()
             # Doc to send
             doc = nlp(cont)
-            filtered_entities[file_name] = post_process(doc)
+            filtered_entities[course_name][file_name] = post_process(doc)
     
     return filtered_entities
-
-def topics_graph(file_list):
-    # Create a graph
-    graph = Graph()
-
-    # Create new Namespace
-    unid = Namespace("http://uni.com/data/")
-    uni = Namespace("http://uni.com/schema#")
-    dbo = Namespace("http://dbpedia.org/ontology/")
-
-    # Bind Namespaces
-    graph.bind("unid", unid)
-    graph.bind("uni", uni)
-    graph.bind("dbo", dbo)
-
-    for file, ents in process_files(file_list).items():
-        file_nospace = file.replace(' ', '_')
-
-        graph.add((unid[file_nospace], RDF.type, uni.Lecture))
-
-        for topic, vals in ents.items():
-            topic_nospace = topic.replace(' ', '_')
-            topic_nobs = topic_nospace.replace('\\', '%5C')
-
-            graph.add((unid[topic_nobs], RDF.type, uni.Topic))
-
-            graph.add((unid[topic_nobs], uni.topicName, Literal(topic)))
-
-            graph.add((unid[topic_nobs], uni.linked_to, URIRef(vals["url"])))
-
-            graph.add((unid[topic_nobs], uni.provenance, unid[file_nospace]))
-
-    graph.serialize(destination="topics_turtle.ttl", format='turtle')
-    graph.serialize(destination="topics_ntriples.nt", format='nt')
 
 def main():
     
@@ -97,20 +73,10 @@ def main():
     curr_dir = os.getcwd()
     file_list = get_files(curr_dir)
 
-    topics_graph(file_list)
-
-    # Tokenize files  
-    # Keep this commented to not re-write to the text file, very long
-    # with open("topics.txt", 'w', newline='', encoding="utf8") as tf:
-    #     for file, ents in process_files(file_list).items():
-    #         tf.write("\n")
-    #         tf.write(file)
-    #         tf.write("------------------------------------------------------------------\n")
-    #         for topic, vals in ents.items():
-    #             tf.write(topic)
-    #             tf.write(" -- ")
-    #             tf.write(vals["url"])
-    #             tf.write("\n")
+    data = process_files(file_list)
+    
+    with open("topics.json", 'w') as jsonfile:
+        json.dump(data, jsonfile, indent=4)
 
 if __name__ == "__main__":
     main()

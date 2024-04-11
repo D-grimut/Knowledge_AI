@@ -770,7 +770,7 @@ unid:Viable_Software_Plan.txt a uni:Lecture ;
 
 <http://uni.com/data/%5Cn> a uni:Topic ;
     uni:linked_to <https://www.wikidata.org/wiki/Q184914> ;
-    uni:topicName "\\n" .
+    uni:topicName "\" .
 
 unid:A._Turing a uni:Topic ;
     uni:linked_to <https://www.wikidata.org/wiki/Q7251> ;

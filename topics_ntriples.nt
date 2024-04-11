@@ -336,7 +336,7 @@ _College> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/sche
 <http://uni.com/data/World_Wide> <http://uni.com/schema#topicName> "World Wide" .
 <http://uni.com/data/Dublin_Core
 
-> <http://uni.com/schema#topicName> "Dublin Core\n\n" .
+> <http://uni.com/schema#topicName> "Dublin Core" .
 <http://uni.com/data/XOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/UCP> <http://uni.com/schema#topicName> "UCP" .
 <http://uni.com/data/Reuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
@@ -466,7 +466,7 @@ Graphs> <http://uni.com/schema#topicName> "Knowledge\nGraphs" .
 <http://uni.com/data/AIML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/Machine_Learning_for_Intelligent_Systems.txt> <http://uni.com/schema#has_content> <http://uni.com/data/Underfitting> .
 <http://uni.com/data/Loyola
-_College> <http://uni.com/schema#topicName> "Loyola\n College" .
+_College> <http://uni.com/schema#topicName> "Loyola College" .
 <http://uni.com/data/Red_Queen> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q2561830> .
 <http://uni.com/data/Alexa> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q3814475> .
 <http://uni.com/data/Advanced_Analytics> <http://uni.com/schema#topicName> "Advanced Analytics" .
@@ -639,7 +639,7 @@ Solver
 <http://uni.com/data/Software_Development_and_Engineering.txt> <http://uni.com/schema#has_content> <http://uni.com/data/Software_Engineering> .
 <http://uni.com/data/PME> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q622439> .
 <http://uni.com/data/Non-Functional_Requirements
-	> <http://uni.com/schema#topicName> "Non-Functional Requirements\n	" .
+	> <http://uni.com/schema#topicName> "Non-Functional Requirements	" .
 <http://uni.com/data/PDS> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q541370> .
 <http://uni.com/data/Description_Logics> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q387196> .
 <http://uni.com/data/HTTP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
@@ -996,7 +996,7 @@ University> .
 <http://uni.com/data/Concordia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/Organizational_Effectiveness> <http://uni.com/schema#topicName> "Organizational Effectiveness" .
 <http://uni.com/data/Graph_API
-> <http://uni.com/schema#topicName> "Graph API\n" .
+> <http://uni.com/schema#topicName> "Graph API" .
 <http://uni.com/data/Flow_Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/POWER7> <http://uni.com/schema#topicName> "POWER7" .
 <http://uni.com/data/Zootopia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
@@ -1180,7 +1180,7 @@ University> <http://uni.com/schema#topicName> "Concordia\nUniversity" .
 <http://uni.com/data/Intelligent_Systems_Introduction.txt> <http://uni.com/schema#has_content> <http://uni.com/data/Watson> .
 <http://uni.com/data/Software_Engineering
 
-> <http://uni.com/schema#topicName> "Software Engineering\n\n" .
+> <http://uni.com/schema#topicName> "Software Engineering" .
 <http://uni.com/data/LOD> <http://uni.com/schema#topicName> "LOD" .
 <http://uni.com/data/Google_Docs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/Dublin_Core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
@@ -1386,7 +1386,7 @@ University> <http://uni.com/schema#topicName> "Concordia\nUniversity" .
 <http://uni.com/data/Leonardo_da_Vinci> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q762> .
 <http://uni.com/data/Personalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
 <http://uni.com/data/Apple_Siri> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q582159> .
-<http://uni.com/data/%5Cn> <http://uni.com/schema#topicName> "\\n" .
+<http://uni.com/data/%5Cn> <http://uni.com/schema#topicName> "\" .
 <http://uni.com/data/Springer_International_Publishing> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q176916> .
 <http://uni.com/data/Chapter_25> <http://uni.com/schema#topicName> "Chapter 25" .
 <http://uni.com/data/TUT_2_-_Software_Design.txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Lecture> .
@@ -1512,7 +1512,7 @@ _College> .
 <http://uni.com/data/Knowledge_Graphs.txt> <http://uni.com/schema#has_content> <http://uni.com/data/Wikidata> .
 <http://uni.com/data/Final_Exam__
 
-> <http://uni.com/schema#topicName> "Final Exam  \n\n" .
+> <http://uni.com/schema#topicName> "Final Exam  " .
 <http://uni.com/data/Gettysburg> <http://uni.com/schema#topicName> "Gettysburg" .
 <http://uni.com/data/User_Experience_Design.txt> <http://uni.com/schema#has_content> <http://uni.com/data/Google> .
 <http://uni.com/data/UX_Design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uni.com/schema#Topic> .
@@ -1859,7 +1859,7 @@ _College> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q5399
 
 Solver
 
-> <http://uni.com/schema#topicName> "General Problem \n\nSolver\n\n" .
+> <http://uni.com/schema#topicName> "General Problem \nSolver" .
 <http://uni.com/data/Knowledge_Graphs_-_Vocabularies_and_Ontologies.txt> <http://uni.com/schema#has_content> <http://uni.com/data/FOAF> .
 <http://uni.com/data/Machine_Learning> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q6723676> .
 <http://uni.com/data/Concordia_University> <http://uni.com/schema#linked_to> <https://www.wikidata.org/wiki/Q5159001> .

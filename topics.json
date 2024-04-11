@@ -1,0 +1,3438 @@
+{
+    "COMP 354-GCS_132": {
+        "Course Outline.txt": {
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.4821
+            },
+            "McGraw Hill": {
+                "qid": "Q17153156",
+                "url": "https://www.wikidata.org/wiki/Q17153156",
+                "sim_score": 0.5489
+            },
+            "Final Exam": {
+                "qid": "Q4373850",
+                "url": "https://www.wikidata.org/wiki/Q4373850",
+                "sim_score": 0.6511
+            },
+            "Moodle": {
+                "qid": "Q190434",
+                "url": "https://www.wikidata.org/wiki/Q190434",
+                "sim_score": 0.915
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.4333
+            }
+        },
+        "LAB 3 - Quality Control.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.4785
+            },
+            "Original Design": {
+                "qid": "Q211736",
+                "url": "https://www.wikidata.org/wiki/Q211736",
+                "sim_score": 0.4256
+            }
+        },
+        "LAB 1 - SRS.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.5963
+            },
+            "Moodle": {
+                "qid": "Q190434",
+                "url": "https://www.wikidata.org/wiki/Q190434",
+                "sim_score": 0.7029
+            },
+            "Use-Case": {
+                "qid": "Q613417",
+                "url": "https://www.wikidata.org/wiki/Q613417",
+                "sim_score": 0.5593
+            },
+            "Sequence Diagram": {
+                "qid": "Q1391624",
+                "url": "https://www.wikidata.org/wiki/Q1391624",
+                "sim_score": 0.7029
+            },
+            "Reason": {
+                "qid": "Q1454090",
+                "url": "https://www.wikidata.org/wiki/Q1454090",
+                "sim_score": 0.4147
+            },
+            "Slide": {
+                "qid": "Q85801586",
+                "url": "https://www.wikidata.org/wiki/Q85801586",
+                "sim_score": 0.438
+            },
+            "UML Diagram": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.4488
+            }
+        },
+        "LAB 2 - Software Design.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.4785
+            },
+            "Text Editor": {
+                "qid": "Q131212",
+                "url": "https://www.wikidata.org/wiki/Q131212",
+                "sim_score": 0.6864
+            },
+            "Slide": {
+                "qid": "Q85801586",
+                "url": "https://www.wikidata.org/wiki/Q85801586",
+                "sim_score": 0.438
+            }
+        },
+        "TUT 2 - Software Design.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.5963
+            },
+            "SRS": {
+                "qid": "Q334410",
+                "url": "https://www.wikidata.org/wiki/Q334410",
+                "sim_score": 0.4197
+            },
+            "Data Flow": {
+                "qid": "Q1172416",
+                "url": "https://www.wikidata.org/wiki/Q1172416",
+                "sim_score": 0.6034
+            }
+        },
+        "TUT 3 - Quality Control.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.5963
+            },
+            "JAVA": {
+                "qid": "Q1100132",
+                "url": "https://www.wikidata.org/wiki/Q1100132",
+                "sim_score": 0.4051
+            },
+            "Preparations": {
+                "qid": "Q7240618",
+                "url": "https://www.wikidata.org/wiki/Q7240618",
+                "sim_score": 0.4484
+            },
+            "Severity Level": {
+                "qid": "Q1425501",
+                "url": "https://www.wikidata.org/wiki/Q1425501",
+                "sim_score": 0.4437
+            },
+            "Quality Control": {
+                "qid": "Q55316128",
+                "url": "https://www.wikidata.org/wiki/Q55316128",
+                "sim_score": 0.4241
+            }
+        },
+        "Final Project.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.5963
+            },
+            "Junit": {
+                "qid": "Q847675",
+                "url": "https://www.wikidata.org/wiki/Q847675",
+                "sim_score": 0.7399
+            },
+            "Mockito": {
+                "qid": "Q1941695",
+                "url": "https://www.wikidata.org/wiki/Q1941695",
+                "sim_score": 0.7728
+            },
+            "MVC": {
+                "qid": "Q1536057",
+                "url": "https://www.wikidata.org/wiki/Q1536057",
+                "sim_score": 0.4527
+            }
+        },
+        "TUT 1 - SRS.txt": {
+            "Adeli": {
+                "qid": "Q4681927",
+                "url": "https://www.wikidata.org/wiki/Q4681927",
+                "sim_score": 0.4785
+            },
+            "TA": {
+                "qid": "Q2609672",
+                "url": "https://www.wikidata.org/wiki/Q2609672",
+                "sim_score": 0.4106
+            },
+            "Non-Functional Requirements\n\t": {
+                "qid": "Q3254666",
+                "url": "https://www.wikidata.org/wiki/Q3254666",
+                "sim_score": 0.6666
+            }
+        },
+        "Software Process Models.txt": {
+            "Software Engineering\n\n": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.5946
+            },
+            "Risk Management": {
+                "qid": "Q189447",
+                "url": "https://www.wikidata.org/wiki/Q189447",
+                "sim_score": 0.4922
+            },
+            "Quality Assurance": {
+                "qid": "Q836575",
+                "url": "https://www.wikidata.org/wiki/Q836575",
+                "sim_score": 0.6659
+            },
+            "Configuration Management": {
+                "qid": "Q1153495",
+                "url": "https://www.wikidata.org/wiki/Q1153495",
+                "sim_score": 0.5023
+            },
+            "Process Model": {
+                "qid": "Q27610560",
+                "url": "https://www.wikidata.org/wiki/Q27610560",
+                "sim_score": 0.4492
+            },
+            "Tricky": {
+                "qid": "Q313627",
+                "url": "https://www.wikidata.org/wiki/Q313627",
+                "sim_score": 0.6895
+            }
+        },
+        "Component-Level Design.txt": {
+            "Chapter 11": {
+                "qid": "Q1062835",
+                "url": "https://www.wikidata.org/wiki/Q1062835",
+                "sim_score": 0.8199
+            },
+            "Liskov Substitution Principle": {
+                "qid": "Q957386",
+                "url": "https://www.wikidata.org/wiki/Q957386",
+                "sim_score": 0.6145
+            },
+            "DIP": {
+                "qid": "Q1141665",
+                "url": "https://www.wikidata.org/wiki/Q1141665",
+                "sim_score": 0.456
+            },
+            "Interface Segregation Principle": {
+                "qid": "Q1666034",
+                "url": "https://www.wikidata.org/wiki/Q1666034",
+                "sim_score": 0.7029
+            },
+            "ISP": {
+                "qid": "Q11371",
+                "url": "https://www.wikidata.org/wiki/Q11371",
+                "sim_score": 0.4563
+            },
+            "OCP": {
+                "qid": "Q501605",
+                "url": "https://www.wikidata.org/wiki/Q501605",
+                "sim_score": 0.4446
+            },
+            "Collaboration Diagram": {
+                "qid": "Q950859",
+                "url": "https://www.wikidata.org/wiki/Q950859",
+                "sim_score": 0.5612
+            },
+            "WebApps": {
+                "qid": "Q189210",
+                "url": "https://www.wikidata.org/wiki/Q189210",
+                "sim_score": 0.665
+            },
+            "WebApp": {
+                "qid": "Q189210",
+                "url": "https://www.wikidata.org/wiki/Q189210",
+                "sim_score": 0.5258
+            },
+            "Mobile Apps": {
+                "qid": "Q620615",
+                "url": "https://www.wikidata.org/wiki/Q620615",
+                "sim_score": 0.5122
+            },
+            "CBSE": {
+                "qid": "Q3347350",
+                "url": "https://www.wikidata.org/wiki/Q3347350",
+                "sim_score": 0.8475
+            },
+            "COTS": {
+                "qid": "Q1115443",
+                "url": "https://www.wikidata.org/wiki/Q1115443",
+                "sim_score": 0.4471
+            }
+        },
+        "Viable Software Plan.txt": {
+            "Software Engineering\n\n": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Chapter 25": {
+                "qid": "Q6789865",
+                "url": "https://www.wikidata.org/wiki/Q6789865",
+                "sim_score": 0.4691
+            },
+            "Chapter 26": {
+                "qid": "Q6789867",
+                "url": "https://www.wikidata.org/wiki/Q6789867",
+                "sim_score": 0.4669
+            },
+            "Data Analytics": {
+                "qid": "Q485396",
+                "url": "https://www.wikidata.org/wiki/Q485396",
+                "sim_score": 0.4926
+            },
+            "LOC": {
+                "qid": "Q131454",
+                "url": "https://www.wikidata.org/wiki/Q131454",
+                "sim_score": 0.4713
+            },
+            "FP": {
+                "qid": "Q1072130",
+                "url": "https://www.wikidata.org/wiki/Q1072130",
+                "sim_score": 0.5037
+            },
+            "Function": {
+                "qid": "Q190686",
+                "url": "https://www.wikidata.org/wiki/Q190686",
+                "sim_score": 0.5025
+            },
+            "McGraw-Hill Education": {
+                "qid": "Q17153156",
+                "url": "https://www.wikidata.org/wiki/Q17153156",
+                "sim_score": 0.4568
+            },
+            "ECF": {
+                "qid": "Q528935",
+                "url": "https://www.wikidata.org/wiki/Q528935",
+                "sim_score": 0.5281
+            },
+            "UAW": {
+                "qid": "Q1814260",
+                "url": "https://www.wikidata.org/wiki/Q1814260",
+                "sim_score": 0.8256
+            },
+            "TCF": {
+                "qid": "Q6137461",
+                "url": "https://www.wikidata.org/wiki/Q6137461",
+                "sim_score": 0.4867
+            },
+            "UCP": {
+                "qid": "Q34930858",
+                "url": "https://www.wikidata.org/wiki/Q34930858",
+                "sim_score": 0.5548
+            },
+            "CAD": {
+                "qid": "Q184793",
+                "url": "https://www.wikidata.org/wiki/Q184793",
+                "sim_score": 0.7054
+            },
+            "Miscommunication": {
+                "qid": "Q104841107",
+                "url": "https://www.wikidata.org/wiki/Q104841107",
+                "sim_score": 0.4357
+            },
+            "Customer": {
+                "qid": "Q852835",
+                "url": "https://www.wikidata.org/wiki/Q852835",
+                "sim_score": 0.5016
+            },
+            "Gantt Chart": {
+                "qid": "Q192847",
+                "url": "https://www.wikidata.org/wiki/Q192847",
+                "sim_score": 0.7199
+            }
+        },
+        "Software Support.txt": {
+            "Software Engineering\n\n": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.4743
+            },
+            "Chapter 26": {
+                "qid": "Q6789867",
+                "url": "https://www.wikidata.org/wiki/Q6789867",
+                "sim_score": 0.4635
+            },
+            "Software Evolution": {
+                "qid": "Q265013",
+                "url": "https://www.wikidata.org/wiki/Q265013",
+                "sim_score": 0.6659
+            },
+            "Software Maintenance": {
+                "qid": "Q940053",
+                "url": "https://www.wikidata.org/wiki/Q940053",
+                "sim_score": 0.6858
+            },
+            "Software": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.5038
+            },
+            "Reverse Engineering": {
+                "qid": "Q269608",
+                "url": "https://www.wikidata.org/wiki/Q269608",
+                "sim_score": 0.6139
+            },
+            "UML": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.6938
+            },
+            "GUI": {
+                "qid": "Q782543",
+                "url": "https://www.wikidata.org/wiki/Q782543",
+                "sim_score": 0.7419
+            },
+            "Software Analytics": {
+                "qid": "Q7554239",
+                "url": "https://www.wikidata.org/wiki/Q7554239",
+                "sim_score": 0.4743
+            },
+            "Twitter": {
+                "qid": "Q918",
+                "url": "https://www.wikidata.org/wiki/Q918",
+                "sim_score": 0.9026
+            },
+            "P3": {
+                "qid": "Q659696",
+                "url": "https://www.wikidata.org/wiki/Q659696",
+                "sim_score": 0.4861
+            },
+            "P6": {
+                "qid": "Q1364041",
+                "url": "https://www.wikidata.org/wiki/Q1364041",
+                "sim_score": 0.5126
+            },
+            "Inventory Analysis": {
+                "qid": "Q6059915",
+                "url": "https://www.wikidata.org/wiki/Q6059915",
+                "sim_score": 0.6636
+            },
+            "Code Restructuring": {
+                "qid": "Q116877",
+                "url": "https://www.wikidata.org/wiki/Q116877",
+                "sim_score": 0.6636
+            }
+        },
+        "Software Quality Concepts.txt": {
+            "Umbrella": {
+                "qid": "Q155447",
+                "url": "https://www.wikidata.org/wiki/Q155447",
+                "sim_score": 0.418
+            }
+        },
+        "Software Development and Engineering.txt": {
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Software": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.5825
+            },
+            "KISS": {
+                "qid": "Q124179",
+                "url": "https://www.wikidata.org/wiki/Q124179",
+                "sim_score": 0.7276
+            },
+            "Reuse": {
+                "qid": "Q846574",
+                "url": "https://www.wikidata.org/wiki/Q846574",
+                "sim_score": 0.4401
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            }
+        },
+        "Understanding Requirements.txt": {
+            "Requirements": {
+                "qid": "Q774228",
+                "url": "https://www.wikidata.org/wiki/Q774228",
+                "sim_score": 0.4995
+            },
+            "Non-Functional Requirement": {
+                "qid": "Q3254666",
+                "url": "https://www.wikidata.org/wiki/Q3254666",
+                "sim_score": 0.7152
+            },
+            "NFR": {
+                "qid": "Q3454731",
+                "url": "https://www.wikidata.org/wiki/Q3454731",
+                "sim_score": 0.608
+            },
+            "UML": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.4622
+            }
+        },
+        "Project Management Concepts.txt": {
+            "Chapter 24": {
+                "qid": "Q261005",
+                "url": "https://www.wikidata.org/wiki/Q261005",
+                "sim_score": 0.667
+            },
+            "Inspire": {
+                "qid": "Q3359800",
+                "url": "https://www.wikidata.org/wiki/Q3359800",
+                "sim_score": 0.4163
+            }
+        },
+        "Software Integration Testing.txt": {
+            "Integration Testing": {
+                "qid": "Q782466",
+                "url": "https://www.wikidata.org/wiki/Q782466",
+                "sim_score": 0.8961
+            },
+            "Breadth": {
+                "qid": "Q36253",
+                "url": "https://www.wikidata.org/wiki/Q36253",
+                "sim_score": 0.434
+            },
+            "DevOps": {
+                "qid": "Q3025536",
+                "url": "https://www.wikidata.org/wiki/Q3025536",
+                "sim_score": 0.9026
+            },
+            "Time": {
+                "qid": "Q43297",
+                "url": "https://www.wikidata.org/wiki/Q43297",
+                "sim_score": 0.502
+            },
+            "Regression Testing": {
+                "qid": "Q917415",
+                "url": "https://www.wikidata.org/wiki/Q917415",
+                "sim_score": 0.7021
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.452
+            },
+            "Collaboration Diagram": {
+                "qid": "Q950859",
+                "url": "https://www.wikidata.org/wiki/Q950859",
+                "sim_score": 0.6636
+            }
+        },
+        "Software Metrics and Analytics.txt": {
+            "Width": {
+                "qid": "Q36253",
+                "url": "https://www.wikidata.org/wiki/Q36253",
+                "sim_score": 0.5761
+            },
+            "DIT": {
+                "qid": "Q3098071",
+                "url": "https://www.wikidata.org/wiki/Q3098071",
+                "sim_score": 0.4566
+            },
+            "NOC": {
+                "qid": "Q183288",
+                "url": "https://www.wikidata.org/wiki/Q183288",
+                "sim_score": 0.4149
+            },
+            "CBO": {
+                "qid": "Q1125991",
+                "url": "https://www.wikidata.org/wiki/Q1125991",
+                "sim_score": 0.4163
+            },
+            "Ergonomics": {
+                "qid": "Q7742195",
+                "url": "https://www.wikidata.org/wiki/Q7742195",
+                "sim_score": 0.4361
+            },
+            "Halstead": {
+                "qid": "Q2282928",
+                "url": "https://www.wikidata.org/wiki/Q2282928",
+                "sim_score": 0.4192
+            },
+            "OO": {
+                "qid": "Q1807761",
+                "url": "https://www.wikidata.org/wiki/Q1807761",
+                "sim_score": 0.4103
+            },
+            "PAD": {
+                "qid": "Q249083",
+                "url": "https://www.wikidata.org/wiki/Q249083",
+                "sim_score": 0.4534
+            },
+            "NOR": {
+                "qid": "Q574946",
+                "url": "https://www.wikidata.org/wiki/Q574946",
+                "sim_score": 0.4167
+            },
+            "SMI": {
+                "qid": "Q1487705",
+                "url": "https://www.wikidata.org/wiki/Q1487705",
+                "sim_score": 0.4123
+            },
+            "Organizational Effectiveness": {
+                "qid": "Q7102014",
+                "url": "https://www.wikidata.org/wiki/Q7102014",
+                "sim_score": 0.5141
+            },
+            "LOC": {
+                "qid": "Q942695",
+                "url": "https://www.wikidata.org/wiki/Q942695",
+                "sim_score": 0.5724
+            },
+            "KLOC": {
+                "qid": "Q14682612",
+                "url": "https://www.wikidata.org/wiki/Q14682612",
+                "sim_score": 0.8914
+            },
+            "FP": {
+                "qid": "Q970152",
+                "url": "https://www.wikidata.org/wiki/Q970152",
+                "sim_score": 0.4129
+            },
+            "DRE": {
+                "qid": "Q5206047",
+                "url": "https://www.wikidata.org/wiki/Q5206047",
+                "sim_score": 0.4246
+            }
+        },
+        "Agility and Process.txt": {
+            "Process 4": {
+                "qid": "Q674564",
+                "url": "https://www.wikidata.org/wiki/Q674564",
+                "sim_score": 0.6734
+            },
+            "Extreme Programming": {
+                "qid": "Q209711",
+                "url": "https://www.wikidata.org/wiki/Q209711",
+                "sim_score": 0.9155
+            },
+            "Framework": {
+                "qid": "Q271680",
+                "url": "https://www.wikidata.org/wiki/Q271680",
+                "sim_score": 0.5025
+            },
+            "DevOps": {
+                "qid": "Q3025536",
+                "url": "https://www.wikidata.org/wiki/Q3025536",
+                "sim_score": 0.9026
+            }
+        },
+        "Software Reviews.txt": {
+            "Software Engineering\n\n": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Chapter 16": {
+                "qid": "Q48835285",
+                "url": "https://www.wikidata.org/wiki/Q48835285",
+                "sim_score": 0.4526
+            },
+            "UML": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.4622
+            },
+            "Reference Model": {
+                "qid": "Q356674",
+                "url": "https://www.wikidata.org/wiki/Q356674",
+                "sim_score": 0.4533
+            },
+            "FTR": {
+                "qid": "Q22079375",
+                "url": "https://www.wikidata.org/wiki/Q22079375",
+                "sim_score": 0.461
+            },
+            "Focus": {
+                "qid": "Q288918",
+                "url": "https://www.wikidata.org/wiki/Q288918",
+                "sim_score": 0.479
+            },
+            "Producer": {
+                "qid": "Q183945",
+                "url": "https://www.wikidata.org/wiki/Q183945",
+                "sim_score": 0.4327
+            },
+            "PME": {
+                "qid": "Q622439",
+                "url": "https://www.wikidata.org/wiki/Q622439",
+                "sim_score": 0.4101
+            }
+        },
+        "Risk Management.txt": {
+            "Chapter 26": {
+                "qid": "Q6789867",
+                "url": "https://www.wikidata.org/wiki/Q6789867",
+                "sim_score": 0.5702
+            },
+            "LOC": {
+                "qid": "Q131454",
+                "url": "https://www.wikidata.org/wiki/Q131454",
+                "sim_score": 0.4106
+            }
+        },
+        "Design Concepts.txt": {
+            "Chapter 9": {
+                "qid": "Q5073465",
+                "url": "https://www.wikidata.org/wiki/Q5073465",
+                "sim_score": 0.4341
+            },
+            "Design Model": {
+                "qid": "Q857102",
+                "url": "https://www.wikidata.org/wiki/Q857102",
+                "sim_score": 0.4256
+            },
+            "Stepwise Refinement": {
+                "qid": "Q2167279",
+                "url": "https://www.wikidata.org/wiki/Q2167279",
+                "sim_score": 0.6643
+            },
+            "UI": {
+                "qid": "Q47146",
+                "url": "https://www.wikidata.org/wiki/Q47146",
+                "sim_score": 0.4204
+            },
+            "UML": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.4622
+            }
+        },
+        "Requirements Modeling.txt": {
+            "UML": {
+                "qid": "Q169411",
+                "url": "https://www.wikidata.org/wiki/Q169411",
+                "sim_score": 0.8284
+            },
+            "CRC": {
+                "qid": "Q242915",
+                "url": "https://www.wikidata.org/wiki/Q242915",
+                "sim_score": 0.472
+            },
+            "Sequence Diagram": {
+                "qid": "Q1391624",
+                "url": "https://www.wikidata.org/wiki/Q1391624",
+                "sim_score": 0.9027
+            },
+            "Sequence": {
+                "qid": "Q3955681",
+                "url": "https://www.wikidata.org/wiki/Q3955681",
+                "sim_score": 0.5099
+            },
+            "Swimlane": {
+                "qid": "Q4050462",
+                "url": "https://www.wikidata.org/wiki/Q4050462",
+                "sim_score": 0.9074
+            }
+        },
+        "Configuration Management.txt": {
+            "CM": {
+                "qid": "Q5066118",
+                "url": "https://www.wikidata.org/wiki/Q5066118",
+                "sim_score": 0.5115
+            },
+            "SCM": {
+                "qid": "Q189439",
+                "url": "https://www.wikidata.org/wiki/Q189439",
+                "sim_score": 0.599
+            },
+            "IEEE": {
+                "qid": "Q131566",
+                "url": "https://www.wikidata.org/wiki/Q131566",
+                "sim_score": 0.8256
+            },
+            "SCI": {
+                "qid": "Q1379084",
+                "url": "https://www.wikidata.org/wiki/Q1379084",
+                "sim_score": 0.4129
+            },
+            "CI": {
+                "qid": "Q6634104",
+                "url": "https://www.wikidata.org/wiki/Q6634104",
+                "sim_score": 0.4259
+            },
+            "ECO": {
+                "qid": "Q13218856",
+                "url": "https://www.wikidata.org/wiki/Q13218856",
+                "sim_score": 0.4403
+            },
+            "CSR": {
+                "qid": "Q218600",
+                "url": "https://www.wikidata.org/wiki/Q218600",
+                "sim_score": 0.4259
+            },
+            "Convert": {
+                "qid": "Q904756",
+                "url": "https://www.wikidata.org/wiki/Q904756",
+                "sim_score": 0.4504
+            },
+            "XML": {
+                "qid": "Q2115",
+                "url": "https://www.wikidata.org/wiki/Q2115",
+                "sim_score": 0.694
+            },
+            "Content Management System": {
+                "qid": "Q131093",
+                "url": "https://www.wikidata.org/wiki/Q131093",
+                "sim_score": 0.6139
+            },
+            "Version Control": {
+                "qid": "Q189439",
+                "url": "https://www.wikidata.org/wiki/Q189439",
+                "sim_score": 0.5707
+            }
+        },
+        "Architectural Design.txt": {
+            "IEEE Standard": {
+                "qid": "Q5970491",
+                "url": "https://www.wikidata.org/wiki/Q5970491",
+                "sim_score": 0.6389
+            },
+            "Tradeoff Analysis": {
+                "qid": "Q638123",
+                "url": "https://www.wikidata.org/wiki/Q638123",
+                "sim_score": 0.5016
+            },
+            "Assess": {
+                "qid": "Q1476755",
+                "url": "https://www.wikidata.org/wiki/Q1476755",
+                "sim_score": 0.4581
+            }
+        },
+        "Software Component Testing.txt": {
+            "ITG": {
+                "qid": "Q3063959",
+                "url": "https://www.wikidata.org/wiki/Q3063959",
+                "sim_score": 0.4139
+            },
+            "Test Planning": {
+                "qid": "Q364651",
+                "url": "https://www.wikidata.org/wiki/Q364651",
+                "sim_score": 0.4492
+            },
+            "Google Docs": {
+                "qid": "Q9344",
+                "url": "https://www.wikidata.org/wiki/Q9344",
+                "sim_score": 0.4377
+            },
+            "Stubs": {
+                "qid": "Q443426",
+                "url": "https://www.wikidata.org/wiki/Q443426",
+                "sim_score": 0.4634
+            },
+            "Traceability": {
+                "qid": "Q899704",
+                "url": "https://www.wikidata.org/wiki/Q899704",
+                "sim_score": 0.6996
+            },
+            "Flow Graph": {
+                "qid": "Q18816135",
+                "url": "https://www.wikidata.org/wiki/Q18816135",
+                "sim_score": 0.41
+            },
+            "Cyclomatic Complexity": {
+                "qid": "Q867330",
+                "url": "https://www.wikidata.org/wiki/Q867330",
+                "sim_score": 0.7037
+            },
+            "Loop": {
+                "qid": "Q70626",
+                "url": "https://www.wikidata.org/wiki/Q70626",
+                "sim_score": 0.4713
+            },
+            "Black Box Testing": {
+                "qid": "Q879969",
+                "url": "https://www.wikidata.org/wiki/Q879969",
+                "sim_score": 0.718
+            },
+            "Interface": {
+                "qid": "Q23808",
+                "url": "https://www.wikidata.org/wiki/Q23808",
+                "sim_score": 0.5087
+            },
+            "OO": {
+                "qid": "Q1807761",
+                "url": "https://www.wikidata.org/wiki/Q1807761",
+                "sim_score": 0.4103
+            },
+            "Valid": {
+                "qid": "Q18757",
+                "url": "https://www.wikidata.org/wiki/Q18757",
+                "sim_score": 0.5706
+            },
+            "State Diagram": {
+                "qid": "Q230885",
+                "url": "https://www.wikidata.org/wiki/Q230885",
+                "sim_score": 0.7108
+            }
+        },
+        "User Experience Design.txt": {
+            "Usability Engineering": {
+                "qid": "Q1642623",
+                "url": "https://www.wikidata.org/wiki/Q1642623",
+                "sim_score": 0.7021
+            },
+            "UX": {
+                "qid": "Q11248500",
+                "url": "https://www.wikidata.org/wiki/Q11248500",
+                "sim_score": 0.597
+            },
+            "Personas": {
+                "qid": "Q7170670",
+                "url": "https://www.wikidata.org/wiki/Q7170670",
+                "sim_score": 0.4887
+            },
+            "UX Design": {
+                "qid": "Q11248500",
+                "url": "https://www.wikidata.org/wiki/Q11248500",
+                "sim_score": 0.684
+            },
+            "Task Analysis": {
+                "qid": "Q380077",
+                "url": "https://www.wikidata.org/wiki/Q380077",
+                "sim_score": 0.6954
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.6657
+            },
+            "Prototype": {
+                "qid": "Q746599",
+                "url": "https://www.wikidata.org/wiki/Q746599",
+                "sim_score": 0.5965
+            },
+            "Validate": {
+                "qid": "Q3306762",
+                "url": "https://www.wikidata.org/wiki/Q3306762",
+                "sim_score": 0.577
+            },
+            "Response Time": {
+                "qid": "Q578372",
+                "url": "https://www.wikidata.org/wiki/Q578372",
+                "sim_score": 0.6377
+            },
+            "jargon": {
+                "qid": "Q17951",
+                "url": "https://www.wikidata.org/wiki/Q17951",
+                "sim_score": 0.4548
+            }
+        }
+    },
+    "COMP 474_6741-GCS_143": {
+        "Course Outline.txt": {
+            "ER": {
+                "qid": "Q207375",
+                "url": "https://www.wikidata.org/wiki/Q207375",
+                "sim_score": 0.7096
+            },
+            "Moodle": {
+                "qid": "Q190434",
+                "url": "https://www.wikidata.org/wiki/Q190434",
+                "sim_score": 0.915
+            },
+            "JSON": {
+                "qid": "Q2063",
+                "url": "https://www.wikidata.org/wiki/Q2063",
+                "sim_score": 0.9134
+            },
+            "XML": {
+                "qid": "Q2115",
+                "url": "https://www.wikidata.org/wiki/Q2115",
+                "sim_score": 0.9022
+            },
+            "NLP": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.6737
+            },
+            "Deep Learning": {
+                "qid": "Q197536",
+                "url": "https://www.wikidata.org/wiki/Q197536",
+                "sim_score": 0.7791
+            },
+            "Concordia": {
+                "qid": "Q1913996",
+                "url": "https://www.wikidata.org/wiki/Q1913996",
+                "sim_score": 0.4877
+            },
+            "Final Exam  \n\n": {
+                "qid": "Q4373850",
+                "url": "https://www.wikidata.org/wiki/Q4373850",
+                "sim_score": 0.671
+            },
+            "Artificial Intelligence": {
+                "qid": "Q109875730",
+                "url": "https://www.wikidata.org/wiki/Q109875730",
+                "sim_score": 0.6523
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            },
+            "Natural Language Processing": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.715
+            },
+            "Knowledge Graphs": {
+                "qid": "Q324254",
+                "url": "https://www.wikidata.org/wiki/Q324254",
+                "sim_score": 0.6576
+            },
+            "Personalization": {
+                "qid": "Q1000371",
+                "url": "https://www.wikidata.org/wiki/Q1000371",
+                "sim_score": 0.5183
+            },
+            "RDF": {
+                "qid": "Q1367488",
+                "url": "https://www.wikidata.org/wiki/Q1367488",
+                "sim_score": 0.6672
+            },
+            "OWL": {
+                "qid": "Q994371",
+                "url": "https://www.wikidata.org/wiki/Q994371",
+                "sim_score": 0.6321
+            },
+            "Linked Open Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.6972
+            },
+            "LOD": {
+                "qid": "Q1821756",
+                "url": "https://www.wikidata.org/wiki/Q1821756",
+                "sim_score": 0.5385
+            },
+            "ML": {
+                "qid": "Q860654",
+                "url": "https://www.wikidata.org/wiki/Q860654",
+                "sim_score": 0.5132
+            },
+            "Intelligent Systems": {
+                "qid": "Q150001",
+                "url": "https://www.wikidata.org/wiki/Q150001",
+                "sim_score": 0.6525
+            },
+            "Artificial Neural Networks": {
+                "qid": "Q192776",
+                "url": "https://www.wikidata.org/wiki/Q192776",
+                "sim_score": 0.4495
+            },
+            "PyTorch": {
+                "qid": "Q47509047",
+                "url": "https://www.wikidata.org/wiki/Q47509047",
+                "sim_score": 0.7052
+            },
+            "tandem": {
+                "qid": "Q1752317",
+                "url": "https://www.wikidata.org/wiki/Q1752317",
+                "sim_score": 0.5152
+            },
+            "Active Learning": {
+                "qid": "Q1542052",
+                "url": "https://www.wikidata.org/wiki/Q1542052",
+                "sim_score": 0.6977
+            },
+            "Model Evaluation": {
+                "qid": "Q1379672",
+                "url": "https://www.wikidata.org/wiki/Q1379672",
+                "sim_score": 0.4629
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.4333
+            }
+        },
+        "Lab Session #03.txt": {
+            "RDF": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.8571
+            },
+            "Knowledge Graphs": {
+                "qid": "Q324254",
+                "url": "https://www.wikidata.org/wiki/Q324254",
+                "sim_score": 0.6576
+            },
+            "RDF Schema": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.7907
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.901
+            },
+            "FOAF": {
+                "qid": "Q1389366",
+                "url": "https://www.wikidata.org/wiki/Q1389366",
+                "sim_score": 0.7435
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "mbox": {
+                "qid": "Q285972",
+                "url": "https://www.wikidata.org/wiki/Q285972",
+                "sim_score": 0.691
+            },
+            "Wikidata": {
+                "qid": "Q2013",
+                "url": "https://www.wikidata.org/wiki/Q2013",
+                "sim_score": 0.6887
+            },
+            "McGill University": {
+                "qid": "Q201492",
+                "url": "https://www.wikidata.org/wiki/Q201492",
+                "sim_score": 0.6847
+            },
+            "Turtle": {
+                "qid": "Q1886405",
+                "url": "https://www.wikidata.org/wiki/Q1886405",
+                "sim_score": 0.439
+            },
+            "Concordia": {
+                "qid": "Q52578",
+                "url": "https://www.wikidata.org/wiki/Q52578",
+                "sim_score": 0.4914
+            },
+            "Montreal": {
+                "qid": "Q340",
+                "url": "https://www.wikidata.org/wiki/Q340",
+                "sim_score": 0.7097
+            },
+            "byte": {
+                "qid": "Q8799",
+                "url": "https://www.wikidata.org/wiki/Q8799",
+                "sim_score": 0.8256
+            },
+            "OWL": {
+                "qid": "Q826165",
+                "url": "https://www.wikidata.org/wiki/Q826165",
+                "sim_score": 0.456
+            },
+            "Knowledge Graph": {
+                "qid": "Q33002955",
+                "url": "https://www.wikidata.org/wiki/Q33002955",
+                "sim_score": 0.4544
+            },
+            "Concordia\nUniversity": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "NLP": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.6822
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Canada": {
+                "qid": "Q16",
+                "url": "https://www.wikidata.org/wiki/Q16",
+                "sim_score": 0.6452
+            },
+            "DBP": {
+                "qid": "Q415612",
+                "url": "https://www.wikidata.org/wiki/Q415612",
+                "sim_score": 0.6246
+            },
+            "French": {
+                "qid": "Q150",
+                "url": "https://www.wikidata.org/wiki/Q150",
+                "sim_score": 0.513
+            },
+            "Universit\u00e9 Concordia": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.6775
+            },
+            "Quebec": {
+                "qid": "Q176",
+                "url": "https://www.wikidata.org/wiki/Q176",
+                "sim_score": 0.7006
+            },
+            "Loyola\n College": {
+                "qid": "Q5399470",
+                "url": "https://www.wikidata.org/wiki/Q5399470",
+                "sim_score": 0.4699
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.5122
+            },
+            "McGill": {
+                "qid": "Q201492",
+                "url": "https://www.wikidata.org/wiki/Q201492",
+                "sim_score": 0.4055
+            },
+            "Bishop": {
+                "qid": "Q2296652",
+                "url": "https://www.wikidata.org/wiki/Q2296652",
+                "sim_score": 0.4755
+            },
+            "SPARQL": {
+                "qid": "Q54871",
+                "url": "https://www.wikidata.org/wiki/Q54871",
+                "sim_score": 0.9146
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.6657
+            },
+            "Siri": {
+                "qid": "Q582159",
+                "url": "https://www.wikidata.org/wiki/Q582159",
+                "sim_score": 0.6127
+            },
+            "Alexa": {
+                "qid": "Q230051",
+                "url": "https://www.wikidata.org/wiki/Q230051",
+                "sim_score": 0.5113
+            },
+            "Knowledge\nGraphs": {
+                "qid": "Q324254",
+                "url": "https://www.wikidata.org/wiki/Q324254",
+                "sim_score": 0.5719
+            }
+        },
+        "Lab Session #02.txt": {
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.8418
+            },
+            "Turtle": {
+                "qid": "Q223044",
+                "url": "https://www.wikidata.org/wiki/Q223044",
+                "sim_score": 0.6653
+            },
+            "Validate": {
+                "qid": "Q3306762",
+                "url": "https://www.wikidata.org/wiki/Q3306762",
+                "sim_score": 0.4471
+            },
+            "Convert": {
+                "qid": "Q904756",
+                "url": "https://www.wikidata.org/wiki/Q904756",
+                "sim_score": 0.4504
+            },
+            "RDF Schema": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.7907
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.7728
+            },
+            "Wikidata": {
+                "qid": "Q2013",
+                "url": "https://www.wikidata.org/wiki/Q2013",
+                "sim_score": 0.894
+            },
+            "Concordia": {
+                "qid": "Q1913996",
+                "url": "https://www.wikidata.org/wiki/Q1913996",
+                "sim_score": 0.4877
+            },
+            "Java": {
+                "qid": "Q251",
+                "url": "https://www.wikidata.org/wiki/Q251",
+                "sim_score": 0.8691
+            },
+            "Apache Jena": {
+                "qid": "Q1686799",
+                "url": "https://www.wikidata.org/wiki/Q1686799",
+                "sim_score": 0.901
+            },
+            "Conda": {
+                "qid": "Q1619974",
+                "url": "https://www.wikidata.org/wiki/Q1619974",
+                "sim_score": 0.5205
+            },
+            "Graph": {
+                "qid": "Q2479726",
+                "url": "https://www.wikidata.org/wiki/Q2479726",
+                "sim_score": 0.5215
+            },
+            "Parse": {
+                "qid": "Q194152",
+                "url": "https://www.wikidata.org/wiki/Q194152",
+                "sim_score": 0.5776
+            },
+            "Loop": {
+                "qid": "Q70626",
+                "url": "https://www.wikidata.org/wiki/Q70626",
+                "sim_score": 0.4713
+            },
+            "N-Triples": {
+                "qid": "Q44044",
+                "url": "https://www.wikidata.org/wiki/Q44044",
+                "sim_score": 0.9148
+            },
+            "Literal": {
+                "qid": "Q6647567",
+                "url": "https://www.wikidata.org/wiki/Q6647567",
+                "sim_score": 0.4339
+            },
+            "Namespace": {
+                "qid": "Q873636",
+                "url": "https://www.wikidata.org/wiki/Q873636",
+                "sim_score": 0.7976
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "XOR": {
+                "qid": "Q498186",
+                "url": "https://www.wikidata.org/wiki/Q498186",
+                "sim_score": 0.7273
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            },
+            "Montreal": {
+                "qid": "Q340",
+                "url": "https://www.wikidata.org/wiki/Q340",
+                "sim_score": 0.7097
+            },
+            "Advanced Analytics": {
+                "qid": "Q485396",
+                "url": "https://www.wikidata.org/wiki/Q485396",
+                "sim_score": 0.443
+            }
+        },
+        "Lab Session #01.txt": {
+            "TA": {
+                "qid": "Q2609672",
+                "url": "https://www.wikidata.org/wiki/Q2609672",
+                "sim_score": 0.4106
+            },
+            "Linux": {
+                "qid": "Q388",
+                "url": "https://www.wikidata.org/wiki/Q388",
+                "sim_score": 0.4526
+            },
+            "Windows": {
+                "qid": "Q1406",
+                "url": "https://www.wikidata.org/wiki/Q1406",
+                "sim_score": 0.4552
+            },
+            "Eliza": {
+                "qid": "Q580318",
+                "url": "https://www.wikidata.org/wiki/Q580318",
+                "sim_score": 0.5102
+            },
+            "Python": {
+                "qid": "Q28865",
+                "url": "https://www.wikidata.org/wiki/Q28865",
+                "sim_score": 0.8425
+            },
+            "GitHub": {
+                "qid": "Q364",
+                "url": "https://www.wikidata.org/wiki/Q364",
+                "sim_score": 0.912
+            },
+            "Concordia": {
+                "qid": "Q1913996",
+                "url": "https://www.wikidata.org/wiki/Q1913996",
+                "sim_score": 0.4877
+            }
+        },
+        "Lab Session #05.txt": {
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Canada": {
+                "qid": "Q16",
+                "url": "https://www.wikidata.org/wiki/Q16",
+                "sim_score": 0.6681
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.514
+            },
+            "SELECT": {
+                "qid": "Q1164001",
+                "url": "https://www.wikidata.org/wiki/Q1164001",
+                "sim_score": 0.5045
+            },
+            "FILTER": {
+                "qid": "Q17772161",
+                "url": "https://www.wikidata.org/wiki/Q17772161",
+                "sim_score": 0.6013
+            },
+            "Wikipedia": {
+                "qid": "Q52",
+                "url": "https://www.wikidata.org/wiki/Q52",
+                "sim_score": 0.4744
+            },
+            "Wikidata": {
+                "qid": "Q2013",
+                "url": "https://www.wikidata.org/wiki/Q2013",
+                "sim_score": 0.7658
+            },
+            "Fuseki": {
+                "qid": "Q1471749",
+                "url": "https://www.wikidata.org/wiki/Q1471749",
+                "sim_score": 0.7018
+            },
+            "Anaconda": {
+                "qid": "Q464042",
+                "url": "https://www.wikidata.org/wiki/Q464042",
+                "sim_score": 0.4536
+            },
+            "MovieLens": {
+                "qid": "Q4353746",
+                "url": "https://www.wikidata.org/wiki/Q4353746",
+                "sim_score": 0.9074
+            },
+            "Pandas": {
+                "qid": "Q33602",
+                "url": "https://www.wikidata.org/wiki/Q33602",
+                "sim_score": 0.4974
+            },
+            "DataFrame": {
+                "qid": "Q1324888",
+                "url": "https://www.wikidata.org/wiki/Q1324888",
+                "sim_score": 0.6428
+            },
+            "DataFrames": {
+                "qid": "Q7573619",
+                "url": "https://www.wikidata.org/wiki/Q7573619",
+                "sim_score": 0.7079
+            },
+            "Toy Story": {
+                "qid": "Q2414752",
+                "url": "https://www.wikidata.org/wiki/Q2414752",
+                "sim_score": 0.4669
+            },
+            "Bug's Life": {
+                "qid": "Q216153",
+                "url": "https://www.wikidata.org/wiki/Q216153",
+                "sim_score": 0.4526
+            },
+            "The Lego Movie": {
+                "qid": "Q2608065",
+                "url": "https://www.wikidata.org/wiki/Q2608065",
+                "sim_score": 0.8808
+            },
+            "SPARQL": {
+                "qid": "Q54871",
+                "url": "https://www.wikidata.org/wiki/Q54871",
+                "sim_score": 0.7837
+            },
+            "Linked Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.7448
+            },
+            "GitHub": {
+                "qid": "Q364",
+                "url": "https://www.wikidata.org/wiki/Q364",
+                "sim_score": 0.912
+            },
+            "TA": {
+                "qid": "Q2609672",
+                "url": "https://www.wikidata.org/wiki/Q2609672",
+                "sim_score": 0.4713
+            },
+            "pandas": {
+                "qid": "Q33602",
+                "url": "https://www.wikidata.org/wiki/Q33602",
+                "sim_score": 0.4142
+            }
+        },
+        "Lab Session #04.txt": {
+            "SPARQL": {
+                "qid": "Q54871",
+                "url": "https://www.wikidata.org/wiki/Q54871",
+                "sim_score": 0.9146
+            },
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.8662
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Berlin": {
+                "qid": "Q64",
+                "url": "https://www.wikidata.org/wiki/Q64",
+                "sim_score": 0.4615
+            },
+            "SELECT": {
+                "qid": "Q1164001",
+                "url": "https://www.wikidata.org/wiki/Q1164001",
+                "sim_score": 0.5045
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.514
+            },
+            "Watson": {
+                "qid": "Q12253",
+                "url": "https://www.wikidata.org/wiki/Q12253",
+                "sim_score": 0.5108
+            },
+            "Siri": {
+                "qid": "Q582159",
+                "url": "https://www.wikidata.org/wiki/Q582159",
+                "sim_score": 0.7432
+            },
+            "Alexa": {
+                "qid": "Q28022144",
+                "url": "https://www.wikidata.org/wiki/Q28022144",
+                "sim_score": 0.5998
+            },
+            "Canada": {
+                "qid": "Q16",
+                "url": "https://www.wikidata.org/wiki/Q16",
+                "sim_score": 0.6681
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "Intelligent Systems": {
+                "qid": "Q150001",
+                "url": "https://www.wikidata.org/wiki/Q150001",
+                "sim_score": 0.6724
+            },
+            "Apache Jena": {
+                "qid": "Q1686799",
+                "url": "https://www.wikidata.org/wiki/Q1686799",
+                "sim_score": 0.901
+            },
+            "API": {
+                "qid": "Q165194",
+                "url": "https://www.wikidata.org/wiki/Q165194",
+                "sim_score": 0.8291
+            },
+            "Fuseki": {
+                "qid": "Q1471749",
+                "url": "https://www.wikidata.org/wiki/Q1471749",
+                "sim_score": 0.7499
+            },
+            "HTTP": {
+                "qid": "Q8777",
+                "url": "https://www.wikidata.org/wiki/Q8777",
+                "sim_score": 0.8909
+            },
+            "Amazon Neptune": {
+                "qid": "Q48843359",
+                "url": "https://www.wikidata.org/wiki/Q48843359",
+                "sim_score": 0.9028
+            },
+            "Apache": {
+                "qid": "Q616563",
+                "url": "https://www.wikidata.org/wiki/Q616563",
+                "sim_score": 0.6377
+            },
+            "Linux": {
+                "qid": "Q388",
+                "url": "https://www.wikidata.org/wiki/Q388",
+                "sim_score": 0.7066
+            },
+            "Windows": {
+                "qid": "Q1406",
+                "url": "https://www.wikidata.org/wiki/Q1406",
+                "sim_score": 0.6414
+            },
+            "GUI": {
+                "qid": "Q782543",
+                "url": "https://www.wikidata.org/wiki/Q782543",
+                "sim_score": 0.7403
+            },
+            "PowerShell": {
+                "qid": "Q840410",
+                "url": "https://www.wikidata.org/wiki/Q840410",
+                "sim_score": 0.7681
+            },
+            "Java": {
+                "qid": "Q251",
+                "url": "https://www.wikidata.org/wiki/Q251",
+                "sim_score": 0.8651
+            },
+            "Dataset": {
+                "qid": "Q1172284",
+                "url": "https://www.wikidata.org/wiki/Q1172284",
+                "sim_score": 0.5441
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6197
+            },
+            "ASK": {
+                "qid": "Q3485796",
+                "url": "https://www.wikidata.org/wiki/Q3485796",
+                "sim_score": 0.4823
+            },
+            "RDFlib": {
+                "qid": "Q7276224",
+                "url": "https://www.wikidata.org/wiki/Q7276224",
+                "sim_score": 0.4543
+            },
+            "Refine": {
+                "qid": "Q682483",
+                "url": "https://www.wikidata.org/wiki/Q682483",
+                "sim_score": 0.4357
+            },
+            "Wikidata": {
+                "qid": "Q2013",
+                "url": "https://www.wikidata.org/wiki/Q2013",
+                "sim_score": 0.894
+            },
+            "Outlook": {
+                "qid": "Q1955600",
+                "url": "https://www.wikidata.org/wiki/Q1955600",
+                "sim_score": 0.5389
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.6428
+            },
+            "LinkedIn": {
+                "qid": "Q213660",
+                "url": "https://www.wikidata.org/wiki/Q213660",
+                "sim_score": 0.7039
+            },
+            "Netflix": {
+                "qid": "Q907311",
+                "url": "https://www.wikidata.org/wiki/Q907311",
+                "sim_score": 0.7608
+            },
+            "Spotify": {
+                "qid": "Q689141",
+                "url": "https://www.wikidata.org/wiki/Q689141",
+                "sim_score": 0.7609
+            }
+        },
+        "Lab Session #06.txt": {
+            "ML": {
+                "qid": "Q860654",
+                "url": "https://www.wikidata.org/wiki/Q860654",
+                "sim_score": 0.42
+            },
+            "Matplotlib": {
+                "qid": "Q2985668",
+                "url": "https://www.wikidata.org/wiki/Q2985668",
+                "sim_score": 0.9122
+            },
+            "API": {
+                "qid": "Q466043",
+                "url": "https://www.wikidata.org/wiki/Q466043",
+                "sim_score": 0.6467
+            },
+            "Moodle": {
+                "qid": "Q190434",
+                "url": "https://www.wikidata.org/wiki/Q190434",
+                "sim_score": 0.7029
+            },
+            "MovieLens": {
+                "qid": "Q4353746",
+                "url": "https://www.wikidata.org/wiki/Q4353746",
+                "sim_score": 0.6927
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.456
+            },
+            "Usenet": {
+                "qid": "Q193162",
+                "url": "https://www.wikidata.org/wiki/Q193162",
+                "sim_score": 0.9151
+            },
+            "NLP": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.6857
+            },
+            "PDS": {
+                "qid": "Q541370",
+                "url": "https://www.wikidata.org/wiki/Q541370",
+                "sim_score": 0.8095
+            },
+            "NuBus": {
+                "qid": "Q1928621",
+                "url": "https://www.wikidata.org/wiki/Q1928621",
+                "sim_score": 0.9146
+            },
+            "Apache Lucene": {
+                "qid": "Q773196",
+                "url": "https://www.wikidata.org/wiki/Q773196",
+                "sim_score": 0.9124
+            },
+            "Java": {
+                "qid": "Q251",
+                "url": "https://www.wikidata.org/wiki/Q251",
+                "sim_score": 0.8691
+            },
+            "Lucene": {
+                "qid": "Q773196",
+                "url": "https://www.wikidata.org/wiki/Q773196",
+                "sim_score": 0.9082
+            },
+            "Elasticsearch": {
+                "qid": "Q3050461",
+                "url": "https://www.wikidata.org/wiki/Q3050461",
+                "sim_score": 0.9158
+            },
+            "Solr": {
+                "qid": "Q2858103",
+                "url": "https://www.wikidata.org/wiki/Q2858103",
+                "sim_score": 0.8909
+            },
+            "Azure Cognitive Search": {
+                "qid": "Q25000548",
+                "url": "https://www.wikidata.org/wiki/Q25000548",
+                "sim_score": 0.4488
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            },
+            "kmeans": {
+                "qid": "Q310401",
+                "url": "https://www.wikidata.org/wiki/Q310401",
+                "sim_score": 0.5966
+            },
+            "WCSS": {
+                "qid": "Q7948104",
+                "url": "https://www.wikidata.org/wiki/Q7948104",
+                "sim_score": 0.6572
+            },
+            "Principal Component Analysis": {
+                "qid": "Q2873",
+                "url": "https://www.wikidata.org/wiki/Q2873",
+                "sim_score": 0.7151
+            },
+            "PCA": {
+                "qid": "Q2873",
+                "url": "https://www.wikidata.org/wiki/Q2873",
+                "sim_score": 0.6192
+            }
+        },
+        "Knowledge Base Queries and Linked Open Data.txt": {
+            "LOD": {
+                "qid": "Q843863",
+                "url": "https://www.wikidata.org/wiki/Q843863",
+                "sim_score": 0.6381
+            },
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.5946
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "Linked Open Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.9075
+            },
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.8418
+            },
+            "Notes": {
+                "qid": "Q60198",
+                "url": "https://www.wikidata.org/wiki/Q60198",
+                "sim_score": 0.4986
+            },
+            "OWL": {
+                "qid": "Q826165",
+                "url": "https://www.wikidata.org/wiki/Q826165",
+                "sim_score": 0.7952
+            },
+            "Description Logics": {
+                "qid": "Q387196",
+                "url": "https://www.wikidata.org/wiki/Q387196",
+                "sim_score": 0.4606
+            },
+            "Amsterdam": {
+                "qid": "Q727",
+                "url": "https://www.wikidata.org/wiki/Q727",
+                "sim_score": 0.7091
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Geonames": {
+                "qid": "Q830106",
+                "url": "https://www.wikidata.org/wiki/Q830106",
+                "sim_score": 0.7358
+            },
+            "Description Logic": {
+                "qid": "Q387196",
+                "url": "https://www.wikidata.org/wiki/Q387196",
+                "sim_score": 0.6131
+            },
+            "Poetry": {
+                "qid": "Q482",
+                "url": "https://www.wikidata.org/wiki/Q482",
+                "sim_score": 0.4721
+            },
+            "UniProt": {
+                "qid": "Q905695",
+                "url": "https://www.wikidata.org/wiki/Q905695",
+                "sim_score": 0.7742
+            },
+            "SELECT": {
+                "qid": "Q1164001",
+                "url": "https://www.wikidata.org/wiki/Q1164001",
+                "sim_score": 0.5062
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.7728
+            },
+            "Springer-Verlag Berlin Heidelberg": {
+                "qid": "Q176916",
+                "url": "https://www.wikidata.org/wiki/Q176916",
+                "sim_score": 0.4483
+            },
+            "Select": {
+                "qid": "Q7447637",
+                "url": "https://www.wikidata.org/wiki/Q7447637",
+                "sim_score": 0.4071
+            },
+            "AVG": {
+                "qid": "Q896547",
+                "url": "https://www.wikidata.org/wiki/Q896547",
+                "sim_score": 0.4736
+            },
+            "MIN": {
+                "qid": "Q953046",
+                "url": "https://www.wikidata.org/wiki/Q953046",
+                "sim_score": 0.4531
+            },
+            "MAX": {
+                "qid": "Q2584009",
+                "url": "https://www.wikidata.org/wiki/Q2584009",
+                "sim_score": 0.5399
+            },
+            "SUM": {
+                "qid": "Q13570696",
+                "url": "https://www.wikidata.org/wiki/Q13570696",
+                "sim_score": 0.4581
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.514
+            },
+            "Mexico": {
+                "qid": "Q96",
+                "url": "https://www.wikidata.org/wiki/Q96",
+                "sim_score": 0.6895
+            },
+            "Q96": {
+                "qid": "Q7265361",
+                "url": "https://www.wikidata.org/wiki/Q7265361",
+                "sim_score": 0.7358
+            },
+            "Construct": {
+                "qid": "Q5164392",
+                "url": "https://www.wikidata.org/wiki/Q5164392",
+                "sim_score": 0.57
+            },
+            "SPARQL": {
+                "qid": "Q54871",
+                "url": "https://www.wikidata.org/wiki/Q54871",
+                "sim_score": 0.9146
+            },
+            "HTTP": {
+                "qid": "Q8777",
+                "url": "https://www.wikidata.org/wiki/Q8777",
+                "sim_score": 0.8909
+            },
+            "SOAP": {
+                "qid": "Q189620",
+                "url": "https://www.wikidata.org/wiki/Q189620",
+                "sim_score": 0.8811
+            },
+            "XML": {
+                "qid": "Q2115",
+                "url": "https://www.wikidata.org/wiki/Q2115",
+                "sim_score": 0.9022
+            },
+            "Server": {
+                "qid": "Q11288",
+                "url": "https://www.wikidata.org/wiki/Q11288",
+                "sim_score": 0.507
+            },
+            "ec": {
+                "qid": "Q52847",
+                "url": "https://www.wikidata.org/wiki/Q52847",
+                "sim_score": 0.4904
+            },
+            "Graphs": {
+                "qid": "Q3784250",
+                "url": "https://www.wikidata.org/wiki/Q3784250",
+                "sim_score": 0.5068
+            },
+            "Turtle": {
+                "qid": "Q223044",
+                "url": "https://www.wikidata.org/wiki/Q223044",
+                "sim_score": 0.5004
+            },
+            "N-Triples": {
+                "qid": "Q44044",
+                "url": "https://www.wikidata.org/wiki/Q44044",
+                "sim_score": 0.7893
+            },
+            "Mona Lisa": {
+                "qid": "Q12418",
+                "url": "https://www.wikidata.org/wiki/Q12418",
+                "sim_score": 0.7362
+            },
+            "IRI": {
+                "qid": "Q424583",
+                "url": "https://www.wikidata.org/wiki/Q424583",
+                "sim_score": 0.7972
+            },
+            "POST": {
+                "qid": "Q28457714",
+                "url": "https://www.wikidata.org/wiki/Q28457714",
+                "sim_score": 0.5062
+            },
+            "Federated Query": {
+                "qid": "Q5440717",
+                "url": "https://www.wikidata.org/wiki/Q5440717",
+                "sim_score": 0.4847
+            },
+            "Apache Jena": {
+                "qid": "Q1686799",
+                "url": "https://www.wikidata.org/wiki/Q1686799",
+                "sim_score": 0.7779
+            },
+            "Reasoning Engine": {
+                "qid": "Q3929429",
+                "url": "https://www.wikidata.org/wiki/Q3929429",
+                "sim_score": 0.6294
+            },
+            "Freebase": {
+                "qid": "Q1453477",
+                "url": "https://www.wikidata.org/wiki/Q1453477",
+                "sim_score": 0.8769
+            },
+            "CSV": {
+                "qid": "Q935809",
+                "url": "https://www.wikidata.org/wiki/Q935809",
+                "sim_score": 0.8255
+            },
+            "Wikipedia": {
+                "qid": "Q52",
+                "url": "https://www.wikidata.org/wiki/Q52",
+                "sim_score": 0.5675
+            },
+            "Tim Berners-Lee": {
+                "qid": "Q80",
+                "url": "https://www.wikidata.org/wiki/Q80",
+                "sim_score": 0.9134
+            },
+            "Canada": {
+                "qid": "Q16",
+                "url": "https://www.wikidata.org/wiki/Q16",
+                "sim_score": 0.6681
+            },
+            "Google": {
+                "qid": "Q9366",
+                "url": "https://www.wikidata.org/wiki/Q9366",
+                "sim_score": 0.8002
+            },
+            "Data Model": {
+                "qid": "Q1172480",
+                "url": "https://www.wikidata.org/wiki/Q1172480",
+                "sim_score": 0.5588
+            },
+            "BabelNet": {
+                "qid": "Q4837690",
+                "url": "https://www.wikidata.org/wiki/Q4837690",
+                "sim_score": 0.9117
+            },
+            "Chapter 9": {
+                "qid": "Q5073465",
+                "url": "https://www.wikidata.org/wiki/Q5073465",
+                "sim_score": 0.4341
+            },
+            "Chapter 12": {
+                "qid": "Q5073439",
+                "url": "https://www.wikidata.org/wiki/Q5073439",
+                "sim_score": 0.4028
+            },
+            "John Domingue": {
+                "qid": "Q93046",
+                "url": "https://www.wikidata.org/wiki/Q93046",
+                "sim_score": 0.7779
+            },
+            "Dieter Fensel": {
+                "qid": "Q92918",
+                "url": "https://www.wikidata.org/wiki/Q92918",
+                "sim_score": 0.7454
+            },
+            "Linked Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.9026
+            },
+            "Frey": {
+                "qid": "Q7326995",
+                "url": "https://www.wikidata.org/wiki/Q7326995",
+                "sim_score": 0.4566
+            },
+            "Cham": {
+                "qid": "Q383256",
+                "url": "https://www.wikidata.org/wiki/Q383256",
+                "sim_score": 0.6376
+            },
+            "Springer International Publishing": {
+                "qid": "Q176916",
+                "url": "https://www.wikidata.org/wiki/Q176916",
+                "sim_score": 0.5976
+            }
+        },
+        "Recommender Systems.txt": {
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Concordia University": {
+                "qid": "Q5159001",
+                "url": "https://www.wikidata.org/wiki/Q5159001",
+                "sim_score": 0.737
+            },
+            "Prabhakar Raghavan": {
+                "qid": "Q7237222",
+                "url": "https://www.wikidata.org/wiki/Q7237222",
+                "sim_score": 0.7627
+            },
+            "Cambridge University": {
+                "qid": "Q35794",
+                "url": "https://www.wikidata.org/wiki/Q35794",
+                "sim_score": 0.6718
+            },
+            "Recommender Systems": {
+                "qid": "Q554950",
+                "url": "https://www.wikidata.org/wiki/Q554950",
+                "sim_score": 0.5872
+            },
+            "Collaborative Filtering": {
+                "qid": "Q94702",
+                "url": "https://www.wikidata.org/wiki/Q94702",
+                "sim_score": 0.7029
+            },
+            "Cambridge University Press": {
+                "qid": "Q912887",
+                "url": "https://www.wikidata.org/wiki/Q912887",
+                "sim_score": 0.7883
+            },
+            "Euclidean": {
+                "qid": "Q5406124",
+                "url": "https://www.wikidata.org/wiki/Q5406124",
+                "sim_score": 0.4485
+            },
+            "Euclidian": {
+                "qid": "Q702232",
+                "url": "https://www.wikidata.org/wiki/Q702232",
+                "sim_score": 0.517
+            },
+            "Comparing": {
+                "qid": "Q1720648",
+                "url": "https://www.wikidata.org/wiki/Q1720648",
+                "sim_score": 0.4543
+            },
+            "Cosine": {
+                "qid": "Q13647261",
+                "url": "https://www.wikidata.org/wiki/Q13647261",
+                "sim_score": 0.6657
+            },
+            "metadata": {
+                "qid": "Q180160",
+                "url": "https://www.wikidata.org/wiki/Q180160",
+                "sim_score": 0.4624
+            },
+            "FOAF": {
+                "qid": "Q1389366",
+                "url": "https://www.wikidata.org/wiki/Q1389366",
+                "sim_score": 0.7435
+            },
+            "Intuitively": {
+                "qid": "Q189222",
+                "url": "https://www.wikidata.org/wiki/Q189222",
+                "sim_score": 0.4389
+            },
+            "Amazon": {
+                "qid": "Q3884",
+                "url": "https://www.wikidata.org/wiki/Q3884",
+                "sim_score": 0.6438
+            },
+            "Netflix": {
+                "qid": "Q907311",
+                "url": "https://www.wikidata.org/wiki/Q907311",
+                "sim_score": 0.7035
+            },
+            "AP": {
+                "qid": "Q40469",
+                "url": "https://www.wikidata.org/wiki/Q40469",
+                "sim_score": 0.5039
+            },
+            "MAP": {
+                "qid": "Q6753731",
+                "url": "https://www.wikidata.org/wiki/Q6753731",
+                "sim_score": 0.5287
+            },
+            "Likert": {
+                "qid": "Q617473",
+                "url": "https://www.wikidata.org/wiki/Q617473",
+                "sim_score": 0.5017
+            },
+            "Compute": {
+                "qid": "Q4036474",
+                "url": "https://www.wikidata.org/wiki/Q4036474",
+                "sim_score": 0.4484
+            },
+            "DCG": {
+                "qid": "Q1963535",
+                "url": "https://www.wikidata.org/wiki/Q1963535",
+                "sim_score": 0.6473
+            },
+            "IR": {
+                "qid": "Q11388",
+                "url": "https://www.wikidata.org/wiki/Q11388",
+                "sim_score": 0.493
+            },
+            "Anthony Julius": {
+                "qid": "Q4772862",
+                "url": "https://www.wikidata.org/wiki/Q4772862",
+                "sim_score": 0.9134
+            },
+            "Cleopatra": {
+                "qid": "Q635",
+                "url": "https://www.wikidata.org/wiki/Q635",
+                "sim_score": 0.6887
+            },
+            "\u2208": {
+                "qid": "Q379825",
+                "url": "https://www.wikidata.org/wiki/Q379825",
+                "sim_score": 0.5761
+            },
+            "Recommender Engine": {
+                "qid": "Q554950",
+                "url": "https://www.wikidata.org/wiki/Q554950",
+                "sim_score": 0.6967
+            },
+            "Recommendations": {
+                "qid": "Q554950",
+                "url": "https://www.wikidata.org/wiki/Q554950",
+                "sim_score": 0.501
+            },
+            "Doug Turnbull": {
+                "qid": "Q5300968",
+                "url": "https://www.wikidata.org/wiki/Q5300968",
+                "sim_score": 0.7064
+            },
+            "John Berryman": {
+                "qid": "Q4085167",
+                "url": "https://www.wikidata.org/wiki/Q4085167",
+                "sim_score": 0.697
+            }
+        },
+        "Machine Learning for Intelligent Systems.txt": {
+            "Machine Learning": {
+                "qid": "Q6723676",
+                "url": "https://www.wikidata.org/wiki/Q6723676",
+                "sim_score": 0.8041
+            },
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Concordia University": {
+                "qid": "Q5159001",
+                "url": "https://www.wikidata.org/wiki/Q5159001",
+                "sim_score": 0.737
+            },
+            "Motivation": {
+                "qid": "Q644302",
+                "url": "https://www.wikidata.org/wiki/Q644302",
+                "sim_score": 0.4147
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6322
+            },
+            "ML": {
+                "qid": "Q860654",
+                "url": "https://www.wikidata.org/wiki/Q860654",
+                "sim_score": 0.5132
+            },
+            "Arthur Samuel": {
+                "qid": "Q710266",
+                "url": "https://www.wikidata.org/wiki/Q710266",
+                "sim_score": 0.4635
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.901
+            },
+            "Neural Networks": {
+                "qid": "Q15708873",
+                "url": "https://www.wikidata.org/wiki/Q15708873",
+                "sim_score": 0.5047
+            },
+            "NB": {
+                "qid": "Q222751",
+                "url": "https://www.wikidata.org/wiki/Q222751",
+                "sim_score": 0.4571
+            },
+            "EDA": {
+                "qid": "Q18023109",
+                "url": "https://www.wikidata.org/wiki/Q18023109",
+                "sim_score": 0.7218
+            },
+            "Exploratory Data Analysis": {
+                "qid": "Q1322871",
+                "url": "https://www.wikidata.org/wiki/Q1322871",
+                "sim_score": 0.7033
+            },
+            "Unsupervised Learning": {
+                "qid": "Q1152135",
+                "url": "https://www.wikidata.org/wiki/Q1152135",
+                "sim_score": 0.7074
+            },
+            "Reinforcement Learning": {
+                "qid": "Q830687",
+                "url": "https://www.wikidata.org/wiki/Q830687",
+                "sim_score": 0.6979
+            },
+            "Notes": {
+                "qid": "Q4653740",
+                "url": "https://www.wikidata.org/wiki/Q4653740",
+                "sim_score": 0.4992
+            },
+            "Enron": {
+                "qid": "Q327646",
+                "url": "https://www.wikidata.org/wiki/Q327646",
+                "sim_score": 0.7394
+            },
+            "German": {
+                "qid": "Q188",
+                "url": "https://www.wikidata.org/wiki/Q188",
+                "sim_score": 0.5223
+            },
+            "Cambridge Analytica": {
+                "qid": "Q24083484",
+                "url": "https://www.wikidata.org/wiki/Q24083484",
+                "sim_score": 0.7544
+            },
+            "Algorithm": {
+                "qid": "Q8366",
+                "url": "https://www.wikidata.org/wiki/Q8366",
+                "sim_score": 0.4082
+            },
+            "Compute": {
+                "qid": "Q4036474",
+                "url": "https://www.wikidata.org/wiki/Q4036474",
+                "sim_score": 0.5706
+            },
+            "Pros & Cons": {
+                "qid": "Q7250533",
+                "url": "https://www.wikidata.org/wiki/Q7250533",
+                "sim_score": 0.4615
+            },
+            "k-Nearest-Neighbor": {
+                "qid": "Q1071612",
+                "url": "https://www.wikidata.org/wiki/Q1071612",
+                "sim_score": 0.4754
+            },
+            "Euclidian": {
+                "qid": "Q702232",
+                "url": "https://www.wikidata.org/wiki/Q702232",
+                "sim_score": 0.517
+            },
+            "Euclidean": {
+                "qid": "Q162886",
+                "url": "https://www.wikidata.org/wiki/Q162886",
+                "sim_score": 0.4486
+            },
+            "Manhattan": {
+                "qid": "Q11299",
+                "url": "https://www.wikidata.org/wiki/Q11299",
+                "sim_score": 0.6756
+            },
+            "Netflix": {
+                "qid": "Q907311",
+                "url": "https://www.wikidata.org/wiki/Q907311",
+                "sim_score": 0.9164
+            },
+            "U.S.": {
+                "qid": "Q30",
+                "url": "https://www.wikidata.org/wiki/Q30",
+                "sim_score": 0.4046
+            },
+            "British": {
+                "qid": "Q8680",
+                "url": "https://www.wikidata.org/wiki/Q8680",
+                "sim_score": 0.4715
+            },
+            "House of Cards": {
+                "qid": "Q3330940",
+                "url": "https://www.wikidata.org/wiki/Q3330940",
+                "sim_score": 0.7546
+            },
+            "BSD License": {
+                "qid": "Q191307",
+                "url": "https://www.wikidata.org/wiki/Q191307",
+                "sim_score": 0.9027
+            },
+            "Noisy Data": {
+                "qid": "Q30587856",
+                "url": "https://www.wikidata.org/wiki/Q30587856",
+                "sim_score": 0.4603
+            },
+            "Underfitting": {
+                "qid": "Q331309",
+                "url": "https://www.wikidata.org/wiki/Q331309",
+                "sim_score": 0.9074
+            },
+            "Cross-Validation": {
+                "qid": "Q541014",
+                "url": "https://www.wikidata.org/wiki/Q541014",
+                "sim_score": 0.9027
+            },
+            "Chapter 7": {
+                "qid": "Q4411666",
+                "url": "https://www.wikidata.org/wiki/Q4411666",
+                "sim_score": 0.5489
+            },
+            "James Pustejovsky": {
+                "qid": "Q3161351",
+                "url": "https://www.wikidata.org/wiki/Q3161351",
+                "sim_score": 0.6977
+            }
+        },
+        "Knowledge Graphs.txt": {
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.8418
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Concordia University": {
+                "qid": "Q5159001",
+                "url": "https://www.wikidata.org/wiki/Q5159001",
+                "sim_score": 0.737
+            },
+            "Text": {
+                "qid": "Q234460",
+                "url": "https://www.wikidata.org/wiki/Q234460",
+                "sim_score": 0.5025
+            },
+            "Knowledge Graphs": {
+                "qid": "Q324254",
+                "url": "https://www.wikidata.org/wiki/Q324254",
+                "sim_score": 0.6576
+            },
+            "IBM": {
+                "qid": "Q37156",
+                "url": "https://www.wikidata.org/wiki/Q37156",
+                "sim_score": 0.6864
+            },
+            "A1": {
+                "qid": "Q279859",
+                "url": "https://www.wikidata.org/wiki/Q279859",
+                "sim_score": 0.5054
+            },
+            "A2": {
+                "qid": "Q888603",
+                "url": "https://www.wikidata.org/wiki/Q888603",
+                "sim_score": 0.487
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6338
+            },
+            "Graph API\n": {
+                "qid": "Q648457",
+                "url": "https://www.wikidata.org/wiki/Q648457",
+                "sim_score": 0.6669
+            },
+            "WWW": {
+                "qid": "Q15117072",
+                "url": "https://www.wikidata.org/wiki/Q15117072",
+                "sim_score": 0.5266
+            },
+            "YouTube": {
+                "qid": "Q866",
+                "url": "https://www.wikidata.org/wiki/Q866",
+                "sim_score": 0.8892
+            },
+            "General Problem \n\nSolver\n\n": {
+                "qid": "Q1387212",
+                "url": "https://www.wikidata.org/wiki/Q1387212",
+                "sim_score": 0.72
+            },
+            "Frame Problem": {
+                "qid": "Q1185775",
+                "url": "https://www.wikidata.org/wiki/Q1185775",
+                "sim_score": 0.7162
+            },
+            "Quillian": {
+                "qid": "Q76878060",
+                "url": "https://www.wikidata.org/wiki/Q76878060",
+                "sim_score": 0.4725
+            },
+            "SHRDLU": {
+                "qid": "Q1778029",
+                "url": "https://www.wikidata.org/wiki/Q1778029",
+                "sim_score": 0.784
+            },
+            "OWL": {
+                "qid": "Q826165",
+                "url": "https://www.wikidata.org/wiki/Q826165",
+                "sim_score": 0.6616
+            },
+            "Semantic Networks": {
+                "qid": "Q1045785",
+                "url": "https://www.wikidata.org/wiki/Q1045785",
+                "sim_score": 0.7003
+            },
+            "Description Logic": {
+                "qid": "Q387196",
+                "url": "https://www.wikidata.org/wiki/Q387196",
+                "sim_score": 0.718
+            },
+            "Oracle Spatial": {
+                "qid": "Q3508244",
+                "url": "https://www.wikidata.org/wiki/Q3508244",
+                "sim_score": 0.5974
+            },
+            "Facebook Graph Search": {
+                "qid": "Q5428454",
+                "url": "https://www.wikidata.org/wiki/Q5428454",
+                "sim_score": 0.4558
+            },
+            "Google Knowledge Graph": {
+                "qid": "Q648625",
+                "url": "https://www.wikidata.org/wiki/Q648625",
+                "sim_score": 0.7893
+            },
+            "Wikidata": {
+                "qid": "Q2013",
+                "url": "https://www.wikidata.org/wiki/Q2013",
+                "sim_score": 0.894
+            },
+            "TBL": {
+                "qid": "Q4001328",
+                "url": "https://www.wikidata.org/wiki/Q4001328",
+                "sim_score": 0.6567
+            },
+            "TED": {
+                "qid": "Q189021",
+                "url": "https://www.wikidata.org/wiki/Q189021",
+                "sim_score": 0.689
+            },
+            "The Next Web": {
+                "qid": "Q2913725",
+                "url": "https://www.wikidata.org/wiki/Q2913725",
+                "sim_score": 0.8117
+            },
+            "Graphs": {
+                "qid": "Q3427422",
+                "url": "https://www.wikidata.org/wiki/Q3427422",
+                "sim_score": 0.4923
+            },
+            "Leonardo da Vinci": {
+                "qid": "Q762",
+                "url": "https://www.wikidata.org/wiki/Q762",
+                "sim_score": 0.4334
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.901
+            },
+            "Turtle": {
+                "qid": "Q114409",
+                "url": "https://www.wikidata.org/wiki/Q114409",
+                "sim_score": 0.5612
+            },
+            "N3": {
+                "qid": "Q1424987",
+                "url": "https://www.wikidata.org/wiki/Q1424987",
+                "sim_score": 0.7463
+            },
+            "IRI": {
+                "qid": "Q1674879",
+                "url": "https://www.wikidata.org/wiki/Q1674879",
+                "sim_score": 0.6521
+            },
+            "Mona Lisa": {
+                "qid": "Q12418",
+                "url": "https://www.wikidata.org/wiki/Q12418",
+                "sim_score": 0.7362
+            },
+            "Notes": {
+                "qid": "Q60198",
+                "url": "https://www.wikidata.org/wiki/Q60198",
+                "sim_score": 0.5008
+            },
+            "suffix": {
+                "qid": "Q62155",
+                "url": "https://www.wikidata.org/wiki/Q62155",
+                "sim_score": 0.5511
+            },
+            "FOAF": {
+                "qid": "Q1389366",
+                "url": "https://www.wikidata.org/wiki/Q1389366",
+                "sim_score": 0.7435
+            },
+            "N-Triples": {
+                "qid": "Q44044",
+                "url": "https://www.wikidata.org/wiki/Q44044",
+                "sim_score": 0.9148
+            },
+            "Java": {
+                "qid": "Q3757",
+                "url": "https://www.wikidata.org/wiki/Q3757",
+                "sim_score": 0.7318
+            },
+            "PHP": {
+                "qid": "Q59",
+                "url": "https://www.wikidata.org/wiki/Q59",
+                "sim_score": 0.7486
+            },
+            "Graph": {
+                "qid": "Q141488",
+                "url": "https://www.wikidata.org/wiki/Q141488",
+                "sim_score": 0.5231
+            },
+            "The Glass Palace": {
+                "qid": "Q3225164",
+                "url": "https://www.wikidata.org/wiki/Q3225164",
+                "sim_score": 0.8939
+            },
+            "Harper Collins": {
+                "qid": "Q95149",
+                "url": "https://www.wikidata.org/wiki/Q95149",
+                "sim_score": 0.6565
+            },
+            "London": {
+                "qid": "Q84",
+                "url": "https://www.wikidata.org/wiki/Q84",
+                "sim_score": 0.643
+            },
+            "French": {
+                "qid": "Q150",
+                "url": "https://www.wikidata.org/wiki/Q150",
+                "sim_score": 0.5147
+            },
+            "A12": {
+                "qid": "Q4648862",
+                "url": "https://www.wikidata.org/wiki/Q4648862",
+                "sim_score": 0.6708
+            },
+            "Auteur": {
+                "qid": "Q788514",
+                "url": "https://www.wikidata.org/wiki/Q788514",
+                "sim_score": 0.4167
+            },
+            "Wikipedia": {
+                "qid": "Q52",
+                "url": "https://www.wikidata.org/wiki/Q52",
+                "sim_score": 0.4744
+            },
+            "Expose": {
+                "qid": "Q1384772",
+                "url": "https://www.wikidata.org/wiki/Q1384772",
+                "sim_score": 0.5281
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.6657
+            },
+            "Knowledge Graph": {
+                "qid": "Q33002955",
+                "url": "https://www.wikidata.org/wiki/Q33002955",
+                "sim_score": 0.5698
+            },
+            "LLM": {
+                "qid": "Q754848",
+                "url": "https://www.wikidata.org/wiki/Q754848",
+                "sim_score": 0.6895
+            },
+            "GenAI": {
+                "qid": "Q5530868",
+                "url": "https://www.wikidata.org/wiki/Q5530868",
+                "sim_score": 0.4789
+            },
+            "Primer": {
+                "qid": "Q16000421",
+                "url": "https://www.wikidata.org/wiki/Q16000421",
+                "sim_score": 0.5209
+            }
+        },
+        "Intelligent Systems Introduction.txt": {
+            "Knowledge Graphs": {
+                "qid": "Q324254",
+                "url": "https://www.wikidata.org/wiki/Q324254",
+                "sim_score": 0.6576
+            },
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.5946
+            },
+            "Concordia University": {
+                "qid": "Q5159001",
+                "url": "https://www.wikidata.org/wiki/Q5159001",
+                "sim_score": 0.7076
+            },
+            "Notes": {
+                "qid": "Q4653740",
+                "url": "https://www.wikidata.org/wiki/Q4653740",
+                "sim_score": 0.5011
+            },
+            "Information Retrieval": {
+                "qid": "Q816826",
+                "url": "https://www.wikidata.org/wiki/Q816826",
+                "sim_score": 0.6589
+            },
+            "Steve Jobs": {
+                "qid": "Q19837",
+                "url": "https://www.wikidata.org/wiki/Q19837",
+                "sim_score": 0.754
+            },
+            "Text Mining": {
+                "qid": "Q676880",
+                "url": "https://www.wikidata.org/wiki/Q676880",
+                "sim_score": 0.7169
+            },
+            "Artificial Intelligence": {
+                "qid": "Q109875730",
+                "url": "https://www.wikidata.org/wiki/Q109875730",
+                "sim_score": 0.6523
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.514
+            },
+            "French": {
+                "qid": "Q150",
+                "url": "https://www.wikidata.org/wiki/Q150",
+                "sim_score": 0.5147
+            },
+            "NLP": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.5691
+            },
+            "UIMA": {
+                "qid": "Q1539155",
+                "url": "https://www.wikidata.org/wiki/Q1539155",
+                "sim_score": 0.747
+            },
+            "Refinitiv": {
+                "qid": "Q60741469",
+                "url": "https://www.wikidata.org/wiki/Q60741469",
+                "sim_score": 0.6845
+            },
+            "Machine Learning": {
+                "qid": "Q2539",
+                "url": "https://www.wikidata.org/wiki/Q2539",
+                "sim_score": 0.5695
+            },
+            "Recommender Systems": {
+                "qid": "Q554950",
+                "url": "https://www.wikidata.org/wiki/Q554950",
+                "sim_score": 0.685
+            },
+            "Collaborative Filtering": {
+                "qid": "Q94702",
+                "url": "https://www.wikidata.org/wiki/Q94702",
+                "sim_score": 0.7029
+            },
+            "Sentiment Analysis": {
+                "qid": "Q2271421",
+                "url": "https://www.wikidata.org/wiki/Q2271421",
+                "sim_score": 0.616
+            },
+            "IBM": {
+                "qid": "Q37156",
+                "url": "https://www.wikidata.org/wiki/Q37156",
+                "sim_score": 0.8843
+            },
+            "Linked Open Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.9075
+            },
+            "LOD": {
+                "qid": "Q1821756",
+                "url": "https://www.wikidata.org/wiki/Q1821756",
+                "sim_score": 0.4303
+            },
+            "Graphs": {
+                "qid": "Q3784250",
+                "url": "https://www.wikidata.org/wiki/Q3784250",
+                "sim_score": 0.5035
+            },
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.4584
+            },
+            "Mona Lisa": {
+                "qid": "Q12418",
+                "url": "https://www.wikidata.org/wiki/Q12418",
+                "sim_score": 0.7362
+            },
+            "Bahar": {
+                "qid": "Q4842420",
+                "url": "https://www.wikidata.org/wiki/Q4842420",
+                "sim_score": 0.4703
+            },
+            "Dublin Core": {
+                "qid": "Q624610",
+                "url": "https://www.wikidata.org/wiki/Q624610",
+                "sim_score": 0.7907
+            },
+            "SAAS": {
+                "qid": "Q671488",
+                "url": "https://www.wikidata.org/wiki/Q671488",
+                "sim_score": 0.5862
+            },
+            "Deep Learning": {
+                "qid": "Q197536",
+                "url": "https://www.wikidata.org/wiki/Q197536",
+                "sim_score": 0.6139
+            },
+            "A. Turing": {
+                "qid": "Q7251",
+                "url": "https://www.wikidata.org/wiki/Q7251",
+                "sim_score": 0.4488
+            },
+            "Apple Siri": {
+                "qid": "Q582159",
+                "url": "https://www.wikidata.org/wiki/Q582159",
+                "sim_score": 0.7779
+            },
+            "Alexa": {
+                "qid": "Q1674441",
+                "url": "https://www.wikidata.org/wiki/Q1674441",
+                "sim_score": 0.5001
+            },
+            "Microsoft": {
+                "qid": "Q2283",
+                "url": "https://www.wikidata.org/wiki/Q2283",
+                "sim_score": 0.7067
+            },
+            "Cortana": {
+                "qid": "Q16752102",
+                "url": "https://www.wikidata.org/wiki/Q16752102",
+                "sim_score": 0.6994
+            },
+            "Gartner": {
+                "qid": "Q174198",
+                "url": "https://www.wikidata.org/wiki/Q174198",
+                "sim_score": 0.6622
+            },
+            "Eliza": {
+                "qid": "Q580318",
+                "url": "https://www.wikidata.org/wiki/Q580318",
+                "sim_score": 0.5102
+            },
+            "Weizenbaum": {
+                "qid": "Q75778",
+                "url": "https://www.wikidata.org/wiki/Q75778",
+                "sim_score": 0.5602
+            },
+            "Keyword": {
+                "qid": "Q28134182",
+                "url": "https://www.wikidata.org/wiki/Q28134182",
+                "sim_score": 0.4877
+            },
+            "Watson": {
+                "qid": "Q12253",
+                "url": "https://www.wikidata.org/wiki/Q12253",
+                "sim_score": 0.5087
+            },
+            "QA": {
+                "qid": "Q613918",
+                "url": "https://www.wikidata.org/wiki/Q613918",
+                "sim_score": 0.511
+            },
+            "POWER7": {
+                "qid": "Q2600559",
+                "url": "https://www.wikidata.org/wiki/Q2600559",
+                "sim_score": 0.7042
+            },
+            "RAM": {
+                "qid": "Q173104",
+                "url": "https://www.wikidata.org/wiki/Q173104",
+                "sim_score": 0.6509
+            },
+            "BERT": {
+                "qid": "Q840922",
+                "url": "https://www.wikidata.org/wiki/Q840922",
+                "sim_score": 0.6884
+            },
+            "Google Search": {
+                "qid": "Q9366",
+                "url": "https://www.wikidata.org/wiki/Q9366",
+                "sim_score": 0.5478
+            },
+            "Google": {
+                "qid": "Q9366",
+                "url": "https://www.wikidata.org/wiki/Q9366",
+                "sim_score": 0.6827
+            },
+            "Jorge P\u00e9rez": {
+                "qid": "Q55615315",
+                "url": "https://www.wikidata.org/wiki/Q55615315",
+                "sim_score": 0.4135
+            },
+            "Gettysburg": {
+                "qid": "Q694550",
+                "url": "https://www.wikidata.org/wiki/Q694550",
+                "sim_score": 0.4539
+            },
+            "Antietam": {
+                "qid": "Q719252",
+                "url": "https://www.wikidata.org/wiki/Q719252",
+                "sim_score": 0.4627
+            },
+            "GPT-2": {
+                "qid": "Q95726727",
+                "url": "https://www.wikidata.org/wiki/Q95726727",
+                "sim_score": 0.7906
+            },
+            "GPT-3": {
+                "qid": "Q95726734",
+                "url": "https://www.wikidata.org/wiki/Q95726734",
+                "sim_score": 0.7859
+            },
+            "API": {
+                "qid": "Q165194",
+                "url": "https://www.wikidata.org/wiki/Q165194",
+                "sim_score": 0.8168
+            },
+            "Cole Howard": {
+                "qid": "Q5142666",
+                "url": "https://www.wikidata.org/wiki/Q5142666",
+                "sim_score": 0.7486
+            }
+        },
+        "Intelligent Agents.txt": {
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.6972
+            },
+            "Concordia University": {
+                "qid": "Q326342",
+                "url": "https://www.wikidata.org/wiki/Q326342",
+                "sim_score": 0.7544
+            },
+            "Notes": {
+                "qid": "Q4653740",
+                "url": "https://www.wikidata.org/wiki/Q4653740",
+                "sim_score": 0.4992
+            },
+            "Deep Learning": {
+                "qid": "Q197536",
+                "url": "https://www.wikidata.org/wiki/Q197536",
+                "sim_score": 0.7021
+            },
+            "Apple": {
+                "qid": "Q312",
+                "url": "https://www.wikidata.org/wiki/Q312",
+                "sim_score": 0.5673
+            },
+            "Siri": {
+                "qid": "Q12069185",
+                "url": "https://www.wikidata.org/wiki/Q12069185",
+                "sim_score": 0.5877
+            },
+            "Alexa": {
+                "qid": "Q3814475",
+                "url": "https://www.wikidata.org/wiki/Q3814475",
+                "sim_score": 0.5005
+            },
+            "Google": {
+                "qid": "Q95",
+                "url": "https://www.wikidata.org/wiki/Q95",
+                "sim_score": 0.6657
+            },
+            "MS": {
+                "qid": "Q1494",
+                "url": "https://www.wikidata.org/wiki/Q1494",
+                "sim_score": 0.439
+            },
+            "Chatbot": {
+                "qid": "Q870780",
+                "url": "https://www.wikidata.org/wiki/Q870780",
+                "sim_score": 0.7015
+            },
+            "HBO": {
+                "qid": "Q23633",
+                "url": "https://www.wikidata.org/wiki/Q23633",
+                "sim_score": 0.7407
+            },
+            "Westworld": {
+                "qid": "Q17572811",
+                "url": "https://www.wikidata.org/wiki/Q17572811",
+                "sim_score": 0.8903
+            },
+            "Resident Evil": {
+                "qid": "Q1276325",
+                "url": "https://www.wikidata.org/wiki/Q1276325",
+                "sim_score": 0.8656
+            },
+            "Red Queen": {
+                "qid": "Q2561830",
+                "url": "https://www.wikidata.org/wiki/Q2561830",
+                "sim_score": 0.6951
+            },
+            "Zootopia": {
+                "qid": "Q15270647",
+                "url": "https://www.wikidata.org/wiki/Q15270647",
+                "sim_score": 0.9136
+            },
+            "Judy Hopps": {
+                "qid": "Q15270647",
+                "url": "https://www.wikidata.org/wiki/Q15270647",
+                "sim_score": 0.8488
+            },
+            "Call of Duty": {
+                "qid": "Q192156",
+                "url": "https://www.wikidata.org/wiki/Q192156",
+                "sim_score": 0.8251
+            },
+            "Gartner": {
+                "qid": "Q174198",
+                "url": "https://www.wikidata.org/wiki/Q174198",
+                "sim_score": 0.8474
+            },
+            "Amazon": {
+                "qid": "Q3884",
+                "url": "https://www.wikidata.org/wiki/Q3884",
+                "sim_score": 0.6599
+            },
+            "Microsoft": {
+                "qid": "Q2283",
+                "url": "https://www.wikidata.org/wiki/Q2283",
+                "sim_score": 0.8474
+            },
+            "Eliza": {
+                "qid": "Q580318",
+                "url": "https://www.wikidata.org/wiki/Q580318",
+                "sim_score": 0.5119
+            },
+            "Keyword": {
+                "qid": "Q28134182",
+                "url": "https://www.wikidata.org/wiki/Q28134182",
+                "sim_score": 0.4099
+            },
+            "Finite State Machine": {
+                "qid": "Q176452",
+                "url": "https://www.wikidata.org/wiki/Q176452",
+                "sim_score": 0.7115
+            },
+            "automaton": {
+                "qid": "Q176452",
+                "url": "https://www.wikidata.org/wiki/Q176452",
+                "sim_score": 0.8201
+            },
+            "DFA": {
+                "qid": "Q1153070",
+                "url": "https://www.wikidata.org/wiki/Q1153070",
+                "sim_score": 0.637
+            },
+            "Automata": {
+                "qid": "Q787116",
+                "url": "https://www.wikidata.org/wiki/Q787116",
+                "sim_score": 0.6229
+            },
+            "Richard Wallace": {
+                "qid": "Q374455",
+                "url": "https://www.wikidata.org/wiki/Q374455",
+                "sim_score": 0.7372
+            },
+            "YOUS": {
+                "qid": "Q1165897",
+                "url": "https://www.wikidata.org/wiki/Q1165897",
+                "sim_score": 0.4596
+            },
+            "Chapter 12": {
+                "qid": "Q5073439",
+                "url": "https://www.wikidata.org/wiki/Q5073439",
+                "sim_score": 0.4028
+            },
+            "Italian": {
+                "qid": "Q652",
+                "url": "https://www.wikidata.org/wiki/Q652",
+                "sim_score": 0.4449
+            },
+            "AIML": {
+                "qid": "Q223898",
+                "url": "https://www.wikidata.org/wiki/Q223898",
+                "sim_score": 0.6591
+            },
+            "Speaktoit": {
+                "qid": "Q7574357",
+                "url": "https://www.wikidata.org/wiki/Q7574357",
+                "sim_score": 0.9074
+            },
+            "DBpedia": {
+                "qid": "Q465",
+                "url": "https://www.wikidata.org/wiki/Q465",
+                "sim_score": 0.9155
+            },
+            "Concordia": {
+                "qid": "Q1913996",
+                "url": "https://www.wikidata.org/wiki/Q1913996",
+                "sim_score": 0.4877
+            },
+            "Montreal": {
+                "qid": "Q340",
+                "url": "https://www.wikidata.org/wiki/Q340",
+                "sim_score": 0.7097
+            },
+            "Quebec": {
+                "qid": "Q176",
+                "url": "https://www.wikidata.org/wiki/Q176",
+                "sim_score": 0.7293
+            },
+            "Canada": {
+                "qid": "Q16",
+                "url": "https://www.wikidata.org/wiki/Q16",
+                "sim_score": 0.6681
+            },
+            "Loyola College": {
+                "qid": "Q6694542",
+                "url": "https://www.wikidata.org/wiki/Q6694542",
+                "sim_score": 0.704
+            },
+            "George Williams": {
+                "qid": "Q5546376",
+                "url": "https://www.wikidata.org/wiki/Q5546376",
+                "sim_score": 0.6663
+            },
+            "English": {
+                "qid": "Q1860",
+                "url": "https://www.wikidata.org/wiki/Q1860",
+                "sim_score": 0.514
+            },
+            "Workflow": {
+                "qid": "Q30602204",
+                "url": "https://www.wikidata.org/wiki/Q30602204",
+                "sim_score": 0.5469
+            },
+            "ASK": {
+                "qid": "Q3755081",
+                "url": "https://www.wikidata.org/wiki/Q3755081",
+                "sim_score": 0.4791
+            },
+            "SELECT": {
+                "qid": "Q1164001",
+                "url": "https://www.wikidata.org/wiki/Q1164001",
+                "sim_score": 0.5062
+            },
+            "NLP": {
+                "qid": "Q30642",
+                "url": "https://www.wikidata.org/wiki/Q30642",
+                "sim_score": 0.6857
+            },
+            "Stopword": {
+                "qid": "Q80735",
+                "url": "https://www.wikidata.org/wiki/Q80735",
+                "sim_score": 0.7021
+            },
+            "Noun": {
+                "qid": "Q4782696",
+                "url": "https://www.wikidata.org/wiki/Q4782696",
+                "sim_score": 0.5035
+            },
+            "Verb": {
+                "qid": "Q24905",
+                "url": "https://www.wikidata.org/wiki/Q24905",
+                "sim_score": 0.5169
+            },
+            "Token": {
+                "qid": "Q172841",
+                "url": "https://www.wikidata.org/wiki/Q172841",
+                "sim_score": 0.4877
+            },
+            "Modifier": {
+                "qid": "Q5156843",
+                "url": "https://www.wikidata.org/wiki/Q5156843",
+                "sim_score": 0.4914
+            },
+            "quan": {
+                "qid": "Q1045852",
+                "url": "https://www.wikidata.org/wiki/Q1045852",
+                "sim_score": 0.4654
+            },
+            "tem": {
+                "qid": "Q36613",
+                "url": "https://www.wikidata.org/wiki/Q36613",
+                "sim_score": 0.4484
+            },
+            "CE": {
+                "qid": "Q208141",
+                "url": "https://www.wikidata.org/wiki/Q208141",
+                "sim_score": 0.5021
+            },
+            "OPE": {
+                "qid": "Q3883909",
+                "url": "https://www.wikidata.org/wiki/Q3883909",
+                "sim_score": 0.6368
+            },
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.7084
+            },
+            "World Wide": {
+                "qid": "Q1341612",
+                "url": "https://www.wikidata.org/wiki/Q1341612",
+                "sim_score": 0.5646
+            },
+            "Linked Open Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.9075
+            },
+            "LOD": {
+                "qid": "Q843863",
+                "url": "https://www.wikidata.org/wiki/Q843863",
+                "sim_score": 0.6381
+            },
+            "Wikipedia": {
+                "qid": "Q52",
+                "url": "https://www.wikidata.org/wiki/Q52",
+                "sim_score": 0.4093
+            },
+            "Spotlight": {
+                "qid": "Q18154496",
+                "url": "https://www.wikidata.org/wiki/Q18154496",
+                "sim_score": 0.4264
+            },
+            "IBM": {
+                "qid": "Q37156",
+                "url": "https://www.wikidata.org/wiki/Q37156",
+                "sim_score": 0.6904
+            },
+            "QA": {
+                "qid": "Q613918",
+                "url": "https://www.wikidata.org/wiki/Q613918",
+                "sim_score": 0.511
+            },
+            "POWER7": {
+                "qid": "Q2600559",
+                "url": "https://www.wikidata.org/wiki/Q2600559",
+                "sim_score": 0.7042
+            },
+            "RAM": {
+                "qid": "Q173104",
+                "url": "https://www.wikidata.org/wiki/Q173104",
+                "sim_score": 0.6509
+            },
+            "Chapter 26": {
+                "qid": "Q6789867",
+                "url": "https://www.wikidata.org/wiki/Q6789867",
+                "sim_score": 0.4544
+            },
+            "Frey": {
+                "qid": "Q7326995",
+                "url": "https://www.wikidata.org/wiki/Q7326995",
+                "sim_score": 0.4583
+            },
+            "Cham": {
+                "qid": "Q10424",
+                "url": "https://www.wikidata.org/wiki/Q10424",
+                "sim_score": 0.6231
+            },
+            "Springer International Publishing": {
+                "qid": "Q176916",
+                "url": "https://www.wikidata.org/wiki/Q176916",
+                "sim_score": 0.4989
+            },
+            "Cole Howard": {
+                "qid": "Q5142666",
+                "url": "https://www.wikidata.org/wiki/Q5142666",
+                "sim_score": 0.7164
+            },
+            "Stuart Russell": {
+                "qid": "Q3656334",
+                "url": "https://www.wikidata.org/wiki/Q3656334",
+                "sim_score": 0.6988
+            },
+            "Peter Norvig": {
+                "qid": "Q92832",
+                "url": "https://www.wikidata.org/wiki/Q92832",
+                "sim_score": 0.7879
+            },
+            "Prentice Hall": {
+                "qid": "Q443253",
+                "url": "https://www.wikidata.org/wiki/Q443253",
+                "sim_score": 0.6194
+            }
+        },
+        "Knowledge Graphs - Vocabularies and Ontologies.txt": {
+            "Dublin Core\n\n": {
+                "qid": "Q624610",
+                "url": "https://www.wikidata.org/wiki/Q624610",
+                "sim_score": 0.7637
+            },
+            "Software Engineering": {
+                "qid": "Q80993",
+                "url": "https://www.wikidata.org/wiki/Q80993",
+                "sim_score": 0.4743
+            },
+            "Concordia University": {
+                "qid": "Q5159001",
+                "url": "https://www.wikidata.org/wiki/Q5159001",
+                "sim_score": 0.7076
+            },
+            "AI": {
+                "qid": "Q2494121",
+                "url": "https://www.wikidata.org/wiki/Q2494121",
+                "sim_score": 0.6197
+            },
+            "RDF": {
+                "qid": "Q54872",
+                "url": "https://www.wikidata.org/wiki/Q54872",
+                "sim_score": 0.8418
+            },
+            "Turtle": {
+                "qid": "Q114409",
+                "url": "https://www.wikidata.org/wiki/Q114409",
+                "sim_score": 0.5612
+            },
+            "N3": {
+                "qid": "Q1424987",
+                "url": "https://www.wikidata.org/wiki/Q1424987",
+                "sim_score": 0.731
+            },
+            "Json": {
+                "qid": "Q19281804",
+                "url": "https://www.wikidata.org/wiki/Q19281804",
+                "sim_score": 0.6702
+            },
+            "Unicode": {
+                "qid": "Q8819",
+                "url": "https://www.wikidata.org/wiki/Q8819",
+                "sim_score": 0.7488
+            },
+            "The Glass Palace": {
+                "qid": "Q3225164",
+                "url": "https://www.wikidata.org/wiki/Q3225164",
+                "sim_score": 0.753
+            },
+            "London": {
+                "qid": "Q84",
+                "url": "https://www.wikidata.org/wiki/Q84",
+                "sim_score": 0.643
+            },
+            "TBL": {
+                "qid": "Q4001328",
+                "url": "https://www.wikidata.org/wiki/Q4001328",
+                "sim_score": 0.6567
+            },
+            "TED": {
+                "qid": "Q189021",
+                "url": "https://www.wikidata.org/wiki/Q189021",
+                "sim_score": 0.4622
+            },
+            "RDF Schema": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.9168
+            },
+            "Classes": {
+                "qid": "Q4479242",
+                "url": "https://www.wikidata.org/wiki/Q4479242",
+                "sim_score": 0.5031
+            },
+            "The Glass": {
+                "qid": "Q16205826",
+                "url": "https://www.wikidata.org/wiki/Q16205826",
+                "sim_score": 0.4566
+            },
+            "RDFS": {
+                "qid": "Q1751819",
+                "url": "https://www.wikidata.org/wiki/Q1751819",
+                "sim_score": 0.7728
+            },
+            "\u00a7": {
+                "qid": "Q189248",
+                "url": "https://www.wikidata.org/wiki/Q189248",
+                "sim_score": 0.5002
+            },
+            "P1": {
+                "qid": "Q28452989",
+                "url": "https://www.wikidata.org/wiki/Q28452989",
+                "sim_score": 0.4313
+            },
+            "P2": {
+                "qid": "Q954078",
+                "url": "https://www.wikidata.org/wiki/Q954078",
+                "sim_score": 0.4777
+            },
+            "IRI": {
+                "qid": "Q424583",
+                "url": "https://www.wikidata.org/wiki/Q424583",
+                "sim_score": 0.7972
+            },
+            "Dublin Core": {
+                "qid": "Q624610",
+                "url": "https://www.wikidata.org/wiki/Q624610",
+                "sim_score": 0.9168
+            },
+            "FOAF": {
+                "qid": "Q1389366",
+                "url": "https://www.wikidata.org/wiki/Q1389366",
+                "sim_score": 0.8885
+            },
+            "thesauri": {
+                "qid": "Q17152639",
+                "url": "https://www.wikidata.org/wiki/Q17152639",
+                "sim_score": 0.8372
+            },
+            "Dewey Decimal Classification": {
+                "qid": "Q48460",
+                "url": "https://www.wikidata.org/wiki/Q48460",
+                "sim_score": 0.8807
+            },
+            "ACM": {
+                "qid": "Q2828191",
+                "url": "https://www.wikidata.org/wiki/Q2828191",
+                "sim_score": 0.6349
+            },
+            "LOC": {
+                "qid": "Q942695",
+                "url": "https://www.wikidata.org/wiki/Q942695",
+                "sim_score": 0.5724
+            },
+            "ISO": {
+                "qid": "Q930439",
+                "url": "https://www.wikidata.org/wiki/Q930439",
+                "sim_score": 0.6373
+            },
+            "Thesauri": {
+                "qid": "Q179797",
+                "url": "https://www.wikidata.org/wiki/Q179797",
+                "sim_score": 0.6008
+            },
+            "The Artist": {
+                "qid": "Q171861",
+                "url": "https://www.wikidata.org/wiki/Q171861",
+                "sim_score": 0.554
+            },
+            "Chapter 7": {
+                "qid": "Q4411666",
+                "url": "https://www.wikidata.org/wiki/Q4411666",
+                "sim_score": 0.5489
+            },
+            "Schema.org": {
+                "qid": "Q3475322",
+                "url": "https://www.wikidata.org/wiki/Q3475322",
+                "sim_score": 0.7856
+            },
+            "Linked Data": {
+                "qid": "Q515701",
+                "url": "https://www.wikidata.org/wiki/Q515701",
+                "sim_score": 0.7448
+            },
+            "Primer": {
+                "qid": "Q16000421",
+                "url": "https://www.wikidata.org/wiki/Q16000421",
+                "sim_score": 0.4266
+            }
+        }
+    }
+}
