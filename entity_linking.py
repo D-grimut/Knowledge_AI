@@ -83,7 +83,7 @@ def topics_graph(file_list):
 
             graph.add((unid[topic_nobs], uni.linked_to, URIRef(vals["url"])))
 
-            graph.add((unid[file_nospace], uni.has_content, unid[topic_nobs]))
+            graph.add((unid[topic_nobs], uni.provenance, unid[file_nospace]))
 
     graph.serialize(destination="topics_turtle.ttl", format='turtle')
     graph.serialize(destination="topics_ntriples.nt", format='nt')
