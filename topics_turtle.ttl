@@ -2520,13 +2520,9 @@ unid:SPARQL a uni:Topic ;
     uni:linked_to <https://www.wikidata.org/wiki/Q54871> ;
     uni:topicName "SPARQL" .
 
-<http://uni.com/data/Software_Engineering
-
-> a uni:Topic ;
+<http://uni.com/data/Software_Engineering> a uni:Topic ;
     uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
-    uni:topicName """Software Engineering
-
-""" .
+    uni:topicName "Software Engineering" .
 
 unid:Wikipedia a uni:Topic ;
     uni:linked_to <https://www.wikidata.org/wiki/Q52> ;
