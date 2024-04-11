@@ -1,1479 +1,2605 @@
 @prefix uni: <http://uni.com/schema#> .
 @prefix unid: <http://uni.com/data/> .
 
-<http://uni.com/data/%5Cn> uni:linked_to <https://www.wikidata.org/wiki/Q184914> ;
+unid:Agility_and_Process.txt a uni:Lecture ;
+    uni:has_content unid:DevOps,
+        unid:Extreme_Programming,
+        unid:Framework,
+        unid:Process_4 .
+
+unid:Architectural_Design.txt a uni:Lecture ;
+    uni:has_content unid:Assess,
+        unid:IEEE_Standard,
+        unid:Tradeoff_Analysis .
+
+unid:Component-Level_Design.txt a uni:Lecture ;
+    uni:has_content unid:CBSE,
+        unid:COTS,
+        unid:Chapter_11,
+        unid:Collaboration_Diagram,
+        unid:DIP,
+        unid:ISP,
+        unid:Interface_Segregation_Principle,
+        unid:Liskov_Substitution_Principle,
+        unid:Mobile_Apps,
+        unid:OCP,
+        unid:WebApp,
+        unid:WebApps .
+
+unid:Configuration_Management.txt a uni:Lecture ;
+    uni:has_content unid:CI,
+        unid:CM,
+        unid:CSR,
+        unid:Content_Management_System,
+        unid:Convert,
+        unid:ECO,
+        unid:IEEE,
+        unid:SCI,
+        unid:SCM,
+        unid:Version_Control,
+        unid:XML .
+
+unid:Course_Outline.txt a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:Active_Learning,
+        unid:Artificial_Intelligence,
+        unid:Artificial_Neural_Networks,
+        unid:Concordia,
+        unid:Concordia_University,
+        unid:Deep_Learning,
+        unid:ER,
+        <http://uni.com/data/Final_Exam__
+
+>,
+        unid:Intelligent_Systems,
+        unid:JSON,
+        unid:Knowledge_Graphs,
+        unid:LOD,
+        unid:Linked_Open_Data,
+        unid:ML,
+        unid:Model_Evaluation,
+        unid:Moodle,
+        unid:NLP,
+        unid:Natural_Language_Processing,
+        unid:OWL,
+        unid:Personalization,
+        unid:PyTorch,
+        unid:RDF,
+        unid:XML,
+        unid:tandem .
+
+unid:Design_Concepts.txt a uni:Lecture ;
+    uni:has_content unid:Chapter_9,
+        unid:Design_Model,
+        unid:Stepwise_Refinement,
+        unid:UI,
+        unid:UML .
+
+unid:Final_Project.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:Junit,
+        unid:MVC,
+        unid:Mockito .
+
+unid:Intelligent_Agents.txt a uni:Lecture ;
+    uni:has_content unid:AIML,
+        unid:ASK,
+        unid:Alexa,
+        unid:Amazon,
+        unid:Apple,
+        unid:Automata,
+        unid:CE,
+        unid:Call_of_Duty,
+        unid:Canada,
+        unid:Cham,
+        unid:Chapter_12,
+        unid:Chapter_26,
+        unid:Chatbot,
+        unid:Cole_Howard,
+        unid:Concordia,
+        unid:Concordia_University,
+        unid:DBpedia,
+        unid:DFA,
+        unid:Deep_Learning,
+        unid:Eliza,
+        unid:English,
+        unid:Finite_State_Machine,
+        unid:Frey,
+        unid:Gartner,
+        unid:George_Williams,
+        unid:Google,
+        unid:HBO,
+        unid:IBM,
+        unid:Italian,
+        unid:Judy_Hopps,
+        unid:Keyword,
+        unid:LOD,
+        unid:Linked_Open_Data,
+        unid:Loyola_College,
+        unid:MS,
+        unid:Microsoft,
+        unid:Modifier,
+        unid:Montreal,
+        unid:NLP,
+        unid:Notes,
+        unid:Noun,
+        unid:OPE,
+        unid:POWER7,
+        unid:Peter_Norvig,
+        unid:Prentice_Hall,
+        unid:QA,
+        unid:Quebec,
+        unid:RAM,
+        unid:RDF,
+        unid:Red_Queen,
+        unid:Resident_Evil,
+        unid:Richard_Wallace,
+        unid:SELECT,
+        unid:Siri,
+        unid:Software_Engineering,
+        unid:Speaktoit,
+        unid:Spotlight,
+        unid:Springer_International_Publishing,
+        unid:Stopword,
+        unid:Stuart_Russell,
+        unid:Token,
+        unid:Verb,
+        unid:Westworld,
+        unid:Wikipedia,
+        unid:Workflow,
+        unid:World_Wide,
+        unid:YOUS,
+        unid:Zootopia,
+        unid:automaton,
+        unid:quan,
+        unid:tem .
+
+unid:Intelligent_Systems_Introduction.txt a uni:Lecture ;
+    uni:has_content unid:A._Turing,
+        unid:API,
+        unid:Alexa,
+        unid:Antietam,
+        unid:Apple_Siri,
+        unid:Artificial_Intelligence,
+        unid:BERT,
+        unid:Bahar,
+        unid:Cole_Howard,
+        unid:Collaborative_Filtering,
+        unid:Concordia_University,
+        unid:Cortana,
+        unid:Deep_Learning,
+        unid:Dublin_Core,
+        unid:Eliza,
+        unid:English,
+        unid:French,
+        unid:GPT-2,
+        unid:GPT-3,
+        unid:Gartner,
+        unid:Gettysburg,
+        unid:Google,
+        unid:Google_Search,
+        unid:Graphs,
+        unid:IBM,
+        unid:Information_Retrieval,
+        unid:Jorge_Pérez,
+        unid:Keyword,
+        unid:Knowledge_Graphs,
+        unid:LOD,
+        unid:Linked_Open_Data,
+        unid:Machine_Learning,
+        unid:Microsoft,
+        unid:Mona_Lisa,
+        unid:NLP,
+        unid:Notes,
+        unid:POWER7,
+        unid:QA,
+        unid:RAM,
+        unid:RDF,
+        unid:Recommender_Systems,
+        unid:Refinitiv,
+        unid:SAAS,
+        unid:Sentiment_Analysis,
+        unid:Software_Engineering,
+        unid:Steve_Jobs,
+        unid:Text_Mining,
+        unid:UIMA,
+        unid:Watson,
+        unid:Weizenbaum .
+
+unid:Knowledge_Base_Queries_and_Linked_Open_Data.txt a uni:Lecture ;
+    uni:has_content unid:AVG,
+        unid:Amsterdam,
+        unid:Apache_Jena,
+        unid:BabelNet,
+        unid:CSV,
+        unid:Canada,
+        unid:Cham,
+        unid:Chapter_12,
+        unid:Chapter_9,
+        unid:Concordia_University,
+        unid:Construct,
+        unid:DBpedia,
+        unid:Data_Model,
+        unid:Description_Logic,
+        unid:Description_Logics,
+        unid:Dieter_Fensel,
+        unid:English,
+        unid:Federated_Query,
+        unid:Freebase,
+        unid:Frey,
+        unid:Geonames,
+        unid:Google,
+        unid:Graphs,
+        unid:HTTP,
+        unid:IRI,
+        unid:John_Domingue,
+        unid:LOD,
+        unid:Linked_Data,
+        unid:Linked_Open_Data,
+        unid:MAX,
+        unid:MIN,
+        unid:Mexico,
+        unid:Mona_Lisa,
+        unid:N-Triples,
+        unid:Notes,
+        unid:OWL,
+        unid:POST,
+        unid:Poetry,
+        unid:Q96,
+        unid:RDF,
+        unid:RDFS,
+        unid:Reasoning_Engine,
+        unid:SELECT,
+        unid:SOAP,
+        unid:SPARQL,
+        unid:SUM,
+        unid:Select,
+        unid:Server,
+        unid:Software_Engineering,
+        unid:Springer-Verlag_Berlin_Heidelberg,
+        unid:Springer_International_Publishing,
+        unid:Tim_Berners-Lee,
+        unid:Turtle,
+        unid:UniProt,
+        unid:Wikipedia,
+        unid:XML,
+        unid:ec .
+
+unid:Knowledge_Graphs.txt a uni:Lecture ;
+    uni:has_content unid:A1,
+        unid:A12,
+        unid:A2,
+        unid:AI,
+        unid:Auteur,
+        unid:Concordia_University,
+        unid:DBpedia,
+        unid:Description_Logic,
+        unid:Expose,
+        unid:FOAF,
+        unid:Facebook_Graph_Search,
+        unid:Frame_Problem,
+        unid:French,
+        unid:GenAI,
+        <http://uni.com/data/General_Problem_
+
+Solver
+
+>,
+        unid:Google,
+        unid:Google_Knowledge_Graph,
+        unid:Graph,
+        <http://uni.com/data/Graph_API
+>,
+        unid:Graphs,
+        unid:Harper_Collins,
+        unid:IBM,
+        unid:IRI,
+        unid:Java,
+        unid:Knowledge_Graph,
+        unid:Knowledge_Graphs,
+        unid:LLM,
+        unid:Leonardo_da_Vinci,
+        unid:London,
+        unid:Mona_Lisa,
+        unid:N-Triples,
+        unid:N3,
+        unid:Notes,
+        unid:OWL,
+        unid:Oracle_Spatial,
+        unid:PHP,
+        unid:Primer,
+        unid:Quillian,
+        unid:RDF,
+        unid:RDFS,
+        unid:SHRDLU,
+        unid:Semantic_Networks,
+        unid:Software_Engineering,
+        unid:TBL,
+        unid:TED,
+        unid:Text,
+        unid:The_Glass_Palace,
+        unid:The_Next_Web,
+        unid:Turtle,
+        unid:WWW,
+        unid:Wikidata,
+        unid:Wikipedia,
+        unid:YouTube,
+        unid:suffix .
+
+unid:Knowledge_Graphs_-_Vocabularies_and_Ontologies.txt a uni:Lecture ;
+    uni:has_content unid:ACM,
+        unid:AI,
+        unid:Chapter_7,
+        unid:Classes,
+        unid:Concordia_University,
+        unid:Dewey_Decimal_Classification,
+        unid:Dublin_Core,
+        <http://uni.com/data/Dublin_Core
+
+>,
+        unid:FOAF,
+        unid:IRI,
+        unid:ISO,
+        unid:Json,
+        unid:LOC,
+        unid:Linked_Data,
+        unid:London,
+        unid:N3,
+        unid:P1,
+        unid:P2,
+        unid:Primer,
+        unid:RDF,
+        unid:RDFS,
+        unid:RDF_Schema,
+        unid:Schema.org,
+        unid:Software_Engineering,
+        unid:TBL,
+        unid:TED,
+        unid:The_Artist,
+        unid:The_Glass,
+        unid:The_Glass_Palace,
+        unid:Thesauri,
+        unid:Turtle,
+        unid:Unicode,
+        unid:thesauri,
+        <http://uni.com/data/§> .
+
+unid:LAB_1_-_SRS.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:Moodle,
+        unid:Reason,
+        unid:Sequence_Diagram,
+        unid:Slide,
+        unid:UML_Diagram,
+        unid:Use-Case .
+
+unid:LAB_2_-_Software_Design.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:Slide,
+        unid:Text_Editor .
+
+unid:LAB_3_-_Quality_Control.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:Original_Design .
+
+<http://uni.com/data/Lab_Session_#01.txt> a uni:Lecture ;
+    uni:has_content unid:Concordia,
+        unid:Eliza,
+        unid:GitHub,
+        unid:Linux,
+        unid:Python,
+        unid:TA,
+        unid:Windows .
+
+<http://uni.com/data/Lab_Session_#02.txt> a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:Advanced_Analytics,
+        unid:Apache_Jena,
+        unid:Concordia,
+        unid:Concordia_University,
+        unid:Conda,
+        unid:Convert,
+        unid:DBpedia,
+        unid:Graph,
+        unid:Java,
+        unid:Literal,
+        unid:Loop,
+        unid:Montreal,
+        unid:N-Triples,
+        unid:Namespace,
+        unid:Parse,
+        unid:RDF,
+        unid:RDFS,
+        unid:RDF_Schema,
+        unid:Turtle,
+        unid:Validate,
+        unid:Wikidata,
+        unid:XOR .
+
+<http://uni.com/data/Lab_Session_#03.txt> a uni:Lecture ;
+    uni:has_content <http://uni.com/data/%5Cn>,
+        unid:AI,
+        unid:Alexa,
+        unid:Bishop,
+        unid:Canada,
+        unid:Concordia,
+        <http://uni.com/data/Concordia
+University>,
+        unid:Concordia_University,
+        unid:DBP,
+        unid:DBpedia,
+        unid:English,
+        unid:FOAF,
+        unid:French,
+        unid:Google,
+        <http://uni.com/data/Knowledge
+Graphs>,
+        unid:Knowledge_Graph,
+        unid:Knowledge_Graphs,
+        <http://uni.com/data/Loyola
+_College>,
+        unid:McGill,
+        unid:McGill_University,
+        unid:Montreal,
+        unid:NLP,
+        unid:OWL,
+        unid:Quebec,
+        unid:RDF,
+        unid:RDFS,
+        unid:RDF_Schema,
+        unid:SPARQL,
+        unid:Siri,
+        unid:Turtle,
+        unid:Université_Concordia,
+        unid:Wikidata,
+        unid:byte,
+        unid:mbox .
+
+<http://uni.com/data/Lab_Session_#04.txt> a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:API,
+        unid:ASK,
+        unid:Alexa,
+        unid:Amazon_Neptune,
+        unid:Apache,
+        unid:Apache_Jena,
+        unid:Berlin,
+        unid:Canada,
+        unid:Concordia_University,
+        unid:DBpedia,
+        unid:Dataset,
+        unid:English,
+        unid:Fuseki,
+        unid:GUI,
+        unid:Google,
+        unid:HTTP,
+        unid:Intelligent_Systems,
+        unid:Java,
+        unid:LinkedIn,
+        unid:Linux,
+        unid:Netflix,
+        unid:Outlook,
+        unid:PowerShell,
+        unid:RDF,
+        unid:RDFlib,
+        unid:Refine,
+        unid:SELECT,
+        unid:SPARQL,
+        unid:Siri,
+        unid:Spotify,
+        unid:Watson,
+        unid:Wikidata,
+        unid:Windows .
+
+<http://uni.com/data/Lab_Session_#05.txt> a uni:Lecture ;
+    uni:has_content unid:Anaconda,
+        <http://uni.com/data/Bug's_Life>,
+        unid:Canada,
+        unid:Concordia_University,
+        unid:DBpedia,
+        unid:DataFrame,
+        unid:DataFrames,
+        unid:English,
+        unid:FILTER,
+        unid:Fuseki,
+        unid:GitHub,
+        unid:Linked_Data,
+        unid:MovieLens,
+        unid:Pandas,
+        unid:SELECT,
+        unid:SPARQL,
+        unid:TA,
+        unid:The_Lego_Movie,
+        unid:Toy_Story,
+        unid:Wikidata,
+        unid:Wikipedia,
+        unid:pandas .
+
+<http://uni.com/data/Lab_Session_#06.txt> a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:API,
+        unid:Apache_Lucene,
+        unid:Azure_Cognitive_Search,
+        unid:Elasticsearch,
+        unid:Google,
+        unid:Java,
+        unid:Lucene,
+        unid:ML,
+        unid:Matplotlib,
+        unid:Moodle,
+        unid:MovieLens,
+        unid:NLP,
+        unid:NuBus,
+        unid:PCA,
+        unid:PDS,
+        unid:Principal_Component_Analysis,
+        unid:Solr,
+        unid:Usenet,
+        unid:WCSS,
+        unid:kmeans .
+
+unid:Machine_Learning_for_Intelligent_Systems.txt a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:Algorithm,
+        unid:Arthur_Samuel,
+        unid:BSD_License,
+        unid:British,
+        unid:Cambridge_Analytica,
+        unid:Chapter_7,
+        unid:Compute,
+        unid:Concordia_University,
+        unid:Cross-Validation,
+        unid:EDA,
+        unid:Enron,
+        unid:Euclidean,
+        unid:Euclidian,
+        unid:Exploratory_Data_Analysis,
+        unid:German,
+        unid:House_of_Cards,
+        unid:James_Pustejovsky,
+        unid:ML,
+        unid:Machine_Learning,
+        unid:Manhattan,
+        unid:Motivation,
+        unid:NB,
+        unid:Netflix,
+        unid:Neural_Networks,
+        unid:Noisy_Data,
+        unid:Notes,
+        <http://uni.com/data/Pros_&_Cons>,
+        unid:RDFS,
+        unid:Reinforcement_Learning,
+        unid:Software_Engineering,
+        <http://uni.com/data/U.S.>,
+        unid:Underfitting,
+        unid:Unsupervised_Learning,
+        unid:k-Nearest-Neighbor .
+
+unid:Project_Management_Concepts.txt a uni:Lecture ;
+    uni:has_content unid:Chapter_24,
+        unid:Inspire .
+
+unid:Recommender_Systems.txt a uni:Lecture ;
+    uni:has_content unid:AP,
+        unid:Amazon,
+        unid:Anthony_Julius,
+        unid:Cambridge_University,
+        unid:Cambridge_University_Press,
+        unid:Cleopatra,
+        unid:Collaborative_Filtering,
+        unid:Comparing,
+        unid:Compute,
+        unid:Concordia_University,
+        unid:Cosine,
+        unid:DCG,
+        unid:Doug_Turnbull,
+        unid:Euclidean,
+        unid:Euclidian,
+        unid:FOAF,
+        unid:IR,
+        unid:Intuitively,
+        unid:John_Berryman,
+        unid:Likert,
+        unid:MAP,
+        unid:Netflix,
+        unid:Prabhakar_Raghavan,
+        unid:Recommendations,
+        unid:Recommender_Engine,
+        unid:Recommender_Systems,
+        unid:Software_Engineering,
+        unid:metadata,
+        <http://uni.com/data/∈> .
+
+unid:Requirements_Modeling.txt a uni:Lecture ;
+    uni:has_content unid:CRC,
+        unid:Sequence,
+        unid:Sequence_Diagram,
+        unid:Swimlane,
+        unid:UML .
+
+unid:Risk_Management.txt a uni:Lecture ;
+    uni:has_content unid:Chapter_26,
+        unid:LOC .
+
+unid:Software_Component_Testing.txt a uni:Lecture ;
+    uni:has_content unid:Black_Box_Testing,
+        unid:Cyclomatic_Complexity,
+        unid:Flow_Graph,
+        unid:Google_Docs,
+        unid:ITG,
+        unid:Interface,
+        unid:Loop,
+        unid:OO,
+        unid:State_Diagram,
+        unid:Stubs,
+        unid:Test_Planning,
+        unid:Traceability,
+        unid:Valid .
+
+unid:Software_Development_and_Engineering.txt a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:KISS,
+        unid:Reuse,
+        unid:Software,
+        unid:Software_Engineering .
+
+unid:Software_Integration_Testing.txt a uni:Lecture ;
+    uni:has_content unid:AI,
+        unid:Breadth,
+        unid:Collaboration_Diagram,
+        unid:DevOps,
+        unid:Integration_Testing,
+        unid:Regression_Testing,
+        unid:Time .
+
+unid:Software_Metrics_and_Analytics.txt a uni:Lecture ;
+    uni:has_content unid:CBO,
+        unid:DIT,
+        unid:DRE,
+        unid:Ergonomics,
+        unid:FP,
+        unid:Halstead,
+        unid:KLOC,
+        unid:LOC,
+        unid:NOC,
+        unid:NOR,
+        unid:OO,
+        unid:Organizational_Effectiveness,
+        unid:PAD,
+        unid:SMI,
+        unid:Width .
+
+unid:Software_Process_Models.txt a uni:Lecture ;
+    uni:has_content unid:Configuration_Management,
+        unid:Process_Model,
+        unid:Quality_Assurance,
+        unid:Risk_Management,
+        <http://uni.com/data/Software_Engineering
+
+>,
+        unid:Tricky .
+
+unid:Software_Quality_Concepts.txt a uni:Lecture ;
+    uni:has_content unid:Umbrella .
+
+unid:Software_Reviews.txt a uni:Lecture ;
+    uni:has_content unid:Chapter_16,
+        unid:FTR,
+        unid:Focus,
+        unid:PME,
+        unid:Producer,
+        unid:Reference_Model,
+        <http://uni.com/data/Software_Engineering
+
+>,
+        unid:UML .
+
+unid:Software_Support.txt a uni:Lecture ;
+    uni:has_content unid:Chapter_26,
+        unid:Code_Restructuring,
+        unid:GUI,
+        unid:Inventory_Analysis,
+        unid:P3,
+        unid:P6,
+        unid:Reverse_Engineering,
+        unid:Software,
+        unid:Software_Analytics,
+        <http://uni.com/data/Software_Engineering
+
+>,
+        unid:Software_Evolution,
+        unid:Software_Maintenance,
+        unid:Twitter,
+        unid:UML .
+
+unid:TUT_1_-_SRS.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        <http://uni.com/data/Non-Functional_Requirements
+	>,
+        unid:TA .
+
+unid:TUT_2_-_Software_Design.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:Data_Flow,
+        unid:SRS .
+
+unid:TUT_3_-_Quality_Control.txt a uni:Lecture ;
+    uni:has_content unid:Adeli,
+        unid:JAVA,
+        unid:Preparations,
+        unid:Quality_Control,
+        unid:Severity_Level .
+
+unid:Understanding_Requirements.txt a uni:Lecture ;
+    uni:has_content unid:NFR,
+        unid:Non-Functional_Requirement,
+        unid:Requirements,
+        unid:UML .
+
+unid:User_Experience_Design.txt a uni:Lecture ;
+    uni:has_content unid:Google,
+        unid:Personas,
+        unid:Prototype,
+        unid:Response_Time,
+        unid:Task_Analysis,
+        unid:UX,
+        unid:UX_Design,
+        unid:Usability_Engineering,
+        unid:Validate,
+        unid:jargon .
+
+unid:Viable_Software_Plan.txt a uni:Lecture ;
+    uni:has_content unid:CAD,
+        unid:Chapter_25,
+        unid:Chapter_26,
+        unid:Customer,
+        unid:Data_Analytics,
+        unid:ECF,
+        unid:FP,
+        unid:Function,
+        unid:Gantt_Chart,
+        unid:LOC,
+        unid:McGraw-Hill_Education,
+        unid:Miscommunication,
+        <http://uni.com/data/Software_Engineering
+
+>,
+        unid:TCF,
+        unid:UAW,
+        unid:UCP .
+
+<http://uni.com/data/%5Cn> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q184914> ;
     uni:topicName "\\n" .
 
-unid:A._Turing uni:linked_to <https://www.wikidata.org/wiki/Q7251> ;
+unid:A._Turing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7251> ;
     uni:topicName "A. Turing" .
 
-unid:A1 uni:linked_to <https://www.wikidata.org/wiki/Q279859> ;
+unid:A1 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q279859> ;
     uni:topicName "A1" .
 
-unid:A12 uni:linked_to <https://www.wikidata.org/wiki/Q4648862> ;
+unid:A12 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4648862> ;
     uni:topicName "A12" .
 
-unid:A2 uni:linked_to <https://www.wikidata.org/wiki/Q888603> ;
+unid:A2 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q888603> ;
     uni:topicName "A2" .
 
-unid:ACM uni:linked_to <https://www.wikidata.org/wiki/Q2828191> ;
+unid:ACM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2828191> ;
     uni:topicName "ACM" .
 
-unid:AI uni:linked_to <https://www.wikidata.org/wiki/Q2494121> ;
-    uni:topicName "AI" .
-
-unid:AIML uni:linked_to <https://www.wikidata.org/wiki/Q223898> ;
+unid:AIML a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q223898> ;
     uni:topicName "AIML" .
 
-unid:AP uni:linked_to <https://www.wikidata.org/wiki/Q40469> ;
+unid:AP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q40469> ;
     uni:topicName "AP" .
 
-unid:API uni:linked_to <https://www.wikidata.org/wiki/Q165194>,
-        <https://www.wikidata.org/wiki/Q466043> ;
-    uni:topicName "API" .
-
-unid:ASK uni:linked_to <https://www.wikidata.org/wiki/Q3485796>,
-        <https://www.wikidata.org/wiki/Q3755081> ;
-    uni:topicName "ASK" .
-
-unid:AVG uni:linked_to <https://www.wikidata.org/wiki/Q896547> ;
+unid:AVG a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q896547> ;
     uni:topicName "AVG" .
 
-unid:Active_Learning uni:linked_to <https://www.wikidata.org/wiki/Q1542052> ;
+unid:Active_Learning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1542052> ;
     uni:topicName "Active Learning" .
 
-unid:Adeli uni:linked_to <https://www.wikidata.org/wiki/Q4681927> ;
-    uni:topicName "Adeli" .
-
-unid:Advanced_Analytics uni:linked_to <https://www.wikidata.org/wiki/Q485396> ;
+unid:Advanced_Analytics a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q485396> ;
     uni:topicName "Advanced Analytics" .
 
-unid:Agility_and_Process.txt a uni:Topic .
-
-unid:Alexa uni:linked_to <https://www.wikidata.org/wiki/Q1674441>,
-        <https://www.wikidata.org/wiki/Q230051>,
-        <https://www.wikidata.org/wiki/Q28022144>,
-        <https://www.wikidata.org/wiki/Q3814475> ;
-    uni:topicName "Alexa" .
-
-unid:Algorithm uni:linked_to <https://www.wikidata.org/wiki/Q8366> ;
+unid:Algorithm a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q8366> ;
     uni:topicName "Algorithm" .
 
-unid:Amazon uni:linked_to <https://www.wikidata.org/wiki/Q3884> ;
-    uni:topicName "Amazon" .
-
-unid:Amazon_Neptune uni:linked_to <https://www.wikidata.org/wiki/Q48843359> ;
+unid:Amazon_Neptune a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q48843359> ;
     uni:topicName "Amazon Neptune" .
 
-unid:Amsterdam uni:linked_to <https://www.wikidata.org/wiki/Q727> ;
+unid:Amsterdam a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q727> ;
     uni:topicName "Amsterdam" .
 
-unid:Anaconda uni:linked_to <https://www.wikidata.org/wiki/Q464042> ;
+unid:Anaconda a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q464042> ;
     uni:topicName "Anaconda" .
 
-unid:Anthony_Julius uni:linked_to <https://www.wikidata.org/wiki/Q4772862> ;
+unid:Anthony_Julius a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4772862> ;
     uni:topicName "Anthony Julius" .
 
-unid:Antietam uni:linked_to <https://www.wikidata.org/wiki/Q719252> ;
+unid:Antietam a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q719252> ;
     uni:topicName "Antietam" .
 
-unid:Apache uni:linked_to <https://www.wikidata.org/wiki/Q616563> ;
+unid:Apache a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q616563> ;
     uni:topicName "Apache" .
 
-unid:Apache_Jena uni:linked_to <https://www.wikidata.org/wiki/Q1686799> ;
-    uni:topicName "Apache Jena" .
-
-unid:Apache_Lucene uni:linked_to <https://www.wikidata.org/wiki/Q773196> ;
+unid:Apache_Lucene a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q773196> ;
     uni:topicName "Apache Lucene" .
 
-unid:Apple uni:linked_to <https://www.wikidata.org/wiki/Q312> ;
+unid:Apple a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q312> ;
     uni:topicName "Apple" .
 
-unid:Apple_Siri uni:linked_to <https://www.wikidata.org/wiki/Q582159> ;
+unid:Apple_Siri a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q582159> ;
     uni:topicName "Apple Siri" .
 
-unid:Architectural_Design.txt a uni:Topic .
-
-unid:Arthur_Samuel uni:linked_to <https://www.wikidata.org/wiki/Q710266> ;
+unid:Arthur_Samuel a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q710266> ;
     uni:topicName "Arthur Samuel" .
 
-unid:Artificial_Intelligence uni:linked_to <https://www.wikidata.org/wiki/Q109875730> ;
-    uni:topicName "Artificial Intelligence" .
-
-unid:Artificial_Neural_Networks uni:linked_to <https://www.wikidata.org/wiki/Q192776> ;
+unid:Artificial_Neural_Networks a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q192776> ;
     uni:topicName "Artificial Neural Networks" .
 
-unid:Assess uni:linked_to <https://www.wikidata.org/wiki/Q1476755> ;
+unid:Assess a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1476755> ;
     uni:topicName "Assess" .
 
-unid:Auteur uni:linked_to <https://www.wikidata.org/wiki/Q788514> ;
+unid:Auteur a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q788514> ;
     uni:topicName "Auteur" .
 
-unid:Automata uni:linked_to <https://www.wikidata.org/wiki/Q787116> ;
+unid:Automata a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q787116> ;
     uni:topicName "Automata" .
 
-unid:Azure_Cognitive_Search uni:linked_to <https://www.wikidata.org/wiki/Q25000548> ;
+unid:Azure_Cognitive_Search a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q25000548> ;
     uni:topicName "Azure Cognitive Search" .
 
-unid:BERT uni:linked_to <https://www.wikidata.org/wiki/Q840922> ;
+unid:BERT a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q840922> ;
     uni:topicName "BERT" .
 
-unid:BSD_License uni:linked_to <https://www.wikidata.org/wiki/Q191307> ;
+unid:BSD_License a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q191307> ;
     uni:topicName "BSD License" .
 
-unid:BabelNet uni:linked_to <https://www.wikidata.org/wiki/Q4837690> ;
+unid:BabelNet a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4837690> ;
     uni:topicName "BabelNet" .
 
-unid:Bahar uni:linked_to <https://www.wikidata.org/wiki/Q4842420> ;
+unid:Bahar a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4842420> ;
     uni:topicName "Bahar" .
 
-unid:Berlin uni:linked_to <https://www.wikidata.org/wiki/Q64> ;
+unid:Berlin a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q64> ;
     uni:topicName "Berlin" .
 
-unid:Bishop uni:linked_to <https://www.wikidata.org/wiki/Q2296652> ;
+unid:Bishop a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2296652> ;
     uni:topicName "Bishop" .
 
-unid:Black_Box_Testing uni:linked_to <https://www.wikidata.org/wiki/Q879969> ;
+unid:Black_Box_Testing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q879969> ;
     uni:topicName "Black Box Testing" .
 
-unid:Breadth uni:linked_to <https://www.wikidata.org/wiki/Q36253> ;
+unid:Breadth a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q36253> ;
     uni:topicName "Breadth" .
 
-unid:British uni:linked_to <https://www.wikidata.org/wiki/Q8680> ;
+unid:British a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q8680> ;
     uni:topicName "British" .
 
-<http://uni.com/data/Bug's_Life> uni:linked_to <https://www.wikidata.org/wiki/Q216153> ;
+<http://uni.com/data/Bug's_Life> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q216153> ;
     uni:topicName "Bug's Life" .
 
-unid:CAD uni:linked_to <https://www.wikidata.org/wiki/Q184793> ;
+unid:CAD a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q184793> ;
     uni:topicName "CAD" .
 
-unid:CBO uni:linked_to <https://www.wikidata.org/wiki/Q1125991> ;
+unid:CBO a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1125991> ;
     uni:topicName "CBO" .
 
-unid:CBSE uni:linked_to <https://www.wikidata.org/wiki/Q3347350> ;
+unid:CBSE a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3347350> ;
     uni:topicName "CBSE" .
 
-unid:CE uni:linked_to <https://www.wikidata.org/wiki/Q208141> ;
+unid:CE a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q208141> ;
     uni:topicName "CE" .
 
-unid:CI uni:linked_to <https://www.wikidata.org/wiki/Q6634104> ;
+unid:CI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6634104> ;
     uni:topicName "CI" .
 
-unid:CM uni:linked_to <https://www.wikidata.org/wiki/Q5066118> ;
+unid:CM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5066118> ;
     uni:topicName "CM" .
 
-unid:COTS uni:linked_to <https://www.wikidata.org/wiki/Q1115443> ;
+unid:COTS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1115443> ;
     uni:topicName "COTS" .
 
-unid:CRC uni:linked_to <https://www.wikidata.org/wiki/Q242915> ;
+unid:CRC a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q242915> ;
     uni:topicName "CRC" .
 
-unid:CSR uni:linked_to <https://www.wikidata.org/wiki/Q218600> ;
+unid:CSR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q218600> ;
     uni:topicName "CSR" .
 
-unid:CSV uni:linked_to <https://www.wikidata.org/wiki/Q935809> ;
+unid:CSV a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q935809> ;
     uni:topicName "CSV" .
 
-unid:Call_of_Duty uni:linked_to <https://www.wikidata.org/wiki/Q192156> ;
+unid:Call_of_Duty a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q192156> ;
     uni:topicName "Call of Duty" .
 
-unid:Cambridge_Analytica uni:linked_to <https://www.wikidata.org/wiki/Q24083484> ;
+unid:Cambridge_Analytica a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q24083484> ;
     uni:topicName "Cambridge Analytica" .
 
-unid:Cambridge_University uni:linked_to <https://www.wikidata.org/wiki/Q35794> ;
+unid:Cambridge_University a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q35794> ;
     uni:topicName "Cambridge University" .
 
-unid:Cambridge_University_Press uni:linked_to <https://www.wikidata.org/wiki/Q912887> ;
+unid:Cambridge_University_Press a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q912887> ;
     uni:topicName "Cambridge University Press" .
 
-unid:Canada uni:linked_to <https://www.wikidata.org/wiki/Q16> ;
-    uni:topicName "Canada" .
-
-unid:Cham uni:linked_to <https://www.wikidata.org/wiki/Q10424>,
-        <https://www.wikidata.org/wiki/Q383256> ;
-    uni:topicName "Cham" .
-
-unid:Chapter_11 uni:linked_to <https://www.wikidata.org/wiki/Q1062835> ;
+unid:Chapter_11 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1062835> ;
     uni:topicName "Chapter 11" .
 
-unid:Chapter_12 uni:linked_to <https://www.wikidata.org/wiki/Q5073439> ;
-    uni:topicName "Chapter 12" .
-
-unid:Chapter_16 uni:linked_to <https://www.wikidata.org/wiki/Q48835285> ;
+unid:Chapter_16 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q48835285> ;
     uni:topicName "Chapter 16" .
 
-unid:Chapter_24 uni:linked_to <https://www.wikidata.org/wiki/Q261005> ;
+unid:Chapter_24 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q261005> ;
     uni:topicName "Chapter 24" .
 
-unid:Chapter_25 uni:linked_to <https://www.wikidata.org/wiki/Q6789865> ;
+unid:Chapter_25 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6789865> ;
     uni:topicName "Chapter 25" .
 
-unid:Chapter_26 uni:linked_to <https://www.wikidata.org/wiki/Q6789867> ;
-    uni:topicName "Chapter 26" .
-
-unid:Chapter_7 uni:linked_to <https://www.wikidata.org/wiki/Q4411666> ;
-    uni:topicName "Chapter 7" .
-
-unid:Chapter_9 uni:linked_to <https://www.wikidata.org/wiki/Q5073465> ;
-    uni:topicName "Chapter 9" .
-
-unid:Chatbot uni:linked_to <https://www.wikidata.org/wiki/Q870780> ;
+unid:Chatbot a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q870780> ;
     uni:topicName "Chatbot" .
 
-unid:Classes uni:linked_to <https://www.wikidata.org/wiki/Q4479242> ;
+unid:Classes a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4479242> ;
     uni:topicName "Classes" .
 
-unid:Cleopatra uni:linked_to <https://www.wikidata.org/wiki/Q635> ;
+unid:Cleopatra a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q635> ;
     uni:topicName "Cleopatra" .
 
-unid:Code_Restructuring uni:linked_to <https://www.wikidata.org/wiki/Q116877> ;
+unid:Code_Restructuring a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q116877> ;
     uni:topicName "Code Restructuring" .
 
-unid:Cole_Howard uni:linked_to <https://www.wikidata.org/wiki/Q5142666> ;
-    uni:topicName "Cole Howard" .
-
-unid:Collaboration_Diagram uni:linked_to <https://www.wikidata.org/wiki/Q950859> ;
-    uni:topicName "Collaboration Diagram" .
-
-unid:Collaborative_Filtering uni:linked_to <https://www.wikidata.org/wiki/Q94702> ;
-    uni:topicName "Collaborative Filtering" .
-
-unid:Comparing uni:linked_to <https://www.wikidata.org/wiki/Q1720648> ;
+unid:Comparing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1720648> ;
     uni:topicName "Comparing" .
 
-unid:Component-Level_Design.txt a uni:Topic .
-
-unid:Compute uni:linked_to <https://www.wikidata.org/wiki/Q4036474> ;
-    uni:topicName "Compute" .
-
-unid:Concordia uni:linked_to <https://www.wikidata.org/wiki/Q1913996> ;
-    uni:topicName "Concordia" .
-
 <http://uni.com/data/Concordia
-University> uni:linked_to <https://www.wikidata.org/wiki/Q326342> ;
+University> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q326342> ;
     uni:topicName """Concordia
 University""" .
 
-unid:Concordia_University uni:linked_to <https://www.wikidata.org/wiki/Q326342>,
-        <https://www.wikidata.org/wiki/Q5159001> ;
-    uni:topicName "Concordia University" .
-
-unid:Conda uni:linked_to <https://www.wikidata.org/wiki/Q1619974> ;
+unid:Conda a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1619974> ;
     uni:topicName "Conda" .
 
-unid:Configuration_Management uni:linked_to <https://www.wikidata.org/wiki/Q1153495> ;
+unid:Configuration_Management a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1153495> ;
     uni:topicName "Configuration Management" .
 
-unid:Configuration_Management.txt a uni:Topic .
-
-unid:Construct uni:linked_to <https://www.wikidata.org/wiki/Q5164392> ;
+unid:Construct a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5164392> ;
     uni:topicName "Construct" .
 
-unid:Content_Management_System uni:linked_to <https://www.wikidata.org/wiki/Q131093> ;
+unid:Content_Management_System a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q131093> ;
     uni:topicName "Content Management System" .
 
-unid:Convert uni:linked_to <https://www.wikidata.org/wiki/Q904756> ;
-    uni:topicName "Convert" .
-
-unid:Cortana uni:linked_to <https://www.wikidata.org/wiki/Q16752102> ;
+unid:Cortana a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q16752102> ;
     uni:topicName "Cortana" .
 
-unid:Cosine uni:linked_to <https://www.wikidata.org/wiki/Q13647261> ;
+unid:Cosine a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q13647261> ;
     uni:topicName "Cosine" .
 
-unid:Course_Outline.txt a uni:Topic .
-
-unid:Cross-Validation uni:linked_to <https://www.wikidata.org/wiki/Q541014> ;
+unid:Cross-Validation a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q541014> ;
     uni:topicName "Cross-Validation" .
 
-unid:Customer uni:linked_to <https://www.wikidata.org/wiki/Q852835> ;
+unid:Customer a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q852835> ;
     uni:topicName "Customer" .
 
-unid:Cyclomatic_Complexity uni:linked_to <https://www.wikidata.org/wiki/Q867330> ;
+unid:Cyclomatic_Complexity a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q867330> ;
     uni:topicName "Cyclomatic Complexity" .
 
-unid:DBP uni:linked_to <https://www.wikidata.org/wiki/Q415612> ;
+unid:DBP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q415612> ;
     uni:topicName "DBP" .
 
-unid:DBpedia uni:linked_to <https://www.wikidata.org/wiki/Q465> ;
-    uni:topicName "DBpedia" .
-
-unid:DCG uni:linked_to <https://www.wikidata.org/wiki/Q1963535> ;
+unid:DCG a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1963535> ;
     uni:topicName "DCG" .
 
-unid:DFA uni:linked_to <https://www.wikidata.org/wiki/Q837528> ;
+unid:DFA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1153070> ;
     uni:topicName "DFA" .
 
-unid:DIP uni:linked_to <https://www.wikidata.org/wiki/Q1141665> ;
+unid:DIP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1141665> ;
     uni:topicName "DIP" .
 
-unid:DIT uni:linked_to <https://www.wikidata.org/wiki/Q3098071> ;
+unid:DIT a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3098071> ;
     uni:topicName "DIT" .
 
-unid:DRE uni:linked_to <https://www.wikidata.org/wiki/Q5206047> ;
+unid:DRE a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5206047> ;
     uni:topicName "DRE" .
 
-unid:DataFrame uni:linked_to <https://www.wikidata.org/wiki/Q1324888> ;
+unid:DataFrame a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1324888> ;
     uni:topicName "DataFrame" .
 
-unid:DataFrames uni:linked_to <https://www.wikidata.org/wiki/Q7573619> ;
+unid:DataFrames a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7573619> ;
     uni:topicName "DataFrames" .
 
-unid:Data_Analytics uni:linked_to <https://www.wikidata.org/wiki/Q485396> ;
+unid:Data_Analytics a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q485396> ;
     uni:topicName "Data Analytics" .
 
-unid:Data_Flow uni:linked_to <https://www.wikidata.org/wiki/Q1172416> ;
+unid:Data_Flow a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1172416> ;
     uni:topicName "Data Flow" .
 
-unid:Data_Model uni:linked_to <https://www.wikidata.org/wiki/Q1172480> ;
+unid:Data_Model a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1172480> ;
     uni:topicName "Data Model" .
 
-unid:Dataset uni:linked_to <https://www.wikidata.org/wiki/Q1172284> ;
+unid:Dataset a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1172284> ;
     uni:topicName "Dataset" .
 
-unid:Deep_Learning uni:linked_to <https://www.wikidata.org/wiki/Q197536> ;
-    uni:topicName "Deep Learning" .
-
-unid:Description_Logic uni:linked_to <https://www.wikidata.org/wiki/Q387196> ;
-    uni:topicName "Description Logic" .
-
-unid:Description_Logics uni:linked_to <https://www.wikidata.org/wiki/Q387196> ;
+unid:Description_Logics a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q387196> ;
     uni:topicName "Description Logics" .
 
-unid:Design_Concepts.txt a uni:Topic .
-
-unid:Design_Model uni:linked_to <https://www.wikidata.org/wiki/Q857102> ;
+unid:Design_Model a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q857102> ;
     uni:topicName "Design Model" .
 
-unid:DevOps uni:linked_to <https://www.wikidata.org/wiki/Q3025536> ;
-    uni:topicName "DevOps" .
-
-unid:Dewey_Decimal_Classification uni:linked_to <https://www.wikidata.org/wiki/Q48460> ;
+unid:Dewey_Decimal_Classification a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q48460> ;
     uni:topicName "Dewey Decimal Classification" .
 
-unid:Dieter_Fensel uni:linked_to <https://www.wikidata.org/wiki/Q92918> ;
+unid:Dieter_Fensel a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q92918> ;
     uni:topicName "Dieter Fensel" .
 
-unid:Doug_Turnbull uni:linked_to <https://www.wikidata.org/wiki/Q5300968> ;
+unid:Doug_Turnbull a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5300968> ;
     uni:topicName "Doug Turnbull" .
-
-unid:Dublin_Core uni:linked_to <https://www.wikidata.org/wiki/Q624610> ;
-    uni:topicName "Dublin Core" .
 
 <http://uni.com/data/Dublin_Core
 
-> uni:linked_to <https://www.wikidata.org/wiki/Q624610> ;
+> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q624610> ;
     uni:topicName """Dublin Core
 
 """ .
 
-unid:ECF uni:linked_to <https://www.wikidata.org/wiki/Q528935> ;
+unid:ECF a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q528935> ;
     uni:topicName "ECF" .
 
-unid:ECO uni:linked_to <https://www.wikidata.org/wiki/Q13218856> ;
+unid:ECO a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q13218856> ;
     uni:topicName "ECO" .
 
-unid:EDA uni:linked_to <https://www.wikidata.org/wiki/Q18023109> ;
+unid:EDA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q18023109> ;
     uni:topicName "EDA" .
 
-unid:ER uni:linked_to <https://www.wikidata.org/wiki/Q207375> ;
+unid:ER a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q207375> ;
     uni:topicName "ER" .
 
-unid:Elasticsearch uni:linked_to <https://www.wikidata.org/wiki/Q3050461> ;
+unid:Elasticsearch a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3050461> ;
     uni:topicName "Elasticsearch" .
 
-unid:Eliza uni:linked_to <https://www.wikidata.org/wiki/Q580318> ;
-    uni:topicName "Eliza" .
-
-unid:English uni:linked_to <https://www.wikidata.org/wiki/Q1860> ;
-    uni:topicName "English" .
-
-unid:Enron uni:linked_to <https://www.wikidata.org/wiki/Q327646> ;
+unid:Enron a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q327646> ;
     uni:topicName "Enron" .
 
-unid:Ergonomics uni:linked_to <https://www.wikidata.org/wiki/Q7742195> ;
+unid:Ergonomics a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7742195> ;
     uni:topicName "Ergonomics" .
 
-unid:Euclidean uni:linked_to <https://www.wikidata.org/wiki/Q162886>,
-        <https://www.wikidata.org/wiki/Q5406124> ;
-    uni:topicName "Euclidean" .
-
-unid:Euclidian uni:linked_to <https://www.wikidata.org/wiki/Q702232> ;
-    uni:topicName "Euclidian" .
-
-unid:Exploratory_Data_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q1322871> ;
+unid:Exploratory_Data_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1322871> ;
     uni:topicName "Exploratory Data Analysis" .
 
-unid:Expose uni:linked_to <https://www.wikidata.org/wiki/Q1384772> ;
+unid:Expose a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1384772> ;
     uni:topicName "Expose" .
 
-unid:Extreme_Programming uni:linked_to <https://www.wikidata.org/wiki/Q209711> ;
+unid:Extreme_Programming a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q209711> ;
     uni:topicName "Extreme Programming" .
 
-unid:FILTER uni:linked_to <https://www.wikidata.org/wiki/Q17772161> ;
+unid:FILTER a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q17772161> ;
     uni:topicName "FILTER" .
 
-unid:FOAF uni:linked_to <https://www.wikidata.org/wiki/Q1389366> ;
-    uni:topicName "FOAF" .
-
-unid:FP uni:linked_to <https://www.wikidata.org/wiki/Q1072130>,
-        <https://www.wikidata.org/wiki/Q970152> ;
-    uni:topicName "FP" .
-
-unid:FTR uni:linked_to <https://www.wikidata.org/wiki/Q22079375> ;
+unid:FTR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q22079375> ;
     uni:topicName "FTR" .
 
-unid:Facebook_Graph_Search uni:linked_to <https://www.wikidata.org/wiki/Q5428454> ;
+unid:Facebook_Graph_Search a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5428454> ;
     uni:topicName "Facebook Graph Search" .
 
-unid:Federated_Query uni:linked_to <https://www.wikidata.org/wiki/Q5440717> ;
+unid:Federated_Query a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5440717> ;
     uni:topicName "Federated Query" .
 
 <http://uni.com/data/Final_Exam__
 
-> uni:linked_to <https://www.wikidata.org/wiki/Q4373850> ;
+> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4373850> ;
     uni:topicName """Final Exam  
 
 """ .
 
-unid:Final_Project.txt a uni:Topic .
-
-unid:Finite_State_Machine uni:linked_to <https://www.wikidata.org/wiki/Q176452> ;
+unid:Finite_State_Machine a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q176452> ;
     uni:topicName "Finite State Machine" .
 
-unid:Flow_Graph uni:linked_to <https://www.wikidata.org/wiki/Q18816135> ;
+unid:Flow_Graph a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q18816135> ;
     uni:topicName "Flow Graph" .
 
-unid:Focus uni:linked_to <https://www.wikidata.org/wiki/Q288918> ;
+unid:Focus a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q288918> ;
     uni:topicName "Focus" .
 
-unid:Frame_Problem uni:linked_to <https://www.wikidata.org/wiki/Q1185775> ;
+unid:Frame_Problem a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1185775> ;
     uni:topicName "Frame Problem" .
 
-unid:Framework uni:linked_to <https://www.wikidata.org/wiki/Q271680> ;
+unid:Framework a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q271680> ;
     uni:topicName "Framework" .
 
-unid:Freebase uni:linked_to <https://www.wikidata.org/wiki/Q1453477> ;
+unid:Freebase a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1453477> ;
     uni:topicName "Freebase" .
 
-unid:French uni:linked_to <https://www.wikidata.org/wiki/Q150> ;
-    uni:topicName "French" .
-
-unid:Frey uni:linked_to <https://www.wikidata.org/wiki/Q7326995> ;
-    uni:topicName "Frey" .
-
-unid:Friend uni:linked_to <https://www.wikidata.org/wiki/Q491> ;
-    uni:topicName "Friend" .
-
-unid:Function uni:linked_to <https://www.wikidata.org/wiki/Q190686> ;
+unid:Function a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q190686> ;
     uni:topicName "Function" .
 
-unid:Fuseki uni:linked_to <https://www.wikidata.org/wiki/Q1471749> ;
-    uni:topicName "Fuseki" .
-
-unid:GPT-2 uni:linked_to <https://www.wikidata.org/wiki/Q95726727> ;
+unid:GPT-2 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q95726727> ;
     uni:topicName "GPT-2" .
 
-unid:GPT-3 uni:linked_to <https://www.wikidata.org/wiki/Q95726734> ;
+unid:GPT-3 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q95726734> ;
     uni:topicName "GPT-3" .
 
-unid:GUI uni:linked_to <https://www.wikidata.org/wiki/Q782543> ;
-    uni:topicName "GUI" .
-
-unid:Gantt_Chart uni:linked_to <https://www.wikidata.org/wiki/Q192847> ;
+unid:Gantt_Chart a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q192847> ;
     uni:topicName "Gantt Chart" .
 
-unid:Gartner uni:linked_to <https://www.wikidata.org/wiki/Q174198> ;
-    uni:topicName "Gartner" .
-
-unid:GenAI uni:linked_to <https://www.wikidata.org/wiki/Q5530868> ;
+unid:GenAI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5530868> ;
     uni:topicName "GenAI" .
 
 <http://uni.com/data/General_Problem_
 
 Solver
 
-> uni:linked_to <https://www.wikidata.org/wiki/Q1387212> ;
+> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1387212> ;
     uni:topicName """General Problem 
 
 Solver
 
 """ .
 
-unid:Geonames uni:linked_to <https://www.wikidata.org/wiki/Q830106> ;
+unid:Geonames a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q830106> ;
     uni:topicName "Geonames" .
 
-unid:George_Williams uni:linked_to <https://www.wikidata.org/wiki/Q5546376> ;
+unid:George_Williams a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5546376> ;
     uni:topicName "George Williams" .
 
-unid:German uni:linked_to <https://www.wikidata.org/wiki/Q188> ;
+unid:German a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q188> ;
     uni:topicName "German" .
 
-unid:Gettysburg uni:linked_to <https://www.wikidata.org/wiki/Q694550> ;
+unid:Gettysburg a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q694550> ;
     uni:topicName "Gettysburg" .
 
-unid:GitHub uni:linked_to <https://www.wikidata.org/wiki/Q364> ;
-    uni:topicName "GitHub" .
-
-unid:Google uni:linked_to <https://www.wikidata.org/wiki/Q9366>,
-        <https://www.wikidata.org/wiki/Q95> ;
-    uni:topicName "Google" .
-
-unid:Google_Docs uni:linked_to <https://www.wikidata.org/wiki/Q9344> ;
+unid:Google_Docs a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q9344> ;
     uni:topicName "Google Docs" .
 
-unid:Google_Knowledge_Graph uni:linked_to <https://www.wikidata.org/wiki/Q648625> ;
+unid:Google_Knowledge_Graph a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q648625> ;
     uni:topicName "Google Knowledge Graph" .
 
-unid:Google_Search uni:linked_to <https://www.wikidata.org/wiki/Q9366> ;
+unid:Google_Search a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q9366> ;
     uni:topicName "Google Search" .
 
-unid:Graph uni:linked_to <https://www.wikidata.org/wiki/Q141488>,
-        <https://www.wikidata.org/wiki/Q2479726> ;
-    uni:topicName "Graph" .
-
 <http://uni.com/data/Graph_API
-> uni:linked_to <https://www.wikidata.org/wiki/Q648457> ;
+> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q648457> ;
     uni:topicName """Graph API
 """ .
 
-unid:Graphs uni:linked_to <https://www.wikidata.org/wiki/Q3427422>,
-        <https://www.wikidata.org/wiki/Q3784250> ;
-    uni:topicName "Graphs" .
-
-unid:HBO uni:linked_to <https://www.wikidata.org/wiki/Q23633> ;
+unid:HBO a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q23633> ;
     uni:topicName "HBO" .
 
-unid:HTTP uni:linked_to <https://www.wikidata.org/wiki/Q8777> ;
-    uni:topicName "HTTP" .
-
-unid:Halstead uni:linked_to <https://www.wikidata.org/wiki/Q2282928> ;
+unid:Halstead a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2282928> ;
     uni:topicName "Halstead" .
 
-unid:Harper_Collins uni:linked_to <https://www.wikidata.org/wiki/Q95149> ;
+unid:Harper_Collins a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q95149> ;
     uni:topicName "Harper Collins" .
 
-unid:House_of_Cards uni:linked_to <https://www.wikidata.org/wiki/Q3330940> ;
+unid:House_of_Cards a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3330940> ;
     uni:topicName "House of Cards" .
 
-unid:IBM uni:linked_to <https://www.wikidata.org/wiki/Q37156> ;
-    uni:topicName "IBM" .
-
-unid:IEEE uni:linked_to <https://www.wikidata.org/wiki/Q131566> ;
+unid:IEEE a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q131566> ;
     uni:topicName "IEEE" .
 
-unid:IEEE_Standard uni:linked_to <https://www.wikidata.org/wiki/Q5970491> ;
+unid:IEEE_Standard a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5970491> ;
     uni:topicName "IEEE Standard" .
 
-unid:IR uni:linked_to <https://www.wikidata.org/wiki/Q11388> ;
+unid:IR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11388> ;
     uni:topicName "IR" .
 
-unid:IRI uni:linked_to <https://www.wikidata.org/wiki/Q1674879>,
-        <https://www.wikidata.org/wiki/Q424583> ;
-    uni:topicName "IRI" .
-
-unid:ISO uni:linked_to <https://www.wikidata.org/wiki/Q930439> ;
+unid:ISO a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q930439> ;
     uni:topicName "ISO" .
 
-unid:ISP uni:linked_to <https://www.wikidata.org/wiki/Q11371> ;
+unid:ISP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11371> ;
     uni:topicName "ISP" .
 
-unid:ITG uni:linked_to <https://www.wikidata.org/wiki/Q3063959> ;
+unid:ITG a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3063959> ;
     uni:topicName "ITG" .
 
-unid:Information_Retrieval uni:linked_to <https://www.wikidata.org/wiki/Q816826> ;
+unid:Information_Retrieval a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q816826> ;
     uni:topicName "Information Retrieval" .
 
-unid:Inspire uni:linked_to <https://www.wikidata.org/wiki/Q3359800> ;
+unid:Inspire a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3359800> ;
     uni:topicName "Inspire" .
 
-unid:Integration_Testing uni:linked_to <https://www.wikidata.org/wiki/Q782466> ;
+unid:Integration_Testing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q782466> ;
     uni:topicName "Integration Testing" .
 
-unid:Intelligent_Agents.txt a uni:Topic .
-
-unid:Intelligent_Systems uni:linked_to <https://www.wikidata.org/wiki/Q150001> ;
-    uni:topicName "Intelligent Systems" .
-
-unid:Intelligent_Systems_Introduction.txt a uni:Topic .
-
-unid:Interface uni:linked_to <https://www.wikidata.org/wiki/Q23808> ;
+unid:Interface a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q23808> ;
     uni:topicName "Interface" .
 
-unid:Interface_Segregation_Principle uni:linked_to <https://www.wikidata.org/wiki/Q1666034> ;
+unid:Interface_Segregation_Principle a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1666034> ;
     uni:topicName "Interface Segregation Principle" .
 
-unid:Intuitively uni:linked_to <https://www.wikidata.org/wiki/Q189222> ;
+unid:Intuitively a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189222> ;
     uni:topicName "Intuitively" .
 
-unid:Inventory_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q6059915> ;
+unid:Inventory_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6059915> ;
     uni:topicName "Inventory Analysis" .
 
-unid:Italian uni:linked_to <https://www.wikidata.org/wiki/Q652> ;
+unid:Italian a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q652> ;
     uni:topicName "Italian" .
 
-unid:JAVA uni:linked_to <https://www.wikidata.org/wiki/Q1100132> ;
+unid:JAVA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1100132> ;
     uni:topicName "JAVA" .
 
-unid:JSON uni:linked_to <https://www.wikidata.org/wiki/Q2063> ;
+unid:JSON a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2063> ;
     uni:topicName "JSON" .
 
-unid:James_Pustejovsky uni:linked_to <https://www.wikidata.org/wiki/Q3161351> ;
+unid:James_Pustejovsky a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3161351> ;
     uni:topicName "James Pustejovsky" .
 
-unid:Java uni:linked_to <https://www.wikidata.org/wiki/Q251>,
-        <https://www.wikidata.org/wiki/Q3757> ;
-    uni:topicName "Java" .
-
-unid:John_Berryman uni:linked_to <https://www.wikidata.org/wiki/Q4085167> ;
+unid:John_Berryman a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4085167> ;
     uni:topicName "John Berryman" .
 
-unid:John_Domingue uni:linked_to <https://www.wikidata.org/wiki/Q93046> ;
+unid:John_Domingue a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q93046> ;
     uni:topicName "John Domingue" .
 
-unid:Jorge_Pérez uni:linked_to <https://www.wikidata.org/wiki/Q55615315> ;
+unid:Jorge_Pérez a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q55615315> ;
     uni:topicName "Jorge Pérez" .
 
-unid:Json uni:linked_to <https://www.wikidata.org/wiki/Q19281804> ;
+unid:Json a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q19281804> ;
     uni:topicName "Json" .
 
-unid:Judy_Hopps uni:linked_to <https://www.wikidata.org/wiki/Q15270647> ;
+unid:Judy_Hopps a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q15270647> ;
     uni:topicName "Judy Hopps" .
 
-unid:Junit uni:linked_to <https://www.wikidata.org/wiki/Q847675> ;
+unid:Junit a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q847675> ;
     uni:topicName "Junit" .
 
-unid:KISS uni:linked_to <https://www.wikidata.org/wiki/Q124179> ;
+unid:KISS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q124179> ;
     uni:topicName "KISS" .
 
-unid:KLOC uni:linked_to <https://www.wikidata.org/wiki/Q14682612> ;
+unid:KLOC a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q14682612> ;
     uni:topicName "KLOC" .
 
-unid:Keyword uni:linked_to <https://www.wikidata.org/wiki/Q28134182> ;
-    uni:topicName "Keyword" .
-
 <http://uni.com/data/Knowledge
-Graphs> uni:linked_to <https://www.wikidata.org/wiki/Q324254> ;
+Graphs> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q324254> ;
     uni:topicName """Knowledge
 Graphs""" .
 
-unid:Knowledge_Base_Queries_and_Linked_Open_Data.txt a uni:Topic .
-
-unid:Knowledge_Graph uni:linked_to <https://www.wikidata.org/wiki/Q33002955> ;
-    uni:topicName "Knowledge Graph" .
-
-unid:Knowledge_Graphs uni:linked_to <https://www.wikidata.org/wiki/Q324254> ;
-    uni:topicName "Knowledge Graphs" .
-
-unid:Knowledge_Graphs.txt a uni:Topic .
-
-unid:Knowledge_Graphs_-_Vocabularies_and_Ontologies.txt a uni:Topic .
-
-unid:LAB_1_-_SRS.txt a uni:Topic .
-
-unid:LAB_2_-_Software_Design.txt a uni:Topic .
-
-unid:LAB_3_-_Quality_Control.txt a uni:Topic .
-
-unid:LLM uni:linked_to <https://www.wikidata.org/wiki/Q754848> ;
+unid:LLM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q754848> ;
     uni:topicName "LLM" .
 
-unid:LOC uni:linked_to <https://www.wikidata.org/wiki/Q131454>,
+unid:Leonardo_da_Vinci a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q762> ;
+    uni:topicName "Leonardo da Vinci" .
+
+unid:Likert a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q617473> ;
+    uni:topicName "Likert" .
+
+unid:LinkedIn a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q213660> ;
+    uni:topicName "LinkedIn" .
+
+unid:Liskov_Substitution_Principle a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q957386> ;
+    uni:topicName "Liskov Substitution Principle" .
+
+unid:Literal a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6647567> ;
+    uni:topicName "Literal" .
+
+<http://uni.com/data/Loyola
+_College> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5399470> ;
+    uni:topicName """Loyola
+ College""" .
+
+unid:Loyola_College a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6694542> ;
+    uni:topicName "Loyola College" .
+
+unid:Lucene a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q773196> ;
+    uni:topicName "Lucene" .
+
+unid:MAP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4863657> ;
+    uni:topicName "MAP" .
+
+unid:MAX a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2584009> ;
+    uni:topicName "MAX" .
+
+unid:MIN a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q953046> ;
+    uni:topicName "MIN" .
+
+unid:MS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1494> ;
+    uni:topicName "MS" .
+
+unid:MVC a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1536057> ;
+    uni:topicName "MVC" .
+
+unid:Manhattan a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11299> ;
+    uni:topicName "Manhattan" .
+
+unid:Matplotlib a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2985668> ;
+    uni:topicName "Matplotlib" .
+
+unid:McGill a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q201492> ;
+    uni:topicName "McGill" .
+
+unid:McGill_University a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q201492> ;
+    uni:topicName "McGill University" .
+
+unid:McGraw-Hill_Education a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q17153156> ;
+    uni:topicName "McGraw-Hill Education" .
+
+unid:Mexico a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q96> ;
+    uni:topicName "Mexico" .
+
+unid:Miscommunication a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q104841107> ;
+    uni:topicName "Miscommunication" .
+
+unid:Mobile_Apps a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q620615> ;
+    uni:topicName "Mobile Apps" .
+
+unid:Mockito a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1941695> ;
+    uni:topicName "Mockito" .
+
+unid:Model_Evaluation a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1379672> ;
+    uni:topicName "Model Evaluation" .
+
+unid:Modifier a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5156843> ;
+    uni:topicName "Modifier" .
+
+unid:Motivation a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q644302> ;
+    uni:topicName "Motivation" .
+
+unid:NB a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q222751> ;
+    uni:topicName "NB" .
+
+unid:NFR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3454731> ;
+    uni:topicName "NFR" .
+
+unid:NOC a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q183288> ;
+    uni:topicName "NOC" .
+
+unid:NOR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q574946> ;
+    uni:topicName "NOR" .
+
+unid:Namespace a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q873636> ;
+    uni:topicName "Namespace" .
+
+unid:Natural_Language_Processing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q30642> ;
+    uni:topicName "Natural Language Processing" .
+
+unid:Neural_Networks a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q15708873> ;
+    uni:topicName "Neural Networks" .
+
+unid:Noisy_Data a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q30587856> ;
+    uni:topicName "Noisy Data" .
+
+unid:Non-Functional_Requirement a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3254666> ;
+    uni:topicName "Non-Functional Requirement" .
+
+<http://uni.com/data/Non-Functional_Requirements
+	> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3254666> ;
+    uni:topicName """Non-Functional Requirements
+	""" .
+
+unid:Noun a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4782696> ;
+    uni:topicName "Noun" .
+
+unid:NuBus a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1928621> ;
+    uni:topicName "NuBus" .
+
+unid:OCP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q501605> ;
+    uni:topicName "OCP" .
+
+unid:OPE a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3883909> ;
+    uni:topicName "OPE" .
+
+unid:Oracle_Spatial a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3508244> ;
+    uni:topicName "Oracle Spatial" .
+
+unid:Organizational_Effectiveness a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7102014> ;
+    uni:topicName "Organizational Effectiveness" .
+
+unid:Original_Design a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q211736> ;
+    uni:topicName "Original Design" .
+
+unid:Outlook a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1955600> ;
+    uni:topicName "Outlook" .
+
+unid:P1 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q28452989> ;
+    uni:topicName "P1" .
+
+unid:P2 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q954078> ;
+    uni:topicName "P2" .
+
+unid:P3 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q659696> ;
+    uni:topicName "P3" .
+
+unid:P6 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1364041> ;
+    uni:topicName "P6" .
+
+unid:PAD a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q249083> ;
+    uni:topicName "PAD" .
+
+unid:PCA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2873> ;
+    uni:topicName "PCA" .
+
+unid:PDS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q541370> ;
+    uni:topicName "PDS" .
+
+unid:PHP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q59> ;
+    uni:topicName "PHP" .
+
+unid:PME a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q622439> ;
+    uni:topicName "PME" .
+
+unid:POST a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q28457714> ;
+    uni:topicName "POST" .
+
+unid:Pandas a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q33602> ;
+    uni:topicName "Pandas" .
+
+unid:Parse a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q194152> ;
+    uni:topicName "Parse" .
+
+unid:Personalization a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1000371> ;
+    uni:topicName "Personalization" .
+
+unid:Personas a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7170670> ;
+    uni:topicName "Personas" .
+
+unid:Peter_Norvig a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q92832> ;
+    uni:topicName "Peter Norvig" .
+
+unid:Poetry a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q482> ;
+    uni:topicName "Poetry" .
+
+unid:PowerShell a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q840410> ;
+    uni:topicName "PowerShell" .
+
+unid:Prabhakar_Raghavan a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7237222> ;
+    uni:topicName "Prabhakar Raghavan" .
+
+unid:Prentice_Hall a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q443253> ;
+    uni:topicName "Prentice Hall" .
+
+unid:Preparations a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7240618> ;
+    uni:topicName "Preparations" .
+
+unid:Principal_Component_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2873> ;
+    uni:topicName "Principal Component Analysis" .
+
+unid:Process_4 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q674564> ;
+    uni:topicName "Process 4" .
+
+unid:Process_Model a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q27610560> ;
+    uni:topicName "Process Model" .
+
+unid:Producer a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q183945> ;
+    uni:topicName "Producer" .
+
+<http://uni.com/data/Pros_&_Cons> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7250533> ;
+    uni:topicName "Pros & Cons" .
+
+unid:Prototype a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q746599> ;
+    uni:topicName "Prototype" .
+
+unid:PyTorch a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q47509047> ;
+    uni:topicName "PyTorch" .
+
+unid:Python a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q28865> ;
+    uni:topicName "Python" .
+
+unid:Q96 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7265361> ;
+    uni:topicName "Q96" .
+
+unid:Quality_Assurance a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q836575> ;
+    uni:topicName "Quality Assurance" .
+
+unid:Quality_Control a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q55316128> ;
+    uni:topicName "Quality Control" .
+
+unid:Quillian a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q76878060> ;
+    uni:topicName "Quillian" .
+
+unid:RDFlib a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7276224> ;
+    uni:topicName "RDFlib" .
+
+unid:Reason a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1454090> ;
+    uni:topicName "Reason" .
+
+unid:Reasoning_Engine a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3929429> ;
+    uni:topicName "Reasoning Engine" .
+
+unid:Recommendations a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
+    uni:topicName "Recommendations" .
+
+unid:Recommender_Engine a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
+    uni:topicName "Recommender Engine" .
+
+unid:Red_Queen a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2561830> ;
+    uni:topicName "Red Queen" .
+
+unid:Reference_Model a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q356674> ;
+    uni:topicName "Reference Model" .
+
+unid:Refine a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q682483> ;
+    uni:topicName "Refine" .
+
+unid:Refinitiv a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q60741469> ;
+    uni:topicName "Refinitiv" .
+
+unid:Regression_Testing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q917415> ;
+    uni:topicName "Regression Testing" .
+
+unid:Reinforcement_Learning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q830687> ;
+    uni:topicName "Reinforcement Learning" .
+
+unid:Requirements a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q774228> ;
+    uni:topicName "Requirements" .
+
+unid:Resident_Evil a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1276325> ;
+    uni:topicName "Resident Evil" .
+
+unid:Response_Time a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q578372> ;
+    uni:topicName "Response Time" .
+
+unid:Reuse a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q846574> ;
+    uni:topicName "Reuse" .
+
+unid:Reverse_Engineering a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q269608> ;
+    uni:topicName "Reverse Engineering" .
+
+unid:Richard_Wallace a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q374455> ;
+    uni:topicName "Richard Wallace" .
+
+unid:Risk_Management a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189447> ;
+    uni:topicName "Risk Management" .
+
+unid:SAAS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q671488> ;
+    uni:topicName "SAAS" .
+
+unid:SCI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1379084> ;
+    uni:topicName "SCI" .
+
+unid:SCM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189439> ;
+    uni:topicName "SCM" .
+
+unid:SHRDLU a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1778029> ;
+    uni:topicName "SHRDLU" .
+
+unid:SMI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1487705> ;
+    uni:topicName "SMI" .
+
+unid:SOAP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189620> ;
+    uni:topicName "SOAP" .
+
+unid:SRS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q334410> ;
+    uni:topicName "SRS" .
+
+unid:SUM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q13570696> ;
+    uni:topicName "SUM" .
+
+unid:Schema.org a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3475322> ;
+    uni:topicName "Schema.org" .
+
+unid:Select a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7447637> ;
+    uni:topicName "Select" .
+
+unid:Semantic_Networks a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1045785> ;
+    uni:topicName "Semantic Networks" .
+
+unid:Sentiment_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2271421> ;
+    uni:topicName "Sentiment Analysis" .
+
+unid:Sequence a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3955681> ;
+    uni:topicName "Sequence" .
+
+unid:Server a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11288> ;
+    uni:topicName "Server" .
+
+unid:Severity_Level a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1425501> ;
+    uni:topicName "Severity Level" .
+
+unid:Software_Analytics a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7554239> ;
+    uni:topicName "Software Analytics" .
+
+unid:Software_Evolution a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q265013> ;
+    uni:topicName "Software Evolution" .
+
+unid:Software_Maintenance a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q940053> ;
+    uni:topicName "Software Maintenance" .
+
+unid:Solr a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2858103> ;
+    uni:topicName "Solr" .
+
+unid:Speaktoit a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7574357> ;
+    uni:topicName "Speaktoit" .
+
+unid:Spotify a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q689141> ;
+    uni:topicName "Spotify" .
+
+unid:Spotlight a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q18154496> ;
+    uni:topicName "Spotlight" .
+
+unid:Springer-Verlag_Berlin_Heidelberg a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q176916> ;
+    uni:topicName "Springer-Verlag Berlin Heidelberg" .
+
+unid:State_Diagram a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q230885> ;
+    uni:topicName "State Diagram" .
+
+unid:Stepwise_Refinement a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2167279> ;
+    uni:topicName "Stepwise Refinement" .
+
+unid:Steve_Jobs a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q19837> ;
+    uni:topicName "Steve Jobs" .
+
+unid:Stopword a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q80735> ;
+    uni:topicName "Stopword" .
+
+unid:Stuart_Russell a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3656334> ;
+    uni:topicName "Stuart Russell" .
+
+unid:Stubs a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q443426> ;
+    uni:topicName "Stubs" .
+
+unid:Swimlane a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4050462> ;
+    uni:topicName "Swimlane" .
+
+unid:TCF a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6137461> ;
+    uni:topicName "TCF" .
+
+unid:Task_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q380077> ;
+    uni:topicName "Task Analysis" .
+
+unid:Test_Planning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q364651> ;
+    uni:topicName "Test Planning" .
+
+unid:Text a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q234460> ;
+    uni:topicName "Text" .
+
+unid:Text_Editor a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q131212> ;
+    uni:topicName "Text Editor" .
+
+unid:Text_Mining a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q676880> ;
+    uni:topicName "Text Mining" .
+
+unid:The_Artist a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q171861> ;
+    uni:topicName "The Artist" .
+
+unid:The_Glass a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q16205826> ;
+    uni:topicName "The Glass" .
+
+unid:The_Lego_Movie a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2608065> ;
+    uni:topicName "The Lego Movie" .
+
+unid:The_Next_Web a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2913725> ;
+    uni:topicName "The Next Web" .
+
+unid:Thesauri a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q179797> ;
+    uni:topicName "Thesauri" .
+
+unid:Tim_Berners-Lee a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q80> ;
+    uni:topicName "Tim Berners-Lee" .
+
+unid:Time a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q43297> ;
+    uni:topicName "Time" .
+
+unid:Token a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q172841> ;
+    uni:topicName "Token" .
+
+unid:Toy_Story a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2414752> ;
+    uni:topicName "Toy Story" .
+
+unid:Traceability a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q899704> ;
+    uni:topicName "Traceability" .
+
+unid:Tradeoff_Analysis a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q638123> ;
+    uni:topicName "Tradeoff Analysis" .
+
+unid:Tricky a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q313627> ;
+    uni:topicName "Tricky" .
+
+unid:Twitter a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q918> ;
+    uni:topicName "Twitter" .
+
+<http://uni.com/data/U.S.> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q30> ;
+    uni:topicName "U.S." .
+
+unid:UAW a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1814260> ;
+    uni:topicName "UAW" .
+
+unid:UCP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q34930858> ;
+    uni:topicName "UCP" .
+
+unid:UI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q47146> ;
+    uni:topicName "UI" .
+
+unid:UIMA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1539155> ;
+    uni:topicName "UIMA" .
+
+unid:UML_Diagram a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q169411> ;
+    uni:topicName "UML Diagram" .
+
+unid:UX a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11248500> ;
+    uni:topicName "UX" .
+
+unid:UX_Design a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q11248500> ;
+    uni:topicName "UX Design" .
+
+unid:Umbrella a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q155447> ;
+    uni:topicName "Umbrella" .
+
+unid:Underfitting a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q331309> ;
+    uni:topicName "Underfitting" .
+
+unid:UniProt a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q905695> ;
+    uni:topicName "UniProt" .
+
+unid:Unicode a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q8819> ;
+    uni:topicName "Unicode" .
+
+unid:Université_Concordia a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q326342> ;
+    uni:topicName "Université Concordia" .
+
+unid:Unsupervised_Learning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1152135> ;
+    uni:topicName "Unsupervised Learning" .
+
+unid:Usability_Engineering a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1642623> ;
+    uni:topicName "Usability Engineering" .
+
+unid:Use-Case a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q613417> ;
+    uni:topicName "Use-Case" .
+
+unid:Usenet a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q193162> ;
+    uni:topicName "Usenet" .
+
+unid:Valid a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q18757> ;
+    uni:topicName "Valid" .
+
+unid:Verb a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q24905> ;
+    uni:topicName "Verb" .
+
+unid:Version_Control a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189439> ;
+    uni:topicName "Version Control" .
+
+unid:WCSS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7948104> ;
+    uni:topicName "WCSS" .
+
+unid:WWW a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q15117072> ;
+    uni:topicName "WWW" .
+
+unid:WebApp a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189210> ;
+    uni:topicName "WebApp" .
+
+unid:WebApps a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189210> ;
+    uni:topicName "WebApps" .
+
+unid:Weizenbaum a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q75778> ;
+    uni:topicName "Weizenbaum" .
+
+unid:Westworld a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q17572811> ;
+    uni:topicName "Westworld" .
+
+unid:Width a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q36253> ;
+    uni:topicName "Width" .
+
+unid:Workflow a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q30602204> ;
+    uni:topicName "Workflow" .
+
+unid:World_Wide a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1341612> ;
+    uni:topicName "World Wide" .
+
+unid:XOR a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q498186> ;
+    uni:topicName "XOR" .
+
+unid:YOUS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1165897> ;
+    uni:topicName "YOUS" .
+
+unid:YouTube a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q866> ;
+    uni:topicName "YouTube" .
+
+unid:Zootopia a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q15270647> ;
+    uni:topicName "Zootopia" .
+
+unid:automaton a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q176452> ;
+    uni:topicName "automaton" .
+
+unid:byte a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q8799> ;
+    uni:topicName "byte" .
+
+unid:ec a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q52847> ;
+    uni:topicName "ec" .
+
+unid:jargon a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q17951> ;
+    uni:topicName "jargon" .
+
+unid:k-Nearest-Neighbor a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1071612> ;
+    uni:topicName "k-Nearest-Neighbor" .
+
+unid:kmeans a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q310401> ;
+    uni:topicName "kmeans" .
+
+unid:mbox a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q285972> ;
+    uni:topicName "mbox" .
+
+unid:metadata a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q180160> ;
+    uni:topicName "metadata" .
+
+unid:pandas a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q33602> ;
+    uni:topicName "pandas" .
+
+unid:quan a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1045852> ;
+    uni:topicName "quan" .
+
+unid:suffix a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q62155> ;
+    uni:topicName "suffix" .
+
+unid:tandem a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1752317> ;
+    uni:topicName "tandem" .
+
+unid:tem a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q36613> ;
+    uni:topicName "tem" .
+
+unid:thesauri a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q17152639> ;
+    uni:topicName "thesauri" .
+
+<http://uni.com/data/§> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189248> ;
+    uni:topicName "§" .
+
+<http://uni.com/data/∈> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q379825> ;
+    uni:topicName "∈" .
+
+unid:ASK a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3485796>,
+        <https://www.wikidata.org/wiki/Q3755081> ;
+    uni:topicName "ASK" .
+
+unid:Amazon a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3884> ;
+    uni:topicName "Amazon" .
+
+unid:Artificial_Intelligence a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q109875730> ;
+    uni:topicName "Artificial Intelligence" .
+
+unid:Cham a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q10424>,
+        <https://www.wikidata.org/wiki/Q383256> ;
+    uni:topicName "Cham" .
+
+unid:Chapter_12 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5073439> ;
+    uni:topicName "Chapter 12" .
+
+unid:Chapter_7 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4411666> ;
+    uni:topicName "Chapter 7" .
+
+unid:Chapter_9 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5073465> ;
+    uni:topicName "Chapter 9" .
+
+unid:Cole_Howard a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q5142666> ;
+    uni:topicName "Cole Howard" .
+
+unid:Collaboration_Diagram a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q950859> ;
+    uni:topicName "Collaboration Diagram" .
+
+unid:Collaborative_Filtering a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q94702> ;
+    uni:topicName "Collaborative Filtering" .
+
+unid:Compute a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4036474> ;
+    uni:topicName "Compute" .
+
+unid:Convert a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q904756> ;
+    uni:topicName "Convert" .
+
+unid:Description_Logic a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q387196> ;
+    uni:topicName "Description Logic" .
+
+unid:DevOps a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3025536> ;
+    uni:topicName "DevOps" .
+
+unid:Dublin_Core a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q624610> ;
+    uni:topicName "Dublin Core" .
+
+unid:Euclidean a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q162886>,
+        <https://www.wikidata.org/wiki/Q5406124> ;
+    uni:topicName "Euclidean" .
+
+unid:Euclidian a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q702232> ;
+    uni:topicName "Euclidian" .
+
+unid:FP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1072130>,
+        <https://www.wikidata.org/wiki/Q970152> ;
+    uni:topicName "FP" .
+
+unid:Frey a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q7326995> ;
+    uni:topicName "Frey" .
+
+unid:Fuseki a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1471749> ;
+    uni:topicName "Fuseki" .
+
+unid:GUI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q782543> ;
+    uni:topicName "GUI" .
+
+unid:Gartner a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q174198> ;
+    uni:topicName "Gartner" .
+
+unid:GitHub a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q364> ;
+    uni:topicName "GitHub" .
+
+unid:Graph a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q141488>,
+        <https://www.wikidata.org/wiki/Q2479726> ;
+    uni:topicName "Graph" .
+
+unid:HTTP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q8777> ;
+    uni:topicName "HTTP" .
+
+unid:Intelligent_Systems a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q150001> ;
+    uni:topicName "Intelligent Systems" .
+
+unid:Keyword a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q28134182> ;
+    uni:topicName "Keyword" .
+
+unid:Knowledge_Graph a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q33002955> ;
+    uni:topicName "Knowledge Graph" .
+
+unid:Linux a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q388> ;
+    uni:topicName "Linux" .
+
+unid:London a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q84> ;
+    uni:topicName "London" .
+
+unid:Loop a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q70626> ;
+    uni:topicName "Loop" .
+
+unid:Machine_Learning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2539>,
+        <https://www.wikidata.org/wiki/Q6723676> ;
+    uni:topicName "Machine Learning" .
+
+unid:Microsoft a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2283> ;
+    uni:topicName "Microsoft" .
+
+unid:MovieLens a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4353746> ;
+    uni:topicName "MovieLens" .
+
+unid:N3 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1424987> ;
+    uni:topicName "N3" .
+
+unid:OO a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1807761> ;
+    uni:topicName "OO" .
+
+unid:POWER7 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2600559> ;
+    uni:topicName "POWER7" .
+
+unid:Primer a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q16000421> ;
+    uni:topicName "Primer" .
+
+unid:QA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q613918> ;
+    uni:topicName "QA" .
+
+unid:Quebec a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q176> ;
+    uni:topicName "Quebec" .
+
+unid:RAM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q173104> ;
+    uni:topicName "RAM" .
+
+unid:Recommender_Systems a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
+    uni:topicName "Recommender Systems" .
+
+unid:Sequence_Diagram a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1391624> ;
+    uni:topicName "Sequence Diagram" .
+
+unid:Slide a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q85801586> ;
+    uni:topicName "Slide" .
+
+unid:Software a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
+    uni:topicName "Software" .
+
+unid:Springer_International_Publishing a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q176916> ;
+    uni:topicName "Springer International Publishing" .
+
+unid:TBL a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4001328> ;
+    uni:topicName "TBL" .
+
+unid:TED a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q189021> ;
+    uni:topicName "TED" .
+
+unid:The_Glass_Palace a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3225164> ;
+    uni:topicName "The Glass Palace" .
+
+unid:Validate a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3306762> ;
+    uni:topicName "Validate" .
+
+unid:Watson a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q12253> ;
+    uni:topicName "Watson" .
+
+unid:Windows a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1406> ;
+    uni:topicName "Windows" .
+
+unid:API a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q165194>,
+        <https://www.wikidata.org/wiki/Q466043> ;
+    uni:topicName "API" .
+
+unid:Apache_Jena a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1686799> ;
+    uni:topicName "Apache Jena" .
+
+unid:Deep_Learning a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q197536> ;
+    uni:topicName "Deep Learning" .
+
+unid:Eliza a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q580318> ;
+    uni:topicName "Eliza" .
+
+unid:French a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q150> ;
+    uni:topicName "French" .
+
+unid:Graphs a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q3427422>,
+        <https://www.wikidata.org/wiki/Q3784250> ;
+    uni:topicName "Graphs" .
+
+unid:IBM a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q37156> ;
+    uni:topicName "IBM" .
+
+unid:IRI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1674879>,
+        <https://www.wikidata.org/wiki/Q424583> ;
+    uni:topicName "IRI" .
+
+unid:Linked_Data a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q515701> ;
+    uni:topicName "Linked Data" .
+
+unid:ML a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q860654> ;
+    uni:topicName "ML" .
+
+unid:Mona_Lisa a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q12418> ;
+    uni:topicName "Mona Lisa" .
+
+unid:Montreal a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q340> ;
+    uni:topicName "Montreal" .
+
+unid:Moodle a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q190434> ;
+    uni:topicName "Moodle" .
+
+unid:N-Triples a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q44044> ;
+    uni:topicName "N-Triples" .
+
+unid:Netflix a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q907311> ;
+    uni:topicName "Netflix" .
+
+unid:RDF_Schema a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1751819> ;
+    uni:topicName "RDF Schema" .
+
+unid:Siri a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q12069185>,
+        <https://www.wikidata.org/wiki/Q582159> ;
+    uni:topicName "Siri" .
+
+unid:TA a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2609672> ;
+    uni:topicName "TA" .
+
+unid:XML a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2115> ;
+    uni:topicName "XML" .
+
+unid:Alexa a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1674441>,
+        <https://www.wikidata.org/wiki/Q230051>,
+        <https://www.wikidata.org/wiki/Q28022144>,
+        <https://www.wikidata.org/wiki/Q3814475> ;
+    uni:topicName "Alexa" .
+
+unid:Chapter_26 a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q6789867> ;
+    uni:topicName "Chapter 26" .
+
+unid:FOAF a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1389366> ;
+    uni:topicName "FOAF" .
+
+unid:Java a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q251>,
+        <https://www.wikidata.org/wiki/Q3757> ;
+    uni:topicName "Java" .
+
+unid:Knowledge_Graphs a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q324254> ;
+    uni:topicName "Knowledge Graphs" .
+
+unid:LOC a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q131454>,
         <https://www.wikidata.org/wiki/Q942695> ;
     uni:topicName "LOC" .
 
-unid:LOD uni:linked_to <https://www.wikidata.org/wiki/Q1505570>,
+unid:LOD a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1505570>,
         <https://www.wikidata.org/wiki/Q1821756>,
         <https://www.wikidata.org/wiki/Q843863> ;
     uni:topicName "LOD" .
 
-<http://uni.com/data/Lab_Session_#01.txt> a uni:Topic .
-
-<http://uni.com/data/Lab_Session_#02.txt> a uni:Topic .
-
-<http://uni.com/data/Lab_Session_#03.txt> a uni:Topic .
-
-<http://uni.com/data/Lab_Session_#04.txt> a uni:Topic .
-
-<http://uni.com/data/Lab_Session_#05.txt> a uni:Topic .
-
-<http://uni.com/data/Lab_Session_#06.txt> a uni:Topic .
-
-unid:Leonardo_da_Vinci uni:linked_to <https://www.wikidata.org/wiki/Q762> ;
-    uni:topicName "Leonardo da Vinci" .
-
-unid:Likert uni:linked_to <https://www.wikidata.org/wiki/Q617473> ;
-    uni:topicName "Likert" .
-
-unid:LinkedIn uni:linked_to <https://www.wikidata.org/wiki/Q213660> ;
-    uni:topicName "LinkedIn" .
-
-unid:Linked_Data uni:linked_to <https://www.wikidata.org/wiki/Q515701> ;
-    uni:topicName "Linked Data" .
-
-unid:Linked_Open_Data uni:linked_to <https://www.wikidata.org/wiki/Q515701> ;
+unid:Linked_Open_Data a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q515701> ;
     uni:topicName "Linked Open Data" .
 
-unid:Linux uni:linked_to <https://www.wikidata.org/wiki/Q388> ;
-    uni:topicName "Linux" .
-
-unid:Liskov_Substitution_Principle uni:linked_to <https://www.wikidata.org/wiki/Q957386> ;
-    uni:topicName "Liskov Substitution Principle" .
-
-unid:Literal uni:linked_to <https://www.wikidata.org/wiki/Q6647567> ;
-    uni:topicName "Literal" .
-
-unid:London uni:linked_to <https://www.wikidata.org/wiki/Q84> ;
-    uni:topicName "London" .
-
-unid:Loop uni:linked_to <https://www.wikidata.org/wiki/Q70626> ;
-    uni:topicName "Loop" .
-
-<http://uni.com/data/Loyola
-_College> uni:linked_to <https://www.wikidata.org/wiki/Q5399470> ;
-    uni:topicName """Loyola
- College""" .
-
-unid:Loyola_College uni:linked_to <https://www.wikidata.org/wiki/Q6694542> ;
-    uni:topicName "Loyola College" .
-
-unid:Lucene uni:linked_to <https://www.wikidata.org/wiki/Q773196> ;
-    uni:topicName "Lucene" .
-
-unid:MAP uni:linked_to <https://www.wikidata.org/wiki/Q4863657> ;
-    uni:topicName "MAP" .
-
-unid:MAX uni:linked_to <https://www.wikidata.org/wiki/Q2584009> ;
-    uni:topicName "MAX" .
-
-unid:MIN uni:linked_to <https://www.wikidata.org/wiki/Q953046> ;
-    uni:topicName "MIN" .
-
-unid:ML uni:linked_to <https://www.wikidata.org/wiki/Q860654> ;
-    uni:topicName "ML" .
-
-unid:MS uni:linked_to <https://www.wikidata.org/wiki/Q1494> ;
-    uni:topicName "MS" .
-
-unid:MVC uni:linked_to <https://www.wikidata.org/wiki/Q1536057> ;
-    uni:topicName "MVC" .
-
-unid:Machine_Learning uni:linked_to <https://www.wikidata.org/wiki/Q2539>,
-        <https://www.wikidata.org/wiki/Q6723676> ;
-    uni:topicName "Machine Learning" .
-
-unid:Machine_Learning_for_Intelligent_Systems.txt a uni:Topic .
-
-unid:Manhattan uni:linked_to <https://www.wikidata.org/wiki/Q11299> ;
-    uni:topicName "Manhattan" .
-
-unid:Matplotlib uni:linked_to <https://www.wikidata.org/wiki/Q2985668> ;
-    uni:topicName "Matplotlib" .
-
-unid:McGill uni:linked_to <https://www.wikidata.org/wiki/Q201492> ;
-    uni:topicName "McGill" .
-
-unid:McGill_University uni:linked_to <https://www.wikidata.org/wiki/Q201492> ;
-    uni:topicName "McGill University" .
-
-unid:McGraw-Hill_Education uni:linked_to <https://www.wikidata.org/wiki/Q17153156> ;
-    uni:topicName "McGraw-Hill Education" .
-
-unid:Mexico uni:linked_to <https://www.wikidata.org/wiki/Q96> ;
-    uni:topicName "Mexico" .
-
-unid:Microsoft uni:linked_to <https://www.wikidata.org/wiki/Q2283> ;
-    uni:topicName "Microsoft" .
-
-unid:Miscommunication uni:linked_to <https://www.wikidata.org/wiki/Q104841107> ;
-    uni:topicName "Miscommunication" .
-
-unid:Mobile_Apps uni:linked_to <https://www.wikidata.org/wiki/Q620615> ;
-    uni:topicName "Mobile Apps" .
-
-unid:Mockito uni:linked_to <https://www.wikidata.org/wiki/Q1941695> ;
-    uni:topicName "Mockito" .
-
-unid:Model_Evaluation uni:linked_to <https://www.wikidata.org/wiki/Q1379672> ;
-    uni:topicName "Model Evaluation" .
-
-unid:Modifier uni:linked_to <https://www.wikidata.org/wiki/Q5156843> ;
-    uni:topicName "Modifier" .
-
-unid:Mona_Lisa uni:linked_to <https://www.wikidata.org/wiki/Q12418> ;
-    uni:topicName "Mona Lisa" .
-
-unid:Montreal uni:linked_to <https://www.wikidata.org/wiki/Q340> ;
-    uni:topicName "Montreal" .
-
-unid:Moodle uni:linked_to <https://www.wikidata.org/wiki/Q190434> ;
-    uni:topicName "Moodle" .
-
-unid:Motivation uni:linked_to <https://www.wikidata.org/wiki/Q644302> ;
-    uni:topicName "Motivation" .
-
-unid:MovieLens uni:linked_to <https://www.wikidata.org/wiki/Q4353746> ;
-    uni:topicName "MovieLens" .
-
-unid:N-Triples uni:linked_to <https://www.wikidata.org/wiki/Q44044> ;
-    uni:topicName "N-Triples" .
-
-unid:N3 uni:linked_to <https://www.wikidata.org/wiki/Q1424987> ;
-    uni:topicName "N3" .
-
-unid:NB uni:linked_to <https://www.wikidata.org/wiki/Q222751> ;
-    uni:topicName "NB" .
-
-unid:NFR uni:linked_to <https://www.wikidata.org/wiki/Q3454731> ;
-    uni:topicName "NFR" .
-
-unid:NLP uni:linked_to <https://www.wikidata.org/wiki/Q30642> ;
-    uni:topicName "NLP" .
-
-unid:NOC uni:linked_to <https://www.wikidata.org/wiki/Q183288> ;
-    uni:topicName "NOC" .
-
-unid:NOR uni:linked_to <https://www.wikidata.org/wiki/Q574946> ;
-    uni:topicName "NOR" .
-
-unid:Namespace uni:linked_to <https://www.wikidata.org/wiki/Q873636> ;
-    uni:topicName "Namespace" .
-
-unid:Natural_Language_Processing uni:linked_to <https://www.wikidata.org/wiki/Q30642> ;
-    uni:topicName "Natural Language Processing" .
-
-unid:Netflix uni:linked_to <https://www.wikidata.org/wiki/Q907311> ;
-    uni:topicName "Netflix" .
-
-unid:Neural_Networks uni:linked_to <https://www.wikidata.org/wiki/Q15708873> ;
-    uni:topicName "Neural Networks" .
-
-unid:Noisy_Data uni:linked_to <https://www.wikidata.org/wiki/Q30587856> ;
-    uni:topicName "Noisy Data" .
-
-unid:Non-Functional_Requirement uni:linked_to <https://www.wikidata.org/wiki/Q3254666> ;
-    uni:topicName "Non-Functional Requirement" .
-
-<http://uni.com/data/Non-Functional_Requirements
-	> uni:linked_to <https://www.wikidata.org/wiki/Q3254666> ;
-    uni:topicName """Non-Functional Requirements
-	""" .
-
-unid:Notes uni:linked_to <https://www.wikidata.org/wiki/Q4653740>,
-        <https://www.wikidata.org/wiki/Q60198> ;
-    uni:topicName "Notes" .
-
-unid:Noun uni:linked_to <https://www.wikidata.org/wiki/Q4782696> ;
-    uni:topicName "Noun" .
-
-unid:NuBus uni:linked_to <https://www.wikidata.org/wiki/Q1928621> ;
-    uni:topicName "NuBus" .
-
-unid:OCP uni:linked_to <https://www.wikidata.org/wiki/Q501605> ;
-    uni:topicName "OCP" .
-
-unid:OO uni:linked_to <https://www.wikidata.org/wiki/Q1807761> ;
-    uni:topicName "OO" .
-
-unid:OPE uni:linked_to <https://www.wikidata.org/wiki/Q3883909> ;
-    uni:topicName "OPE" .
-
-unid:OWL uni:linked_to <https://www.wikidata.org/wiki/Q826165>,
+unid:OWL a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q826165>,
         <https://www.wikidata.org/wiki/Q994371> ;
     uni:topicName "OWL" .
 
-unid:Oracle_Spatial uni:linked_to <https://www.wikidata.org/wiki/Q3508244> ;
-    uni:topicName "Oracle Spatial" .
-
-unid:Organizational_Effectiveness uni:linked_to <https://www.wikidata.org/wiki/Q7102014> ;
-    uni:topicName "Organizational Effectiveness" .
-
-unid:Original_Design uni:linked_to <https://www.wikidata.org/wiki/Q211736> ;
-    uni:topicName "Original Design" .
-
-unid:Outlook uni:linked_to <https://www.wikidata.org/wiki/Q1955600> ;
-    uni:topicName "Outlook" .
-
-unid:P1 uni:linked_to <https://www.wikidata.org/wiki/Q28452989> ;
-    uni:topicName "P1" .
-
-unid:P2 uni:linked_to <https://www.wikidata.org/wiki/Q954078> ;
-    uni:topicName "P2" .
-
-unid:P3 uni:linked_to <https://www.wikidata.org/wiki/Q659696> ;
-    uni:topicName "P3" .
-
-unid:P6 uni:linked_to <https://www.wikidata.org/wiki/Q1364041> ;
-    uni:topicName "P6" .
-
-unid:PAD uni:linked_to <https://www.wikidata.org/wiki/Q249083> ;
-    uni:topicName "PAD" .
-
-unid:PCA uni:linked_to <https://www.wikidata.org/wiki/Q2873> ;
-    uni:topicName "PCA" .
-
-unid:PDS uni:linked_to <https://www.wikidata.org/wiki/Q541370> ;
-    uni:topicName "PDS" .
-
-unid:PHP uni:linked_to <https://www.wikidata.org/wiki/Q59> ;
-    uni:topicName "PHP" .
-
-unid:PME uni:linked_to <https://www.wikidata.org/wiki/Q622439> ;
-    uni:topicName "PME" .
-
-unid:POST uni:linked_to <https://www.wikidata.org/wiki/Q28457714> ;
-    uni:topicName "POST" .
-
-unid:POWER7 uni:linked_to <https://www.wikidata.org/wiki/Q2600559> ;
-    uni:topicName "POWER7" .
-
-unid:Pandas uni:linked_to <https://www.wikidata.org/wiki/Q33602> ;
-    uni:topicName "Pandas" .
-
-unid:Parse uni:linked_to <https://www.wikidata.org/wiki/Q194152> ;
-    uni:topicName "Parse" .
-
-unid:Person uni:linked_to <https://www.wikidata.org/wiki/Q215627> ;
-    uni:topicName "Person" .
-
-unid:Personalization uni:linked_to <https://www.wikidata.org/wiki/Q1000371> ;
-    uni:topicName "Personalization" .
-
-unid:Personas uni:linked_to <https://www.wikidata.org/wiki/Q7170670> ;
-    uni:topicName "Personas" .
-
-unid:Peter_Norvig uni:linked_to <https://www.wikidata.org/wiki/Q92832> ;
-    uni:topicName "Peter Norvig" .
-
-unid:Poetry uni:linked_to <https://www.wikidata.org/wiki/Q482> ;
-    uni:topicName "Poetry" .
-
-unid:PowerShell uni:linked_to <https://www.wikidata.org/wiki/Q840410> ;
-    uni:topicName "PowerShell" .
-
-unid:Prabhakar_Raghavan uni:linked_to <https://www.wikidata.org/wiki/Q7237222> ;
-    uni:topicName "Prabhakar Raghavan" .
-
-unid:Prentice_Hall uni:linked_to <https://www.wikidata.org/wiki/Q443253> ;
-    uni:topicName "Prentice Hall" .
-
-unid:Preparations uni:linked_to <https://www.wikidata.org/wiki/Q7240618> ;
-    uni:topicName "Preparations" .
-
-unid:Primer uni:linked_to <https://www.wikidata.org/wiki/Q16000421> ;
-    uni:topicName "Primer" .
-
-unid:Principal_Component_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q2873> ;
-    uni:topicName "Principal Component Analysis" .
-
-unid:Process_4 uni:linked_to <https://www.wikidata.org/wiki/Q674564> ;
-    uni:topicName "Process 4" .
-
-unid:Process_Model uni:linked_to <https://www.wikidata.org/wiki/Q27610560> ;
-    uni:topicName "Process Model" .
-
-unid:Producer uni:linked_to <https://www.wikidata.org/wiki/Q183945> ;
-    uni:topicName "Producer" .
-
-unid:Project_Management_Concepts.txt a uni:Topic .
-
-<http://uni.com/data/Pros_&_Cons> uni:linked_to <https://www.wikidata.org/wiki/Q7250533> ;
-    uni:topicName "Pros & Cons" .
-
-unid:Prototype uni:linked_to <https://www.wikidata.org/wiki/Q746599> ;
-    uni:topicName "Prototype" .
-
-unid:PyTorch uni:linked_to <https://www.wikidata.org/wiki/Q47509047> ;
-    uni:topicName "PyTorch" .
-
-unid:Python uni:linked_to <https://www.wikidata.org/wiki/Q28865> ;
-    uni:topicName "Python" .
-
-unid:Q96 uni:linked_to <https://www.wikidata.org/wiki/Q7265361> ;
-    uni:topicName "Q96" .
-
-unid:QA uni:linked_to <https://www.wikidata.org/wiki/Q613918> ;
-    uni:topicName "QA" .
-
-unid:Quality_Assurance uni:linked_to <https://www.wikidata.org/wiki/Q836575> ;
-    uni:topicName "Quality Assurance" .
-
-unid:Quality_Control uni:linked_to <https://www.wikidata.org/wiki/Q55316128> ;
-    uni:topicName "Quality Control" .
-
-unid:Quebec uni:linked_to <https://www.wikidata.org/wiki/Q176> ;
-    uni:topicName "Quebec" .
-
-unid:Quillian uni:linked_to <https://www.wikidata.org/wiki/Q76878060> ;
-    uni:topicName "Quillian" .
-
-unid:RAM uni:linked_to <https://www.wikidata.org/wiki/Q173104> ;
-    uni:topicName "RAM" .
-
-unid:RDF uni:linked_to <https://www.wikidata.org/wiki/Q1367488>,
-        <https://www.wikidata.org/wiki/Q1751819>,
-        <https://www.wikidata.org/wiki/Q54872> ;
-    uni:topicName "RDF" .
-
-unid:RDFS uni:linked_to <https://www.wikidata.org/wiki/Q1751819> ;
-    uni:topicName "RDFS" .
-
-unid:RDF_Schema uni:linked_to <https://www.wikidata.org/wiki/Q1751819> ;
-    uni:topicName "RDF Schema" .
-
-unid:RDFlib uni:linked_to <https://www.wikidata.org/wiki/Q7276224> ;
-    uni:topicName "RDFlib" .
-
-unid:Reason uni:linked_to <https://www.wikidata.org/wiki/Q1454090> ;
-    uni:topicName "Reason" .
-
-unid:Reasoning_Engine uni:linked_to <https://www.wikidata.org/wiki/Q3929429> ;
-    uni:topicName "Reasoning Engine" .
-
-unid:Recommendations uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
-    uni:topicName "Recommendations" .
-
-unid:Recommender_Engine uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
-    uni:topicName "Recommender Engine" .
-
-unid:Recommender_Systems uni:linked_to <https://www.wikidata.org/wiki/Q554950> ;
-    uni:topicName "Recommender Systems" .
-
-unid:Recommender_Systems.txt a uni:Topic .
-
-unid:Red_Queen uni:linked_to <https://www.wikidata.org/wiki/Q2561830> ;
-    uni:topicName "Red Queen" .
-
-unid:Reference_Model uni:linked_to <https://www.wikidata.org/wiki/Q356674> ;
-    uni:topicName "Reference Model" .
-
-unid:Refine uni:linked_to <https://www.wikidata.org/wiki/Q682483> ;
-    uni:topicName "Refine" .
-
-unid:Refinitiv uni:linked_to <https://www.wikidata.org/wiki/Q60741469> ;
-    uni:topicName "Refinitiv" .
-
-unid:Regression_Testing uni:linked_to <https://www.wikidata.org/wiki/Q917415> ;
-    uni:topicName "Regression Testing" .
-
-unid:Reinforcement_Learning uni:linked_to <https://www.wikidata.org/wiki/Q830687> ;
-    uni:topicName "Reinforcement Learning" .
-
-unid:Requirements uni:linked_to <https://www.wikidata.org/wiki/Q774228> ;
-    uni:topicName "Requirements" .
-
-unid:Requirements_Modeling.txt a uni:Topic .
-
-unid:Resident_Evil uni:linked_to <https://www.wikidata.org/wiki/Q1276325> ;
-    uni:topicName "Resident Evil" .
-
-unid:Response_Time uni:linked_to <https://www.wikidata.org/wiki/Q578372> ;
-    uni:topicName "Response Time" .
-
-unid:Reuse uni:linked_to <https://www.wikidata.org/wiki/Q846574> ;
-    uni:topicName "Reuse" .
-
-unid:Reverse_Engineering uni:linked_to <https://www.wikidata.org/wiki/Q269608> ;
-    uni:topicName "Reverse Engineering" .
-
-unid:Richard_Wallace uni:linked_to <https://www.wikidata.org/wiki/Q374455> ;
-    uni:topicName "Richard Wallace" .
-
-unid:Risk_Management uni:linked_to <https://www.wikidata.org/wiki/Q189447> ;
-    uni:topicName "Risk Management" .
-
-unid:Risk_Management.txt a uni:Topic .
-
-unid:SAAS uni:linked_to <https://www.wikidata.org/wiki/Q671488> ;
-    uni:topicName "SAAS" .
-
-unid:SCI uni:linked_to <https://www.wikidata.org/wiki/Q1379084> ;
-    uni:topicName "SCI" .
-
-unid:SCM uni:linked_to <https://www.wikidata.org/wiki/Q189439> ;
-    uni:topicName "SCM" .
-
-unid:SELECT uni:linked_to <https://www.wikidata.org/wiki/Q1164001> ;
+unid:SELECT a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1164001> ;
     uni:topicName "SELECT" .
 
-unid:SHRDLU uni:linked_to <https://www.wikidata.org/wiki/Q1778029> ;
-    uni:topicName "SHRDLU" .
-
-unid:SMI uni:linked_to <https://www.wikidata.org/wiki/Q1487705> ;
-    uni:topicName "SMI" .
-
-unid:SOAP uni:linked_to <https://www.wikidata.org/wiki/Q189620> ;
-    uni:topicName "SOAP" .
-
-unid:SPARQL uni:linked_to <https://www.wikidata.org/wiki/Q54871> ;
+unid:SPARQL a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q54871> ;
     uni:topicName "SPARQL" .
-
-unid:SRS uni:linked_to <https://www.wikidata.org/wiki/Q334410> ;
-    uni:topicName "SRS" .
-
-unid:SUM uni:linked_to <https://www.wikidata.org/wiki/Q13570696> ;
-    uni:topicName "SUM" .
-
-unid:Schema.org uni:linked_to <https://www.wikidata.org/wiki/Q3475322> ;
-    uni:topicName "Schema.org" .
-
-unid:Select uni:linked_to <https://www.wikidata.org/wiki/Q7447637> ;
-    uni:topicName "Select" .
-
-unid:Semantic_Networks uni:linked_to <https://www.wikidata.org/wiki/Q1045785> ;
-    uni:topicName "Semantic Networks" .
-
-unid:Sentiment_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q2271421> ;
-    uni:topicName "Sentiment Analysis" .
-
-unid:Sequence uni:linked_to <https://www.wikidata.org/wiki/Q3955681> ;
-    uni:topicName "Sequence" .
-
-unid:Sequence_Diagram uni:linked_to <https://www.wikidata.org/wiki/Q1391624> ;
-    uni:topicName "Sequence Diagram" .
-
-unid:Server uni:linked_to <https://www.wikidata.org/wiki/Q11288> ;
-    uni:topicName "Server" .
-
-unid:Severity_Level uni:linked_to <https://www.wikidata.org/wiki/Q1425501> ;
-    uni:topicName "Severity Level" .
-
-unid:Siri uni:linked_to <https://www.wikidata.org/wiki/Q12069185>,
-        <https://www.wikidata.org/wiki/Q582159> ;
-    uni:topicName "Siri" .
-
-unid:Slide uni:linked_to <https://www.wikidata.org/wiki/Q85801586> ;
-    uni:topicName "Slide" .
-
-unid:Software uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
-    uni:topicName "Software" .
-
-unid:Software_Analytics uni:linked_to <https://www.wikidata.org/wiki/Q7554239> ;
-    uni:topicName "Software Analytics" .
-
-unid:Software_Component_Testing.txt a uni:Topic .
-
-unid:Software_Development_and_Engineering.txt a uni:Topic .
-
-unid:Software_Engineering uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
-    uni:topicName "Software Engineering" .
 
 <http://uni.com/data/Software_Engineering
 
-> uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
+> a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
     uni:topicName """Software Engineering
 
 """ .
 
-unid:Software_Evolution uni:linked_to <https://www.wikidata.org/wiki/Q265013> ;
-    uni:topicName "Software Evolution" .
+unid:Wikipedia a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q52> ;
+    uni:topicName "Wikipedia" .
 
-unid:Software_Integration_Testing.txt a uni:Topic .
+unid:Canada a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q16> ;
+    uni:topicName "Canada" .
 
-unid:Software_Maintenance uni:linked_to <https://www.wikidata.org/wiki/Q940053> ;
-    uni:topicName "Software Maintenance" .
+unid:Concordia a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1913996> ;
+    uni:topicName "Concordia" .
 
-unid:Software_Metrics_and_Analytics.txt a uni:Topic .
+unid:NLP a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q30642> ;
+    uni:topicName "NLP" .
 
-unid:Software_Process_Models.txt a uni:Topic .
+unid:Notes a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4653740>,
+        <https://www.wikidata.org/wiki/Q60198> ;
+    uni:topicName "Notes" .
 
-unid:Software_Quality_Concepts.txt a uni:Topic .
-
-unid:Software_Reviews.txt a uni:Topic .
-
-unid:Software_Support.txt a uni:Topic .
-
-unid:Solr uni:linked_to <https://www.wikidata.org/wiki/Q2858103> ;
-    uni:topicName "Solr" .
-
-unid:Speaktoit uni:linked_to <https://www.wikidata.org/wiki/Q7574357> ;
-    uni:topicName "Speaktoit" .
-
-unid:Spotify uni:linked_to <https://www.wikidata.org/wiki/Q689141> ;
-    uni:topicName "Spotify" .
-
-unid:Spotlight uni:linked_to <https://www.wikidata.org/wiki/Q18154496> ;
-    uni:topicName "Spotlight" .
-
-unid:Springer-Verlag_Berlin_Heidelberg uni:linked_to <https://www.wikidata.org/wiki/Q176916> ;
-    uni:topicName "Springer-Verlag Berlin Heidelberg" .
-
-unid:Springer_International_Publishing uni:linked_to <https://www.wikidata.org/wiki/Q176916> ;
-    uni:topicName "Springer International Publishing" .
-
-unid:State_Diagram uni:linked_to <https://www.wikidata.org/wiki/Q230885> ;
-    uni:topicName "State Diagram" .
-
-unid:Stepwise_Refinement uni:linked_to <https://www.wikidata.org/wiki/Q2167279> ;
-    uni:topicName "Stepwise Refinement" .
-
-unid:Steve_Jobs uni:linked_to <https://www.wikidata.org/wiki/Q19837> ;
-    uni:topicName "Steve Jobs" .
-
-unid:Stopword uni:linked_to <https://www.wikidata.org/wiki/Q80735> ;
-    uni:topicName "Stopword" .
-
-unid:Stuart_Russell uni:linked_to <https://www.wikidata.org/wiki/Q3656334> ;
-    uni:topicName "Stuart Russell" .
-
-unid:Stubs uni:linked_to <https://www.wikidata.org/wiki/Q443426> ;
-    uni:topicName "Stubs" .
-
-unid:Swimlane uni:linked_to <https://www.wikidata.org/wiki/Q4050462> ;
-    uni:topicName "Swimlane" .
-
-unid:TA uni:linked_to <https://www.wikidata.org/wiki/Q2609672> ;
-    uni:topicName "TA" .
-
-unid:TBL uni:linked_to <https://www.wikidata.org/wiki/Q4001328> ;
-    uni:topicName "TBL" .
-
-unid:TCF uni:linked_to <https://www.wikidata.org/wiki/Q6137461> ;
-    uni:topicName "TCF" .
-
-unid:TED uni:linked_to <https://www.wikidata.org/wiki/Q189021> ;
-    uni:topicName "TED" .
-
-unid:TUT_1_-_SRS.txt a uni:Topic .
-
-unid:TUT_2_-_Software_Design.txt a uni:Topic .
-
-unid:TUT_3_-_Quality_Control.txt a uni:Topic .
-
-unid:Task_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q380077> ;
-    uni:topicName "Task Analysis" .
-
-unid:Test_Planning uni:linked_to <https://www.wikidata.org/wiki/Q364651> ;
-    uni:topicName "Test Planning" .
-
-unid:Text uni:linked_to <https://www.wikidata.org/wiki/Q234460> ;
-    uni:topicName "Text" .
-
-unid:Text_Editor uni:linked_to <https://www.wikidata.org/wiki/Q131212> ;
-    uni:topicName "Text Editor" .
-
-unid:Text_Mining uni:linked_to <https://www.wikidata.org/wiki/Q676880> ;
-    uni:topicName "Text Mining" .
-
-unid:The_Artist uni:linked_to <https://www.wikidata.org/wiki/Q171861> ;
-    uni:topicName "The Artist" .
-
-unid:The_Glass uni:linked_to <https://www.wikidata.org/wiki/Q16205826> ;
-    uni:topicName "The Glass" .
-
-unid:The_Glass_Palace uni:linked_to <https://www.wikidata.org/wiki/Q3225164> ;
-    uni:topicName "The Glass Palace" .
-
-unid:The_Lego_Movie uni:linked_to <https://www.wikidata.org/wiki/Q2608065> ;
-    uni:topicName "The Lego Movie" .
-
-unid:The_Next_Web uni:linked_to <https://www.wikidata.org/wiki/Q2913725> ;
-    uni:topicName "The Next Web" .
-
-unid:Thesauri uni:linked_to <https://www.wikidata.org/wiki/Q179797> ;
-    uni:topicName "Thesauri" .
-
-unid:Tim_Berners-Lee uni:linked_to <https://www.wikidata.org/wiki/Q80> ;
-    uni:topicName "Tim Berners-Lee" .
-
-unid:Time uni:linked_to <https://www.wikidata.org/wiki/Q43297> ;
-    uni:topicName "Time" .
-
-unid:Token uni:linked_to <https://www.wikidata.org/wiki/Q172841> ;
-    uni:topicName "Token" .
-
-unid:Toy_Story uni:linked_to <https://www.wikidata.org/wiki/Q2414752> ;
-    uni:topicName "Toy Story" .
-
-unid:Traceability uni:linked_to <https://www.wikidata.org/wiki/Q899704> ;
-    uni:topicName "Traceability" .
-
-unid:Tradeoff_Analysis uni:linked_to <https://www.wikidata.org/wiki/Q638123> ;
-    uni:topicName "Tradeoff Analysis" .
-
-unid:Tricky uni:linked_to <https://www.wikidata.org/wiki/Q313627> ;
-    uni:topicName "Tricky" .
-
-unid:Turtle uni:linked_to <https://www.wikidata.org/wiki/Q114409>,
+unid:Turtle a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q114409>,
         <https://www.wikidata.org/wiki/Q1886405>,
         <https://www.wikidata.org/wiki/Q223044> ;
     uni:topicName "Turtle" .
 
-unid:Twitter uni:linked_to <https://www.wikidata.org/wiki/Q918> ;
-    uni:topicName "Twitter" .
-
-<http://uni.com/data/U.S.> uni:linked_to <https://www.wikidata.org/wiki/Q30> ;
-    uni:topicName "U.S." .
-
-unid:UAW uni:linked_to <https://www.wikidata.org/wiki/Q1814260> ;
-    uni:topicName "UAW" .
-
-unid:UCP uni:linked_to <https://www.wikidata.org/wiki/Q34930858> ;
-    uni:topicName "UCP" .
-
-unid:UI uni:linked_to <https://www.wikidata.org/wiki/Q47146> ;
-    uni:topicName "UI" .
-
-unid:UIMA uni:linked_to <https://www.wikidata.org/wiki/Q1539155> ;
-    uni:topicName "UIMA" .
-
-unid:UML uni:linked_to <https://www.wikidata.org/wiki/Q169411> ;
+unid:UML a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q169411> ;
     uni:topicName "UML" .
 
-unid:UML_Diagram uni:linked_to <https://www.wikidata.org/wiki/Q169411> ;
-    uni:topicName "UML Diagram" .
-
-unid:UX uni:linked_to <https://www.wikidata.org/wiki/Q11248500> ;
-    uni:topicName "UX" .
-
-unid:UX_Design uni:linked_to <https://www.wikidata.org/wiki/Q11248500> ;
-    uni:topicName "UX Design" .
-
-unid:Umbrella uni:linked_to <https://www.wikidata.org/wiki/Q155447> ;
-    uni:topicName "Umbrella" .
-
-unid:Underfitting uni:linked_to <https://www.wikidata.org/wiki/Q331309> ;
-    uni:topicName "Underfitting" .
-
-unid:Understanding_Requirements.txt a uni:Topic .
-
-unid:UniProt uni:linked_to <https://www.wikidata.org/wiki/Q905695> ;
-    uni:topicName "UniProt" .
-
-unid:Unicode uni:linked_to <https://www.wikidata.org/wiki/Q8819> ;
-    uni:topicName "Unicode" .
-
-unid:Université_Concordia uni:linked_to <https://www.wikidata.org/wiki/Q326342> ;
-    uni:topicName "Université Concordia" .
-
-unid:Unsupervised_Learning uni:linked_to <https://www.wikidata.org/wiki/Q1152135> ;
-    uni:topicName "Unsupervised Learning" .
-
-unid:Usability_Engineering uni:linked_to <https://www.wikidata.org/wiki/Q1642623> ;
-    uni:topicName "Usability Engineering" .
-
-unid:Use-Case uni:linked_to <https://www.wikidata.org/wiki/Q613417> ;
-    uni:topicName "Use-Case" .
-
-unid:Usenet uni:linked_to <https://www.wikidata.org/wiki/Q193162> ;
-    uni:topicName "Usenet" .
-
-unid:User_Experience_Design.txt a uni:Topic .
-
-unid:Valid uni:linked_to <https://www.wikidata.org/wiki/Q18757> ;
-    uni:topicName "Valid" .
-
-unid:Validate uni:linked_to <https://www.wikidata.org/wiki/Q3306762> ;
-    uni:topicName "Validate" .
-
-unid:Verb uni:linked_to <https://www.wikidata.org/wiki/Q24905> ;
-    uni:topicName "Verb" .
-
-unid:Version_Control uni:linked_to <https://www.wikidata.org/wiki/Q189439> ;
-    uni:topicName "Version Control" .
-
-unid:Viable_Software_Plan.txt a uni:Topic .
-
-unid:WCSS uni:linked_to <https://www.wikidata.org/wiki/Q7948104> ;
-    uni:topicName "WCSS" .
-
-unid:WWW uni:linked_to <https://www.wikidata.org/wiki/Q15117072> ;
-    uni:topicName "WWW" .
-
-unid:Watson uni:linked_to <https://www.wikidata.org/wiki/Q12253> ;
-    uni:topicName "Watson" .
-
-unid:WebApp uni:linked_to <https://www.wikidata.org/wiki/Q189210> ;
-    uni:topicName "WebApp" .
-
-unid:WebApps uni:linked_to <https://www.wikidata.org/wiki/Q189210> ;
-    uni:topicName "WebApps" .
-
-unid:Weizenbaum uni:linked_to <https://www.wikidata.org/wiki/Q75778> ;
-    uni:topicName "Weizenbaum" .
-
-unid:Westworld uni:linked_to <https://www.wikidata.org/wiki/Q17572811> ;
-    uni:topicName "Westworld" .
-
-unid:Width uni:linked_to <https://www.wikidata.org/wiki/Q36253> ;
-    uni:topicName "Width" .
-
-unid:Wikidata uni:linked_to <https://www.wikidata.org/wiki/Q2013> ;
+unid:Wikidata a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2013> ;
     uni:topicName "Wikidata" .
 
-unid:Wikipedia uni:linked_to <https://www.wikidata.org/wiki/Q52> ;
-    uni:topicName "Wikipedia" .
+unid:English a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1860> ;
+    uni:topicName "English" .
 
-unid:Windows uni:linked_to <https://www.wikidata.org/wiki/Q1406> ;
-    uni:topicName "Windows" .
+unid:RDFS a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1751819> ;
+    uni:topicName "RDFS" .
 
-unid:Workflow uni:linked_to <https://www.wikidata.org/wiki/Q30602204> ;
-    uni:topicName "Workflow" .
+unid:Adeli a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q4681927> ;
+    uni:topicName "Adeli" .
 
-unid:World_Wide uni:linked_to <https://www.wikidata.org/wiki/Q1341612> ;
-    uni:topicName "World Wide" .
+unid:DBpedia a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q465> ;
+    uni:topicName "DBpedia" .
 
-unid:XML uni:linked_to <https://www.wikidata.org/wiki/Q2115> ;
-    uni:topicName "XML" .
+unid:Google a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q9366>,
+        <https://www.wikidata.org/wiki/Q95> ;
+    uni:topicName "Google" .
 
-unid:XOR uni:linked_to <https://www.wikidata.org/wiki/Q498186> ;
-    uni:topicName "XOR" .
+unid:Software_Engineering a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q80993> ;
+    uni:topicName "Software Engineering" .
 
-unid:YOUS uni:linked_to <https://www.wikidata.org/wiki/Q1165897> ;
-    uni:topicName "YOUS" .
+unid:RDF a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q1367488>,
+        <https://www.wikidata.org/wiki/Q1751819>,
+        <https://www.wikidata.org/wiki/Q54872> ;
+    uni:topicName "RDF" .
 
-unid:YouTube uni:linked_to <https://www.wikidata.org/wiki/Q866> ;
-    uni:topicName "YouTube" .
+unid:AI a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q2494121> ;
+    uni:topicName "AI" .
 
-unid:Zootopia uni:linked_to <https://www.wikidata.org/wiki/Q15270647> ;
-    uni:topicName "Zootopia" .
-
-unid:automaton uni:linked_to <https://www.wikidata.org/wiki/Q176452> ;
-    uni:topicName "automaton" .
-
-unid:byte uni:linked_to <https://www.wikidata.org/wiki/Q8799> ;
-    uni:topicName "byte" .
-
-unid:ec uni:linked_to <https://www.wikidata.org/wiki/Q52847> ;
-    uni:topicName "ec" .
-
-unid:jargon uni:linked_to <https://www.wikidata.org/wiki/Q17951> ;
-    uni:topicName "jargon" .
-
-unid:k-Nearest-Neighbor uni:linked_to <https://www.wikidata.org/wiki/Q1071612> ;
-    uni:topicName "k-Nearest-Neighbor" .
-
-unid:kmeans uni:linked_to <https://www.wikidata.org/wiki/Q310401> ;
-    uni:topicName "kmeans" .
-
-unid:mbox uni:linked_to <https://www.wikidata.org/wiki/Q285972> ;
-    uni:topicName "mbox" .
-
-unid:metadata uni:linked_to <https://www.wikidata.org/wiki/Q180160> ;
-    uni:topicName "metadata" .
-
-unid:pandas uni:linked_to <https://www.wikidata.org/wiki/Q33602> ;
-    uni:topicName "pandas" .
-
-unid:quan uni:linked_to <https://www.wikidata.org/wiki/Q1045852> ;
-    uni:topicName "quan" .
-
-unid:suffix uni:linked_to <https://www.wikidata.org/wiki/Q62155> ;
-    uni:topicName "suffix" .
-
-unid:tandem uni:linked_to <https://www.wikidata.org/wiki/Q1752317> ;
-    uni:topicName "tandem" .
-
-unid:tem uni:linked_to <https://www.wikidata.org/wiki/Q36613> ;
-    uni:topicName "tem" .
-
-unid:thesauri uni:linked_to <https://www.wikidata.org/wiki/Q17152639> ;
-    uni:topicName "thesauri" .
-
-<http://uni.com/data/§> uni:linked_to <https://www.wikidata.org/wiki/Q189248> ;
-    uni:topicName "§" .
-
-<http://uni.com/data/∈> uni:linked_to <https://www.wikidata.org/wiki/Q379825> ;
-    uni:topicName "∈" .
+unid:Concordia_University a uni:Topic ;
+    uni:linked_to <https://www.wikidata.org/wiki/Q326342>,
+        <https://www.wikidata.org/wiki/Q5159001> ;
+    uni:topicName "Concordia University" .
 

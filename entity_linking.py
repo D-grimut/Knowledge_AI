@@ -70,17 +70,20 @@ def topics_graph(file_list):
 
     for file, ents in process_files(file_list).items():
         file_nospace = file.replace(' ', '_')
-        graph.add((unid[file_nospace], RDF.type, uni.Topic))
+
+        graph.add((unid[file_nospace], RDF.type, uni.Lecture))
 
         for topic, vals in ents.items():
             topic_nospace = topic.replace(' ', '_')
             topic_nobs = topic_nospace.replace('\\', '%5C')
 
+            graph.add((unid[topic_nobs], RDF.type, uni.Topic))
+
             graph.add((unid[topic_nobs], uni.topicName, Literal(topic)))
 
             graph.add((unid[topic_nobs], uni.linked_to, URIRef(vals["url"])))
 
-            # TODO: Add has_topic somehow
+            graph.add((unid[file_nospace], uni.has_content, unid[topic_nobs]))
 
     graph.serialize(destination="topics_turtle.ttl", format='turtle')
     graph.serialize(destination="topics_ntriples.nt", format='nt')
@@ -97,6 +100,7 @@ def main():
     topics_graph(file_list)
 
     # Tokenize files  
+    # Keep this commented to not re-write to the text file, very long
     # with open("topics.txt", 'w', newline='', encoding="utf8") as tf:
     #     for file, ents in process_files(file_list).items():
     #         tf.write("\n")
