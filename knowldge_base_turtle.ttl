@@ -97,6 +97,58 @@ unid:9 a uni:Student ;
     foaf:lastName "Wilson" ;
     foaf:mbox "jameswilson@example.com" .
 
+unid:COMP_354-GCS_132_Final_Project a uni:OtherLectureMaterial ;
+    uni:lecture_name "Final Project" ;
+    uni:lecture_number 0 .
+
+unid:COMP_354-GCS_132_LAB_1_-_SRS a uni:OtherLectureMaterial ;
+    uni:lecture_name "LAB 1 - SRS" ;
+    uni:lecture_number 0 .
+
+unid:COMP_354-GCS_132_LAB_2_-_Software_Design a uni:OtherLectureMaterial ;
+    uni:lecture_name "LAB 2 - Software Design" ;
+    uni:lecture_number 1 .
+
+unid:COMP_354-GCS_132_LAB_3_-_Quality_Control a uni:OtherLectureMaterial ;
+    uni:lecture_name "LAB 3 - Quality Control" ;
+    uni:lecture_number 2 .
+
+unid:COMP_354-GCS_132_TUT_1_-_SRS a uni:OtherLectureMaterial ;
+    uni:lecture_name "TUT 1 - SRS" ;
+    uni:lecture_number 1 .
+
+unid:COMP_354-GCS_132_TUT_2_-_Software_Design a uni:OtherLectureMaterial ;
+    uni:lecture_name "TUT 2 - Software Design" ;
+    uni:lecture_number 2 .
+
+unid:COMP_354-GCS_132_TUT_3_-_Quality_Control a uni:OtherLectureMaterial ;
+    uni:lecture_name "TUT 3 - Quality Control" ;
+    uni:lecture_number 3 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#01> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #01" ;
+    uni:lecture_number 0 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#02> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #02" ;
+    uni:lecture_number 1 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#03> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #03" ;
+    uni:lecture_number 2 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#04> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #04" ;
+    uni:lecture_number 3 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#05> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #05" ;
+    uni:lecture_number 4 .
+
+<http://uni.com/data/COMP_474_6741-GCS_143_Lab_Session_#06> a uni:OtherLectureMaterial ;
+    uni:lecture_name "Lab Session #06" ;
+    uni:lecture_number 5 .
+
 unid:Concordia a dbo:University ;
     uni:name "Concordia" ;
     uni:offers unid:FAS_0173,
@@ -2070,57 +2122,57 @@ unid:Concordia a dbo:University ;
     owl:sameAs <https://dbpedia.org/resource/Concordia_University>,
         <https://www.wikidata.org/entity/Q326342> .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.txt> a uni:Slides .
 
-<file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> a uni:Slides .
+<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.txt> a uni:Slides .
 
 unid:A_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_132 ;
@@ -2163,126 +2215,126 @@ unid:A_9 a uni:Grade ;
     uni:grade_value "A" .
 
 unid:COMP_354-GCS_132_Agility_and_Process a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.txt> ;
     uni:lecture_name "Agility and Process" ;
-    uni:lecture_number 15 .
-
-unid:COMP_354-GCS_132_Architectural_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.pdf> ;
-    uni:lecture_name "Architectural Design" ;
-    uni:lecture_number 12 .
-
-unid:COMP_354-GCS_132_Component-Level_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.pdf> ;
-    uni:lecture_name "Component-Level Design" ;
-    uni:lecture_number 6 .
-
-unid:COMP_354-GCS_132_Configuration_Management a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.pdf> ;
-    uni:lecture_name "Configuration Management" ;
-    uni:lecture_number 11 .
-
-unid:COMP_354-GCS_132_Design_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.pdf> ;
-    uni:lecture_name "Design Concepts" ;
-    uni:lecture_number 18 .
-
-unid:COMP_354-GCS_132_Requirements_Modeling a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.pdf> ;
-    uni:lecture_name "Requirements Modeling" ;
-    uni:lecture_number 9 .
-
-unid:COMP_354-GCS_132_Risk_Management a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.pdf> ;
-    uni:lecture_name "Risk Management" ;
-    uni:lecture_number 16 .
-
-unid:COMP_354-GCS_132_Software_Component_Testing a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.pdf> ;
-    uni:lecture_name "Software Component Testing" ;
-    uni:lecture_number 13 .
-
-unid:COMP_354-GCS_132_Software_Development_and_Engineering a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.pdf> ;
-    uni:lecture_name "Software Development and Engineering" ;
-    uni:lecture_number 1 .
-
-unid:COMP_354-GCS_132_Software_Integration_Testing a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.pdf> ;
-    uni:lecture_name "Software Integration Testing" ;
-    uni:lecture_number 3 .
-
-unid:COMP_354-GCS_132_Software_Metrics_and_Analytics a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.pdf> ;
-    uni:lecture_name "Software Metrics and Analytics" ;
-    uni:lecture_number 17 .
-
-unid:COMP_354-GCS_132_Software_Process_Models a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.pdf> ;
-    uni:lecture_name "Software Process Models" ;
-    uni:lecture_number 7 .
-
-unid:COMP_354-GCS_132_Software_Quality_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.pdf> ;
-    uni:lecture_name "Software Quality Concepts" ;
     uni:lecture_number 0 .
 
+unid:COMP_354-GCS_132_Architectural_Design a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.txt> ;
+    uni:lecture_name "Architectural Design" ;
+    uni:lecture_number 1 .
+
+unid:COMP_354-GCS_132_Component-Level_Design a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Component-Level%20Design.txt> ;
+    uni:lecture_name "Component-Level Design" ;
+    uni:lecture_number 2 .
+
+unid:COMP_354-GCS_132_Configuration_Management a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Configuration%20Management.txt> ;
+    uni:lecture_name "Configuration Management" ;
+    uni:lecture_number 3 .
+
+unid:COMP_354-GCS_132_Design_Concepts a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Design%20Concepts.txt> ;
+    uni:lecture_name "Design Concepts" ;
+    uni:lecture_number 4 .
+
+unid:COMP_354-GCS_132_Requirements_Modeling a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.txt> ;
+    uni:lecture_name "Requirements Modeling" ;
+    uni:lecture_number 6 .
+
+unid:COMP_354-GCS_132_Risk_Management a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Risk%20Management.txt> ;
+    uni:lecture_name "Risk Management" ;
+    uni:lecture_number 7 .
+
+unid:COMP_354-GCS_132_Software_Component_Testing a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Component%20Testing.txt> ;
+    uni:lecture_name "Software Component Testing" ;
+    uni:lecture_number 8 .
+
+unid:COMP_354-GCS_132_Software_Development_and_Engineering a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Development%20and%20Engineering.txt> ;
+    uni:lecture_name "Software Development and Engineering" ;
+    uni:lecture_number 9 .
+
+unid:COMP_354-GCS_132_Software_Integration_Testing a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Integration%20Testing.txt> ;
+    uni:lecture_name "Software Integration Testing" ;
+    uni:lecture_number 10 .
+
+unid:COMP_354-GCS_132_Software_Metrics_and_Analytics a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Metrics%20and%20Analytics.txt> ;
+    uni:lecture_name "Software Metrics and Analytics" ;
+    uni:lecture_number 11 .
+
+unid:COMP_354-GCS_132_Software_Process_Models a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Process%20Models.txt> ;
+    uni:lecture_name "Software Process Models" ;
+    uni:lecture_number 12 .
+
+unid:COMP_354-GCS_132_Software_Quality_Concepts a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Quality%20Concepts.txt> ;
+    uni:lecture_name "Software Quality Concepts" ;
+    uni:lecture_number 13 .
+
 unid:COMP_354-GCS_132_Software_Reviews a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Reviews.txt> ;
     uni:lecture_name "Software Reviews" ;
     uni:lecture_number 14 .
 
 unid:COMP_354-GCS_132_Software_Support a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Software%20Support.txt> ;
     uni:lecture_name "Software Support" ;
-    uni:lecture_number 2 .
+    uni:lecture_number 15 .
 
 unid:COMP_354-GCS_132_Understanding_Requirements a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.txt> ;
     uni:lecture_name "Understanding Requirements" ;
-    uni:lecture_number 4 .
+    uni:lecture_number 16 .
 
 unid:COMP_354-GCS_132_User_Experience_Design a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.txt> ;
     uni:lecture_name "User Experience Design" ;
-    uni:lecture_number 10 .
+    uni:lecture_number 17 .
 
 unid:COMP_354-GCS_132_Viable_Software_Plan a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.pdf>,
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.txt>,
         <https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins.> ;
     uni:lecture_name "Viable Software Plan" ;
-    uni:lecture_number 8 .
+    uni:lecture_number 18 .
 
 unid:COMP_474_6741-GCS_143_Intelligent_Agents a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.pdf>,
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.txt>,
         <https://plato.stanford.edu/entries/artificial-intelligence/> ;
     uni:lecture_name "Intelligent Agents" ;
-    uni:lecture_number 4 .
+    uni:lecture_number 0 .
 
 unid:COMP_474_6741-GCS_143_Intelligent_Systems_Introduction a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Systems%20Introduction.txt> ;
     uni:lecture_name "Intelligent Systems Introduction" ;
-    uni:lecture_number 3 .
-
-unid:COMP_474_6741-GCS_143_Knowledge_Base_Queries_and_Linked_Open_Data a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.pdf> ;
-    uni:lecture_name "Knowledge Base Queries and Linked Open Data" ;
     uni:lecture_number 1 .
 
+unid:COMP_474_6741-GCS_143_Knowledge_Base_Queries_and_Linked_Open_Data a uni:Lecture ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Base%20Queries%20and%20Linked%20Open%20Data.txt> ;
+    uni:lecture_name "Knowledge Base Queries and Linked Open Data" ;
+    uni:lecture_number 2 .
+
 unid:COMP_474_6741-GCS_143_Knowledge_Graphs a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs.txt> ;
     uni:lecture_name "Knowledge Graphs" ;
-    uni:lecture_number 6 .
+    uni:lecture_number 4 .
 
 unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.txt> ;
     uni:lecture_name "Knowledge Graphs - Vocabularies and Ontologies" ;
-    uni:lecture_number 5 .
+    uni:lecture_number 3 .
 
 unid:COMP_474_6741-GCS_143_Recommender_Systems a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.txt> ;
     uni:lecture_name "Recommender Systems" ;
-    uni:lecture_number 2 .
+    uni:lecture_number 6 .
 
 unid:D_1 a uni:Grade ;
     uni:grade_obtained_in unid:GCS_143 ;
@@ -2300,19 +2352,19 @@ unid:Engineering_Practices a uni:Topic ;
 
 unid:FAS_0173 a uni:Course ;
     uni:ID 301 ;
-    uni:subject "Traduction_littéraire_du_français_à_l’anglais" .
+    uni:subject "Traduction_littÃ©raire_du_franÃ§ais_Ã _lâ€™anglais" .
 
 unid:FAS_0174 a uni:Course ;
     uni:ID 304 ;
-    uni:subject "Traduction_littéraire_de_l’anglais_au_français" .
+    uni:subject "Traduction_littÃ©raire_de_lâ€™anglais_au_franÃ§ais" .
 
 unid:FAS_0175 a uni:Course ;
     uni:ID 401 ;
-    uni:subject "Traduction_littéraire_avancée_:_du_français_à_l’anglais" .
+    uni:subject "Traduction_littÃ©raire_avancÃ©e_:_du_franÃ§ais_Ã _lâ€™anglais" .
 
 unid:FAS_0176 a uni:Course ;
     uni:ID 402 ;
-    uni:subject "Traduction_littéraire_avancée_:_de_l’anglais_au_français" .
+    uni:subject "Traduction_littÃ©raire_avancÃ©e_:_de_lâ€™anglais_au_franÃ§ais" .
 
 unid:FAS_0396 a uni:Course ;
     uni:ID 450 ;
@@ -2380,7 +2432,7 @@ unid:FAS_1008 a uni:Course ;
 
 unid:FAS_1009 a uni:Course ;
     uni:ID 685 ;
-    uni:subject "Master’s_Thesis" .
+    uni:subject "Masterâ€™s_Thesis" .
 
 unid:FAS_101 a uni:Course ;
     uni:ID 484 ;
@@ -2397,15 +2449,15 @@ unid:FAS_1011 a uni:Course ;
 
 unid:FAS_1012 a uni:Course ;
     uni:ID 498 ;
-    uni:subject "Seminar_in_Women’s_Studies" .
+    uni:subject "Seminar_in_Womenâ€™s_Studies" .
 
 unid:FAS_1013 a uni:Course ;
     uni:ID 290 ;
-    uni:subject "Introduction_to_Historical_Perspectives_in_Women’s_Studies" .
+    uni:subject "Introduction_to_Historical_Perspectives_in_Womenâ€™s_Studies" .
 
 unid:FAS_1014 a uni:Course ;
     uni:ID 291 ;
-    uni:subject "Introduction_to_Contemporary_Concerns_in_Women’s_Studies" .
+    uni:subject "Introduction_to_Contemporary_Concerns_in_Womenâ€™s_Studies" .
 
 unid:FAS_1015 a uni:Course ;
     uni:ID 391 ;
@@ -2473,7 +2525,7 @@ unid:FAS_1027 a uni:Course ;
 
 unid:FAS_1028 a uni:Course ;
     uni:ID 300 ;
-    uni:subject "Not‑for‑Profit_Organizations_and_the_Law" .
+    uni:subject "Notâ€‘forâ€‘Profit_Organizations_and_the_Law" .
 
 unid:FAS_1029 a uni:Course ;
     uni:ID 315 ;
@@ -2500,11 +2552,11 @@ unid:FAS_1032 a uni:Course ;
 
 unid:FAS_1033 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "School_of_Community_and_Public_Affairs_Students’_Association" .
+    uni:subject "School_of_Community_and_Public_Affairs_Studentsâ€™_Association" .
 
 unid:FAS_1034 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Liberal_Arts_Society " .
+    uni:subject "Liberal_Arts_SocietyÂ " .
 
 unid:FAS_1035 a uni:Course ;
     uni:ID -1 ;
@@ -2668,7 +2720,7 @@ unid:FAS_1067 a uni:Course ;
 unid:FAS_1068 a uni:Course ;
     uni:ID 538 ;
     uni:subject """Initiation_au_sous-titrage
-Co-listé_:_FTRA_538""" .
+Co-listÃ©_:_FTRA_538""" .
 
 unid:FAS_107 a uni:Course ;
     uni:ID 606 ;
@@ -2759,43 +2811,39 @@ unid:FAS_150 a uni:Course ;
 
 unid:FAS_151 a uni:Course ;
     uni:ID 454 ;
-    uni:credits 3.00 ;
-    uni:subject "Histoire_du_livre_et_de_l’édition" .
+    uni:subject "Histoire_du_livre_et_de_lâ€™Ã©dition" .
 
 unid:FAS_152 a uni:Course ;
     uni:ID 486 ;
-    uni:credits 3.00 ;
-    uni:subject "Création_littéraire_I" .
+    uni:subject "CrÃ©ation_littÃ©raire_I" .
 
 unid:FAS_153 a uni:Course ;
     uni:ID 488 ;
-    uni:credits 3.00 ;
-    uni:subject "Création_littéraire_II" .
+    uni:subject "CrÃ©ation_littÃ©raire_II" .
 
 unid:FAS_154 a uni:Course ;
     uni:ID 496 ;
-    uni:subject "Recherche_dirigée" .
+    uni:subject "Recherche_dirigÃ©e" .
 
 unid:FAS_155 a uni:Course ;
     uni:ID 498 ;
-    uni:credits 6.00 ;
-    uni:subject "Étude_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_dâ€™un_sujet_particulier" .
 
 unid:FAS_156 a uni:Course ;
     uni:ID 690 ;
-    uni:subject "Présentation_du_mémoire" .
+    uni:subject "PrÃ©sentation_du_mÃ©moire" .
 
 unid:FAS_157 a uni:Course ;
     uni:ID 691 ;
-    uni:subject "Présentation_du_mémoire_incluant_une_réalisation_médiatique" .
+    uni:subject "PrÃ©sentation_du_mÃ©moire_incluant_une_rÃ©alisation_mÃ©diatique" .
 
 unid:FAS_158 a uni:Course ;
     uni:ID 692 ;
-    uni:subject "Mémoire" .
+    uni:subject "MÃ©moire" .
 
 unid:FAS_159 a uni:Course ;
     uni:ID 693 ;
-    uni:subject "Mémoire_incluant_une_réalisation_médiatique" .
+    uni:subject "MÃ©moire_incluant_une_rÃ©alisation_mÃ©diatique" .
 
 unid:FAS_16 a uni:Course ;
     uni:ID 510 ;
@@ -2804,7 +2852,7 @@ unid:FAS_16 a uni:Course ;
 
 unid:FAS_160 a uni:Course ;
     uni:ID 423 ;
-    uni:subject "Rédaction_avancée" .
+    uni:subject "RÃ©daction_avancÃ©e" .
 
 unid:FAS_164 a uni:Course ;
     uni:ID 491 ;
@@ -2817,16 +2865,15 @@ unid:FAS_165 a uni:Course ;
 
 unid:FAS_166 a uni:Course ;
     uni:ID 498 ;
-    uni:credits 3.00 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier" .
 
 unid:FAS_167 a uni:Course ;
     uni:ID 523 ;
-    uni:subject "Rédaction_avancée" .
+    uni:subject "RÃ©daction_avancÃ©e" .
 
 unid:FAS_169 a uni:Course ;
     uni:ID 598 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier" .
 
 unid:FAS_17 a uni:Course ;
     uni:ID 525 ;
@@ -2835,7 +2882,7 @@ unid:FAS_17 a uni:Course ;
 
 unid:FAS_172 a uni:Course ;
     uni:ID 318 ;
-    uni:subject "Le_français_des_affaires_" .
+    uni:subject "Le_franÃ§ais_des_affaires_" .
 
 unid:FAS_174 a uni:Course ;
     uni:ID 411 ;
@@ -2849,8 +2896,7 @@ unid:FAS_175 a uni:Course ;
 
 unid:FAS_176 a uni:Course ;
     uni:ID 418 ;
-    uni:credits 3.00 ;
-    uni:subject "Web,_technologies,_traduction_:_théories_et_critiques" .
+    uni:subject "Web,_technologies,_traduction_:_thÃ©ories_et_critiques" .
 
 unid:FAS_177 a uni:Course ;
     uni:ID 438 ;
@@ -2859,8 +2905,7 @@ unid:FAS_177 a uni:Course ;
 
 unid:FAS_178 a uni:Course ;
     uni:ID 452 ;
-    uni:credits 3.00 ;
-    uni:subject "Traduction_automatique_(TA)_et_traduction_assistée_par_ordinateur_(TAO)" .
+    uni:subject "Traduction_automatique_(TA)_et_traduction_assistÃ©e_par_ordinateur_(TAO)" .
 
 unid:FAS_179 a uni:Course ;
     uni:ID 455 ;
@@ -2878,19 +2923,19 @@ unid:FAS_180 a uni:Course ;
 
 unid:FAS_181 a uni:Course ;
     uni:ID 498 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier" .
 
 unid:FAS_182 a uni:Course ;
     uni:ID 499 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier" .
 
 unid:FAS_183 a uni:Course ;
     uni:ID 527 ;
-    uni:subject "Travaux_dirigés_(A)" .
+    uni:subject "Travaux_dirigÃ©s_(A)" .
 
 unid:FAS_184 a uni:Course ;
     uni:ID 528 ;
-    uni:subject "Travaux_dirigés_(F)" .
+    uni:subject "Travaux_dirigÃ©s_(F)" .
 
 unid:FAS_185 a uni:Course ;
     uni:ID 534 ;
@@ -2911,7 +2956,7 @@ unid:FAS_188 a uni:Course ;
 
 unid:FAS_189 a uni:Course ;
     uni:ID 598 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier" .
 
 unid:FAS_19 a uni:Course ;
     uni:ID 599 ;
@@ -2919,44 +2964,44 @@ unid:FAS_19 a uni:Course ;
 
 unid:FAS_190 a uni:Course ;
     uni:ID 598 ;
-    uni:subject "Étude_avancée_d’un_sujet_particulier_/_Special_Topics" .
+    uni:subject "Ã‰tude_avancÃ©e_dâ€™un_sujet_particulier_/_Special_Topics" .
 
 unid:FAS_191 a uni:Course ;
     uni:ID 612 ;
-    uni:subject "Traduction_avancée_en_sciences_humaines_et_sociales_Co-listé_:_FTRA_542_ou_FTRA_543" .
+    uni:subject "Traduction_avancÃ©e_en_sciences_humaines_et_sociales_Co-listÃ©_:_FTRA_542_ou_FTRA_543" .
 
 unid:FAS_192 a uni:Course ;
     uni:ID 613 ;
-    uni:subject "Advanced_translation_in_social_sciences_and_the_humanities_Co-listé_:_FTRA_542_ou_FTRA_543" .
+    uni:subject "Advanced_translation_in_social_sciences_and_the_humanities_Co-listÃ©_:_FTRA_542_ou_FTRA_543" .
 
 unid:FAS_193 a uni:Course ;
     uni:ID 614 ;
-    uni:subject """Traduction_littéraire_avancée
-Co-listé_:_FTRA_544_ou_545""" .
+    uni:subject """Traduction_littÃ©raire_avancÃ©e
+Co-listÃ©_:_FTRA_544_ou_545""" .
 
 unid:FAS_194 a uni:Course ;
     uni:ID 615 ;
-    uni:subject "Advanced_literary_translation_Co-listé_:_FTRA_544_ou_545" .
+    uni:subject "Advanced_literary_translation_Co-listÃ©_:_FTRA_544_ou_545" .
 
 unid:FAS_195 a uni:Course ;
     uni:ID 631 ;
-    uni:subject "Initiation_à_la_traduction_générale_Co-listé_:_FTRA_531" .
+    uni:subject "Initiation_Ã _la_traduction_gÃ©nÃ©rale_Co-listÃ©_:_FTRA_531" .
 
 unid:FAS_196 a uni:Course ;
     uni:ID 632 ;
-    uni:subject "Initiation_à_la_traduction_générale_Co-listé_:_FTRA_532" .
+    uni:subject "Initiation_Ã _la_traduction_gÃ©nÃ©rale_Co-listÃ©_:_FTRA_532" .
 
 unid:FAS_197 a uni:Course ;
     uni:ID 633 ;
-    uni:subject "Aspects_théoriques_et_pratiques_de_la_terminologie_Co-listé_:_FTRA_533" .
+    uni:subject "Aspects_thÃ©oriques_et_pratiques_de_la_terminologie_Co-listÃ©_:_FTRA_533" .
 
 unid:FAS_198 a uni:Course ;
     uni:ID 634 ;
-    uni:subject "Traduction_littéraire_de_l’anglais_au_français_Co-listé_:_FTRA_504" .
+    uni:subject "Traduction_littÃ©raire_de_lâ€™anglais_au_franÃ§ais_Co-listÃ©_:_FTRA_504" .
 
 unid:FAS_199 a uni:Course ;
     uni:ID 635 ;
-    uni:subject "Traduction_littéraire_du_français_à_l’anglais_Co-listé_:_FTRA_501" .
+    uni:subject "Traduction_littÃ©raire_du_franÃ§ais_Ã _lâ€™anglais_Co-listÃ©_:_FTRA_501" .
 
 unid:FAS_2 a uni:Course ;
     uni:ID 232 ;
@@ -2968,33 +3013,32 @@ unid:FAS_20 a uni:Course ;
 
 unid:FAS_200 a uni:Course ;
     uni:ID 636 ;
-    uni:subject "Informatique_et_traduction_Co-listé_:_FTRA_536" .
+    uni:subject "Informatique_et_traduction_Co-listÃ©_:_FTRA_536" .
 
 unid:FAS_201 a uni:Course ;
     uni:ID 638 ;
     uni:subject """Initiation_au_sous-titrage
-Co-listé_:_FTRA_538""" .
+Co-listÃ©_:_FTRA_538""" .
 
 unid:FAS_202 a uni:Course ;
     uni:ID 652 ;
-    uni:subject "Traduction_assistée_par_ordinateur_(TAO)_et_post_édition_Co-listé_:_FTRA_552" .
+    uni:subject "Traduction_assistÃ©e_par_ordinateur_(TAO)_et_post_Ã©dition_Co-listÃ©_:_FTRA_552" .
 
 unid:FAS_203 a uni:Course ;
     uni:ID 655 ;
-    uni:subject "Gestion_de_projets_Co-listé_:_FTRA_555" .
+    uni:subject "Gestion_de_projets_Co-listÃ©_:_FTRA_555" .
 
 unid:FAS_204 a uni:Course ;
     uni:ID 658 ;
-    uni:subject "Pratique_de_la_localisation_Co-listé_:_FTRA_558" .
+    uni:subject "Pratique_de_la_localisation_Co-listÃ©_:_FTRA_558" .
 
 unid:FAS_205 a uni:Course ;
     uni:ID 668 ;
-    uni:subject "Web,_technologies,_traduction_:_théories_et_critiques" .
+    uni:subject "Web,_technologies,_traduction_:_thÃ©ories_et_critiques" .
 
 unid:FAS_206 a uni:Course ;
     uni:ID 680 ;
-    uni:credits 3.00 ;
-    uni:subject "Tutorat_en_littérature" .
+    uni:subject "Tutorat_en_littÃ©rature" .
 
 unid:FAS_207 a uni:Course ;
     uni:ID 681 ;
@@ -3022,11 +3066,11 @@ unid:FAS_211 a uni:Course ;
 
 unid:FAS_212 a uni:Course ;
     uni:ID 686 ;
-    uni:subject "Projet_de_mémoire" .
+    uni:subject "Projet_de_mÃ©moire" .
 
 unid:FAS_213 a uni:Course ;
     uni:ID 698 ;
-    uni:subject "Étude_d’un_sujet_particulier_/_Special_Topics" .
+    uni:subject "Ã‰tude_dâ€™un_sujet_particulier_/_Special_Topics" .
 
 unid:FAS_215 a uni:Course ;
     uni:ID -1 ;
@@ -3034,7 +3078,7 @@ unid:FAS_215 a uni:Course ;
 
 unid:FAS_216 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Technologies_de_l’information_et_de_la_communication_(TIC)_et_enseignement_du_FLS" .
+    uni:subject "Technologies_de_lâ€™information_et_de_la_communication_(TIC)_et_enseignement_du_FLS" .
 
 unid:FAS_217 a uni:Course ;
     uni:ID 262 ;
@@ -3440,7 +3484,7 @@ unid:FAS_299 a uni:Course ;
 
 unid:FAS_3 a uni:Course ;
     uni:ID 322 ;
-    uni:subject "Fundamentals_of_Child‑_and_Youth‑Care_Work" .
+    uni:subject "Fundamentals_of_Childâ€‘_and_Youthâ€‘Care_Work" .
 
 unid:FAS_30 a uni:Course ;
     uni:ID 691 ;
@@ -3778,7 +3822,7 @@ unid:FAS_383 a uni:Course ;
 
 unid:FAS_384 a uni:Course ;
     uni:ID 509 ;
-    uni:subject "Le_financement_des_initiatives_de_DÉC._Partie_II" .
+    uni:subject "Le_financement_des_initiatives_de_DÃ‰C._Partie_II" .
 
 unid:FAS_385 a uni:Course ;
     uni:ID 516 ;
@@ -3786,7 +3830,7 @@ unid:FAS_385 a uni:Course ;
 
 unid:FAS_386 a uni:Course ;
     uni:ID 516 ;
-    uni:subject "Logement_et_aménagement_du_territoire_dans_une_perspective_de_DÉC._Partie_II" .
+    uni:subject "Logement_et_amÃ©nagement_du_territoire_dans_une_perspective_de_DÃ‰C._Partie_II" .
 
 unid:FAS_387 a uni:Course ;
     uni:ID 537 ;
@@ -3794,7 +3838,7 @@ unid:FAS_387 a uni:Course ;
 
 unid:FAS_388 a uni:Course ;
     uni:ID 537 ;
-    uni:subject "Le_DÉC_en_milieu_autochtone._Partie_II" .
+    uni:subject "Le_DÃ‰C_en_milieu_autochtone._Partie_II" .
 
 unid:FAS_389 a uni:Course ;
     uni:ID 290 ;
@@ -3822,11 +3866,11 @@ unid:FAS_392 a uni:Course ;
 
 unid:FAS_393 a uni:Course ;
     uni:ID 394 ;
-    uni:subject "Tutorial_in_Women’s_Studies" .
+    uni:subject "Tutorial_in_Womenâ€™s_Studies" .
 
 unid:FAS_394 a uni:Course ;
     uni:ID 494 ;
-    uni:subject "Advanced_Tutorial_in_Women’s_Studies" .
+    uni:subject "Advanced_Tutorial_in_Womenâ€™s_Studies" .
 
 unid:FAS_395 a uni:Course ;
     uni:ID 315 ;
@@ -3929,7 +3973,7 @@ unid:FAS_49 a uni:Course ;
 
 unid:FAS_492 a uni:Course ;
     uni:ID 698 ;
-    uni:subject "Master’s_Project" .
+    uni:subject "Masterâ€™s_Project" .
 
 unid:FAS_493 a uni:Course ;
     uni:ID -1 ;
@@ -4487,7 +4531,7 @@ unid:FAS_818 a uni:Course ;
 
 unid:FAS_819 a uni:Course ;
     uni:ID 393 ;
-    uni:subject " Quantitative_Research_Methods " .
+    uni:subject "Â Quantitative_Research_MethodsÂ " .
 
 unid:FAS_82 a uni:Course ;
     uni:ID 692 ;
@@ -4751,11 +4795,11 @@ unid:FAS_878 a uni:Course ;
 
 unid:FAS_879 a uni:Course ;
     uni:ID 401 ;
-    uni:subject "Mathematical_and_Computational_Finance_I " .
+    uni:subject "Mathematical_and_Computational_Finance_IÂ " .
 
 unid:FAS_880 a uni:Course ;
     uni:ID 402 ;
-    uni:subject "Mathematical_and_Computational_Finance_I " .
+    uni:subject "Mathematical_and_Computational_Finance_IÂ " .
 
 unid:FAS_881 a uni:Course ;
     uni:ID 397 ;
@@ -5215,12 +5259,11 @@ unid:FAS_972 a uni:Course ;
 
 unid:FAS_973 a uni:Course ;
     uni:ID 413 ;
-    uni:subject "Rédaction_" .
+    uni:subject "RÃ©daction_" .
 
 unid:FAS_974 a uni:Course ;
     uni:ID 623 ;
-    uni:credits 3.00 ;
-    uni:subject "Rédaction_avancée" .
+    uni:subject "RÃ©daction_avancÃ©e" .
 
 unid:FAS_975 a uni:Course ;
     uni:ID 215 ;
@@ -5505,7 +5548,7 @@ unid:FFA_417 a uni:Course ;
 
 unid:FFA_418 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Gail_and_Stephen_A._Jarislowsky_Institute_for_Studies in_Canadian_Art" .
+    uni:subject "Gail_and_Stephen_A._Jarislowsky_Institute_for_StudiesÂ in_Canadian_Art" .
 
 unid:FFA_419 a uni:Course ;
     uni:ID -1 ;
@@ -5622,7 +5665,7 @@ unid:FFA_490 a uni:Course ;
 
 unid:FFA_491 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Architecture_∣_Concordia" .
+    uni:subject "Architecture_âˆ£_Concordia" .
 
 unid:FFA_492 a uni:Course ;
     uni:ID -1 ;
@@ -6837,7 +6880,7 @@ unid:FFA_773 a uni:Course ;
 
 unid:FFA_774 a uni:Course ;
     uni:ID 211 ;
-    uni:subject "Black‑and‑White_Photography_I" .
+    uni:subject "Blackâ€‘andâ€‘White_Photography_I" .
 
 unid:FFA_775 a uni:Course ;
     uni:ID 221 ;
@@ -6850,7 +6893,7 @@ unid:FFA_776 a uni:Course ;
 
 unid:FFA_777 a uni:Course ;
     uni:ID 301 ;
-    uni:subject "Black‑and‑White_II_Fine_Art_Printing" .
+    uni:subject "Blackâ€‘andâ€‘White_II_Fine_Art_Printing" .
 
 unid:FFA_778 a uni:Course ;
     uni:ID 311 ;
@@ -6971,7 +7014,7 @@ unid:FFA_803 a uni:Course ;
 
 unid:FFA_804 a uni:Course ;
     uni:ID 365 ;
-    uni:subject "The_Artist’s_Book_as_Object_" .
+    uni:subject "The_Artistâ€™s_Book_as_Object_" .
 
 unid:FFA_805 a uni:Course ;
     uni:ID 366 ;
@@ -7314,11 +7357,11 @@ unid:GCS_126 a uni:Course ;
 
 unid:GCS_127 a uni:Course ;
     uni:ID 248 ;
-    uni:subject "Object‑Oriented_Programming_I" .
+    uni:subject "Objectâ€‘Oriented_Programming_I" .
 
 unid:GCS_128 a uni:Course ;
     uni:ID 249 ;
-    uni:subject "Object‑Oriented_Programming_I" .
+    uni:subject "Objectâ€‘Oriented_Programming_I" .
 
 unid:GCS_129 a uni:Course ;
     uni:ID 345 ;
@@ -8630,6 +8673,7 @@ unid:GCS_395 a uni:Course ;
 
 unid:GCS_396 a uni:Course ;
     uni:ID 424 ;
+    uni:credits 3.50 ;
     uni:subject "MEMS_-_Design_and_Fabrication" .
 
 unid:GCS_397 a uni:Course ;
@@ -9228,7 +9272,7 @@ unid:GCS_521 a uni:Course ;
 
 unid:GCS_522 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Thermal_Environment_& Controls_Lab" .
+    uni:subject "Thermal_Environment_&Â Controls_Lab" .
 
 unid:GCS_523 a uni:Course ;
     uni:ID -1 ;
@@ -9677,7 +9721,7 @@ unid:GCS_620 a uni:Course ;
 
 unid:GCS_621 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "EWB (Engineers_Without_Borders)_-_Concordia_Chapter" .
+    uni:subject "EWBÂ (Engineers_Without_Borders)_-_Concordia_Chapter" .
 
 unid:GCS_622 a uni:Course ;
     uni:ID -1 ;
@@ -9722,7 +9766,7 @@ unid:GCS_631 a uni:Course ;
 
 unid:GCS_632 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "CSME (Canadian_Society_for_Mechanical_Engineering)" .
+    uni:subject "CSMEÂ (Canadian_Society_for_Mechanical_Engineering)" .
 
 unid:GCS_633 a uni:Course ;
     uni:ID -1 ;
@@ -9730,7 +9774,7 @@ unid:GCS_633 a uni:Course ;
 
 unid:GCS_634 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "SAE (Society_of_Automotive_Engineers)" .
+    uni:subject "SAEÂ (Society_of_Automotive_Engineers)" .
 
 unid:GCS_635 a uni:Course ;
     uni:ID 485 ;
@@ -9927,12 +9971,12 @@ unid:JMSB_119 a uni:Course ;
 unid:JMSB_124 a uni:Course ;
     uni:ID 625 ;
     uni:subject "Global_Experience" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_125 a uni:Course ;
     uni:ID 676 ;
     uni:subject "International_Study_Trip" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_13 a uni:Course ;
     uni:ID 385 ;
@@ -9977,12 +10021,12 @@ unid:JMSB_14 a uni:Course ;
 unid:JMSB_140 a uni:Course ;
     uni:ID -1 ;
     uni:subject "John_Molson_MBA_Entrepreneurship_Club_(JMEC)" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_141 a uni:Course ;
     uni:ID -1 ;
     uni:subject "John_Molson_MBA_Society" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_142 a uni:Course ;
     uni:ID -1 ;
@@ -10026,7 +10070,7 @@ unid:JMSB_150 a uni:Course ;
 
 unid:JMSB_151 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Commerce_and_Administration_Students’_Association_(CASAJMSB)" .
+    uni:subject "Commerce_and_Administration_Studentsâ€™_Association_(CASAJMSB)" .
 
 unid:JMSB_152 a uni:Course ;
     uni:ID -1 ;
@@ -10047,17 +10091,17 @@ unid:JMSB_156 a uni:Course ;
 unid:JMSB_157 a uni:Course ;
     uni:ID 650 ;
     uni:subject "Financial_Reporting_in_Practice" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_158 a uni:Course ;
     uni:ID 651 ;
     uni:subject "Financial_Reporting:_Comprehensive_Applications" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_159 a uni:Course ;
     uni:ID 652 ;
     uni:subject "Business_Advisory_Services" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_16 a uni:Course ;
     uni:ID 405 ;
@@ -10067,43 +10111,43 @@ unid:JMSB_16 a uni:Course ;
 unid:JMSB_160 a uni:Course ;
     uni:ID 653 ;
     uni:subject "Information_Systems_and_Internal_Control" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_161 a uni:Course ;
     uni:ID 654 ;
     uni:credits 4.00 ;
     uni:subject "Assurance_and_Professional_Practice" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_162 a uni:Course ;
     uni:ID 655 ;
     uni:credits 4.00 ;
     uni:subject "Taxation_and_Decision-Making" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_163 a uni:Course ;
     uni:ID 656 ;
     uni:credits 4.00 ;
     uni:subject "Performance_Management" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_164 a uni:Course ;
     uni:ID 657 ;
     uni:credits 4.00 ;
     uni:subject "Financial_Strategies_and_Decisions" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_165 a uni:Course ;
     uni:ID 658 ;
     uni:credits 2.00 ;
     uni:subject "Capstone_I_Seminar" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_166 a uni:Course ;
     uni:ID 659 ;
     uni:credits 4.00 ;
     uni:subject "Capstone_II_Examination_Preparation" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_167 a uni:Course ;
     uni:ID 647 ;
@@ -10137,7 +10181,7 @@ unid:JMSB_171 a uni:Course ;
     uni:ID 671 ;
     uni:credits 3.00 ;
     uni:subject "Consumer_Behaviour" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_172 a uni:Course ;
     uni:ID 205 ;
@@ -10182,7 +10226,7 @@ unid:JMSB_187 a uni:Course ;
 unid:JMSB_188 a uni:Course ;
     uni:ID 663 ;
     uni:subject "Seminar_in_Corporate_Finance" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_189 a uni:Course ;
     uni:ID 477 ;
@@ -10239,7 +10283,7 @@ unid:JMSB_199 a uni:Course ;
     uni:ID 668 ;
     uni:credits 3.00 ;
     uni:subject "Sustainable_Business_Strategy" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_2 a uni:Course ;
     uni:ID 355 ;
@@ -10254,7 +10298,7 @@ unid:JMSB_20 a uni:Course ;
 unid:JMSB_200 a uni:Course ;
     uni:ID 654 ;
     uni:subject "MBA_Research_Projects" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_201 a uni:Course ;
     uni:ID 444 ;
@@ -10263,7 +10307,7 @@ unid:JMSB_201 a uni:Course ;
 unid:JMSB_202 a uni:Course ;
     uni:ID 663 ;
     uni:subject "District_3_Start_Up_Consulting" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_203 a uni:Course ;
     uni:ID -1 ;
@@ -10308,17 +10352,17 @@ unid:JMSB_211 a uni:Course ;
 
 unid:JMSB_212 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Concordia_International_Community_Outreach_Program " .
+    uni:subject "Concordia_International_Community_Outreach_ProgramÂ " .
 
 unid:JMSB_213 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "John_Molson_Graduate_Students’_Association" ;
-    rdfs:seeAlso < > .
+    uni:subject "John_Molson_Graduate_Studentsâ€™_Association" ;
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_214 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "John_Molson_Graduate_Investment_Club " ;
-    rdfs:seeAlso < > .
+    uni:subject "John_Molson_Graduate_Investment_ClubÂ " ;
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_215 a uni:Course ;
     uni:ID -1 ;
@@ -10329,7 +10373,7 @@ unid:JMSB_216 a uni:Course ;
     uni:ID -1 ;
     uni:credits 3.00 ;
     uni:subject "Small_Business_Consulting_Bureau" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_217 a uni:Course ;
     uni:ID -1 ;
@@ -10351,7 +10395,7 @@ unid:JMSB_22 a uni:Course ;
 
 unid:JMSB_220 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Jonathan_Wener_Centre_for_Real Estate" .
+    uni:subject "Jonathan_Wener_Centre_for_RealÂ Estate" .
 
 unid:JMSB_221 a uni:Course ;
     uni:ID -1 ;
@@ -10359,7 +10403,7 @@ unid:JMSB_221 a uni:Course ;
 
 unid:JMSB_222 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "L._Jacques_Ménard_BMO_Centre_for_Capital_Markets" .
+    uni:subject "L._Jacques_MÃ©nard_BMO_Centre_for_Capital_Markets" .
 
 unid:JMSB_223 a uni:Course ;
     uni:ID -1 ;
@@ -10407,7 +10451,7 @@ unid:JMSB_27 a uni:Course ;
 unid:JMSB_28 a uni:Course ;
     uni:ID 695 ;
     uni:subject "Applied_Investments:_Business_Analysis_and_Valuation" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_3 a uni:Course ;
     uni:ID 420 ;
@@ -10417,48 +10461,48 @@ unid:JMSB_3 a uni:Course ;
 unid:JMSB_30 a uni:Course ;
     uni:ID 602 ;
     uni:subject "Applied_Linear_Statistical_Models" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_31 a uni:Course ;
     uni:ID 611 ;
     uni:subject "Research_Methodology" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_32 a uni:Course ;
     uni:ID 625 ;
     uni:subject "Seminar_in_Options_and_Futures" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_33 a uni:Course ;
     uni:ID 632 ;
     uni:subject "Seminar_in_Special_Topics_in_Finance" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_35 a uni:Course ;
     uni:ID 610 ;
     uni:subject "Measuring_and_Reporting_Financial_Performance" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_36 a uni:Course ;
     uni:ID 611 ;
     uni:subject "Managing_Talent" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_37 a uni:Course ;
     uni:ID 612 ;
     uni:subject "Marketing_Management" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_38 a uni:Course ;
     uni:ID 621 ;
     uni:subject "Information_Technology_and_Analytics" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_39 a uni:Course ;
     uni:ID 630 ;
     uni:credits 3.00 ;
     uni:subject "Financial_Decisions_Under_Uncertainty" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_4 a uni:Course ;
     uni:ID 425 ;
@@ -10467,51 +10511,51 @@ unid:JMSB_4 a uni:Course ;
 unid:JMSB_40 a uni:Course ;
     uni:ID 631 ;
     uni:subject "Management_Control_Systems" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_41 a uni:Course ;
     uni:ID 632 ;
     uni:credits 1.50 ;
     uni:subject "Creativity_and_Innovation" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_42 a uni:Course ;
     uni:ID 633 ;
     uni:subject "Applied_Field_Project_I" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_43 a uni:Course ;
     uni:ID 635 ;
     uni:credits 3.00 ;
     uni:subject "Starting_a_New_Venture" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_44 a uni:Course ;
     uni:ID 640 ;
     uni:credits 3.00 ;
     uni:subject "Leadership" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_45 a uni:Course ;
     uni:ID 645 ;
     uni:subject "Applied_Field_Project_II" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_46 a uni:Course ;
     uni:ID 690 ;
     uni:subject "Management_Consulting_Project" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_47 a uni:Course ;
     uni:ID 637 ;
     uni:credits 3.00 ;
     uni:subject "Strategic_Management" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_48 a uni:Course ;
     uni:ID 655 ;
     uni:subject "Socially_Responsible_&_Sustainable_Investment" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_53 a uni:Course ;
     uni:ID 642 ;
@@ -10572,7 +10616,7 @@ unid:JMSB_64 a uni:Course ;
 unid:JMSB_65 a uni:Course ;
     uni:ID 654 ;
     uni:subject "Seminar_in_Consulting" ;
-    rdfs:seeAlso < > .
+    rdfs:seeAlso <Â > .
 
 unid:JMSB_67 a uni:Course ;
     uni:ID 301 ;
@@ -10654,7 +10698,7 @@ unid:JMSB_83 a uni:Course ;
 
 unid:JMSB_84 a uni:Course ;
     uni:ID 440 ;
-    uni:subject "Business_Information_Systems’_Risks,_Security_and_Audit" .
+    uni:subject "Business_Information_Systemsâ€™_Risks,_Security_and_Audit" .
 
 unid:JMSB_85 a uni:Course ;
     uni:ID 480 ;
@@ -10784,7 +10828,7 @@ unid:OTHER_31 a uni:Course ;
 
 unid:OTHER_32 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Graduate_Students’_Association_(GSA)" ;
+    uni:subject "Graduate_Studentsâ€™_Association_(GSA)" ;
     rdfs:seeAlso <https://gsaconcordia.ca/> .
 
 unid:OTHER_33 a uni:Course ;
@@ -10793,11 +10837,11 @@ unid:OTHER_33 a uni:Course ;
 
 unid:OTHER_34 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "La_Francofête" .
+    uni:subject "La_FrancofÃªte" .
 
 unid:OTHER_35 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "L’Organe" .
+    uni:subject "Lâ€™Organe" .
 
 unid:OTHER_36 a uni:Course ;
     uni:ID -1 ;
@@ -10862,8 +10906,7 @@ unid:OTHER_49 a uni:Course ;
 
 unid:OTHER_5 a uni:Course ;
     uni:ID 318 ;
-    uni:credits 3.00 ;
-    uni:subject "Le_français_des_affaires_I" .
+    uni:subject "Le_franÃ§ais_des_affaires_I" .
 
 unid:OTHER_50 a uni:Course ;
     uni:ID -1 ;
@@ -10907,8 +10950,7 @@ unid:OTHER_59 a uni:Course ;
 
 unid:OTHER_6 a uni:Course ;
     uni:ID 319 ;
-    uni:credits 3.00 ;
-    uni:subject "Le_français_des_affaires_II" .
+    uni:subject "Le_franÃ§ais_des_affaires_II" .
 
 unid:OTHER_60 a uni:Course ;
     uni:ID -1 ;
@@ -10932,7 +10974,7 @@ unid:OTHER_64 a uni:Course ;
 
 unid:OTHER_65 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "Concordia_Students’_Nightline" .
+    uni:subject "Concordia_Studentsâ€™_Nightline" .
 
 unid:OTHER_66 a uni:Course ;
     uni:ID -1 ;
@@ -10948,7 +10990,7 @@ unid:OTHER_68 a uni:Course ;
 
 unid:OTHER_69 a uni:Course ;
     uni:ID -1 ;
-    uni:subject "People’s_Potato" .
+    uni:subject "Peopleâ€™s_Potato" .
 
 unid:OTHER_70 a uni:Course ;
     uni:ID -1 ;
@@ -10983,14 +11025,14 @@ unid:OTHER_9 a uni:Course ;
 <https://plato.stanford.edu/entries/artificial-intelligence/> a uni:OtherLectureMaterial .
 
 unid:COMP_354-GCS_132_Project_Management_Concepts a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Project%20Management%20Concepts.txt> ;
     uni:lecture_name "Project Management Concepts" ;
     uni:lecture_number 5 .
 
 unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems a uni:Lecture ;
-    uni:has_content <file:////Users/danielgrimut/Documents/GitHub/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.pdf> ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Machine%20Learning%20for%20Intelligent%20Systems.txt> ;
     uni:lecture_name "Machine Learning for Intelligent Systems" ;
-    uni:lecture_number 0 .
+    uni:lecture_number 5 .
 
 unid:GCS_132 a uni:Course ;
     uni:ID 354 ;
@@ -11015,6 +11057,7 @@ unid:GCS_132 a uni:Course ;
         unid:COMP_354-GCS_132_User_Experience_Design,
         unid:COMP_354-GCS_132_Viable_Software_Plan ;
     uni:has_topic unid:Engineering_Practices ;
+    uni:outline <http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Course%20Outline.txt> ;
     uni:subject "Introduction_to_Software_Engineering" ;
     owl:sameAs <https://www.wikidata.org/entity/Q11023> .
 
@@ -11029,6 +11072,7 @@ unid:GCS_143 a uni:Course ;
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
         unid:COMP_474_6741-GCS_143_Recommender_Systems ;
     uni:has_topic unid:Deep_Learning ;
+    uni:outline <http://uni.com/data/file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Course%20Outline.txt> ;
     uni:subject "Intelligent_Systems" ;
     rdfs:seeAlso <https://www.studocu.com/en-ca/course/concordia-university/intelligent-systems/1423693> ;
     owl:sameAs <https://dbpedia.org/resource/Deep_learning> .
