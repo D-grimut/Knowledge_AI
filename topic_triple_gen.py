@@ -10,15 +10,6 @@ def platform_extension():
     else:
         return "/"
 
-# querry check on the graph to see if topics exist
-def topic_existance_check(topic_uri, graph):
-    query = f"""
-    prefix unid: <http://uni.com/data/>
-        ask where 
-        {{unid:{topic_uri} ?p ?o}}
-    """
-    return graph.query(query)
-
 # parse json file into dictionary
 def get_topics_from_json():
     data = {}
@@ -56,15 +47,13 @@ def topics_graph(topic_dict):
                 topic_name = topic.replace(' ', '_')
                 lecture_provenance = lecture_prefix + "_" + prov_name
                 
-                # if topic does not exist, create and add it to the graph
-                if(not topic_existance_check(topic_name, graph)):
-                    graph.add((unid[topic_name], RDF.type, uni.Topic))
+                graph.add((unid[topic_name], RDF.type, uni.Topic))
 
-                    graph.add((unid[topic_name], uni.topicName, Literal(topic_name)))
+                graph.add((unid[topic_name], uni.topicName, Literal(topic_name)))
 
-                    graph.add((unid[topic_name], uni.linked_to, URIRef(vals["url"])))
+                graph.add((unid[topic_name], uni.linked_to, URIRef(vals["url"])))
 
-                    graph.add((unid[course_URI], uni.has_topic, unid[topic_name]))
+                graph.add((unid[course_URI], uni.has_topic, unid[topic_name]))
 
                 graph.add((unid[topic_name], uni.provenance, unid[lecture_provenance]))
                 

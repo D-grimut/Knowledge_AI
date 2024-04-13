@@ -1,6 +1,6 @@
 import os
 import platform
-import tika
+import re
 from tika import parser
 
 class FileParser:
@@ -18,6 +18,13 @@ class FileParser:
             return "\\"
         else:
             return "/"
+    
+    # method to remove all new lines, tabs and encoded charachters from the text 
+    def clean_text(self, text):
+
+        clean = re.sub(r'\\n|[\n\r]+|[^\x00-\x7F]+', '', text)
+        return clean
+
 
     def chnage_to_plain_text(self):
 
@@ -32,16 +39,17 @@ class FileParser:
                     file_name, ext = os.path.splitext(file_path)
 
                     # Skip any files that is already in plane text -  no need parse it
-                    if(ext.lower() == ".txt"):
-                        continue
+                    # if(ext.lower() == ".txt"):
+                    #     continue
                     
                     text_content = self.extract_text(file_path)
+                    text_content = self.clean_text(text_content)
                     new_file_path = file_name + ".txt"
 
                     with open(new_file_path, 'w', encoding="utf8") as f:
                         f.write(text_content)
                     
-                    os.remove(file_path)
+                    # os.remove(file_path)
         return 0
 
 def main():
