@@ -132,58 +132,58 @@ nlu:
 
 - intent: material_for_topic_course
   examples: |
-    - what [__oov__](material) are recommended for [__oov__](topic) in [__oov__](course) [__oov__](number)?
-    - what [slides](material) are recommended for [deep learning](topic) in [COMP](course) [474](number)?
-    - what [readings](material) are recommended for [engineering practices](topic) in [COMP](course) [354](number)?
-    - for [__oov__](course) [__oov__](number), what [__oov__](material) are recommended?
-    - for [COMP](course) [474](number), what [slides](material) are recommended?
+    - what [__oov__](material) are recommended for [__oov__](topic) in [__oov__](course)?
+    - what [slides](material) are recommended for [deep learning](topic) in [COMP 474](course)?
+    - what [readings](material) are recommended for [engineering practices](topic) in [COMP 354](course)?
+    - for [__oov__](course), what [__oov__](material) are recommended?
+    - for [COMP 474](course), what [slides](material) are recommended?
   
 - intent: credits_course
   examples: |
-    - how many credits is [__oov__](course) [__oov__](number) worth?
-    - how many credits is [COMP](course) [474](number) worth?
-    - how many credits is [comp](course) [354](number) worth?
+    - how many credits is [__oov__](course) worth?
+    - how many credits is [COMP 474](course) worth?
+    - how many credits is [comp 354](course) worth?
 
 - intent: course_additional_resource
   examples: |
-    - for [__oov__](course) [__oov__](number), what additional resources are available?
-    - for [COMP](course) [474](number), what additional resources are available?
-    - for [comp](course) [474](number), what additional resources are available?
+    - for [__oov__](course), what additional resources are available?
+    - for [COMP 474](course), what additional resources are available?
+    - for [comp 474](course), what additional resources are available?
   
 - intent: material_lecture_course
   examples: |
-    - what content is available for lecture [__oov__](lecture_number) in [__oov__](course) [__oov__](number)?
-    - what content is available for lecture [5](lecture_number) in [COMP](course) [474](number)?
+    - what content is available for lecture [__oov__](lec_number) in [__oov__](course)?
+    - what content is available for lecture [5](lec_number) in [COMP 474](course)?
 
 - intent: material_topic_course
   examples: |
     - what reading materials are recommended for studying [__oov__](topic) in [__oov__](course)?
-    - what reading materials are recommended for studying [deep learning](topic) in [Intelligent Systems](course)?
+    - what reading materials are recommended for studying [deep learning](topic) in [comp 474](course)?
     - what readings are recommended for studying [__oov__](topic) in [__oov__](course)?
-    - what readings are recommended for studying [deep learning](topic) in [Intelligent Systems](course)?
+    - what readings are recommended for studying [deep learning](topic) in [comp 474](course)?
   
 - intent: topics_gained_course
   examples: |
-    - what competencies does a student gain after completing [__oov__](course) [__oov__](number)?
-    - what competencies does a student gain after completing [comp](course) [474](number)?
-    - what topics does a student gain after completing [__oov__](course) [__oov__](number)?
-    - what topics does a student gain after completing [comp](course) [354](number)?
+    - what competencies does a student gain after completing [__oov__](course)?
+    - what competencies does a student gain after completing [comp 474](course)?
+    - what topics does a student gain after completing [__oov__](course)?
+    - what topics does a student gain after completing [comp 354](course)?
 
 - intent: grade_student_course
   examples: |
-    - what grades did [__oov__](student) achieve in [__oov__](course) [__oov__](number)?
-    - what grades did [James West](student) achieve in [Comp](course) [474](number)?
-    - what grades did [__oov__](student) get in [__oov__](course) [__oov__](number)?
-    - what grades did [sheila simpson](student) get in [Engr](course) [213](number)?
+    - what grades did [__oov__](student) achieve in [__oov__](course)?
+    - what grades did [James West](student) achieve in [Comp 474](course)?
+    - what grades did [__oov__](student) get in [__oov__](course)?
+    - what grades did [sheila simpson](student) get in [Engr 213](course)?
   
 - intent: student_completed
   examples: |
-    - which students have completed [__oov__](course) [__oov__](number)?
-    - list all students that have completed [__oov__](course) [__oov__](number)
-    - list the students that have completed [__oov__](course) [__oov__](number)
-    - which students have completed [comp](course) [474](number)?
-    - list all students that have completed [math](course) [201](number)
-    - list the students that have completed [engr](course) [213](number)
+    - which students have completed [__oov__](course)?
+    - list all students that have completed [__oov__](course)
+    - list the students that have completed [__oov__](course)
+    - which students have completed [comp 474](course)?
+    - list all students that have completed [math 201](course)
+    - list the students that have completed [engr 213](course)
   
 - intent: transcript
   examples: |
@@ -214,8 +214,8 @@ nlu:
 
 - intent: topics_covered_event
   examples: |
-    - which topics are covered in [__oov__](lec) [__oov__](number) of [__oov__](course) [__oov__](number)?
-    - which topics are covered in [lab](lec) [3](number) of [comp](course) [474](number)?
+    - which topics are covered in [__oov__](lec) [__oov__](lec_number) of [__oov__](course)?
+    - which topics are covered in [lab](lec) [3](lec_number) of [comp 474](course)?
 
 - intent: topic_provenance
   examples: |

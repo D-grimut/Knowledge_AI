@@ -30,114 +30,114 @@ stories:
   - action: utter_goodbye
 
 
-- story: get course list
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: list_course
-  - action: ...
+# - story: get course list
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: list_course
+#   - action: ...
 
 - story: get course topic
   steps: 
   - intent: greet
   - action: utter_greet
   - intent: topic_course
-  - action: ...
+  - action: course_has_topic
 
-- story: get topic covered in course number
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: topic_covered_course_number
-  - action: ...
+# - story: get topic covered in course number
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: topic_covered_course_number
+#   - action: ...
 
-- story: get course by university within subject
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: course_by_university_within_subject
-  - action: ...
+# - story: get course by university within subject
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: course_by_university_within_subject
+#   - action: ...
 
-- story: get material for topic course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: material_for_topic_course
-  - action: ..
+# - story: get material for topic course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: material_for_topic_course
+#   - action: ..
 
-- story: get credits course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: credits_course
-  - action: ..
+# - story: get credits course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: credits_course
+#   - action: ..
 
-- story: get course additional resource
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: course_additional_resource
-  - action: ...
+# - story: get course additional resource
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: course_additional_resource
+#   - action: ...
 
-- story: get material lecture course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: material_lecture_course
-  - action: ...
+# - story: get material lecture course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: material_lecture_course
+#   - action: ...
 
-- story: get material topic course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: material_topic_course
-  - action: ...
+# - story: get material topic course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: material_topic_course
+#   - action: ...
 
-- story: get topics gained course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: topics_gained_course
-  - action: ...
+# - story: get topics gained course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: topics_gained_course
+#   - action: ...
 
-- story: get grade student course
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: grade_student_course
-  - action: ...
+# - story: get grade student course
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: grade_student_course
+#   - action: ...
 
-- story: get student completed
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: student_completed
-  - action: ...
+# - story: get student completed
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: student_completed
+#   - action: ...
 
-- story: get transcript
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: transcript
-  - action: ...
+# - story: get transcript
+#   steps: 
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: transcript
+#   - action: ...
 
-- story: get about course
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: about_course
-    - action: ...
+# - story: get about course
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: about_course
+#     - action: ...
 
-- story: get topics covered event
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: topics_covered_event
-    - action: ...
+# - story: get topics covered event
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: topics_covered_event
+#     - action: ...
 
-- story: get topic provenance
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: topic_provenance
-    - action: ...
+# - story: get topic provenance
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: topic_provenance
+#     - action: ...

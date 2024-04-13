@@ -8,6 +8,22 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - list_course
+  - topic_course
+  - topic_covered_course_number
+  - course_by_university_within_subject
+  - material_for_topic_course
+  - credits_course
+  - course_additional_resource
+  - material_lecture_course
+  - material_topic_course
+  - topics_gained_course
+  - grade_student_course
+  - student_completed
+  - transcript
+  - about_course
+  - topics_covered_event
+  - topic_provenance
 
 responses:
   utter_greet:
@@ -32,3 +48,31 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+  - course_has_topic
+
+entities:
+  - topic
+  - course
+  - lec_number
+  - student
+  - material
+  - university
+
+slots:
+  topic:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: topic
+  course:
+    type: text
+  lec_number:
+    type: any
+  student: 
+    type: text
+  material:
+    type: text
+  university:
+    type: text
