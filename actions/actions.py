@@ -51,7 +51,12 @@ class CourseHasTopic(Action):
             """ % (topic))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
-        for res in result['results']['bindings']:
-            dispatcher.utter_message(text="Course: " + res["cName"]["value"])
+        if (result['results']['bindings'].length() == 0):
+            dispatcher.utter_message(
+                text="Sorry, I was unable to find any results for that question.")
+        else:
+            for res in result['results']['bindings']:
+                dispatcher.utter_message(
+                    text="Course: " + res["cName"]["value"])
 
         return []
