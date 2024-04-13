@@ -14,10 +14,10 @@ from rasa_sdk.executor import CollectingDispatcher
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
-class ActionTopicCourse(Action):
+class CourseHasTopic(Action):
 
     def name(self) -> Text:
-        return "action_hello_world"
+        return "Course_Has_Topic"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -28,7 +28,7 @@ class ActionTopicCourse(Action):
 
         
         # query
-        sparql = SPARQLWrapper("http://localhost:3030/#/dataset/Data/query", agent='Rasabot agent')
+        sparql = SPARQLWrapper("http://localhost:3030/Data/sparql", agent='Rasabot agent')
         sparql.setQuery("""
             prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -59,4 +59,4 @@ class ActionTopicCourse(Action):
 
 
         
-        return [Restarted()]
+        return []
