@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import AllSlotsReset, Restarted
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
@@ -25,6 +26,10 @@ class CourseHasTopic(Action):
 
         # get slot info
         topic = tracker.get_slot('topic')
+
+        if topic is None:
+            dispatcher.utter_message(text=f"I don't understand")
+            return [AllSlotsReset(), Restarted()]
 
         # query
         sparql = SPARQLWrapper(
@@ -51,7 +56,7 @@ class CourseHasTopic(Action):
             """ % (topic))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
-        if (result['results']['bindings'].length() == 0):
+        if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
@@ -59,4 +64,4 @@ class CourseHasTopic(Action):
                 dispatcher.utter_message(
                     text="Course: " + res["cName"]["value"])
 
-        return []
+        return [AllSlotsReset(), Restarted()]

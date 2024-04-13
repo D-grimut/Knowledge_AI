@@ -66,13 +66,13 @@ slots:
     mappings:
       - type: from_entity
         entity: topic
-  course:
-    type: text
-  lec_number:
-    type: any
-  student: 
-    type: text
-  material:
-    type: text
-  university:
-    type: text
+  # course:
+  #   type: text
+  # lec_number:
+  #   type: any
+  # student: 
+  #   type: text
+  # material:
+  #   type: text
+  # university:
+  #   type: text
