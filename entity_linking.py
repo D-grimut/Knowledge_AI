@@ -1,8 +1,11 @@
 import json
 import spacy
 import os
-import re
 import platform
+from spacy.matcher import Matcher
+from spacy.language import Language
+from spacy.tokens import Span
+
 nlp = spacy.load("en_core_web_sm")
 
 def platform_extension():
@@ -22,11 +25,32 @@ def get_files(dir):
 
     return file_list
 
+
+# Create Matcher
+@Language.component("ner_matcher")
+def create_matcher(doc):
+    matcher = Matcher(nlp.vocab)
+    pattern = [{'POS': 'PROPN', 'OP': '+'},
+               {'POS': 'ADP', 'OP': '*'},
+               {'POS': 'PROPN', 'OP': '*'}]
+
+    matcher.add("ner_identifier", [pattern])
+
+    spans = []
+    for match_id, start, end in matcher(doc):
+        string_id = nlp.vocab.strings[match_id]
+        entity = doc[start:end]
+        spans.append(entity)
+        
+    doc.ents = list() + spans
+    return doc
+
+# Filtering named topic entities
 def post_process(doc):
     file_named_entities = {}
 
     for ent in doc.ents:
-        if (ent.label_ not in ["DATE", "TIME", "PERCENT", "MONEY", "QUANTITY", "ORDINAL", "CARDINAL"] and ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
+        if (ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
 
             if ent.text in file_named_entities and ent._.nerd_score <= file_named_entities[ent.text]["sim_score"]:
                 continue
@@ -37,7 +61,7 @@ def post_process(doc):
                                            }       
     return file_named_entities
 
-def process_files(file_list):
+def process_files(file_list, nlp):
     filtered_entities = {}
     course_name = ""
 
@@ -62,18 +86,19 @@ def process_files(file_list):
             doc = nlp(cont)
             filtered_entities[course_name][file_name] = post_process(doc)
     
-    return filtered_entities
+        return filtered_entities
 
 def main():
     
     # Import NLP and add fishing pipeline
-    nlp.add_pipe('entityfishing')
+    nlp.add_pipe("ner_matcher")
+    nlp.add_pipe('entityfishing', last=True)
 
     # Get directory and get files
     curr_dir = os.getcwd()
     file_list = get_files(curr_dir)
 
-    data = process_files(file_list)
+    data = process_files(file_list, nlp)
     
     with open("topics.json", 'w') as jsonfile:
         json.dump(data, jsonfile, indent=4)
