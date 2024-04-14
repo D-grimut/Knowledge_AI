@@ -6,7 +6,7 @@
 @prefix uni: <http://uni.com/schema#>.
 
 #-----------------------University------------------------------
-uni:name a rdfs:Property;
+uni:name a rdf:Property;
     rdfs:domain dbo:University;
     rdfs:range xsd:string;
     rdfs:label "name"@en;
@@ -17,6 +17,12 @@ uni:Course a rdfs:Class;
     rdfs:subClassOf dbo:University;
     rdfs:label "Course"@en;
     rdfs:comment "Course class"@en.
+
+uni:description a rdf:Property
+    rdfs:domain uni:Course;
+    rdfs:range xsd:string;
+    rdfs:label "Description"@en;
+    rdfs:comment "Course Description"@en.
 
 uni:subject a rdf:Property;
     rdfs:domain uni:Course;

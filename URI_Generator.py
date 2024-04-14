@@ -64,11 +64,17 @@ def get_course_info(curr_dir):
                             course_num = -1
 
 
+                    description = row["Description"]
+
+                    if(description.__len__() == 0):
+                        description = "This course does not have a description in the available database"
+
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
                         "Course number": course_num,
                         "Title": new_val,
                         "Website": row["Website"],
+                        "Description": description
                     }
 
     with open(data_catalog, mode='r', encoding="utf-16") as f:
@@ -304,6 +310,9 @@ def create_course_graph(course_list, get_files, curr_dir):
 
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, Literal(unid_val, datatype=XSD.integer)))
+
+        unid_val = values["Description"]
+        graph.add((unid[key], uni.description, Literal(unid_val)))
 
         website = values["Website"]
 
