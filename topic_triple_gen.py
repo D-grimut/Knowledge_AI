@@ -46,6 +46,7 @@ def topics_graph(topic_dict):
 
                 topic_name = topic.replace(' ', '_')
                 lecture_provenance = lecture_prefix + "_" + prov_name
+                lecture_provenance = lecture_provenance.replace("#", "")
                 
                 graph.add((unid[topic_name], RDF.type, uni.Topic))
 

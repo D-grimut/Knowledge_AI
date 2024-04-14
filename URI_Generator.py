@@ -191,6 +191,7 @@ def lecture_graph(graph, get_files):
 
                 # Attach lecture content entity to the lecture
                 graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
+
         elif "Labs" in course:
             for lec_num, lec_cont_uri in course_content.items():
 
@@ -204,7 +205,7 @@ def lecture_graph(graph, get_files):
                 else:
                     lec_uri = course[:course.find("/")].replace(' ', '%20') + "_" + lec_name
 
-                lec_uri = lec_uri.replace('%20', '_')
+                lec_uri = lec_uri.replace('%20', '_').replace("#", "")
 
                 lec_num_formatted = lec_num[lec_num.find("_")+1:]  
 
@@ -218,6 +219,7 @@ def lecture_graph(graph, get_files):
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
         elif "Tutorials" in course:
             for lec_num, lec_cont_uri in course_content.items():
                 

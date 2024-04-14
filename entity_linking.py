@@ -25,10 +25,8 @@ def get_files(dir):
 
     return file_list
 
-
-# Create Matcher
-@Language.component("ner_matcher")
-def create_matcher(doc):
+# Matcher to find the topics
+def find_topics(doc):
     matcher = Matcher(nlp.vocab)
     pattern = [{'POS': 'PROPN', 'OP': '+'},
                {'POS': 'ADP', 'OP': '*'},
@@ -36,27 +34,22 @@ def create_matcher(doc):
 
     matcher.add("ner_identifier", [pattern])
 
-    included_tokens = set()
+    topics_set = set()
 
-    spans = []
-    for match_id, start, end in matcher(doc):
-        if any(token.i in included_tokens for token in doc[start:end]):
-            continue
-
-        string_id = nlp.vocab.strings[match_id]
-        spans.append((start, end, string_id))
+    for _, start, end in matcher(doc):
+        new_span = Span(doc, start, end)
+        topics_set.add(new_span.text)
         
-        included_tokens.update(range(start, end))
-
-    doc.ents = [Span(doc, start, end, label=label) for start, end, label in spans]
-    return doc
+    return topics_set
 
 # Filtering named topic entities
 def post_process(doc):
     file_named_entities = {}
 
+    topics_set = find_topics(doc)
+
     for ent in doc.ents:
-        if (ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
+        if (ent.text in topics_set and ent._.url_wikidata is not None and ent._.nerd_score > 0.4):
 
             if ent.text in file_named_entities and ent._.nerd_score <= file_named_entities[ent.text]["sim_score"]:
                 continue
@@ -92,12 +85,11 @@ def process_files(file_list, nlp):
             doc = nlp(cont)
             filtered_entities[course_name][file_name] = post_process(doc)
     
-        return filtered_entities
+    return filtered_entities
 
 def main():
     
-    # Import NLP and add fishing pipeline
-    nlp.add_pipe("ner_matcher")
+    # Add fishing pipeline
     nlp.add_pipe('entityfishing', last=True)
 
     # Get directory and get files
