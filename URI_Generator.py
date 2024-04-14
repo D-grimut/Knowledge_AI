@@ -142,7 +142,117 @@ def student_info_extract(file):
 
     return data
 
+def lecture_graph(graph, get_files):
+    unid = Namespace("http://uni.com/data/")
+    uni = Namespace("http://uni.com/schema#")
+    dbo = Namespace("http://dbpedia.org/ontology/")
 
+    graph.bind("unid", unid)
+    graph.bind("uni", uni)
+    graph.bind("dbo", dbo)
+
+    for course, course_content in get_files.items():
+        if "Lectures" in course:
+            for lec_num, lec_cont_uri in course_content.items():
+
+                # Change lec_name
+                lec_name = lec_cont_uri[lec_cont_uri.find("Lectures/")+9:-4]
+
+                lec_uri = ""
+
+                if platform.system() == 'Windows':
+                    lec_uri = course[:course.find("\\")].replace(
+                        ' ', '%20') + "_" + lec_name
+                else:
+                    lec_uri = course[:course.find(
+                        "/")].replace(' ', '%20') + "_" + lec_name
+
+                lec_uri = lec_uri.replace('%20', '_')
+
+                lec_num_formatted = lec_num[lec_num.find("_")+1:]
+
+                # Add lecture
+                graph.add((unid[lec_uri], RDF.type, uni.Lecture))
+
+                # Add lecture number
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+
+                lec_name = lec_name.replace('%20', " ")
+
+                # Add lecture name
+                graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+                # Add has lecture
+                graph.add((unid[course[course.find("-")+1:-9]],
+                          uni.has_lecture, unid[lec_uri]))
+
+                # Add lecture content entity
+                graph.add((lec_cont_uri, RDF.type, uni.Slides))
+
+                # Attach lecture content entity to the lecture
+                graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
+
+        elif "Labs" in course:
+            for lec_num, lec_cont_uri in course_content.items():
+
+                # Change lec_name
+                lec_name = lec_cont_uri[lec_cont_uri.find("Labs/")+5:-4]
+                
+                lec_uri = ""
+
+                if platform.system() == 'Windows':
+                    lec_uri = course[:course.find("\\")].replace(' ', '%20') + "_" + lec_name
+                else:
+                    lec_uri = course[:course.find("/")].replace(' ', '%20') + "_" + lec_name
+
+                lec_uri = lec_uri.replace('%20', '_').replace("#", "")
+
+                lec_num_formatted = lec_num[lec_num.find("_")+1:]  
+
+                # Add lecture
+                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))  
+
+                # Add lecture number
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+
+                lec_name = lec_name.replace('%20', " ")
+
+                # Add lecture name
+                graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+        elif "Tutorials" in course:
+            for lec_num, lec_cont_uri in course_content.items():
+                
+                # Change lec_name
+                lec_name = lec_cont_uri[lec_cont_uri.find("Tutorials/")+10:-4]
+               
+                lec_uri = ""
+
+                if platform.system() == 'Windows':
+                    lec_uri = course[:course.find("\\")].replace(' ', '%20') + "_" + lec_name
+                else:
+                    lec_uri = course[:course.find("/")].replace(' ', '%20') + "_" + lec_name
+                
+                lec_uri = lec_uri.replace('%20', '_')
+
+                lec_num_formatted = lec_num[lec_num.find("_")+1:] 
+
+                # Add lecture
+                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))
+
+                # Add lecture number
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+
+                lec_name = lec_name.replace('%20', " ")
+
+                # Add lecture name
+                graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+        else:
+            co = course_content['Lecture_0']
+            gcs = co[co.find('-')+1:-21]
+
+            graph.add((unid[gcs], uni.outline, unid[co]))
+            
 def create_course_graph(course_list, get_files, curr_dir):
     # Create a graph
     graph = Graph()
@@ -203,46 +313,7 @@ def create_course_graph(course_list, get_files, curr_dir):
         graph.add((unid.Concordia, uni.offers, unid[key]))
 
     # Adding course lectures
-    for course, course_content in get_files.items():
-        if "Lectures" in course:
-            for lec_num, lec_cont_uri in course_content.items():
-
-                # Change lec_name
-                lec_name = lec_cont_uri[lec_cont_uri.find("Lectures/")+9:-4]
-
-                lec_uri = ""
-
-                if platform.system() == 'Windows':
-                    lec_uri = course[:course.find("\\")].replace(
-                        ' ', '%20') + "_" + lec_name
-                else:
-                    lec_uri = course[:course.find(
-                        "/")].replace(' ', '%20') + "_" + lec_name
-
-                lec_uri = lec_uri.replace('%20', '_')
-
-                lec_num_formatted = lec_num[lec_num.find("_")+1:]
-
-                # Add lecture
-                graph.add((unid[lec_uri], RDF.type, uni.Lecture))
-
-                # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
-
-                lec_name = lec_name.replace('%20', " ")
-
-                # Add lecture name
-                graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
-
-                # Add has lecture
-                graph.add((unid[course[course.find("-")+1:-9]],
-                          uni.has_lecture, unid[lec_uri]))
-
-                # Add lecture content entity
-                graph.add((lec_cont_uri, RDF.type, uni.Slides))
-
-                # Attach lecture content entity to the lecture
-                graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
+    lecture_graph(graph, get_files)
 
     # --------------------- ADDING TOPICS MANUALLY ---------------------------------
     # Adding 2 topics
