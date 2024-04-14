@@ -14,7 +14,9 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import AllSlotsReset, Restarted
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-#1
+# 1
+
+
 class GetCourseList(Action):
 
     def name(self) -> Text:
@@ -60,8 +62,7 @@ class GetCourseList(Action):
         return [AllSlotsReset(), Restarted()]
 
 
-
-#2
+# 2
 class CourseHasTopic(Action):
 
     def name(self) -> Text:
@@ -114,8 +115,7 @@ class CourseHasTopic(Action):
         return [AllSlotsReset(), Restarted()]
 
 
-
-#3
+# 3
 class TopicInCourseNumber(Action):
 
     def name(self) -> Text:
@@ -127,7 +127,7 @@ class TopicInCourseNumber(Action):
 
         # get slot info
         course = tracker.get_slot('course')
-        lecnum = tracker.get_slot('lec_number')
+        lecnum = int(tracker.get_slot('lec_number'))
 
         if (course is None) or (lecnum is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -175,8 +175,7 @@ class TopicInCourseNumber(Action):
         return [AllSlotsReset(), Restarted()]
 
 
-
-#4
+# 4
 class GetCourseByUNiversityWithinSubject(Action):
 
     def name(self) -> Text:
@@ -187,10 +186,10 @@ class GetCourseByUNiversityWithinSubject(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # get slot info
-        uni = tracker.get_slot('university')
+        # uni = tracker.get_slot('university')
         topic = tracker.get_slot('topic')
 
-        if (uni is None) or (topic is None):
+        if (topic is None):
             dispatcher.utter_message(text=f"I don't understand")
             return [AllSlotsReset(), Restarted()]
 
@@ -215,14 +214,14 @@ class GetCourseByUNiversityWithinSubject(Action):
             ?course uni:subject ?cName.
             ?course uni:has_topic ?topic.
             ?topic uni:topicName ?tName.
-            FILTER(REGEX(STR(?uniName), '%s', "i")).  
+            FILTER(REGEX(STR(?uniName), 'Concordia', "i")).  
             FILTER(REGEX(STR(?tName), '%s', "i")).
             }
             LIMIT 100
 
 
 
-            """% (uni, topic))
+            """ % (topic))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -234,10 +233,9 @@ class GetCourseByUNiversityWithinSubject(Action):
                     text="Course: " + res["cName"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-    
 
 
-#5----------------------------------------------------------------------Review
+# 5----------------------------------------------------------------------Review
 class GetMaterialForTopicCourse(Action):
 
     def name(self) -> Text:
@@ -275,14 +273,14 @@ class GetMaterialForTopicCourse(Action):
             ?topic uni:topicName ?tName.
             ?course uni:has_lecture ?lecture.
             ?lecture uni:has_content ?content.
-            FILTER(REGEX(STR(?subject), 'Intelligent_Systems', "i")).  
-            FILTER(REGEX(STR(?tName), 'Deep Learning', "i")).
+            FILTER(REGEX(STR(?subject), '%s', "i")).  
+            FILTER(REGEX(STR(?tName), '%s', "i")).
             }
             LIMIT 100
 
 
 
-            """% (course, topic))
+            """ % (course, topic))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -294,10 +292,9 @@ class GetMaterialForTopicCourse(Action):
                     text="Content: " + res["content"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-    
 
 
-#6
+# 6
 class GetCreditsCourse(Action):
 
     def name(self) -> Text:
@@ -337,7 +334,7 @@ class GetCreditsCourse(Action):
 
 
 
-            """% (course))
+            """ % (course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -349,10 +346,9 @@ class GetCreditsCourse(Action):
                     text="Content: " + res["credits"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-    
 
 
-#7
+# 7
 class GetCourseAdditionalResource(Action):
 
     def name(self) -> Text:
@@ -394,7 +390,7 @@ class GetCourseAdditionalResource(Action):
 
 
 
-            """% (course))
+            """ % (course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -406,10 +402,9 @@ class GetCourseAdditionalResource(Action):
                     text="Content: " + res["lectureContent"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-    
 
 
-#8
+# 8
 class GetMaterialLectureCourse(Action):
 
     def name(self) -> Text:
@@ -421,7 +416,7 @@ class GetMaterialLectureCourse(Action):
 
         # get slot info
         course = tracker.get_slot('course')
-        lecnum = tracker.get_slot('lec_number')
+        lecnum = int(tracker.get_slot('lec_number'))
 
         if (course is None) or (lecnum is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -453,7 +448,7 @@ class GetMaterialLectureCourse(Action):
 
 
 
-            """% (course, lecnum))
+            """ % (course, lecnum))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -467,8 +462,7 @@ class GetMaterialLectureCourse(Action):
         return [AllSlotsReset(), Restarted()]
 
 
-
-#9
+# 9
 class GetMaterialTopicCourse(Action):
 
     def name(self) -> Text:
@@ -512,7 +506,7 @@ class GetMaterialTopicCourse(Action):
 
 
 
-            """% (topic, course))
+            """ % (topic, course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -521,11 +515,13 @@ class GetMaterialTopicCourse(Action):
         else:
             for res in result['results']['bindings']:
                 dispatcher.utter_message(
-                    text="Content: " + res["?content"]["value"])
+                    text="Content: " + res["content"]["value"])
 
         return [AllSlotsReset(), Restarted()]
 
-#10
+# 10
+
+
 class GetTopicsGainedCourse(Action):
 
     def name(self) -> Text:
@@ -567,7 +563,7 @@ class GetTopicsGainedCourse(Action):
 
 
 
-            """% (course))
+            """ % (course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -580,7 +576,9 @@ class GetTopicsGainedCourse(Action):
 
         return [AllSlotsReset(), Restarted()]
 
-#11
+# 11
+
+
 class GetGradeStudentCourse(Action):
 
     def name(self) -> Text:
@@ -591,10 +589,10 @@ class GetGradeStudentCourse(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # get slot info
-        student = tracker.get_slot('student')
+        student_id = int(tracker.get_slot('student'))
         course = tracker.get_slot('course')
 
-        if (course is None) or (student is None):
+        if (course is None) or (student_id is None):
             dispatcher.utter_message(text=f"I don't understand")
             return [AllSlotsReset(), Restarted()]
 
@@ -626,7 +624,7 @@ class GetGradeStudentCourse(Action):
 
 
 
-            """% (student, course))
+            """ % (student_id, course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -640,7 +638,7 @@ class GetGradeStudentCourse(Action):
         return [AllSlotsReset(), Restarted()]
 
 
-#12
+# 12
 class GetStudentCompleted(Action):
 
     def name(self) -> Text:
@@ -681,7 +679,7 @@ class GetStudentCompleted(Action):
 
 
 
-            """% (course))
+            """ % (course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -693,9 +691,9 @@ class GetStudentCompleted(Action):
                     text="Student ID: " + res["studentID"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-    
 
-#13
+
+# 13
 class GetTranscript(Action):
 
     def name(self) -> Text:
@@ -706,9 +704,9 @@ class GetTranscript(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # get slot info
-        student = tracker.get_slot('student')
+        student_id = int(tracker.get_slot('student'))
 
-        if student is None:
+        if student_id is None:
             dispatcher.utter_message(text=f"I don't understand")
             return [AllSlotsReset(), Restarted()]
 
@@ -740,7 +738,7 @@ class GetTranscript(Action):
 
 
 
-            """% (student))
+            """ % (student_id))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -749,7 +747,6 @@ class GetTranscript(Action):
         else:
             for res in result['results']['bindings']:
                 dispatcher.utter_message(
-                    text= res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] +" " + res["courseID"]["value"])
+                    text=res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"])
 
         return [AllSlotsReset(), Restarted()]
-

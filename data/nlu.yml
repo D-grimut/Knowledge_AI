@@ -119,78 +119,149 @@ nlu:
 - intent: topic_covered_course_number
   examples: |
     - which topics are covered in [__oov__](course) during lecture [__oov__](lec_number)?
-    - which topics are covered in [COMP 474](course) during lecture [5](lec_number)?
-    - which topics are covered in [comp 474](course) during lecture [2](lec_number)?
-    - what topics are covered in [engr 213](course) during lecture [6](lec_number)?
+    - what topics are covered in [__oov__](course) during lecture [__oov__](lec_number)?
+    - which topics are covered in [Intelligent systems](course) during lecture [5](lec_number)?
+    - which topics are covered in [Physics 4](course) during lecture [2](lec_number)?
+    - which topics are covered in [Intelligent_systems](course) during lecture [3](lec_number)?
+    - which topics are covered in [Intelligent_systems](course) during lecture [2](lec_number)?
+    - which topics are covered in [Intelligent Systems](course) during lecture [1](lec_number)?
+    - which topics are covered in [Intelligent Systems](course) during lecture [6](lec_number)?
+    - which topics are covered in [Intelligent_Systems](course) during lecture [9](lec_number)?
+    - which topics are covered in [Intelligent_Systems](course) during lecture [10](lec_number)?
+    - what topics are covered in [Calculus III](course) during lecture [6](lec_number)?
+    - what topics are covered in [Intelligent Systems](course) during lecture [5](lec_number)?
+    - what topics are covered in [Calculus III](course) during lecture [4](lec_number)?
+    - what topics are covered in [Intelligent Systems](course) during lecture [3](lec_number)?
+    - what topics are covered in [Calculus III](course) during lecture [2](lec_number)?
+
 
 - intent: course_by_university_within_subject
   examples: |
     - list all courses offered by [concordia](university) for [__oov__](topic)
     - list all courses offered by [__oov__](university) for [__oov](topic)
     - what courses are offered by [Concordia](university) for [__oov__](topic)?
+    - what courses are offered by [ConC](university) for [__oov__](topic)?
     - what courses are offered by [Con U](university) for [Deep learning](topic)?
+    - what courses are offered by [Concordia](university) for [Engineering practices](topic)?
 
 - intent: material_for_topic_course
   examples: |
     - what [__oov__](material) are recommended for [__oov__](topic) in [__oov__](course)?
-    - what [slides](material) are recommended for [deep learning](topic) in [COMP 474](course)?
-    - what [readings](material) are recommended for [engineering practices](topic) in [COMP 354](course)?
+    - what [slides](material) are recommended for [deep learning](topic) in [Intelligent_systems](course)?
+    - what [readings](material) are recommended for [engineering practices](topic) in [Introduction to software engineering](course)?
+    - what [readings](material) are recommended for [deep Learning](topic) in [Intelligent_systems](course)?
+    - what [slides](material) are recommended for [deep Learning](topic) in [Intelligent_systems](course)?
+    - what [readings](material) are recommended for [physics](topic) in [Cal III](course)?
+    - what [slides](material) are recommended for [physics](topic) in [Calculus III](course)?
     - for [__oov__](course), what [__oov__](material) are recommended?
-    - for [COMP 474](course), what [slides](material) are recommended?
+    - for [Intelligent_systems](course), what [slides](material) are recommended?
+    - for [Intelligent_systems](course), what [readings](material) are recommended?
+    - for [Calculus III](course), what [slides](material) are recommended?
+    - for [Cal III](course), what [readings](material) are recommended?
   
 - intent: credits_course
   examples: |
     - how many credits is [__oov__](course) worth?
-    - how many credits is [COMP 474](course) worth?
-    - how many credits is [comp 354](course) worth?
+    - how many credits is [Intelligent_systems](course) worth?
+    - how many credits is [Introduction to software engineering](course) worth?
+    - how many credits is [physics III](course) worth?
+    - how many credits is [Calc II](course) worth?
 
 - intent: course_additional_resource
   examples: |
     - for [__oov__](course), what additional resources are available?
-    - for [COMP 474](course), what additional resources are available?
-    - for [comp 474](course), what additional resources are available?
+    - for [Intelligent_systems](course), what additional resources are available?
+    - for [intelligent_systems](course), what additional resources are available?
+    - for [Calculus III](course), what additional resources are available?
+    - for [Introduction to software engineering](course), what additional resources are available?
   
 - intent: material_lecture_course
   examples: |
     - what content is available for lecture [__oov__](lec_number) in [__oov__](course)?
-    - what content is available for lecture [5](lec_number) in [COMP 474](course)?
+    - what content is available for lecture [5](lec_number) in [Intelligent_systems](course)?
+    - what content is available for lecture [4](lec_number) in [Calculus III](course)?
+    - what content is available for lecture [3](lec_number) in [Introduction to software engineering](course)?
+    - what content is available for lecture [2](lec_number) in [Introduction to software engineering](course)?
+    - what content is available for lecture [1](lec_number) in [Intelligent_systems](course)?
+    - what content is available for lecture [9](lec_number) in [Calculus III](course)?
+    - what content is available for lecture [8](lec_number) in [Introduction to software engineering](course)?
+    - what content is available for lecture [7](lec_number) in [Intelligent_systems](course)?
+    - what content is available for lecture [6](lec_number) in [Intelligent_systems](course)?
+    - what content is available for lecture [5](lec_number) in [Calculus III](course)?
 
 - intent: material_topic_course
   examples: |
     - what reading materials are recommended for studying [__oov__](topic) in [__oov__](course)?
-    - what reading materials are recommended for studying [deep learning](topic) in [comp 474](course)?
+    - what reading materials are recommended for studying [deep learning](topic) in [Intelligent_systems](course)?
+    - what reading materials are recommended for studying [physics](topic) in [Cal III](course)?
+    - what reading materials are recommended for studying [Engineering practices](topic) in [Introduction to software engineering](course)?
     - what readings are recommended for studying [__oov__](topic) in [__oov__](course)?
-    - what readings are recommended for studying [deep learning](topic) in [comp 474](course)?
+    - what readings are recommended for studying [Engineering practices](topic) in [Intelligent systems](course)?
+    - what readings are recommended for studying [physics](topic) in [Cal III](course)?
+    - what readings are recommended for studying [deep learning](topic) in [Introduction to software engineering](course)?
+
   
 - intent: topics_gained_course
   examples: |
     - what competencies does a student gain after completing [__oov__](course)?
-    - what competencies does a student gain after completing [comp 474](course)?
+    - what competencies does a student gain after completing [Intelligent_systems](course)?
+    - what competencies does a student gain after completing [Cal_III](course)?
     - what topics does a student gain after completing [__oov__](course)?
-    - what topics does a student gain after completing [comp 354](course)?
+    - what topics does a student gain after completing [Cal_III](course)?
+    - what topics does a student gain after completing [Introduction to software engineering](course)?
 
 - intent: grade_student_course
   examples: |
     - what grades did [__oov__](student) achieve in [__oov__](course)?
-    - what grades did [James West](student) achieve in [Comp 474](course)?
+    - what grades did [1](student) achieve in [Intelligent_systems](course)?
+    - what grades did [2](student) achieve in [Calculus III](course)?
+    - what grades did [3](student) achieve in [Intelligent_systems](course)?
+    - what grades did [406](student) achieve in [Calculus III](course)?
+    - what grades did [5](student) achieve in [Intelligent_systems](course)?
+    - what grades did [7](student) achieve in [Calculus III](course)?
+    - what grades did [22](student) achieve in [Calculus III](course)?
+    - what grades did [102](student) achieve in [Intelligent_systems](course)?
+    - what grades did [76](student) achieve in [Calculus III](course)?
     - what grades did [__oov__](student) get in [__oov__](course)?
-    - what grades did [sheila simpson](student) get in [Engr 213](course)?
+    - what grades did [3](student) get in [Calculus III](course)?
+    - what grades did [40](student) get in [CalcIII](course)?
+    - what grades did [55](student) get in [Calculus III](course)?
+    - what grades did [1](student) get in [CalcIII](course)?
+    - what grades did [60](student) get in [Calculus III](course)?
+    - what grades did [89](student) get in [CalcIII](course)?
   
 - intent: student_completed
   examples: |
     - which students have completed [__oov__](course)?
     - list all students that have completed [__oov__](course)
     - list the students that have completed [__oov__](course)
-    - which students have completed [comp 474](course)?
-    - list all students that have completed [math 201](course)
-    - list the students that have completed [engr 213](course)
+    - which students have completed [Intelligent_systems](course)?
+    - which students have completed [CalcIII](course)?
+    - list all students that have completed [Mathematics Intro](course)
+    - list all students that have completed [Intelligent_systems Intro](course)
+    - list the students that have completed [Calculus III](course)
+    - list the students that have completed [Engineering III](course)
   
 - intent: transcript
   examples: |
     - print a transcript for [__oov__](student)
     - list all the course and grades that [__oov__](student) has taken?
-    - print a transcript for [Daniel grimut](student)?
-    - list all the course and grades that [alessio cipriano-kardous](student) has taken?
+    - print a transcript for [1](student)?
+    - list all the course and grades that [3](student) has taken?
+    - print a transcript for [2](student)?
+    - list all the course and grades that [3](student) has taken?
+    - print a transcript for [12](student)?
+    - list all the course and grades that [31](student) has taken?
+    - print a transcript for [5](student)?
+    - list all the course and grades that [302](student) has taken?
+    - print a transcript for [7](student)?
+    - list all the course and grades that [3](student) has taken?
+    - print a transcript for [83](student)?
+    - list all the course and grades that [301](student) has taken?
+    - print a transcript for [9](student)?
+    - list all the course and grades that [31](student) has taken?
+    - print a transcript for [75](student)?
+    - list all the course and grades that [895](student) has taken?
 
 - intent: bot_challenge
   examples: |
@@ -205,9 +276,11 @@ nlu:
 - intent: about_course
   examples: |
     - what is [__oov__](course) about?
-    - what is [comp 474](course) about?
     - describe [__oov__](course)
-    - describe [Engr 213](course)
+    - what is [Intelligent_systems](course) about?
+    - describe [Calculus III](course)
+    - what is [Engineering III](course) about?
+    - describe [Mathematics Intro](course)
     - describe it
     - can you describe it?
     - what is it about?
@@ -215,9 +288,24 @@ nlu:
 - intent: topics_covered_event
   examples: |
     - which topics are covered in [__oov__](lec) [__oov__](lec_number) of [__oov__](course)?
-    - which topics are covered in [lab](lec) [3](lec_number) of [comp 474](course)?
+    - which topics are covered in [lab](lec) [3](lec_number) of [Calculus III](course)?
+    - which topics are covered in [lab](lec) [4](lec_number) of [Engineering III](course)?
+    - which topics are covered in [lab](lec) [2](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lab](lec) [1](lec_number) of [Engineering III](course)?
+    - which topics are covered in [lab](lec) [5](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lab](lec) [6](lec_number) of [Calculus III](course)?
+    - which topics are covered in [lab](lec) [7](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lab](lec) [8](lec_number) of [Mathematics Intro](course)?
+    - which topics are covered in [lab](lec) [9](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lab](lec) [10](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lab](lec) [11](lec_number) of [Engineering III](course)?
+    - which topics are covered in [lab](lec) [12](lec_number) of [Mathematics Intro](course)?
+
+    
 
 - intent: topic_provenance
   examples: |
     - what covers [__oov__](topic)?
     - what covers [deep learning](topic)?
+    - what covers [engineering practices](topic)?
+    - what covers [machine learning](topic)?

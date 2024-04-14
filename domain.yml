@@ -50,7 +50,20 @@ session_config:
   carry_over_slots_to_new_session: true
 
 actions:
+  - get_course_list
   - course_has_topic
+  - topic_in_course_number
+  - get_course_by_university_withing_subject
+  - get_material_for_topic_course
+  - get_credits_course
+  - get_course_additional_resource
+  - get_material_lecture_course
+  - get_material_topic_course
+  - get_topics_gained_course
+  - get_grade_student_course
+  - get_student_completed
+  - get_transcript
+
 
 entities:
   - topic
@@ -72,22 +85,22 @@ slots:
       - type: from_entity
         entity: course
   lec_number:
-    type: any
+    type: float
     mappings:
       - type: from_entity
         entity: lec_number
   student: 
-    type: text
-      mappings:
+    type: float
+    mappings:
       - type: from_entity
         entity: student
   material:
     type: text
     mappings:
       - type: from_entity
-        entity: course
+        entity: material
   university:
     type: text
     mappings:
     - type: from_entity
-      entity: course
+      entity: university

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "lec_number",
+    "pattern": "[\\\\d+](lec_number)"
+  },
+  {
+    "name": "university",
+    "pattern": "Con U"
+  },
+  {
+    "name": "university",
+    "pattern": "ConU"
+  },
+  {
+    "name": "university",
+    "pattern": "Concordia"
+  },
+  {
+    "name": "university",
+    "pattern": "Concordia Uni"
+  },
+  {
+    "name": "university",
+    "pattern": "Concordia University"
+  },
+  {
+    "name": "university",
+    "pattern": "University of Concordia"
+  },
+  {
+    "name": "university",
+    "pattern": "con U"
+  },
+  {
+    "name": "university",
+    "pattern": "con u"
+  },
+  {
+    "name": "university",
+    "pattern": "concordia university"
+  },
+  {
+    "name": "university",
+    "pattern": "conu"
+  }
+]
