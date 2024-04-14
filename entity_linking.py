@@ -36,13 +36,19 @@ def create_matcher(doc):
 
     matcher.add("ner_identifier", [pattern])
 
+    included_tokens = set()
+
     spans = []
     for match_id, start, end in matcher(doc):
+        if any(token.i in included_tokens for token in doc[start:end]):
+            continue
+
         string_id = nlp.vocab.strings[match_id]
-        entity = doc[start:end]
-        spans.append(entity)
+        spans.append((start, end, string_id))
         
-    doc.ents = list() + spans
+        included_tokens.update(range(start, end))
+
+    doc.ents = [Span(doc, start, end, label=label) for start, end, label in spans]
     return doc
 
 # Filtering named topic entities
