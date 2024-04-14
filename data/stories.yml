@@ -126,7 +126,7 @@ stories:
 #     - intent: greet
 #     - action: utter_greet
 #     - intent: about_course
-#     - action: ...
+#     - action: get_course_description
 
 # - story: get topics covered event
 #   steps:
@@ -135,9 +135,9 @@ stories:
 #     - intent: topics_covered_event
 #     - action: ...
 
-# - story: get topic provenance
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: topic_provenance
-#     - action: ...
+- story: get topic provenance
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: topic_provenance
+    - action: get_course_event_topic

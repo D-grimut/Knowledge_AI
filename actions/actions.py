@@ -750,3 +750,78 @@ class GetTranscript(Action):
                     text=res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"])
 
         return [AllSlotsReset(), Restarted()]
+
+# 14
+
+
+class CourseDescription(Action):
+
+    def name(self) -> Text:
+        return "get_course_description"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # query
+        sparql = SPARQLWrapper(
+            "http://localhost:3030/Data/sparql", agent='Rasabot agent')
+        sparql.setQuery("""
+            
+            """)
+        sparql.setReturnFormat(JSON)
+        result = sparql.query().convert()
+        if (len(result['results']['bindings']) == 0):
+            dispatcher.utter_message(
+                text="Sorry, I was unable to find any results for that question.")
+        else:
+            for res in result['results']['bindings']:
+                dispatcher.utter_message(
+                    text=res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"])
+
+        return [AllSlotsReset(), Restarted()]
+
+
+# 15
+class CourseEventTopic(Action):
+    def name(self) -> Text:
+        return "get_course_event_topic"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        topic = tracker.get_slot['topic']
+
+        # query
+        sparql = SPARQLWrapper(
+            "http://localhost:3030/Data/sparql", agent='Rasabot agent')
+        sparql.setQuery("""
+            prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+            prefix foaf: <http://xmlns.com/foaf/0.1/>
+            prefix dbo: <http://dbpedia.org/ontology/>
+            prefix uni: <http://uni.com/schema#>
+            prefix owl: <http://www.w3.org/2002/07/owl#>
+            SELECT ?provenance (COUNT(?provenance) AS ?freq)
+            WHERE{
+            ?topic uni:topicName ?tName.
+            ?topic uni:provenance ?provenance.
+            FILTER(REGEX(STR(?tName), '%s', "i")).
+            }
+            GROUP BY ?provenance
+            ORDER BY DESC(?freq)
+            LIMIT 100
+            """ % (topic))
+        sparql.setReturnFormat(JSON)
+        result = sparql.query().convert()
+        if (len(result['results']['bindings']) == 0):
+            dispatcher.utter_message(
+                text="Sorry, I was unable to find any results for that question.")
+        else:
+            for res in result['results']['bindings']:
+                dispatcher.utter_message(
+                    text=res["provenance"]["value"] + " covers this topic.")
+
+        return [AllSlotsReset(), Restarted()]
