@@ -4,6 +4,8 @@
 
 This project is destined to create a chatbot using course inforamtion that we inputted. For the first part of this assignment, we needed to gather the information and format it for future reference.
 
+# File Description
+
 Here are the following contents of the assignment as well as their respective descriptions:
 
 - COMP 354-GCS_132 folder
@@ -46,22 +48,27 @@ Here are the following contents of the assignment as well as their respective de
   - Formats all of the data into dictionaries, adds the triples to the graph and serializes it. Also connects 
     to Fuseki Server to run the queries
 
+# Running the program
+
 To ensure that the program runs smoothly, please follow the instructions below:
 
-- Run the URI_Generator.py, this file will generate the knoweldge base.
-
-- After having generated the graph, to run all the querries, follow these steps:
-
-  - Open and run Fuseki Server
-  - Note the name of the dataset (bottom left of the image, in this case, "data")
-  ![image](https://github.com/D-grimut/Knowledge_AI/assets/48657408/911ce926-fbd9-4da5-a6a8-412931d618b9)
-  - Upload into Fuseki Server the generated knoweldge base in the previous step.
-  - Go to line 292 where the runAllQueries() method is
-  - Find the endpoint_url variable and change the data part of (http://localhost:3030/data) to the name found in Fuseki Server
-  - In the main method, runAllQueries() might be commented, due to it creating many .csv files for the outputs. Make sure to uncomment it
-  - The files will be created in the main directory and not the Query Ouputs folder
-
+## Installing Spacy
 - To make sure Spacy can be run, run the following commands in the terminal:
   - pip install spacy
   - python -m spacy download en_core_web_sm
   - pip install spacyfishing 
+
+## Running the .py files
+- Run URI_Generator.py, this file will generate the knoweldge base.
+- Run entity_linking.py, this file will create a JSON file with all of the filtered data to be used for the final file.
+- Run topic_triple_gen.py, this file uses the JSON file to create the triples for the topics and links them to the first knowledge base.
+
+At the end, there should be a .ttl and .nt file with the knowledge base.
+
+## Running Fuseki Server
+- After having generated the graph, to run all the querries, follow these steps:
+  - Open and run Fuseki Server
+  - Note the name of the dataset (bottom left of the image, in this case, "data")
+  ![image](https://github.com/D-grimut/Knowledge_AI/assets/48657408/911ce926-fbd9-4da5-a6a8-412931d618b9)
+  - Upload into Fuseki Server the generated knoweldge base in the previous step.
+  - Find the endpoint_url variable and change the data part of (http://localhost:3030/data) to the name found in Fuseki Server
