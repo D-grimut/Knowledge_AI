@@ -752,8 +752,6 @@ class GetTranscript(Action):
         return [AllSlotsReset(), Restarted()]
 
 # 14
-
-
 class CourseDescription(Action):
 
     def name(self) -> Text:
@@ -763,12 +761,29 @@ class CourseDescription(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        course = tracker.get_slot['course']
+
         # query
         sparql = SPARQLWrapper(
             "http://localhost:3030/Data/sparql", agent='Rasabot agent')
         sparql.setQuery("""
-            
-            """)
+            prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+            prefix foaf: <http://xmlns.com/foaf/0.1/>
+            prefix dbo: <http://dbpedia.org/ontology/>
+            prefix uni: <http://uni.com/schema#>
+            prefix owl: <http://www.w3.org/2002/07/owl#>
+
+            SELECT ?description
+            WHERE{
+            ?course rdf:type uni:Course.
+            ?course uni:subject ?cname.
+            ?course uni:description ?description.
+            FILTER(REGEX(STR(?cname), '%s', "i")). 
+            }
+            LIMIT 100
+            """%(course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -777,7 +792,7 @@ class CourseDescription(Action):
         else:
             for res in result['results']['bindings']:
                 dispatcher.utter_message(
-                    text=res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"])
+                    text="The description for the course is: " + res["description"]["value"])
 
         return [AllSlotsReset(), Restarted()]
 

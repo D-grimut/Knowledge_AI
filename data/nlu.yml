@@ -281,9 +281,6 @@ nlu:
     - describe [Calculus III](course)
     - what is [Engineering III](course) about?
     - describe [Mathematics Intro](course)
-    - describe it
-    - can you describe it?
-    - what is it about?
 
 - intent: topics_covered_event
   examples: |

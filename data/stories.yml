@@ -121,12 +121,12 @@ stories:
   - intent: transcript
   - action: get_transcript
 
-# - story: get about course
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: about_course
-#     - action: get_course_description
+- story: get about course
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: about_course
+    - action: get_course_description
 
 # - story: get topics covered event
 #   steps:

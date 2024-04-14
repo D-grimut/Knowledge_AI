@@ -1321,7 +1321,6 @@ unid:Concordia a dbo:University ;
         unid:GCS_162,
         unid:GCS_163,
         unid:GCS_164,
-        unid:GCS_165,
         unid:GCS_166,
         unid:GCS_167,
         unid:GCS_168,
@@ -8715,11 +8714,6 @@ unid:GCS_164 a uni:Course ;
     uni:ID 6731 ;
     uni:description "Laboratory: 24 hours total, project" ;
     uni:subject "Pattern_Recognition" .
-
-unid:GCS_165 a uni:Course ;
-    uni:ID 6741 ;
-    uni:description "Laboratory: 24 hours total, project" ;
-    uni:subject "Intelligent_Systems" .
 
 unid:GCS_166 a uni:Course ;
     uni:ID 6761 ;
