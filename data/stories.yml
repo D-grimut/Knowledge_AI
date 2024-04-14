@@ -1,0 +1,143 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: get course list
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: list_course
+  - action: get_course_list
+
+- story: get course topic
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: topic_course
+  - action: course_has_topic
+
+- story: get topic covered in course number
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: topic_covered_course_number
+  - action: topic_in_course_number
+
+- story: get course by university within subject
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: course_by_university_within_subject
+  - action: get_course_by_university_withing_subject
+
+- story: get material for topic course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: material_for_topic_course
+  - action: get_material_for_topic_course
+
+- story: get credits course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: credits_course
+  - action: get_credits_course
+
+- story: get course additional resource
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: course_additional_resource
+  - action: get_course_additional_resource
+
+- story: get material lecture course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: material_lecture_course
+  - action: get_material_lecture_course
+
+- story: get material topic course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: material_topic_course
+  - action: get_material_topic_course
+
+- story: get topics gained course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: topics_gained_course
+  - action: get_topics_gained_course
+
+- story: get grade student course
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: grade_student_course
+  - action: get_grade_student_course
+
+- story: get student completed
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: student_completed
+  - action: get_student_completed
+
+- story: get transcript
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: transcript
+  - action: get_transcript
+
+# - story: get about course
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: about_course
+#     - action: ...
+
+# - story: get topics covered event
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: topics_covered_event
+#     - action: ...
+
+# - story: get topic provenance
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: topic_provenance
+#     - action: ...

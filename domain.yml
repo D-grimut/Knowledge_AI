@@ -1,0 +1,106 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - list_course
+  - topic_course
+  - topic_covered_course_number
+  - course_by_university_within_subject
+  - material_for_topic_course
+  - credits_course
+  - course_additional_resource
+  - material_lecture_course
+  - material_topic_course
+  - topics_gained_course
+  - grade_student_course
+  - student_completed
+  - transcript
+  - about_course
+  - topics_covered_event
+  - topic_provenance
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - get_course_list
+  - course_has_topic
+  - topic_in_course_number
+  - get_course_by_university_withing_subject
+  - get_material_for_topic_course
+  - get_credits_course
+  - get_course_additional_resource
+  - get_material_lecture_course
+  - get_material_topic_course
+  - get_topics_gained_course
+  - get_grade_student_course
+  - get_student_completed
+  - get_transcript
+
+
+entities:
+  - topic
+  - course
+  - lec_number
+  - student
+  - material
+  - university
+
+slots:
+  topic:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: topic
+  course:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course
+  lec_number:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: lec_number
+  student: 
+    type: float
+    mappings:
+      - type: from_entity
+        entity: student
+  material:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: material
+  university:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: university
