@@ -13,10 +13,17 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import AllSlotsReset, Restarted
 from SPARQLWrapper import SPARQLWrapper, JSON
+from transformers import pipeline, set_seed
+
+# using LLM (disitlied-GPT2) to generate text based of querry return
+def generate_text(inputs):
+    generator = pipeline('text-generation', model='distilgpt2')
+    set_seed(48)
+
+    output = generator(inputs, max_length=150, num_return_sequences=1)
+    return output[0]['generated_text']
 
 # 1
-
-
 class GetCourseList(Action):
 
     def name(self) -> Text:
@@ -761,7 +768,7 @@ class CourseDescription(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        course = tracker.get_slot['course']
+        course = tracker.get_slot('course')
 
         # query
         sparql = SPARQLWrapper(
@@ -790,10 +797,13 @@ class CourseDescription(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
-            for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="The description for the course is: " + res["description"]["value"])
+            to_pass = ""
 
+            for res in result['results']['bindings']:
+                to_pass = to_pass + " " + res["description"]["value"] 
+                
+            text_to_dispach = generate_text(to_pass)
+            dispatcher.utter_message(text=text_to_dispach)
         return [AllSlotsReset(), Restarted()]
 
 
