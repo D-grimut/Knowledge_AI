@@ -210,8 +210,7 @@ def lecture_graph(graph, get_files):
                 lec_num_formatted = lec_num[lec_num.find("_")+1:]  
 
                 # Add lecture
-                # graph.add((unid[lec_uri], RDF.type, uni.Labs))
-                graph.add((lec_cont_uri, RDF.type, uni.Labs))
+                graph.add((unid[lec_uri], RDF.type, uni.Labs))
 
                 # Add lecture number
                 graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
@@ -220,6 +219,10 @@ def lecture_graph(graph, get_files):
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+                # Add has lecture
+                graph.add((unid[course[course.find("-")+1:-5]],
+                          uni.has_lecture, unid[lec_uri]))
 
                 # Attach lecture content entity to the lecture
                 graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
@@ -242,8 +245,7 @@ def lecture_graph(graph, get_files):
                 lec_num_formatted = lec_num[lec_num.find("_")+1:] 
 
                 # Add lecture
-                # graph.add((unid[lec_uri], RDF.type, uni.Tutorials))
-                graph.add((lec_cont_uri, RDF.type, uni.Tutorials))
+                graph.add((unid[lec_uri], RDF.type, uni.Tutorials))
 
                 # Add lecture number
                 graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
@@ -252,6 +254,10 @@ def lecture_graph(graph, get_files):
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+                # Add has lecture
+                graph.add((unid[course[course.find("-")+1:-10]],
+                          uni.has_lecture, unid[lec_uri]))
 
                 # Attach lecture content entity to the lecture
                 graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))

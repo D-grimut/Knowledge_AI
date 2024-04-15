@@ -97,58 +97,6 @@ unid:9 a uni:Student ;
     foaf:lastName "Wilson" ;
     foaf:mbox "jameswilson@example.com" .
 
-unid:COMP_354-GCS_132_Final_Project uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/Final%20Project.txt> ;
-    uni:lecture_name "Final Project" ;
-    uni:lecture_number 0 .
-
-unid:COMP_354-GCS_132_LAB_1_-_SRS uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%201%20-%20SRS.txt> ;
-    uni:lecture_name "LAB 1 - SRS" ;
-    uni:lecture_number 0 .
-
-unid:COMP_354-GCS_132_LAB_2_-_Software_Design uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%202%20-%20Software%20Design.txt> ;
-    uni:lecture_name "LAB 2 - Software Design" ;
-    uni:lecture_number 1 .
-
-unid:COMP_354-GCS_132_LAB_3_-_Quality_Control uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%203%20-%20Quality%20Control.txt> ;
-    uni:lecture_name "LAB 3 - Quality Control" ;
-    uni:lecture_number 2 .
-
-unid:COMP_354-GCS_132_TUT_1_-_SRS uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%201%20-%20SRS.txt> ;
-    uni:lecture_name "TUT 1 - SRS" ;
-    uni:lecture_number 1 .
-
-unid:COMP_354-GCS_132_TUT_2_-_Software_Design uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%202%20-%20Software%20Design.txt> ;
-    uni:lecture_name "TUT 2 - Software Design" ;
-    uni:lecture_number 2 .
-
-unid:COMP_354-GCS_132_TUT_3_-_Quality_Control uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%203%20-%20Quality%20Control.txt> ;
-    uni:lecture_name "TUT 3 - Quality Control" ;
-    uni:lecture_number 3 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_01 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#01.txt> ;
-    uni:lecture_name "Lab Session #01" ;
-    uni:lecture_number 0 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_02 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#02.txt> ;
-    uni:lecture_name "Lab Session #02" ;
-    uni:lecture_number 1 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_03 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#03.txt> ;
-    uni:lecture_name "Lab Session #03" ;
-    uni:lecture_number 2 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_04 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#04.txt> ;
-    uni:lecture_name "Lab Session #04" ;
-    uni:lecture_number 3 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_05 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#05.txt> ;
-    uni:lecture_name "Lab Session #05" ;
-    uni:lecture_number 4 .
-
-unid:COMP_474_6741-GCS_143_Lab_Session_06 uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#06.txt> ;
-    uni:lecture_name "Lab Session #06" ;
-    uni:lecture_number 5 .
-
 unid:Concordia a dbo:University ;
     uni:name "Concordia" ;
     uni:offers unid:FAS_0173,
@@ -2122,12 +2070,6 @@ unid:Concordia a dbo:University ;
     owl:sameAs <https://dbpedia.org/resource/Concordia_University>,
         <https://www.wikidata.org/entity/Q326342> .
 
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%201%20-%20SRS.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%202%20-%20Software%20Design.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%203%20-%20Quality%20Control.txt> a uni:Labs .
-
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Agility%20and%20Process.txt> a uni:Slides .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Architectural%20Design.txt> a uni:Slides .
@@ -2165,26 +2107,6 @@ unid:Concordia a dbo:University ;
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/User%20Experience%20Design.txt> a uni:Slides .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Viable%20Software%20Plan.txt> a uni:Slides .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/Final%20Project.txt> a uni:Tutorials .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%201%20-%20SRS.txt> a uni:Tutorials .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%202%20-%20Software%20Design.txt> a uni:Tutorials .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%203%20-%20Quality%20Control.txt> a uni:Tutorials .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#01.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#02.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#03.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#04.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#05.txt> a uni:Labs .
-
-<file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#06.txt> a uni:Labs .
 
 <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Intelligent%20Agents.txt> a uni:Slides .
 
@@ -2265,6 +2187,26 @@ unid:COMP_354-GCS_132_Design_Concepts a uni:Lecture ;
     uni:lecture_name "Design Concepts" ;
     uni:lecture_number 4 .
 
+unid:COMP_354-GCS_132_Final_Project a uni:Tutorials ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/Final%20Project.txt> ;
+    uni:lecture_name "Final Project" ;
+    uni:lecture_number 0 .
+
+unid:COMP_354-GCS_132_LAB_1_-_SRS a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%201%20-%20SRS.txt> ;
+    uni:lecture_name "LAB 1 - SRS" ;
+    uni:lecture_number 0 .
+
+unid:COMP_354-GCS_132_LAB_2_-_Software_Design a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%202%20-%20Software%20Design.txt> ;
+    uni:lecture_name "LAB 2 - Software Design" ;
+    uni:lecture_number 1 .
+
+unid:COMP_354-GCS_132_LAB_3_-_Quality_Control a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Labs/LAB%203%20-%20Quality%20Control.txt> ;
+    uni:lecture_name "LAB 3 - Quality Control" ;
+    uni:lecture_number 2 .
+
 unid:COMP_354-GCS_132_Requirements_Modeling a uni:Lecture ;
     uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Requirements%20Modeling.txt> ;
     uni:lecture_name "Requirements Modeling" ;
@@ -2315,6 +2257,21 @@ unid:COMP_354-GCS_132_Software_Support a uni:Lecture ;
     uni:lecture_name "Software Support" ;
     uni:lecture_number 15 .
 
+unid:COMP_354-GCS_132_TUT_1_-_SRS a uni:Tutorials ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%201%20-%20SRS.txt> ;
+    uni:lecture_name "TUT 1 - SRS" ;
+    uni:lecture_number 1 .
+
+unid:COMP_354-GCS_132_TUT_2_-_Software_Design a uni:Tutorials ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%202%20-%20Software%20Design.txt> ;
+    uni:lecture_name "TUT 2 - Software Design" ;
+    uni:lecture_number 2 .
+
+unid:COMP_354-GCS_132_TUT_3_-_Quality_Control a uni:Tutorials ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Tutorials/TUT%203%20-%20Quality%20Control.txt> ;
+    uni:lecture_name "TUT 3 - Quality Control" ;
+    uni:lecture_number 3 .
+
 unid:COMP_354-GCS_132_Understanding_Requirements a uni:Lecture ;
     uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20354-GCS_132/Lectures/Understanding%20Requirements.txt> ;
     uni:lecture_name "Understanding Requirements" ;
@@ -2356,6 +2313,36 @@ unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies a uni:
     uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Knowledge%20Graphs%20-%20Vocabularies%20and%20Ontologies.txt> ;
     uni:lecture_name "Knowledge Graphs - Vocabularies and Ontologies" ;
     uni:lecture_number 3 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_01 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#01.txt> ;
+    uni:lecture_name "Lab Session #01" ;
+    uni:lecture_number 0 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_02 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#02.txt> ;
+    uni:lecture_name "Lab Session #02" ;
+    uni:lecture_number 1 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_03 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#03.txt> ;
+    uni:lecture_name "Lab Session #03" ;
+    uni:lecture_number 2 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_04 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#04.txt> ;
+    uni:lecture_name "Lab Session #04" ;
+    uni:lecture_number 3 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_05 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#05.txt> ;
+    uni:lecture_name "Lab Session #05" ;
+    uni:lecture_number 4 .
+
+unid:COMP_474_6741-GCS_143_Lab_Session_06 a uni:Labs ;
+    uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Labs/Lab%20Session%20#06.txt> ;
+    uni:lecture_name "Lab Session #06" ;
+    uni:lecture_number 5 .
 
 unid:COMP_474_6741-GCS_143_Recommender_Systems a uni:Lecture ;
     uni:has_content <file:///Y:/Github%20Projects/Knowledge_AI/COMP%20474_6741-GCS_143/Lectures/Recommender%20Systems.txt> ;
@@ -11068,6 +11055,10 @@ unid:GCS_132 a uni:Course ;
         unid:COMP_354-GCS_132_Component-Level_Design,
         unid:COMP_354-GCS_132_Configuration_Management,
         unid:COMP_354-GCS_132_Design_Concepts,
+        unid:COMP_354-GCS_132_Final_Project,
+        unid:COMP_354-GCS_132_LAB_1_-_SRS,
+        unid:COMP_354-GCS_132_LAB_2_-_Software_Design,
+        unid:COMP_354-GCS_132_LAB_3_-_Quality_Control,
         unid:COMP_354-GCS_132_Project_Management_Concepts,
         unid:COMP_354-GCS_132_Requirements_Modeling,
         unid:COMP_354-GCS_132_Risk_Management,
@@ -11079,6 +11070,9 @@ unid:GCS_132 a uni:Course ;
         unid:COMP_354-GCS_132_Software_Quality_Concepts,
         unid:COMP_354-GCS_132_Software_Reviews,
         unid:COMP_354-GCS_132_Software_Support,
+        unid:COMP_354-GCS_132_TUT_1_-_SRS,
+        unid:COMP_354-GCS_132_TUT_2_-_Software_Design,
+        unid:COMP_354-GCS_132_TUT_3_-_Quality_Control,
         unid:COMP_354-GCS_132_Understanding_Requirements,
         unid:COMP_354-GCS_132_User_Experience_Design,
         unid:COMP_354-GCS_132_Viable_Software_Plan ;
@@ -11095,6 +11089,12 @@ unid:GCS_143 a uni:Course ;
         unid:COMP_474_6741-GCS_143_Knowledge_Base_Queries_and_Linked_Open_Data,
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs,
         unid:COMP_474_6741-GCS_143_Knowledge_Graphs_-_Vocabularies_and_Ontologies,
+        unid:COMP_474_6741-GCS_143_Lab_Session_01,
+        unid:COMP_474_6741-GCS_143_Lab_Session_02,
+        unid:COMP_474_6741-GCS_143_Lab_Session_03,
+        unid:COMP_474_6741-GCS_143_Lab_Session_04,
+        unid:COMP_474_6741-GCS_143_Lab_Session_05,
+        unid:COMP_474_6741-GCS_143_Lab_Session_06,
         unid:COMP_474_6741-GCS_143_Machine_Learning_for_Intelligent_Systems,
         unid:COMP_474_6741-GCS_143_Recommender_Systems ;
     uni:has_topic unid:Deep_Learning ;
