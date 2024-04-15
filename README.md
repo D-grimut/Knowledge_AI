@@ -48,6 +48,25 @@ Here are the following contents of the assignment as well as their respective de
   - Formats all of the data into dictionaries, adds the triples to the graph and serializes it. Also connects 
     to Fuseki Server to run the queries
 
+- pre_processing.py
+  - Python file that reads all of the course contents in the program (COMP 354 and COMP 474) and converts it to plain text files.
+
+- entity_linking.py
+  - Python file to link Wikidata URLs to the topics found in the plain text files.
+  - It filters the data to specific needs of the program
+
+- topic_triple_gen.py
+  - Python file to create the finalized triples for the knowledge base.
+  - This will create knowldge_base_turtle.ttl and knowldge_base_ntriples.nt as files.
+
+- All .yml files
+  - These files are config files for the Rasa chatbot
+  - Do not touch them
+
+- topics.json
+  - JSON file that saves all of the filtered content from entity_linking.py for future use.
+  - Data saved here for time effeciency.
+
 # Running the program
 
 To ensure that the program runs smoothly, please follow the instructions below:
@@ -59,6 +78,7 @@ To ensure that the program runs smoothly, please follow the instructions below:
   - pip install spacyfishing 
 
 ## Running the .py files
+- Run pre_processing.py, this file will process the course content into plain text files.
 - Run URI_Generator.py, this file will generate the knoweldge base.
 - Run entity_linking.py, this file will create a JSON file with all of the filtered data to be used for the final file.
 - Run topic_triple_gen.py, this file uses the JSON file to create the triples for the topics and links them to the first knowledge base.
