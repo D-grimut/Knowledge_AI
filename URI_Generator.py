@@ -7,6 +7,7 @@ from rdflib import OWL, RDFS, XSD, URIRef, Namespace, Graph, Literal
 from rdflib.namespace import FOAF, RDF
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+
 def populate_cource_arr(key_name, title_name, file, enc=None):
 
     courses = {}
@@ -16,10 +17,10 @@ def populate_cource_arr(key_name, title_name, file, enc=None):
         for row in csv_reader:
 
             for key, value in row.items():
-                    if (row[title_name]):
-                        new_val = row[title_name].replace(" ", "_")
+                if (row[title_name]):
+                    new_val = row[title_name].replace(" ", "_")
 
-                    courses[row[title_name]] = row[key_name]
+                courses[row[title_name]] = row[key_name]
 
     return courses
 
@@ -40,10 +41,11 @@ def get_course_info(curr_dir):
         data_catalog = curr_dir + "/KB Data/CU_SR_OPEN_DATA_CATALOG.csv"
 
     course_list = populate_cource_arr("Key", "Title", catalog)
-    course_list_cred = populate_cource_arr("Course ID", "Long Title", data_catalog, "utf-16")
+    course_list_cred = populate_cource_arr(
+        "Course ID", "Long Title", data_catalog, "utf-16")
 
     for key, val in course_list.items():
-        if(key in course_list_cred and key in course_list):
+        if (key in course_list_cred and key in course_list):
             index[course_list_cred[key]] = course_list[key]
 
     with open(catalog, mode='r') as csv_file:
@@ -58,17 +60,23 @@ def get_course_info(curr_dir):
 
                         course_num = -1
                         try:
-                            int_value = int(row["Course number"].replace('\xa0', ''))
+                            int_value = int(
+                                row["Course number"].replace('\xa0', ''))
                             course_num = int_value
                         except ValueError:
                             course_num = -1
 
+                    description = row["Description"]
+
+                    if (description.strip() == 0):
+                        description = "This course does not have a description in the available database"
 
                     data[row["Key"]] = {
                         "Course code": row["Course code"],
                         "Course number": course_num,
                         "Title": new_val,
                         "Website": row["Website"],
+                        "Description": description
                     }
 
     with open(data_catalog, mode='r', encoding="utf-16") as f:
@@ -142,6 +150,7 @@ def student_info_extract(file):
 
     return data
 
+
 def lecture_graph(graph, get_files):
     unid = Namespace("http://uni.com/data/")
     uni = Namespace("http://uni.com/schema#")
@@ -175,7 +184,8 @@ def lecture_graph(graph, get_files):
                 graph.add((unid[lec_uri], RDF.type, uni.Lecture))
 
                 # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(
+                    lec_num_formatted, datatype=XSD.integer)))
 
                 lec_name = lec_name.replace('%20', " ")
 
@@ -197,23 +207,26 @@ def lecture_graph(graph, get_files):
 
                 # Change lec_name
                 lec_name = lec_cont_uri[lec_cont_uri.find("Labs/")+5:-4]
-                
+
                 lec_uri = ""
 
                 if platform.system() == 'Windows':
-                    lec_uri = course[:course.find("\\")].replace(' ', '%20') + "_" + lec_name
+                    lec_uri = course[:course.find("\\")].replace(
+                        ' ', '%20') + "_" + lec_name
                 else:
-                    lec_uri = course[:course.find("/")].replace(' ', '%20') + "_" + lec_name
+                    lec_uri = course[:course.find(
+                        "/")].replace(' ', '%20') + "_" + lec_name
 
                 lec_uri = lec_uri.replace('%20', '_').replace("#", "")
 
-                lec_num_formatted = lec_num[lec_num.find("_")+1:]  
+                lec_num_formatted = lec_num[lec_num.find("_")+1:]
 
                 # Add lecture
-                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))  
+                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))
 
                 # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(
+                    lec_num_formatted, datatype=XSD.integer)))
 
                 lec_name = lec_name.replace('%20', " ")
 
@@ -222,26 +235,29 @@ def lecture_graph(graph, get_files):
 
         elif "Tutorials" in course:
             for lec_num, lec_cont_uri in course_content.items():
-                
+
                 # Change lec_name
                 lec_name = lec_cont_uri[lec_cont_uri.find("Tutorials/")+10:-4]
-               
+
                 lec_uri = ""
 
                 if platform.system() == 'Windows':
-                    lec_uri = course[:course.find("\\")].replace(' ', '%20') + "_" + lec_name
+                    lec_uri = course[:course.find("\\")].replace(
+                        ' ', '%20') + "_" + lec_name
                 else:
-                    lec_uri = course[:course.find("/")].replace(' ', '%20') + "_" + lec_name
-                
+                    lec_uri = course[:course.find(
+                        "/")].replace(' ', '%20') + "_" + lec_name
+
                 lec_uri = lec_uri.replace('%20', '_')
 
-                lec_num_formatted = lec_num[lec_num.find("_")+1:] 
+                lec_num_formatted = lec_num[lec_num.find("_")+1:]
 
                 # Add lecture
                 graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))
 
                 # Add lecture number
-                graph.add((unid[lec_uri], uni.lecture_number, Literal(lec_num_formatted, datatype=XSD.integer)))
+                graph.add((unid[lec_uri], uni.lecture_number, Literal(
+                    lec_num_formatted, datatype=XSD.integer)))
 
                 lec_name = lec_name.replace('%20', " ")
 
@@ -252,7 +268,8 @@ def lecture_graph(graph, get_files):
             gcs = co[co.find('-')+1:-21]
 
             graph.add((unid[gcs], uni.outline, unid[co]))
-            
+
+
 def create_course_graph(course_list, get_files, curr_dir):
     # Create a graph
     graph = Graph()
@@ -298,12 +315,16 @@ def create_course_graph(course_list, get_files, curr_dir):
         unid_val = values["Title"]
         graph.add((unid[key], uni.subject, Literal(unid_val)))
 
-        if("Class Units" in values):
+        if ("Class Units" in values):
             unid_val = values["Class Units"]
-            graph.add((unid[key], uni.credits, Literal(unid_val, datatype=XSD.decimal)))
+            graph.add((unid[key], uni.credits, Literal(
+                unid_val, datatype=XSD.decimal)))
 
         unid_val = values["Course number"]
         graph.add((unid[key], uni.ID, Literal(unid_val, datatype=XSD.integer)))
+
+        unid_val = values["Description"]
+        graph.add((unid[key], uni.description, Literal(unid_val)))
 
         website = values["Website"]
 
@@ -478,10 +499,12 @@ def main():
     curr_dir = os.getcwd()
 
     # Graph creation
-    create_course_graph(get_course_info(curr_dir), get_files(curr_dir), curr_dir)
+    create_course_graph(get_course_info(curr_dir),
+                        get_files(curr_dir), curr_dir)
 
     # Run queries and output them to files
     # runAllQueries(curr_dir)
+
 
 if __name__ == "__main__":
     main()

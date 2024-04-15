@@ -121,23 +121,23 @@ stories:
   - intent: transcript
   - action: get_transcript
 
-# - story: get about course
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: about_course
-#     - action: ...
+- story: get about course
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: about_course
+    - action: get_course_description
 
-# - story: get topics covered event
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: topics_covered_event
-#     - action: ...
+- story: get topics covered event
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: topics_covered_event
+    - action: get_topic_covered_event
 
-# - story: get topic provenance
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: topic_provenance
-#     - action: ...
+- story: get topic provenance
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: topic_provenance
+    - action: get_course_event_topic
