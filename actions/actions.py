@@ -792,9 +792,9 @@ class GetTranscript(Action):
 
             grades = ""
             for res in result['results']['bindings']:
-                grades = grades + ["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"] + "\n"
+                grades = grades + res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"] + "\n"
 
-            dispatcher.utter_message(template="get_student_completed", student=student_id, grades=grades)
+            dispatcher.utter_message(template="get_transcript", student=student_id, grades=grades)
 
         return [AllSlotsReset(), Restarted()]
 
