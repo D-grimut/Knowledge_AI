@@ -13,17 +13,14 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import AllSlotsReset, Restarted
 from SPARQLWrapper import SPARQLWrapper, JSON
-from transformers import pipeline, set_seed
+from transformers import pipeline
 
-# using LLM (disitlied-GPT2) to generate text based of querry return
-
-
-def generate_text(inputs):
-    generator = pipeline('text-generation', model='distilgpt2')
-    set_seed(48)
-
-    output = generator(inputs, max_length=150, num_return_sequences=1)
-    return output[0]['generated_text']
+# using LLM (T5-Small) to generate text based of querry return
+def generate_text(question, context):
+    text2text_generator = pipeline("text2text-generation", model="t5-small", tokenizer="t5-small")
+    input_text = f"question: {question} context: {context}"
+    output_text = text2text_generator(input_text, max_length=200, num_return_sequences=1, temperature=0.7)
+    return output_text[0]['generated_text']
 
 # 1
 
@@ -66,10 +63,12 @@ class GetCourseList(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            course = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Course: " + res["cName"]["value"])
+                course = "Course: " + res["cName"]["value"] + "\n"
 
+            dispatcher.utter_message(template="get_course_list", uni="Concordia", courses=course)
+                
         return [AllSlotsReset(), Restarted()]
 
 
@@ -119,9 +118,11 @@ class CourseHasTopic(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            course = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Course: " + res["cName"]["value"])
+                course = "Course: " + res["cName"]["value"] + "\n"
+
+            dispatcher.utter_message(template="course_has_topic", topic=topic, courses=course)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -184,10 +185,12 @@ class TopicInCourseNumber(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            topics = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Topic: " + res["tName"]["value"])
+                topics = "Topic: " + res["tName"]["value"] + "\n"
 
+            dispatcher.utter_message(template="topic_in_course_number", course=course, lec=lecnum, topics=topics)
+                
         return [AllSlotsReset(), Restarted()]
 
 
@@ -244,10 +247,11 @@ class GetCourseByUNiversityWithinSubject(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            course = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Course: " + res["cName"]["value"])
+                course = "Course: " + res["cName"]["value"] + "\n"
 
+            dispatcher.utter_message(template="get_course_by_university_withing_subject", uni="Concordia", topic=topic, courses=course)
         return [AllSlotsReset(), Restarted()]
 
 
@@ -260,6 +264,8 @@ class GetMaterialForTopicCourse(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_question = tracker.latest_message.get('text')
 
         # get slot info
         course = tracker.get_slot('course')
@@ -292,7 +298,7 @@ class GetMaterialForTopicCourse(Action):
             FILTER(REGEX(STR(?subject), '%s', "i")).  
             FILTER(REGEX(STR(?tName), '%s', "i")).
             }
-            LIMIT 100
+            LIMIT 5
 
 
 
@@ -303,9 +309,11 @@ class GetMaterialForTopicCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            contex = f"The material recommened for the topic {topic}, in course {course} is: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Content: " + res["content"]["value"])
+                contex = res["content"]["value"] + ", "
+
+            dispatcher.utter_message(generate_text(user_question, contex))
 
         return [AllSlotsReset(), Restarted()]
 
@@ -322,6 +330,7 @@ class GetCreditsCourse(Action):
 
         # get slot info
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         if course is None:
             dispatcher.utter_message(text=f"I don't understand")
@@ -357,9 +366,12 @@ class GetCreditsCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            contex = f'the course {course} is worth: '
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Content: " + res["credits"]["value"])
+                contex = res
+
+            dispatcher.utter_message(generate_text(user_question, contex))
 
         return [AllSlotsReset(), Restarted()]
 
@@ -376,6 +388,7 @@ class GetCourseAdditionalResource(Action):
 
         # get slot info
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         if course is None:
             dispatcher.utter_message(text=f"I don't understand")
@@ -401,7 +414,7 @@ class GetCourseAdditionalResource(Action):
             ?lectureContent rdf:type uni:OtherLectureMaterial.
             FILTER(REGEX(STR(?subject), '%s', "i")).  
             }
-            LIMIT 100
+            LIMIT 5
 
 
 
@@ -413,9 +426,12 @@ class GetCourseAdditionalResource(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            context = f"The additional resources available for course {course} are: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Content: " + res["lectureContent"]["value"])
+                context = res["lectureContent"]["value"] + ", "
+
+            dispatcher.utter_message(generate_text(user_question, context))
 
         return [AllSlotsReset(), Restarted()]
 
@@ -433,6 +449,8 @@ class GetMaterialLectureCourse(Action):
         # get slot info
         course = tracker.get_slot('course')
         lecnum_str = tracker.get_slot('lec_number')
+        user_question = tracker.latest_message.get('text')
+        
         if lecnum_str is not None and lecnum_str.isdigit():
             lecnum = int(lecnum_str)
         else:
@@ -465,7 +483,7 @@ class GetMaterialLectureCourse(Action):
             FILTER(REGEX(STR(?cName), '%s', "i")). 
             FILTER(?lecNum=%d).
             }
-            LIMIT 100
+            LIMIT 5
 
 
 
@@ -476,9 +494,12 @@ class GetMaterialLectureCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            context = f"The content availavle for content {lecnum} in course {course}: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Material: " + res["material"]["value"])
+                context = res["material"]["value"] + ", "
+
+            dispatcher.utter_message(generate_text(user_question, context))
 
         return [AllSlotsReset(), Restarted()]
 
@@ -496,6 +517,7 @@ class GetMaterialTopicCourse(Action):
         # get slot info
         topic = tracker.get_slot('topic')
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         if (course is None) or (topic is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -523,7 +545,7 @@ class GetMaterialTopicCourse(Action):
             FILTER(REGEX(STR(?tName), '%s', "i")). 
             FILTER(REGEX(STR(?cName), '%s', "i")). 
             }
-            LIMIT 100
+            LIMIT 5
 
 
 
@@ -534,15 +556,16 @@ class GetMaterialTopicCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+            context = f"The reading material recommended for topic {topic} in course {course} are: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Content: " + res["content"]["value"])
+                context = res["content"]["value"]+ ", "
+
+            dispatcher.utter_message(generate_text(user_question, context))
 
         return [AllSlotsReset(), Restarted()]
 
+
 # 10
-
-
 class GetTopicsGainedCourse(Action):
 
     def name(self) -> Text:
@@ -554,6 +577,7 @@ class GetTopicsGainedCourse(Action):
 
         # get slot info
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         if course is None:
             dispatcher.utter_message(text=f"I don't understand")
@@ -591,15 +615,16 @@ class GetTopicsGainedCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            context = f"The competencies gained by the student after completing the course {course} are: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Topic: " + res["tName"]["value"])
+                context = res["tName"]["value"] + ", "
+
+            dispatcher.utter_message(generate_text(user_question, context))
 
         return [AllSlotsReset(), Restarted()]
 
 # 11
-
-
 class GetGradeStudentCourse(Action):
 
     def name(self) -> Text:
@@ -612,6 +637,7 @@ class GetGradeStudentCourse(Action):
         # get slot info
         student_id = int(tracker.get_slot('student'))
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         if (course is None) or (student_id is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -641,7 +667,7 @@ class GetGradeStudentCourse(Action):
             FILTER(?ID=%d). 
             FILTER(REGEX(STR(?cName), '%s', "i")). 
             }
-            LIMIT 100
+            LIMIT 10
 
 
 
@@ -652,9 +678,12 @@ class GetGradeStudentCourse(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            context = f"The grades obtained by the student {student_id} in {course} are: "
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Grade: " + res["gradeVal"]["value"])
+                context = res["gradeVal"]["value"] + ", "
+
+            dispatcher.utter_message(generate_text(user_question, context))
 
         return [AllSlotsReset(), Restarted()]
 
@@ -707,9 +736,12 @@ class GetStudentCompleted(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            students = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Student ID: " + res["studentID"]["value"])
+                students = "Student ID: " + res["studentID"]["value"] + "\n"
+
+            dispatcher.utter_message(template="get_student_completed", course=course, students=students)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -766,15 +798,17 @@ class GetTranscript(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            grades = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text=res["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"])
+                grades = ["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"] + "\n"
+
+            dispatcher.utter_message(template="get_student_completed", student=student_id, grades=grades)
 
         return [AllSlotsReset(), Restarted()]
 
+
 # 14
-
-
 class CourseDescription(Action):
 
     def name(self) -> Text:
@@ -785,6 +819,7 @@ class CourseDescription(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         course = tracker.get_slot('course')
+        user_question = tracker.latest_message.get('text')
 
         # query
         sparql = SPARQLWrapper(
@@ -813,13 +848,13 @@ class CourseDescription(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
-            to_pass = ""
-
+  
+            context = f"The course description for {course} is : "
             for res in result['results']['bindings']:
-                to_pass = to_pass + " " + res["description"]["value"]
+                context = res["description"]["value"]  + ", "
 
-            text_to_dispach = generate_text(to_pass)
-            dispatcher.utter_message(text=text_to_dispach)
+            dispatcher.utter_message(generate_text(user_question, context))
+                
         return [AllSlotsReset(), Restarted()]
 
 
@@ -861,13 +896,16 @@ class CourseEventTopic(Action):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
         else:
+
+            resources = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text=res["provenance"]["value"] + " covers this topic.")
+                resources = ["provenance"]["value"] + "\n"
+
+            dispatcher.utter_message(template="get_student_completed", topic=topic, resources=resources)
 
         return [AllSlotsReset(), Restarted()]
 
-
+#16
 class TopicCoveredEvent(Action):
 
     def name(self) -> Text:

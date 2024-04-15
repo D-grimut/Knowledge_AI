@@ -45,6 +45,27 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  get_course_list:
+  - text: "Sure! Here are all the courses offered in {uni}:\n {courses}."
+
+  course_has_topic:
+  - text: "Sure! Here are all the courses that teach {topic}:\n {courses}."
+
+  topic_in_course_number:
+  - text: "Sure! Here are all the topics covered in {course} during the lecture {lec}:\n {topics}."
+
+  get_course_by_university_withing_subject:
+  - text: "Sure! Here are all the courses offered in {uni} for topic {topic}:\n {courses}."
+
+  get_student_completed:
+  - text: "Sure! Here are all the students that have completed {course}:\n {students}."
+
+  get_transcript:
+  - text: "Sure! Here are are the grades of student {student} :\n {grades}."
+
+  get_course_event_topic:
+  - text: "Here are all the resources that cover {topic}:\n {resources}."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
