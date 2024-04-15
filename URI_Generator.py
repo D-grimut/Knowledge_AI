@@ -442,7 +442,7 @@ def create_course_graph(course_list, get_files, curr_dir):
 def runAllQueries(curr_dir):
     # Setup database connection
     # To connect to your database, change "data" to whatever your database name is in fuseki.
-    endpoint_url = "http://localhost:3030/dummy_data_1"
+    endpoint_url = "http://localhost:3030/Data"
 
     # Connect our database connection to SPARQL
     sparql = SPARQLWrapper(endpoint_url)
