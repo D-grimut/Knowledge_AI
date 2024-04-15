@@ -359,7 +359,7 @@ class GetCreditsCourse(Action):
 
             cred = ""
             for res in result['results']['bindings']:
-                cred = res
+                cred = res['credits']['value']
 
             dispatcher.utter_message(template="get_credits_course", course=course, credits=cred)
 
