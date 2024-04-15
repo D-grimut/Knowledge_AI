@@ -7,16 +7,17 @@ PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX uni: <http://uni.com/schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-SELECT distinct ?cName ?lecname
-WHERE{
-?course rdf:type uni:Course.
-?course uni:subject ?cName.
-?course uni:has_topic ?topic.
-?topic uni:topicName ?tName.
-?topic uni:linked_to ?link.
-?topic uni:provenance ?lecture.
-?course uni:has_lecture ?lecture.
-?lecture uni:lecture_name ?lecname.
-FILTER(REGEX(STR(?link), 'https://www.wikidata.org/wiki/Q197536', "i")).
+SELECT ?cName ?lecname ?link (COUNT(?cName) AS ?count)
+WHERE {
+    ?course uni:subject ?cName.
+    ?course uni:has_topic ?topic.
+    ?topic uni:topicName ?tName.
+    ?topic uni:linked_to ?link.
+    ?topic uni:provenance ?lecture.
+    ?course uni:has_lecture ?lecture.
+    ?lecture uni:lecture_name ?lecname.
+    FILTER(REGEX(STR(?link), 'https://www.wikidata.org/wiki/Q197536', "i")).
 }
+GROUP BY ?cName ?lecname ?link
+ORDER BY DESC(?count) ?cName
 LIMIT 1000
