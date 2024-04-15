@@ -65,6 +65,7 @@ actions:
   - get_transcript
   - get_course_description
   - get_course_event_topic
+  - get_topic_covered_event
 
 
 entities:

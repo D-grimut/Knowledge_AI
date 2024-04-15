@@ -16,6 +16,8 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from transformers import pipeline, set_seed
 
 # using LLM (disitlied-GPT2) to generate text based of querry return
+
+
 def generate_text(inputs):
     generator = pipeline('text-generation', model='distilgpt2')
     set_seed(48)
@@ -24,6 +26,8 @@ def generate_text(inputs):
     return output[0]['generated_text']
 
 # 1
+
+
 class GetCourseList(Action):
 
     def name(self) -> Text:
@@ -134,7 +138,12 @@ class TopicInCourseNumber(Action):
 
         # get slot info
         course = tracker.get_slot('course')
-        lecnum = int(tracker.get_slot('lec_number'))
+        lecnum_str = tracker.get_slot('lec_number')
+        if lecnum_str is not None and lecnum_str.isdigit():
+            lecnum = int(lecnum_str)
+        else:
+            dispatcher.utter_message(text=f"Not a valid number")
+            return [AllSlotsReset(), Restarted()]
 
         if (course is None) or (lecnum is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -337,7 +346,7 @@ class GetCreditsCourse(Action):
             ?course uni:credits ?credits.
             FILTER(REGEX(STR(?cName), '%s', "i")).  
             }
-            LIMIT 100
+            LIMIT 1
 
 
 
@@ -423,7 +432,12 @@ class GetMaterialLectureCourse(Action):
 
         # get slot info
         course = tracker.get_slot('course')
-        lecnum = int(tracker.get_slot('lec_number'))
+        lecnum_str = tracker.get_slot('lec_number')
+        if lecnum_str is not None and lecnum_str.isdigit():
+            lecnum = int(lecnum_str)
+        else:
+            dispatcher.utter_message(text=f"Not a valid number")
+            return [AllSlotsReset(), Restarted()]
 
         if (course is None) or (lecnum is None):
             dispatcher.utter_message(text=f"I don't understand")
@@ -802,8 +816,8 @@ class CourseDescription(Action):
             to_pass = ""
 
             for res in result['results']['bindings']:
-                to_pass = to_pass + " " + res["description"]["value"] 
-                
+                to_pass = to_pass + " " + res["description"]["value"]
+
             text_to_dispach = generate_text(to_pass)
             dispatcher.utter_message(text=text_to_dispach)
         return [AllSlotsReset(), Restarted()]
@@ -864,10 +878,15 @@ class TopicCoveredEvent(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         event = tracker.get_slot('lec')
-        number = tracker.get_slot('lec_number')
         course = tracker.get_slot('course')
+        lecnum_str = tracker.get_slot('lec_number')
+        if lecnum_str is not None and lecnum_str.isdigit():
+            lecnum = int(lecnum_str)
+        else:
+            dispatcher.utter_message(text=f"Not a valid number")
+            return [AllSlotsReset(), Restarted()]
 
-        if event is None or number is None or course is None:
+        if event is None or lecnum is None or course is None:
             dispatcher.utter_message(text=f"I don't understand")
             return [AllSlotsReset(), Restarted()]
 
@@ -876,7 +895,7 @@ class TopicCoveredEvent(Action):
             "http://localhost:3030/Data/sparql", agent='Rasabot agent')
 
         # ----------------------------------------------
-
+        event = event.lower()
         if event in set(['lecture', 'lectures', 'lec']):
             sparql.setQuery("""
             prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -899,19 +918,59 @@ class TopicCoveredEvent(Action):
             FILTER(?lecNum=%d).
             }
             LIMIT 100
-            """ % (course, number))
+            """ % (course, lecnum))
 
         elif event in set(['lab', 'labs', 'laboratories', 'laboratory']):
             sparql.setQuery("""
+            PREFIX un: <http://www.w3.org/2007/ont/unit#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            PREFIX dbo: <http://dbpedia.org/ontology/>
+            PREFIX uni: <http://uni.com/schema#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-            """)
+            SELECT ?tName
+            WHERE{
+            ?course uni:subject ?cName.
+            ?course uni:has_lecture ?lecture.
+            ?lecture rdf:type uni:Labs.
+            ?lecture uni:lecture_number ?lecNum.
+            ?topic uni:provenance ?lecture.
+            ?topic uni:topicName ?tName.
+            FILTER(REGEX(STR(?cName), '%s', "i")).
+            FILTER(?lecNum=%d).
+            }
+            LIMIT 100
+            """ % (course, lecnum))
             sparql.setReturnFormat(JSON)
             result = sparql.query().convert()
 
         elif event in set(['tutorial', 'tutorials', 'tuts', 'tut']):
             sparql.setQuery("""
-            
-            """)
+            PREFIX un: <http://www.w3.org/2007/ont/unit#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            PREFIX dbo: <http://dbpedia.org/ontology/>
+            PREFIX uni: <http://uni.com/schema#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+            SELECT ?tName
+            WHERE{
+            ?course uni:subject ?cName.
+            ?course uni:has_lecture ?lecture.
+            ?lecture rdf:type uni:Tutorials.
+            ?lecture uni:lecture_number ?lecNum.
+            ?topic uni:provenance ?lecture.
+            ?topic uni:topicName ?tName.
+            FILTER(REGEX(STR(?cName), '%s', "i")).
+            FILTER(?lecNum=%d).
+            }
+            LIMIT 100
+            """ % (course, lecnum))
             sparql.setReturnFormat(JSON)
             result = sparql.query().convert()
 
@@ -920,5 +979,9 @@ class TopicCoveredEvent(Action):
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
                 text="Sorry, I was unable to find any results for that question.")
+        else:
+            for res in result['results']['bindings']:
+                dispatcher.utter_message(
+                    text="Topic for this event : " + res["tName"]["value"])
 
-        return []
+        return [AllSlotsReset(), Restarted()]

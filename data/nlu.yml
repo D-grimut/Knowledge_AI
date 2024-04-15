@@ -2,19 +2,6 @@ version: "3.1"
 
 nlu:
 
-- regex: university
-  examples: |
-    - University of Concordia
-    - Concordia University
-    - concordia university
-    - conu
-    - con u
-    - con U
-    - ConU
-    - Concordia 
-    - Concordia Uni
-    - Con U 
-
 - intent: greet
   examples: |
     - hey
@@ -106,15 +93,27 @@ nlu:
 
 - intent: list_course
   examples: |
+    - list all courses offered by [__oov__](university)
+    - what are the courses offered by [__oov__](university)?
     - list all courses offered by [Concordia University](university)
     - what are the courses offered by [Concordia University](university)?
+    - list all courses offered by [Concordia U](university)
+    - what are the courses offered by [Con University](university)?
+    - list all courses offered by [Conc](university)
+    - what are the courses offered by [Conc U](university)?
+    - list all courses offered by [Con U](university)
+    - what are the courses offered by [Conco U](university)?
 
 - intent: topic_course
   examples: | 
     - in which courses is [__oov__](topic) discussed?
     - which courses cover [__oov__](topic)?
     - which courses cover [Deep Learning](topic)?
+    - which courses cover [Calculus_3](topic)?
+    - which courses cover [machine learning](topic)?
     - in which courses is [Engineering Practices](topic) discussed?
+    - in which courses is [Calculus_3](topic) discussed?
+    - in which courses is [physics](topic) discussed?
 
 - intent: topic_covered_course_number
   examples: |
@@ -137,12 +136,14 @@ nlu:
 
 - intent: course_by_university_within_subject
   examples: |
-    - list all courses offered by [concordia](university) for [__oov__](topic)
     - list all courses offered by [__oov__](university) for [__oov](topic)
     - what courses are offered by [Concordia](university) for [__oov__](topic)?
     - what courses are offered by [ConC](university) for [__oov__](topic)?
     - what courses are offered by [Con U](university) for [Deep learning](topic)?
     - what courses are offered by [Concordia](university) for [Engineering practices](topic)?
+    - list all courses offered by [ConC](university) for [ai](topic)
+    - list all courses offered by [concordia](university) for [deep learning](topic)
+    - list all courses offered by [Con](university) for [artific2](topic)
 
 - intent: material_for_topic_course
   examples: |
@@ -153,11 +154,6 @@ nlu:
     - what [slides](material) are recommended for [deep Learning](topic) in [Intelligent_systems](course)?
     - what [readings](material) are recommended for [physics](topic) in [Cal III](course)?
     - what [slides](material) are recommended for [physics](topic) in [Calculus III](course)?
-    - for [__oov__](course), what [__oov__](material) are recommended?
-    - for [Intelligent_systems](course), what [slides](material) are recommended?
-    - for [Intelligent_systems](course), what [readings](material) are recommended?
-    - for [Calculus III](course), what [slides](material) are recommended?
-    - for [Cal III](course), what [readings](material) are recommended?
   
 - intent: credits_course
   examples: |
@@ -165,7 +161,7 @@ nlu:
     - how many credits is [Intelligent_systems](course) worth?
     - how many credits is [Introduction to software engineering](course) worth?
     - how many credits is [physics III](course) worth?
-    - how many credits is [Calc II](course) worth?
+    - how many credits is [Calc 3](course) worth?
 
 - intent: course_additional_resource
   examples: |
@@ -174,6 +170,10 @@ nlu:
     - for [intelligent_systems](course), what additional resources are available?
     - for [Calculus III](course), what additional resources are available?
     - for [Introduction to software engineering](course), what additional resources are available?
+    - for [physic3](course), what additional resources are available?
+    - for [ai](course), what additional resources are available?
+    - for [deep learnin](course), what additional resources are available?
+    - for [Introduction to soft.eng](course), what additional resources are available?
   
 - intent: material_lecture_course
   examples: |
