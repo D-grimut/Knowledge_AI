@@ -13,18 +13,8 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import AllSlotsReset, Restarted
 from SPARQLWrapper import SPARQLWrapper, JSON
-from transformers import pipeline
-
-# using LLM (T5-Small) to generate text based of querry return
-def generate_text(question, context):
-    text2text_generator = pipeline("text2text-generation", model="t5-small", tokenizer="t5-small")
-    input_text = f"question: {question} context: {context}"
-    output_text = text2text_generator(input_text, max_length=200, num_return_sequences=1, temperature=0.7)
-    return output_text[0]['generated_text']
 
 # 1
-
-
 class GetCourseList(Action):
 
     def name(self) -> Text:
@@ -61,11 +51,11 @@ class GetCourseList(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
             course = ""
             for res in result['results']['bindings']:
-                course = "Course: " + res["cName"]["value"] + "\n"
+                course = course + "Course: " + res["cName"]["value"] + "\n"
 
             dispatcher.utter_message(template="get_course_list", uni="Concordia", courses=course)
                 
@@ -116,11 +106,11 @@ class CourseHasTopic(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
             course = ""
             for res in result['results']['bindings']:
-                course = "Course: " + res["cName"]["value"] + "\n"
+                course = course + "Course: " + res["cName"]["value"] + "\n"
 
             dispatcher.utter_message(template="course_has_topic", topic=topic, courses=course)
 
@@ -183,11 +173,11 @@ class TopicInCourseNumber(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
             topics = ""
             for res in result['results']['bindings']:
-                topics = "Topic: " + res["tName"]["value"] + "\n"
+                topics = topics + "Topic: " + res["tName"]["value"] + "\n"
 
             dispatcher.utter_message(template="topic_in_course_number", course=course, lec=lecnum, topics=topics)
                 
@@ -245,11 +235,11 @@ class GetCourseByUNiversityWithinSubject(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
             course = ""
             for res in result['results']['bindings']:
-                course = "Course: " + res["cName"]["value"] + "\n"
+                course = course + "Course: " + res["cName"]["value"] + "\n"
 
             dispatcher.utter_message(template="get_course_by_university_withing_subject", uni="Concordia", topic=topic, courses=course)
         return [AllSlotsReset(), Restarted()]
@@ -307,13 +297,13 @@ class GetMaterialForTopicCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
-            contex = f"The material recommened for the topic {topic}, in course {course} is: "
+            contex = ""
             for res in result['results']['bindings']:
-                contex = res["content"]["value"] + ", "
+                contex = res["content"]["value"] + "\n"
 
-            dispatcher.utter_message(generate_text(user_question, contex))
+            dispatcher.utter_message(template="get_material_for_topic_course", topic=topic, course=course, material=contex)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -364,14 +354,14 @@ class GetCreditsCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
-            contex = f'the course {course} is worth: '
+            cred = ""
             for res in result['results']['bindings']:
-                contex = res
+                cred = res
 
-            dispatcher.utter_message(generate_text(user_question, contex))
+            dispatcher.utter_message(template="get_credits_course", course=course, credits=cred)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -424,14 +414,14 @@ class GetCourseAdditionalResource(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
-
-            context = f"The additional resources available for course {course} are: "
+       
+            context = ""
             for res in result['results']['bindings']:
-                context = res["lectureContent"]["value"] + ", "
+                context = context + res["lectureContent"]["value"] + "\n"
 
-            dispatcher.utter_message(generate_text(user_question, context))
+            dispatcher.utter_message(template="get_course_additional_resource", course=course, resources=context)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -492,14 +482,14 @@ class GetMaterialLectureCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
-            context = f"The content availavle for content {lecnum} in course {course}: "
+            context = ""
             for res in result['results']['bindings']:
-                context = res["material"]["value"] + ", "
+                context = context + res["material"]["value"] + "\n "
 
-            dispatcher.utter_message(generate_text(user_question, context))
+            dispatcher.utter_message(template="get_material_lecture_course", lecnum=lecnum, course=course, content=context)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -554,13 +544,14 @@ class GetMaterialTopicCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
-            context = f"The reading material recommended for topic {topic} in course {course} are: "
-            for res in result['results']['bindings']:
-                context = res["content"]["value"]+ ", "
 
-            dispatcher.utter_message(generate_text(user_question, context))
+            context = ""
+            for res in result['results']['bindings']:
+                context = context + res["content"]["value"] + "\n"
+
+            dispatcher.utter_message(template="get_material_topic_course", topic=topic, course=course, mats=context)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -613,14 +604,14 @@ class GetTopicsGainedCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
-            context = f"The competencies gained by the student after completing the course {course} are: "
+            context = ""
             for res in result['results']['bindings']:
-                context = res["tName"]["value"] + ", "
+                context = context + res["tName"]["value"] + "\n"
 
-            dispatcher.utter_message(generate_text(user_question, context))
+            dispatcher.utter_message(template="get_topics_gained_course", course=course, comp=context)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -676,14 +667,14 @@ class GetGradeStudentCourse(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
-            context = f"The grades obtained by the student {student_id} in {course} are: "
+            context = ""
             for res in result['results']['bindings']:
-                context = res["gradeVal"]["value"] + ", "
+                context = context + res["gradeVal"]["value"] + "\n"
 
-            dispatcher.utter_message(generate_text(user_question, context))
+            dispatcher.utter_message(template="get_grade_student_course", student_id=student_id, course=course, grades=context)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -734,12 +725,12 @@ class GetStudentCompleted(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
             students = ""
             for res in result['results']['bindings']:
-                students = "Student ID: " + res["studentID"]["value"] + "\n"
+                students = students + "Student ID: " + res["studentID"]["value"] + "\n"
 
             dispatcher.utter_message(template="get_student_completed", course=course, students=students)
 
@@ -796,12 +787,12 @@ class GetTranscript(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
             grades = ""
             for res in result['results']['bindings']:
-                grades = ["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"] + "\n"
+                grades = grades + ["gradeVal"]["value"] + " was earned in " + res["cName"]["value"] + " " + res["courseID"]["value"] + "\n"
 
             dispatcher.utter_message(template="get_student_completed", student=student_id, grades=grades)
 
@@ -846,15 +837,15 @@ class CourseDescription(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
   
-            context = f"The course description for {course} is : "
+            context = ""
             for res in result['results']['bindings']:
-                context = res["description"]["value"]  + ", "
+                context = context + res["description"]["value"]  + "\n"
 
-            dispatcher.utter_message(generate_text(user_question, context))
-                
+            dispatcher.utter_message(template="get_course_description", course=course, desc=context)
+ 
         return [AllSlotsReset(), Restarted()]
 
 
@@ -894,14 +885,14 @@ class CourseEventTopic(Action):
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
 
             resources = ""
             for res in result['results']['bindings']:
-                resources = ["provenance"]["value"] + "\n"
+                resources = resources + res["provenance"]["value"] + "\n"
 
-            dispatcher.utter_message(template="get_student_completed", topic=topic, resources=resources)
+            dispatcher.utter_message(template="get_course_event_topic", topic=topic, resources=resources)
 
         return [AllSlotsReset(), Restarted()]
 
@@ -1016,10 +1007,13 @@ class TopicCoveredEvent(Action):
 
         if (len(result['results']['bindings']) == 0):
             dispatcher.utter_message(
-                text="Sorry, I was unable to find any results for that question.")
+                template="no_result")
         else:
+
+            topics = ""
             for res in result['results']['bindings']:
-                dispatcher.utter_message(
-                    text="Topic for this event : " + res["tName"]["value"])
+                topics = topics + res["tName"]["value"] + "\n"
+
+            dispatcher.utter_message(template="get_topic_covered_event", lecture=event, lec_number=lecnum, course=course, topics=topics)
 
         return [AllSlotsReset(), Restarted()]

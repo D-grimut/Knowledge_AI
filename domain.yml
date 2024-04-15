@@ -66,6 +66,36 @@ responses:
   get_course_event_topic:
   - text: "Here are all the resources that cover {topic}:\n {resources}."
 
+  get_material_for_topic_course:
+  - text: "The material recommened for the topic {topic}, in course {course} is:\n {material}"
+
+  get_credits_course:
+  - text: "The course {course} is worth: {credits}" 
+
+  get_course_additional_resource:
+  - text: "The additional resources available for course {course} are: \n {resources}" 
+
+  get_material_lecture_course:
+  - text: "The content availavle for content {lecnum} in course {course}:\n {content}" 
+
+  get_material_topic_course:
+  - text: "The reading material recommended for topic {topic} in course {course} are: \n {mats}" 
+
+  get_topics_gained_course:
+  - text: "The competencies gained by the student after completing the course {course} are: \n {comp}" 
+
+  get_course_description:
+  - text: "The course description for {course} is: \n {desc}" 
+
+  get_grade_student_course:
+  - text: "The grades obtained by the student {student_id} in {course} are: \n {grades}" 
+
+  get_topic_covered_event:
+  - text : "Topics covered in {lecture}, with number {lec_number}, in {course}, has topics: \n {topics}"
+
+  -no_result:
+  - text: Sorry, I was unable to find any results for that question.
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
