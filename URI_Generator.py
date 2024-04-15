@@ -517,7 +517,7 @@ def main():
                         get_files(curr_dir), curr_dir)
 
     # Run queries and output them to files
-    # runAllQueries(curr_dir)
+    runAllQueries(curr_dir)
 
 
 if __name__ == "__main__":
