@@ -286,20 +286,18 @@ nlu:
   examples: |
     - which topics are covered in [__oov__](lec) [__oov__](lec_number) of [__oov__](course)?
     - which topics are covered in [lab](lec) [3](lec_number) of [Calculus III](course)?
-    - which topics are covered in [lab](lec) [4](lec_number) of [Engineering III](course)?
+    - which topics are covered in [tutorial](lec) [4](lec_number) of [Engineering III](course)?
     - which topics are covered in [lab](lec) [2](lec_number) of [Intelligent_systems](course)?
-    - which topics are covered in [lab](lec) [1](lec_number) of [Engineering III](course)?
+    - which topics are covered in [tutorial](lec) [1](lec_number) of [Engineering III](course)?
     - which topics are covered in [lab](lec) [5](lec_number) of [Intelligent_systems](course)?
     - which topics are covered in [lab](lec) [6](lec_number) of [Calculus III](course)?
     - which topics are covered in [lab](lec) [7](lec_number) of [Intelligent_systems](course)?
-    - which topics are covered in [lab](lec) [8](lec_number) of [Mathematics Intro](course)?
-    - which topics are covered in [lab](lec) [9](lec_number) of [Intelligent_systems](course)?
-    - which topics are covered in [lab](lec) [10](lec_number) of [Intelligent_systems](course)?
-    - which topics are covered in [lab](lec) [11](lec_number) of [Engineering III](course)?
-    - which topics are covered in [lab](lec) [12](lec_number) of [Mathematics Intro](course)?
-
+    - which topics are covered in [lecture](lec) [8](lec_number) of [Mathematics Intro](course)?
+    - which topics are covered in [lecture](lec) [9](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lecture](lec) [10](lec_number) of [Intelligent_systems](course)?
+    - which topics are covered in [lecture](lec) [11](lec_number) of [Engineering III](course)?
+    - which topics are covered in [lab](lec) [12](lec_number) of [Mathematics Intro](course)? 
     
-
 - intent: topic_provenance
   examples: |
     - what covers [__oov__](topic)?

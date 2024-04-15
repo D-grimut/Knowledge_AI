@@ -759,6 +759,8 @@ class GetTranscript(Action):
         return [AllSlotsReset(), Restarted()]
 
 # 14
+
+
 class CourseDescription(Action):
 
     def name(self) -> Text:
@@ -790,7 +792,7 @@ class CourseDescription(Action):
             FILTER(REGEX(STR(?cname), '%s', "i")). 
             }
             LIMIT 100
-            """%(course))
+            """ % (course))
         sparql.setReturnFormat(JSON)
         result = sparql.query().convert()
         if (len(result['results']['bindings']) == 0):
@@ -816,7 +818,7 @@ class CourseEventTopic(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        topic = tracker.get_slot['topic']
+        topic = tracker.get_slot('topic')
 
         # query
         sparql = SPARQLWrapper(
@@ -850,3 +852,73 @@ class CourseEventTopic(Action):
                     text=res["provenance"]["value"] + " covers this topic.")
 
         return [AllSlotsReset(), Restarted()]
+
+
+class TopicCoveredEvent(Action):
+
+    def name(self) -> Text:
+        return "get_topic_covered_event"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        event = tracker.get_slot('lec')
+        number = tracker.get_slot('lec_number')
+        course = tracker.get_slot('course')
+
+        if event is None or number is None or course is None:
+            dispatcher.utter_message(text=f"I don't understand")
+            return [AllSlotsReset(), Restarted()]
+
+        # query
+        sparql = SPARQLWrapper(
+            "http://localhost:3030/Data/sparql", agent='Rasabot agent')
+
+        # ----------------------------------------------
+
+        if event in set(['lecture', 'lectures', 'lec']):
+            sparql.setQuery("""
+            prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+            prefix foaf: <http://xmlns.com/foaf/0.1/>
+            prefix dbo: <http://dbpedia.org/ontology/>
+            prefix uni: <http://uni.com/schema#>
+            prefix owl: <http://www.w3.org/2002/07/owl#>
+
+            SELECT ?tName
+            WHERE{
+            ?course uni:subject ?cName.
+            ?course uni:has_lecture ?lecture.
+            ?lecture uni:lecture_number ?lecNum.
+            ?topic uni:provenance ?courseMat.
+            ?course uni:has_lecture ?courseMat.
+            ?topic uni:topicName ?tName.
+            FILTER(REGEX(STR(?cName), '%s', "i")).
+            FILTER(?lecNum=%d).
+            }
+            LIMIT 100
+            """ % (course, number))
+
+        elif event in set(['lab', 'labs', 'laboratories', 'laboratory']):
+            sparql.setQuery("""
+
+            """)
+            sparql.setReturnFormat(JSON)
+            result = sparql.query().convert()
+
+        elif event in set(['tutorial', 'tutorials', 'tuts', 'tut']):
+            sparql.setQuery("""
+            
+            """)
+            sparql.setReturnFormat(JSON)
+            result = sparql.query().convert()
+
+        # ---------------------------------------------
+
+        if (len(result['results']['bindings']) == 0):
+            dispatcher.utter_message(
+                text="Sorry, I was unable to find any results for that question.")
+
+        return []

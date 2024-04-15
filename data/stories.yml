@@ -128,12 +128,12 @@ stories:
     - intent: about_course
     - action: get_course_description
 
-# - story: get topics covered event
-#   steps:
-#     - intent: greet
-#     - action: utter_greet
-#     - intent: topics_covered_event
-#     - action: ...
+- story: get topics covered event
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: topics_covered_event
+    - action: get_topic_covered_event
 
 - story: get topic provenance
   steps:
