@@ -222,7 +222,7 @@ def lecture_graph(graph, get_files):
                 lec_num_formatted = lec_num[lec_num.find("_")+1:]
 
                 # Add lecture
-                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))
+                graph.add((unid[lec_uri], RDF.type, uni.Labs))
 
                 # Add lecture number
                 graph.add((unid[lec_uri], uni.lecture_number, Literal(
@@ -232,6 +232,13 @@ def lecture_graph(graph, get_files):
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+                # Add has lecture
+                graph.add((unid[course[course.find("-")+1:-5]],
+                          uni.has_lecture, unid[lec_uri]))
+
+                # Attach lecture content entity to the lecture
+                graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
 
         elif "Tutorials" in course:
             for lec_num, lec_cont_uri in course_content.items():
@@ -253,7 +260,7 @@ def lecture_graph(graph, get_files):
                 lec_num_formatted = lec_num[lec_num.find("_")+1:]
 
                 # Add lecture
-                graph.add((unid[lec_uri], RDF.type, uni.OtherLectureMaterial))
+                graph.add((unid[lec_uri], RDF.type, uni.Tutorials))
 
                 # Add lecture number
                 graph.add((unid[lec_uri], uni.lecture_number, Literal(
@@ -263,6 +270,13 @@ def lecture_graph(graph, get_files):
 
                 # Add lecture name
                 graph.add((unid[lec_uri], uni.lecture_name, Literal(lec_name)))
+
+                # Add has lecture
+                graph.add((unid[course[course.find("-")+1:-10]],
+                          uni.has_lecture, unid[lec_uri]))
+
+                # Attach lecture content entity to the lecture
+                graph.add((unid[lec_uri], uni.has_content, lec_cont_uri))
         else:
             co = course_content['Lecture_0']
             gcs = co[co.find('-')+1:-21]

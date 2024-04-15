@@ -110,6 +110,16 @@ uni:OtherLectureMaterial a rdfs:Class;
     rdfs:label "other material"@en;
     rdfs:comment "other/supplementary lecture material"@en.
 
+uni:Labs a rdfs:Class;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "labs"@en;
+    rdfs:comment "labs of a given lecture"@en.
+
+uni:Tutorials a rdfs:Class;
+    rdfs:subClassOf uni:Lecture_Content;
+    rdfs:label "tutorials"@en;
+    rdfs:comment "tutorials of a given lecture"@en.
+
 #-----------------------Topics------------------------------
 uni:Topic a rdfs:Class;
     rdfs:label "Topic"@en;
