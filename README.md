@@ -67,8 +67,21 @@ At the end, there should be a .ttl and .nt file with the knowledge base.
 
 ## Running Fuseki Server
 - After having generated the graph, to run all the querries, follow these steps:
-  - Open and run Fuseki Server
-  - Note the name of the dataset (bottom left of the image, in this case, "data")
+  - Open and run Fuseki Server.
+  - Note the name of the dataset (bottom left of the image, in this case, "data").
   ![image](https://github.com/D-grimut/Knowledge_AI/assets/48657408/911ce926-fbd9-4da5-a6a8-412931d618b9)
   - Upload into Fuseki Server the generated knoweldge base in the previous step.
-  - Find the endpoint_url variable and change the data part of (http://localhost:3030/data) to the name found in Fuseki Server
+  - Find the endpoint_url variable and change the data part of (http://localhost:3030/data) to the name found in Fuseki Server.
+
+## Using Rasa Chatbot
+- To ensure that the Rasa Chatbot works as intended, follow these steps:
+  - Open a terminal and write the following commands:
+    - pip install rasa
+    - rasa train
+  - Open Fuseki Server where the query dataset is named /Data. If that dataset does not exist, create it.
+  - Upload topics_turtle_TEST.ttl to the query database
+  - Open 2 terminal windows. Write 1 command per terminal:
+    - rasa run actions
+    - rasa shell
+
+Once these steps are done, converse with Rasa chatbot!
