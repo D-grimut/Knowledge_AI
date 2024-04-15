@@ -1,0 +1,23 @@
+PREFIX un: <http://www.w3.org/2007/ont/unit#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX uni: <http://uni.com/schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?tName ?link ?lecname ?lecture ?content
+WHERE{
+?course rdf:type uni:Course.
+?course uni:subject ?cName.
+?course uni:has_topic ?topic.
+?topic uni:topicName ?tName.
+?topic uni:linked_to ?link.
+?topic uni:provenance ?lecture.
+?course uni:has_lecture ?lecture.
+?lecture uni:lecture_name ?lecname.
+?lecture uni:has_content ?content.
+ 
+FILTER(REGEX(STR(?cName), 'Intelligent_Systems', "i")). }
+LIMIT 1000
