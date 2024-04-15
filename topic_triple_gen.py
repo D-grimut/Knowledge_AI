@@ -58,8 +58,8 @@ def topics_graph(topic_dict):
 
                 graph.add((unid[topic_name], uni.provenance, unid[lecture_provenance]))
                 
-    graph.serialize(destination="topics_turtle_TEST.ttl", format='turtle')
-    graph.serialize(destination="topics_ntriples_TEST.nt", format='nt')
+    graph.serialize(destination="knowldge_base_turtle.ttl", format='turtle')
+    graph.serialize(destination="knowldge_base_ntriples.nt", format='nt')
 
 def main():
     
