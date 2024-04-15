@@ -18,7 +18,7 @@ uni:Course a rdfs:Class;
     rdfs:label "Course"@en;
     rdfs:comment "Course class"@en.
 
-uni:description a rdf:Property
+uni:description a rdf:Property;
     rdfs:domain uni:Course;
     rdfs:range xsd:string;
     rdfs:label "Description"@en;
