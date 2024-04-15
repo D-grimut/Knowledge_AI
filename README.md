@@ -79,7 +79,7 @@ At the end, there should be a .ttl and .nt file with the knowledge base.
     - pip install rasa
     - rasa train
   - Open Fuseki Server where the query dataset is named /Data. If that dataset does not exist, create it.
-  - Upload topics_turtle_TEST.ttl to the query database
+  - Upload knowledge_base_turtle.ttl to the query database
   - Open 2 terminal windows. Write 1 command per terminal:
     - rasa run actions
     - rasa shell
