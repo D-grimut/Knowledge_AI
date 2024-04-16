@@ -50,7 +50,6 @@ class FileParser:
                         f.write(text_content)
                     
                     os.remove(file_path)
-        return 0
 
 def main():
     # Get current dir
