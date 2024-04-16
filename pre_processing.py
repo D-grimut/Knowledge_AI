@@ -39,8 +39,8 @@ class FileParser:
                     file_name, ext = os.path.splitext(file_path)
 
                     # Skip any files that is already in plane text -  no need parse it
-                    # if(ext.lower() == ".txt"):
-                    #     continue
+                    if(ext.lower() == ".txt"):
+                        continue
                     
                     text_content = self.extract_text(file_path)
                     text_content = self.clean_text(text_content)
@@ -49,7 +49,7 @@ class FileParser:
                     with open(new_file_path, 'w', encoding="utf8") as f:
                         f.write(text_content)
                     
-                    # os.remove(file_path)
+                    os.remove(file_path)
         return 0
 
 def main():
