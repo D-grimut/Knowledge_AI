@@ -96,6 +96,7 @@ At the end, there should be a .ttl and .nt file with the knowledge base.
 
 ## Using Rasa Chatbot
 - To ensure that the Rasa Chatbot works as intended, follow these steps:
+  - Make sure your python version is between 3.8 or 3.10, otherwise Rasa will not install
   - Open a terminal and write the following commands:
     - pip install rasa
     - rasa train
