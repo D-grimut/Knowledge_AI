@@ -1,8 +1,8 @@
-# Project Assignment #1
+# Knoweldge AI - Chat Bot
 
-### Welcome to our project assignment #1
+### Welcome Knoweldge AI
 
-This project is destined to create a chatbot using course inforamtion that we inputted. For the first part of this assignment, we needed to gather the information and format it for future reference.
+This project is destined to create a chatbot using course information that we inputted. For the first part of this assignment, we needed to gather the information and format it for future reference.
 
 # File Description
 
@@ -10,27 +10,27 @@ Here are the following contents of the assignment as well as their respective de
 
 - COMP 354-GCS_132 folder
   -   This folder contains all of the course materials (lectures, labs, tutorials, and course outline)
-  -   It's content is used to create the triples and knowledge base
+  -   Its content is used to create the triples and knowledge base
   
 - COMP 474_6741-GCS_143 folder
-  -   This folder contains all of the course materials (lectures, labs,and course outline)
-  -   It's content is used to create the triples and knowledge base
+  -   This folder contains all of the course materials (lectures, labs, and course outline)
+  -   Its content is used to create the triples and knowledge base
 
 - Queries folder
-  - This folder contains all of the queries, seperated into files named q1.txt - q13.txt
+  - This folder contains all of the queries, separated into files named q1.txt - q13.txt
   - These files are used to run the queries in the program
 
 - Query Outputs
-  - This folder contains all of the query outputs, seperated into files named q1-out.csv - q13-out.csv
-  - These files show the output of the queries, formated into a CSV format
+  - This folder contains all of the query outputs, separated into files named q1-out.csv - q13-out.csv
+  - These files show the output of the queries, formatted into a CSV format
   
 - KB Data Folder 
-  - This is the folder that contains all the resources that we need to parse to begin creating the knoweldge graphs
-  - There resources are different to the resources found in the Cources foulder as these resources contain only CSV data we use to retrieve information about different classes and students prior to their creation.
-  - This folder contains the folowing files: CATALOG.csv, CU_SR_OPEN_DATA_CATALOG.csv, grades.csv, students.csv
+  - This is the folder that contains all the resources that we need to parse to begin creating the knowledge graphs
+  - These resources are different from the resources found in the Courses folder as these resources contain only CSV data we use to retrieve information about different classes and students prior to their creation.
+  - This folder contains the following files: CATALOG.csv, CU_SR_OPEN_DATA_CATALOG.csv, grades.csv, students.csv
   - These files are the main source of information used to create the triples
   - The program gathers and formats the information to ensure the quality of the data
-  - These files are read for specific informations such as cource number, description, website, credits, etc. To create the 
+  - These files are read for specific information such as course number, description, website, credits, etc. To create the 
     triples.
 
 - dummy_data_ntriples.nt, knowldge_base_turtle.ttl, knowldge_base_ntriples.nt
@@ -38,9 +38,9 @@ Here are the following contents of the assignment as well as their respective de
   - They come in 2 formats: n-triples format and turtle format
 
 - RDFS Vocab folder
-  - This folder contains the vocab.ttl fil which is our RDFS vocabulary defined for this project
+  - This folder contains the vocab.ttl file which is our RDFS vocabulary defined for this project
   - This file is used as the vocabulary of our graph
-  - Used for the definitions for the triples
+  - Used for the definitions of the triples
 
 - URI_Generator.py
   - Python file used as the main file in the program, this file generates all the RDF triples when ran, and creates the
@@ -53,7 +53,7 @@ Here are the following contents of the assignment as well as their respective de
 
 - entity_linking.py
   - Python file to link Wikidata URLs to the topics found in the plain text files.
-  - It filters the data to specific needs of the program
+  - It filters the data to the specific needs of the program
 
 - topic_triple_gen.py
   - Python file to create the finalized triples for the knowledge base.
@@ -65,7 +65,7 @@ Here are the following contents of the assignment as well as their respective de
 
 - topics.json
   - JSON file that saves all of the filtered content from entity_linking.py for future use.
-  - Data saved here for time effeciency.
+  - Data saved here for time efficiency.
 
 # Running the program
 
@@ -79,24 +79,24 @@ To ensure that the program runs smoothly, please follow the instructions below:
 
 ## Running the .py files
 - Run pre_processing.py, this file will process the course content into plain text files.
-- Run URI_Generator.py, this file will generate the knoweldge base.
+- Run URI_Generator.py, this file will generate the knowledge base.
 - Run entity_linking.py, this file will create a JSON file with all of the filtered data to be used for the final file.
 - Run topic_triple_gen.py, this file uses the JSON file to create the triples for the topics and links them to the first knowledge base.
 
-At the end, there should be a .ttl and .nt file with the knowledge base.
+In the end, there should be a .ttl and .nt file with the knowledge base.
 
 ## Running Fuseki Server
-- After having generated the graph, to run all the querries, follow these steps:
+- After having generated the graph, to run all the queries, follow these steps:
   - Open and run Fuseki Server.
   - Note the name of the dataset (bottom left of the image, in this case, "Data").
   - Because the path is hardcoded in the rasa py script - please make a data set and call it "Data" in Fuseki
   ![image](https://github.com/D-grimut/Knowledge_AI/assets/48657408/911ce926-fbd9-4da5-a6a8-412931d618b9)
-  - Upload into Fuseki Server the generated knoweldge base in the previous step.
+  - Upload into Fuseki Server the generated knowledge base in the previous step.
   - Find the endpoint_url variable and change the data part of (http://localhost:3030/Data) to the name found in Fuseki Server.
 
 ## Using Rasa Chatbot
 - To ensure that the Rasa Chatbot works as intended, follow these steps:
-  - Make sure your python version is between 3.8 or 3.10, otherwise Rasa will not install
+  - Make sure your Python version is between 3.8 and 3.10, otherwise, Rasa will not install
   - Open a terminal and write the following commands:
     - pip install rasa
     - rasa train
